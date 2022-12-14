@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_service_level_metrics_and_definitions.html 
+keywords: netapp, keystone, service, level, metrics, definitions, 
+summary: Definiciones y métricas del nivel de servicio de Keystone 
+---
+= Definiciones y métricas de nivel de servicio
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Los siguientes términos y definiciones se utilizan en el servicio Suscripción flexible de NetApp Keystone (suscripción flexible):
+
+* * GIB, TIB e IB.* mediciones de capacidad de almacenamiento de datos utilizando base de 1024 (1 GIB = 1024 3 bytes, 1 TIB = 1024 4 bytes y 1 PIB = 1024 5 bytes).
+* *IOPS/TIB.* las operaciones de protocolo por segundo solicitadas por la aplicación divididas por el tamaño lógico asignado del volumen.
+* *La disponibilidad* se mide como un porcentaje del número de solicitudes de E/S respondidas con éxito por el servicio, dividido por el número total de solicitudes de E/S realizadas por el servicio, medido en la demarcación del servicio, en un mes dado, sin incluir el tiempo de inactividad programado o la falta de disponibilidad de las instalaciones requeridas, red u otros servicios que debe proporcionar el cliente.
+* *Durabilidad* es el porcentaje de datos a los que se accede sin pérdida de fidelidad, excluyendo la eliminación o corrupción causada por el cliente.
+* *IOPS objetivo por TIB.* IOPS garantizado para todas las solicitudes de E/S realizadas a un volumen antes de alcanzar el umbral de IOPS objetivo por TIB. El rendimiento del volumen está limitado con el IOPS seleccionado por TIB.
+
+
+
+NOTE: La métrica de rendimiento IOPS objetivo por TIB se calcula en función de la capacidad lógica consumida en TIB.
+
+* *Latencia.* tiempo para atender una solicitud de E/S recibida de un cliente, medido en la demarcación del servicio (puerto de E/S del controlador de almacenamiento).
+

@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: rn_fixed_issues.html 
+keywords: netapp, keystone, release notes, fixed issues, hot fixes 
+summary: Problemas solucionados en el motor de servicios de NetApp 
+---
+= Problemas solucionados en el motor de servicios de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Los siguientes problemas encontrados en una versión anterior del motor de servicios de NetApp se han solucionado para que usted utilice sus servicios de suscripción Flex de NetApp Keystone.
+
+[cols="3*"]
+|===
+| Descripción del problema | Después de la corrección | Corregido en la versión 
+
+
+| El movimiento de volúmenes se activa automáticamente cuando existía un agregado que no pertenece a FabricPool en el clúster. Cualquier modificación de volúmenes o discos activó el movimiento de un volumen a otro agregado. | No se activa ningún movimiento de volúmenes para operaciones de volumen. | Motor de servicio de NetApp 2.2 
+
+
+| Los grupos de hosts se eliminan de los grupos de hosts de la interfaz de usuario de Service Engine de NetApp, pero no del clúster. | Resuelto. | Motor de servicio de NetApp 2.2 
+
+
+| Se podría quitar la asignación de los grupos de hosts de los discos en la interfaz de usuario del motor de servicio de NetApp, pero no del clúster. | Resuelto. | Motor de servicio de NetApp 2.2 
+
+
+| No se pudieron eliminar las políticas de exportación de la interfaz de usuario del motor de servicio de NetApp. | Las políticas modificadas pueden guardarse de la interfaz de usuario. | Motor de servicio de NetApp 2.2 
+|===

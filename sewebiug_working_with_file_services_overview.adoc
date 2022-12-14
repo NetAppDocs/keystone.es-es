@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_working_with_file_services_overview.html 
+keywords: netapp, keystone, working, file, services, overview, 
+summary: Keystone está trabajando con información general sobre servicios de archivos 
+---
+= Descripción general
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+En esta sección se describe cómo gestionar los servidores de archivos y los recursos compartidos de archivos NFS/CIFS. Puede ver información acerca de los servidores de archivos y compartirlos, crearlos, modificarlos y eliminarlos.

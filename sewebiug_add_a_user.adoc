@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_add_a_user.html 
+keywords: netapp, keystone, add, user, 
+summary: Keystone agregue un usuario 
+---
+= Agregar un usuario
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+En esta sección se describe cómo agregar un usuario.
+
+.Antes de empezar
+Necesita:
+
+* Los inquilinos a los que se debe dar acceso al usuario.
+* La función que se concede al usuario dentro de cada arrendamiento. Un usuario solo puede tener un rol dentro de un inquilino.
+
+
+.Pasos
+. Seleccione *ADMINISTRACIÓN > usuarios* en el menú.
+. Haga clic en *Crear usuario*.
+. En el cuadro de diálogo Crear usuario, especifique el nombre de usuario, la dirección de correo electrónico, el nombre, el apellido, el nombre para mostrar, y contraseña para el usuario.
+. Seleccione el arrendatario principal y el rol del usuario en ese arrendatario.
++
+
+NOTE: Puede asignar privilegios a un usuario según su rol, como un administrador de NetApp, un administrador de NetApp con privilegios de solo lectura, un administrador de partners o un administrador de inquilinos. Según su rol, puede ver las funciones de diferentes usuarios en su entorno y asignar roles a usuarios nuevos o existentes.
+
+. Para agregar tenencias adicionales, haga clic en *Agregar arrendatario* para mostrar nuevos campos de entrada y seleccione el arrendatario y la función del usuario en ese arrendatario.
+. Haga clic en *Crear*.
+

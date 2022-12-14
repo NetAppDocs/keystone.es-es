@@ -1,0 +1,128 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_netapp_service_engine_web_interface_overview.html 
+keywords: netapp, keystone, service, engine, web, interface, overview, 
+summary: Información general de la interfaz web del motor de servicios de NetApp 
+---
+= Información general de la interfaz web del motor de servicios de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La siguiente ilustración muestra un ejemplo de la interfaz web del motor de servicio de NetApp. Consta de los siguientes componentes:
+
+* *Área de visualización.* esta es la principal zona de trabajo de la pantalla; tiene dos vistas:
++
+** Vista del panel: Muestra varias herramientas para supervisar el uso, la facturación, las alertas y las solicitudes de servicio.
+** Vista de lista: Muestra las listas de elementos que se pueden examinar y ordenar (más adelante).
+
+
+* *Menú.* Utilice el menú para ver y administrar elementos de almacenamiento, ver informes y acceder a asistencia técnica.
+* *Logotipo de NetApp.* haga clic en este icono en cualquier momento para devolver la pantalla a la vista de panel.
+* *Arrendatario.* muestra el arrendatario seleccionado actualmente. Para cambiar el arrendatario, consulte link:sewebiug_select_tenant.html["Seleccione el inquilino"].
+* *Trabajos.* haga clic para ver el estado de los trabajos de aprovisionamiento más recientes. El icono cambia de color para mostrar el estado del trabajo de configuración. Para obtener más información, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Indicador de estado de trabajos y trabajos"].
+* *Inicio de sesión del usuario.* muestra el nombre del usuario que ha iniciado sesión actualmente. Haga clic en este icono para cerrar sesión. Para obtener más información, consulte link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface["Cierre la sesión en la interfaz web del motor de servicios de NetApp"].
+
+
+image:sewebiug_image9_dashboard1.png["Consola de NSE-1"]
+
+image:sewebiug_image9_dashboard2.png["NSe Dashboard-2"]
+
+
+
+== Vista Consola
+
+La consola muestra información sobre sus suscripciones de almacenamiento de NetApp Keystone, como la capacidad utilizada, la facturación contra el uso, y las alertas recientes y solicitudes de servicio. Es la vista predeterminada cuando se inicia sesión por primera vez en Service Engine de NetApp. Para obtener más información acerca de la consola, consulte link:sewebiug_dashboard.html["Ver el panel de suscripciones de Flex"].
+
+
+
+=== Vista de lista
+
+Una vista de lista se utiliza para ver una lista de objetos. Por ejemplo, la lista de servidores compatibles con los recursos compartidos de archivos de una suscripción se muestra en una vista de lista, como se muestra en la siguiente captura de pantalla.
+
+Desde una vista Lista, puede:
+
+* Realizar acciones en los elementos de la lista: Consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Acciones de vista de lista"].
+
+
+
+
+=== Acciones de vista de lista
+
+Una vista Lista muestra una lista de elementos y proporciona una vista rápida de algunos de los detalles del elemento (incluido el estado). En una vista Lista, puede realizar las acciones enumeradas en la siguiente tabla.
+
+|===
+| Acción | Descripción 
+
+
+| Crear un elemento | Utilice el botón Crear para crear un nuevo elemento. 
+
+
+| Usar iconos de acción | Utilice los iconos de acción para realizar una acción en el elemento de lista. 
+
+
+| Ordenar la lista | Utilice los iconos de flecha de la columna de lista para ordenar la lista por esa columna en orden ascendente o descendente. Los iconos de flecha son visibles cuando se pasa el cursor cerca del nombre de la columna. 
+
+
+| Cambiar el número de elementos mostrados, navegar por la lista | Cambie el número de elementos que se muestran en la página y navegue por la lista mediante el campo elementos por página y los iconos < y > de la parte inferior de la lista. 
+
+
+| Actualice la página | Actualice la página con el icono de actualización: 
+|===
+
+
+== estados de objeto
+
+Durante el aprovisionamiento y la modificación, los objetos de almacenamiento pasan por una serie de estados antes de que entren en funcionamiento. El estado de los objetos de almacenamiento se muestra en la vista Lista de esos elementos. Los objetos pueden estar en uno de los siguientes estados:
+
+* *Creando.* el recurso de almacenamiento se está creando.
+* *Actualizando.* el elemento está siendo modificado actualmente.
++
+Se produce cuando se produce un cambio en un recurso de almacenamiento (servidor de archivos, hare de archivos, blockstore, disco, etc.). Incluye cambiar el tamaño de los recursos compartidos, cambiar la configuración de la política de instantáneas, cambiar la política de exportación, tomar una instantánea, cambiar el nombre de los elementos, etc.
+
+* *Operativo.* indica que el recurso de almacenamiento se ha aprovisionado/modificado correctamente y está disponible, en línea y funcional.
+* *Eliminando.* el objeto se está eliminando y se está procesando.
+* *Objeto en cola.* el objeto está en estado en cola y se está procesando.
+* *Los objetos importados* aprovisionados fuera del motor de servicio de NetApp se importan con este estado cuando no cumplen los criterios de la suscripción Flex de NetApp Keystone (suscripción Flex).
++
+
+NOTE: Normalmente, este estado implica que no se aplica ninguna política de calidad de servicio en el objeto y, por lo tanto, no puede gestionarla Service Engine de NetApp como parte de su suscripción Flex. Puede modificar el objeto (mediante el lápiz de edición) y asignar un nivel de servicio adecuado. Esto cambia el estado de ese objeto a operativo.
+
+* *Los objetos que no son estándar*.* los objetos que se aprovisionan fuera del motor de servicio de NetApp se importan con este estado cuando no cumplen los criterios de la suscripción Flex de NetApp Keystone (suscripción Flex).
++
+
+NOTE: Normalmente, este estado implica que el objeto falta uno o varios criterios para su gestión por parte del motor de servicios de NetApp, como parte de su suscripción Flex. Puede hacerlo link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["elevar una solicitud de servicio"] Para que sean estandarizados y gestionados a través del portal del motor de servicios de NetApp y realicen operaciones con el equipo de soporte.
+
+* *Asistencia de contacto.* este estado ocurre cuando la tarea de aprovisionamiento o modificación no se completa completamente. En el caso de elementos en este estado, envíe una solicitud de soporte para solucionar el problema.
+* *Operativo (para el objeto de origen de una copia de seguridad).* los siguientes son los Estados posibles:
++
+** Con el lápiz de edición : indica que el objeto de copia de seguridad está operativo y en funcionamiento.
+** Sin editar el lápiz: Indica que el backup está huérfano, es decir, que la relación de SnapMirror del objeto de backup con su volumen de origen se rompe o se ha eliminado el volumen de origen.
+
+
+
+
+
+
+== Indicador de estado de trabajos y trabajos
+
+Algunas tareas de aprovisionamiento en el motor de servicios de NetApp, como crear, modificar o eliminar elementos de almacenamiento, pueden tardar un tiempo en completarse. En lugar de ejecutarse inmediatamente (como en el caso de tareas síncronas), estas tareas se ejecutan de forma asíncrona. Al iniciar estas tareas, Service Engine de NetApp devuelve un registro de trabajo. Se puede realizar un seguimiento del estado a través del icono de campana en la esquina superior derecha que indica si la tarea enviada se ha completado correctamente. También se puede realizar un seguimiento del estado del trabajo a través de las API. Para obtener más información, consulte link:https://docs.netapp.com/us-en/keystone/seapiref_jobs.html#retrieve-jobs["aquí"]
+
+|===
+| Color del indicador | Descripción 
+
+
+| Negro | Hay una tarea en ejecución. 
+
+
+| Rojo | No se pudo completar la última tarea. 
+
+
+| Verde | La última tarea se completó correctamente. 
+|===
+Haga clic en el indicador de estado para ver el estado de las 10 tareas más recientes.

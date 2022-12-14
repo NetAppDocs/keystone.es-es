@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: seapiref_authorization_and_authentication.html 
+keywords: netapp, keystone, authorization, authentication, 
+summary: Autorización y autenticación de Keystone 
+---
+= Autorización y autenticación
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La API DE REST del motor de servicios de NetApp es accesible mediante cualquier navegador web o plataforma de programación que pueda emitir solicitudes HTTP. El motor de servicios de NetApp es compatible con el mecanismo de autenticación HTTP básico, así como con la autenticación Bearer de Java Web Token (JWT). Antes de llamar a una API, debe autenticar un usuario.
+
+Para conocer las API de referencia, puede iniciar sesión en la interfaz web del motor de servicio de NetApp y ver la interfaz de Swagger en el panel de navegación * izquierdo > Soporte > Documentación de API*.
+
+
+
+== códigos de estado HTTP
+
+Mientras ejecuta las API o resuelve problemas, debe tener en cuenta los diversos códigos de estado HTTP y códigos de error que utilizan las API del motor de servicio de NetApp.
+
+En la siguiente tabla se enumeran los códigos de error relacionados con la autenticación.
+
+|===
+| Código de estado HTTP | Código de estado Título | Descripción 
+
+
+| 200 | DE ACUERDO | Se devolvió al ejecutar correctamente las llamadas API síncronas. 
+
+
+| 201 | Creado | Creación de recursos nuevos mediante llamadas síncronas, como la configuración de Active Directory. 
+
+
+| 202 | Aceptado | Devuelto cuando la ejecución correcta de llamadas asíncronas para funciones de aprovisionamiento, como la creación de LUN y recursos compartidos de archivos. 
+
+
+| 400 | Solicitud no válida | Indica fallo de validación de entrada. El usuario debe corregir las entradas, por ejemplo, las claves válidas de un cuerpo de solicitud. 
+
+
+| 401 | Solicitud no autorizada | No está autorizado a ver el recurso o no autorizado. 
+
+
+| 403 | Solicitud prohibida | Está prohibido acceder al recurso que estaba intentando alcanzar. 
+
+
+| 404 | No se encuentra el recurso | No se encuentra el recurso al que estaba intentando acceder. 
+
+
+| 405 | Método no permitido | Método no permitido. 
+
+
+| 412 | Error de condición | No se cumplieron una o más condiciones previas. 
+
+
+| 500 | Error de servidor interno | Error interno del servidor. Error al obtener una respuesta del servidor. Este error interno del servidor puede ser permanente o no. Por ejemplo, si ejecuta UNA OPERACIÓN GET o GET ALL y recibe este error, se recomienda repetir esta operación para un mínimo de cinco reintentos. Si se trata de un error permanente, el código de estado devuelto sigue siendo 500. Si la operación se realiza correctamente, el código de estado devuelto es 200. 
+|===
+
+
+== Recomendaciones para el uso de las API
+
+Al usar las API, debe seguir ciertas prácticas recomendadas:
+
+* Para una ejecución válida, asegúrese de que todos los tipos de contenido de respuesta tienen el siguiente formato:
++
+....
+application/json
+....
+* Al actualizar los valores de matriz, debe actualizar toda la cadena de valores. No puede anexar valores a una matriz; sólo puede reemplazar una matriz existente.
+* Evite consultar objetos mediante una combinación del comodín de los operadores de filtro (`*`) y tubería (`|`). Es posible que recupere una cantidad incorrecta de objetos.
+

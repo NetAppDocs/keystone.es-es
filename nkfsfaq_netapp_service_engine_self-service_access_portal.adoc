@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: nkfsfaq_netapp_service_engine_self-service_access_portal.html 
+keywords: netapp, keystone, service, engine, self-service, acess, portal, 
+summary: Portal de acceso de autoservicio/motor de servicio de NetApp 
+---
+= Portal de acceso de autoservicio/motor de servicios de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Las siguientes preguntas frecuentes se aplican al motor de servicio de NetApp.
+
+*¿Qué es el motor de servicio de NetApp?*
+
+Motor de servicios de NetApp es un portal de autoservicio que está disponible en el modelo operado por NetApp y que le permite iniciar sesión y aprovisionar almacenamiento en función de su servicio de suscripción Flex de NetApp Keystone. La herramienta también proporciona informes sobre cuáles son sus niveles de consumo con respecto a su suscripción e inicia cualquier solicitud de servicio o cambio de suscripción.
+
+*Se requiere el motor de servicio de NetApp en el modelo operado por el cliente?*
+
+En un modelo operado por el cliente, se requiere el motor de servicio de NetApp. Proporciona informes básicos sobre los detalles de consumo y es necesario recopilar e informar de la información de facturación.
+
+*Dónde se instala Service Engine de NetApp?*
+
+En un modelo operado por NetApp, el motor de servicio de NetApp se instala de forma local en los recursos informáticos proporcionados por NetApp. En un modelo operado por el cliente, el motor de servicio de NetApp se instala en los recursos informáticos proporcionados por el cliente.
+
+*¿Quién puede iniciar sesión en el motor de servicios de NetApp?*
+
+Los usuarios se pueden autenticar con el inicio de sesión único de NetApp o los usuarios locales configurados en el motor de servicio de NetApp.
+
+*¿Cómo se controla el acceso?*
+
+El motor de servicios de NetApp proporciona control de acceso basado en roles (RBAC) y cada usuario puede asociarse a un rol, que define qué acciones pueden realizar. El cliente realiza la asignación de RBAC con el motor de servicio de NetApp.
+
+*¿Qué controles de acceso están disponibles?*
+
+Están disponibles los siguientes controles de acceso:
+
+* *Administrador del partner* un administrador del socio que tiene derechos para crear y administrar inquilinos, administrar suscripciones para inquilinos, ver informes de uso y gestionar aspectos técnicos del almacenamiento.
+* *Cliente/inquilino Admin* una persona administrativa del cliente que tiene derechos para solicitar cambios en la suscripción, crear nuevos usuarios y subinquilinos, y también crear y ver recursos compartidos de archivos, discos y cubos.
+* *Administración de NetApp (lectura).* un administrador de NetApp que tiene acceso a todos los componentes del portal web y que puede ver todos los detalles, como todas las suscripciones Flex de NetApp Keystone, suscripciones a partners e inquilinos, y almacenamiento. Sin embargo, este usuario no tiene permisos para crear, editar o eliminar.
+* *Administrador de NetApp* este usuario tiene acceso completo y permisos para realizar todas las funciones del portal web de Service Engine de NetApp para gestionar la suscripción Flex de NetApp Keystone, y todas las actividades para la administración de partners e inquilinos.
+
+
+* ¿Dónde puedo ver la facturación contra mi uso?*
+
+Puede ver los cargos mensuales agregados de sus suscripciones durante los últimos tres meses en el widget *cargos mensuales* del Panel. Puede ver información detallada de facturación haciendo clic en el widget o navegando a *ADMINISTRACIÓN* > *facturación*.

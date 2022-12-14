@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_service_request_process.html 
+keywords: netapp, keystone, service, request, process, 
+summary: Proceso de solicitud de servicio de Keystone 
+---
+= Proceso de solicitud de servicio
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+En esta sección se describe un flujo de proceso de solicitud de servicio simplificado.
+
+La siguiente figura muestra el flujo como diagrama y la siguiente tabla describe los actores, acciones y estado de la solicitud de servicio como resultado de la acción.
+
+image:sewebiug_image45.png["Error: Falta la imagen gráfica"]
+
+|===
+|  | Quién | Acción | Estado de solicitud en el motor de servicio de NetApp tras la acción | Notificación 
+
+
+| 1 | Motor de servicio de NetApp | Generar una nueva solicitud de servicio. | Nuevo | Se ha creado un correo electrónico automático que confirma la solicitud 
+
+
+| 2 | GSSC de NetApp | Reconozca la solicitud. | Abierto  a| 
+* Correo electrónico de confirmación: GSSC
+* Mensaje de correo electrónico automatizado que indica el estado en Abrir
+
+
+
+
+| 3 | GSSC de NetApp | Evaluación y asignación al ingeniero de gestión logística. | Abierto | – 
+
+
+| 4 | GSSC de NetApp | Supervisar y realizar un seguimiento de la solicitud a lo largo del proceso de cumplimiento de solicitudes. | – | – 
+
+
+| 5 | Ingeniero de ejecución de NetApp | Revise la solicitud. | Abierto | – 
+
+
+| 6 | Ingeniero de ejecución de NetApp | Si necesita más información, envíe un correo electrónico al solicitante para obtener más información. | Pendiente  a| 
+* Correo electrónico automático que indica el estado pendiente.
+* Comunicarse por correo electrónico para solicitar información adicional
+
+
+
+
+| 7 | Cliente | Proporcione más información. | Pendiente | Comunicarse por correo electrónico 
+
+
+| 8 |  | Repita los pasos 6 y 7 hasta que haya suficiente información para avanzar en la solicitud. | Pendiente | Comunicarse por correo electrónico para solicitar información adicional 
+
+
+| 9 | Ingeniero de ejecución de NetApp | Cumplir la solicitud | Abierto | El correo electrónico automático indica que el estado es abierto. 
+
+
+| 10 | Ingeniero de ejecución de NetApp | Resolver la solicitud y informar de que se ha resuelto la solicitud del cliente. | Resuelto  a| 
+* Se ha resuelto la solicitud de servicio por correo electrónico para solicitar confirmación
+* Se ha resuelto el mensaje de correo electrónico automático que indica el estado.
+
+
+
+
+| 11 | Cliente | Notificar solicitud de servicio se ha resuelto. | Resuelto | Correo electrónico para confirmar que se ha resuelto la solicitud de servicio. 
+
+
+| 12 | Automático | Si no se requiere ninguna otra acción después de tres días , la solicitud de servicio se cierra automáticamente. | Cerrada | Correo electrónico automático que indica el estado cerrado. 
+|===

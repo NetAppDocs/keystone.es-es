@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_delete_a_user.html 
+keywords: netapp, keystone, delete, user, 
+summary: Keystone elimine un usuario 
+---
+= Eliminar un usuario
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Utilice este método para eliminar un usuario.
+
+
+NOTE: No es posible recuperar un usuario eliminado.
+
+.Pasos
+. Seleccione Administración > usuarios en el menú.
+. Localice al usuario en la lista y haga clic en el icono Eliminar.
+. En el cuadro de diálogo Confirmar eliminación, introduzca el nombre del usuario que desea eliminar.
+. Haga clic en *Confirmar*.
+

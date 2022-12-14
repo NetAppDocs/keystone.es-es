@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: nkfsfaq_keystone_subscription.html 
+keywords: netapp, keystone, subscription, subscriptions, 
+summary: Suscripción a NetApp Keystone 
+---
+= Preguntas frecuentes sobre la suscripción a NetApp Keystone Flex
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Las siguientes preguntas proporcionan respuestas a sus preguntas frecuentes acerca de los servicios de suscripción Flex de NetApp Keystone.
+
+*¿Qué se ofrece como parte de la suscripción flexible de NetApp Keystone?* la suscripción flexible de NetApp Keystone (suscripción flexible) es una oferta de servicio basada en suscripción para servicios de datos de bloques, archivos y objetos que puede ponerse en marcha localmente y que puede ser operada por NetApp, un partner o un cliente.
+
+*¿Qué ofertas de servicios de almacenamiento se proporcionan como parte de la suscripción Flex?* para obtener información, consulte link:nkfsosm_performance.html["Niveles de servicio"]
+
+*¿Qué servicios complementarios son compatibles?* la protección avanzada de datos (backup y recuperación ante desastres) y la organización en niveles del cloud híbrido con FabricPool son servicios adicionales que se pueden elegir a un coste adicional.
+
+*¿Qué niveles de servicio garantiza NetApp con el servicio?* en un escenario operado por NetApp, NetApp Keystone garantiza IOPS/TIB para el almacenamiento aprovisionado y la latencia de cada nivel de servicio.
+
+*¿A qué se asigna Flex Subscription?* Flex Subscription se asigna a un solo sitio o a un único centro de datos y puede abarcar diferentes niveles de servicio.
+
+*¿Cuáles son las ventajas de los niveles de servicio de niveles superiores y de niveles extremos?* la segmentación está activada en los niveles de servicio de niveles superiores y de niveles extremos, lo que le permite reducir el espacio de almacenamiento y los costes asociados. NetApp asume que un 25% de los datos tienen datos calientes, mientras que el 75% restante con menos frecuencia se usan o inactivos y los mueve a almacenamiento frío. Además, puede comprobar los informes de uso para comprender la frecuencia de acceso a los datos y habilitar el servicio de organización en niveles en función de la información.
+
+*¿Pueden vender los partners más capacidad de la que han comprado a NetApp a los clientes?* las suscripciones de inquilino no están limitadas por la capacidad que ha adquirido el partner. Los partners pueden vender más capacidad de la que han comprado a NetApp a sus clientes. La capacidad que supera la capacidad adquirida se denomina sobresuscripción.
+
+* ¿Se proporcionan API para integrarse con herramientas de cliente?* Sí, las API RESTful están disponibles para integrarse en sus propias aplicaciones. Vaya a *SUPPORT> API Documentation* para ver la documentación de API de los servicios de suscripción Flex. Para obtener más información, consulte link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html["Guía de suscripción a la API de Keystone Flex"].
+
+* ¿Qué es la capacidad de ráfaga?* puede aumentar y disminuir el uso hasta un 20% por encima de la capacidad comprometida. El uso de la capacidad de ráfaga se mide a diario y solo se factura cuando se utiliza. Por ejemplo, si la capacidad comprometida es de 100 TIB, puede utilizar ráfagas hasta 120 TIB.
+
+* ¿Existe un cargo extra por usar Burst?* el uso de la capacidad de ráfaga hasta el 20% de la capacidad comprometida se factura a la misma tasa que la capacidad comprometida, cualquier uso por encima del 20% de la capacidad comprometida se factura con una prima del 50%.
+
+*¿Cuál es el beneficio de la capacidad de ráfaga?* la capacidad de ráfaga le da la flexibilidad de consumir almacenamiento bajo demanda en vez de comprometerse a largo plazo.
+
+*¿Cómo se asigna la capacidad de ráfaga a los inquilinos?* la capacidad de ráfaga se asigna a los socios, que la asignan aún más a sus clientes en función de los requisitos.
+
+*¿Dónde puedo ver el uso de la capacidad comprometida y en ráfaga?* Service Engine de NetApp cuenta con consolas integradas para informar sobre la capacidad consumida frente a la capacidad comprometida.
+
+*¿Habrá notificaciones si alcancé un cierto porcentaje de uso de la capacidad comprometida?* Sí, las herramientas de gestión proporcionan notificaciones sobre el uso de la capacidad a través de la consola del motor de servicios de NetApp.
+
+*¿Cómo puedo ver el uso de la suscripción Flex?* Service Engine de NetApp proporciona una vista de panel con información sobre todos los servicios a los que se ha suscrito y cuánto se consume. Para obtener más información sobre Service Engine de NetApp, consulte link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html["aquí"].
+
+*¿Cómo puedo informar de cualquier problema con el servicio?* se puede acceder al soporte de NetApp Keystone a través de estos diversos canales:
+
+* Correo electrónico de asistencia: keystone.services@netapp.com[keystone.services@netapp.com^]
+* Correo electrónico escalaciones: Correo electrónico:keystone.escalations@netapp.com[keystone.escalations@netapp.com^]
+
+
+*¿Puedo solicitar un nuevo servicio de almacenamiento?* Sí, se puede solicitar un nuevo servicio de almacenamiento o ampliación al servicio de almacenamiento a través del portal del motor de servicio de NetApp. El equipo de operaciones de NetApp Keystone procesa la solicitud antes de que esté disponible para su uso.
+
+*¿Están disponibles inmediatamente aumentos en compromisos de almacenamiento?* dependiendo de la cantidad de capacidad solicitada, se realiza una determinación si la capacidad ya está desplegada, o requiere que se envíe e instale equipo adicional.
+
+*¿Se pueden mover las cargas de trabajo entre los niveles?* Sí, las cargas de trabajo se pueden mover entre niveles, siempre y cuando el usuario se haya suscrito al nivel al que se está moviendo la carga de trabajo. Sin embargo, no recomendamos pasar de un nivel más alto a uno más bajo, ya que puede causar la degradación del rendimiento. El proceso se logra simplemente editando el recurso compartido de archivos y cambiando la configuración de nivel de servicio.
+
+*Qué versión de software (por ejemplo, ONTAP) se instala de forma predeterminada?* dependiendo del nivel de servicio suscrito (por ejemplo, ONTAP con servicios de archivos y bloques, SANtricity para bloques y StorageGRID para objetos) el equipo de soporte instala la versión estable más reciente sin problemas de seguridad ni de características.

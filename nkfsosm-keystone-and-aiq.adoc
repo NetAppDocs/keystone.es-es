@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm-keystone-and-aiq.html 
+keywords: netapp, keystone, aiq keystone customers, Active IQ and keystone 
+summary: Lo que los clientes observan en Active IQ para obtener una solución Keystone 
+---
+= ¿Qué pueden ver los clientes de la suscripción Flex en Active IQ?
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si se ha suscrito a los servicios de suscripción flexible (suscripción flexible) de NetApp Keystone, puede ver sus informes de uso y gráficos en el panel del asesor digital de Active IQ.
+
+Para obtener más información sobre el asesor digital de Active IQ, consulte link:https://docs.netapp.com/us-en/active-iq/index.html["Documentación del asesor digital de Active IQ"]
+
+Si su sitio tiene instalado de forma predeterminada el motor de servicio de NetApp, puede ver los gráficos de consumo a través de la interfaz del motor de servicio de NetApp además de asesor digital de Active IQ. Sin embargo, en un entorno gestionado por el cliente, no tiene acceso a la interfaz del motor de servicio de NetApp y solo puede ver sus gráficos de capacidad e informes de uso a través del panel del asesor digital de Active IQ. Para obtener más información sobre los entornos gestionados por el cliente, consulte link:nkfsosm_overview.html["Modelo operativo, funciones y responsabilidades"]
+
+El intervalo de recopilación de datos de métricas de su sitio es de 5 minutos.
+
+Como cliente, si se ha suscrito a los servicios de suscripción Flex, puede ver la siguiente información en el asesor digital de Active IQ:
+
+* *Widget de suscripción de Keystone Flex*: Si ha iniciado sesión en el asesor digital de Active IQ, puede ver el widget *Suscripción de Keystone Flex* que resume el uso de la capacidad en comparación con los servicios de suscripción Flex adquiridos.
+* Si hace clic en *Ver detalles* en el widget, puede ver el panel *Keystone - utilización de la capacidad*. El panel *Keystone - utilización de la capacidad* ofrece un mayor desglose y análisis de la capacidad y los datos de uso según los servicios suscritos, por ejemplo, los niveles de servicio, la protección de datos y los servicios avanzados de protección de datos. El panel también muestra los gráficos de uso de capacidad consumida, comprometida y en ráfaga durante los últimos 1, 7 y 30 días, con la ráfaga media acumulada calculada y dividida en el período de facturación actual.
+
+
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/active-iq/task_view_keystone_capacity_utilization.html["Vea el uso de la capacidad con la suscripción flexible de NetApp Keystone"].

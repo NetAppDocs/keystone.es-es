@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_delete_an_s3_key_for_a_user.html 
+keywords: netapp, keystone, s3, key, user, 
+summary: Keystone elimine una clave de S3 para un usuario 
+---
+= Elimine una clave de S3 para un usuario
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Use este método para eliminar una clave de S3 para un usuario.
+
+.Pasos
+. Vea el usuario de almacenamiento de objetos link:sewebiug_view_the_object_storage_group_and_users.html["Ver los usuarios y el grupo de almacenamiento de objetos"].
+. Asegúrese de que el subarrendatario correcto está seleccionado y ha hecho clic en la ficha *usuarios*.
+. Localice el usuario en la lista y haga clic en el icono clave de ese grupo.
++
+Para obtener información detallada sobre cómo trabajar con elementos de las listas, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["Acciones de vista de lista"].
+
+. Aparece el cuadro de diálogo *Administrar claves S3* que muestra la lista de claves para el usuario.
+. En la lista de claves, busque la tecla que desea eliminar y haga clic en el icono *Eliminar*.
+. Haga clic en *Confirmar* para confirmar la acción de eliminación. La clave se elimina de la lista de claves de usuario.
+. Haga clic en *Cerrar* para cerrar el cuadro de diálogo Administrar claves S3.
+

@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_raise_a_service_request.html 
+keywords: netapp, keystone, raise, service, request, NetApp GSSC, tenant support 
+summary: Keystone eleve una solicitud de servicio 
+---
+= Elevar una solicitud de servicio
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La pantalla de solicitudes de servicio le permite plantear nuevas solicitudes de servicio como administrador de partners para las suscripciones a sus clientes o a ellos, y enviarlas a su propio equipo de soporte o a GSSC de NetApp.
+
+Como administrador asociado, puede ver el resumen de las solicitudes de servicio más recientes para un arrendatario, ordenadas por prioridad y tiempo de creación, en el widget *peticiones de servicio* del panel. También puede desplazarse a la pantalla solicitudes de servicio para buscar y ver los detalles de todas las solicitudes de servicio que se han generado en su entorno.
+
+Para crear una nueva solicitud de servicio, siga este procedimiento.
+
+.Pasos
+. En el menú, seleccione *ASISTENCIA > peticiones de servicio* y haga clic en *Nueva solicitud de servicio*.
+. En la página Nueva solicitud de servicio, seleccione la categoría y prioridad de la solicitud y, a continuación, haga clic en *Siguiente*. Aparecerá la pantalla *Detalles*.
+
+
+
+NOTE: Los campos de la pantalla Detalles cambian en función de la categoría seleccionada. En esta pantalla, deberá introducir los detalles correspondientes a la categoría seleccionada de la solicitud de servicio.
+
+. Especifique los detalles obligatorios. Haga clic en *Siguiente*.
+. Revise los detalles de la solicitud. Si desea corregir algo, utilice el botón Atrás para volver a la página anterior y corregir los detalles. Si todos los detalles son correctos, haga clic en *Enviar*.
+. La solicitud de servicio se crea y se muestra en la pantalla solicitudes de servicio. Una solicitud de servicio recientemente abierta tiene un `New` estado.
+
+
+Se envía un correo electrónico al solicitante para indicar que se ha creado la solicitud. El correo electrónico se envía a la dirección de correo electrónico registrada para el usuario del motor de servicios de NetApp que lo solicita.

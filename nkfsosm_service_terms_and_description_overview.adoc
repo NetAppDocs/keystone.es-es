@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_service_terms_and_description_overview.html 
+keywords: netapp, keystone, service, terms, description, overview, 
+summary: Descripción general de los términos y condiciones del servicio de Keystone 
+---
+= Términos y descripciones del servicio de suscripción Flex
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La suscripción flexible de NetApp Keystone (suscripción flexible) se guía por los siguientes términos y descripciones de servicios.
+
+* La suscripción Flex está disponible durante un mínimo de un año y hasta tres años. Después de la primera legislatura, el servicio es renovable anualmente. La capacidad se puede aumentar en incrementos de apenas 1 TIB.
+* La capacidad mínima es de 100 TIB por sitio, y cada sitio puede tener uno o más clústeres para cumplir con el requisito de capacidad mínima. En un modelo gestionado por partners, se crean suscripciones con un mínimo flexible para un cliente, por sitio y entre distintos niveles de servicio.
+* La capacidad de 100 TIB puede ser un único nivel de servicio o una combinación de niveles.
+* Las suscripciones de inquilino se limitan a los niveles de servicio a los que están suscritos los partners.
+* el 20 % de la capacidad de ráfaga está disponible en cada sitio; cualquier uso en ráfaga se factura solo durante ese período de facturación. Si necesita un requisito de ráfaga adicional superior al 20 %, póngase en contacto con el soporte de.
+* La capacidad comprometida o los niveles de servicio no se pueden modificar durante la vigencia de un contrato.
+* Se permite aumentar la capacidad o cambiar a un nivel de servicio superior durante el plazo; sin embargo, no se permite pasar de un nivel de servicio superior a uno más bajo.
+* Cualquier solicitud de cambio en los últimos 90 días del plazo requiere que el cliente renueve el servicio por un mínimo de un año.
+

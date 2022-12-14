@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_working_with_block_storage_overview.html 
+keywords: netapp, keystone, working, block, storage, overview, 
+summary: Keystone funciona con información general sobre almacenamiento basado en bloques 
+---
+= Descripción general
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+En los sistemas de almacenamiento basado en bloques, el almacenamiento de datos se divide en piezas individuales con un identificador único. Service Engine de NetApp se refiere al almacenamiento de datos en bloque como un almacén de bloques, y las piezas individuales como discos.
+
+Los almacenes de bloque pertenecen a un subarrendatario y se especifican dentro de una zona (un almacén de bloque por zona por subarrendatario). Un almacén de bloques tiene atributos de red (por ejemplo, dirección IP e identificador de VLAN) que se utilizan para acceder a los discos a través del protocolo iSCSI o FC. La recuperación ante desastres DP se puede activar en un almacén de bloques. Para obtener más información, consulte link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["Recuperación tras siniestros"].
+
+Los almacenes de bloques deben inicializarse antes de poder utilizarse. Si el almacenamiento de bloques está disponible y no se ha inicializado, puede inicializarse antes de crear el primer disco en el almacén de bloques como parte del proceso de creación de disco.
+
+Los discos se crean en almacenes de bloques. Los discos tienen muchos atributos configurables que incluyen capacidad y nivel de servicio asociado. Opciones de protección de datos como link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["Snapshot"] y.. link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["Recuperación tras siniestros"] se puede habilitar para un disco.
+
+El acceso a discos se controla mediante grupos de hosts. Los grupos de hosts constan de nombres de nodos iniciadores; al asignar uno o varios grupos de hosts a un disco, es posible definir qué iniciadores tienen acceso al disco.
+
+Grupos de hosts:
+
+* Son específicos del protocolo. Pueden ser las siguientes:
++
+** Grupos de hosts de protocolo FC: Constan de iniciadores compuestos por nombres de puerto WWPN de FC. Por ejemplo: `20:56:00:a0:98:5c:0d:da`).
+** Grupos de hosts de protocolo iSCSI: Estos consisten en iniciadores que son nombres cualificados de iSCSI (IQN). Por ejemplo: `iqn.1998-01.com.vmware:esx2`.
+
+
+* Constan de parejas de alias/iniciador. Un alias permite una forma sencilla de identificar al iniciador. Por ejemplo: `esxserver1`.
+* Se puede crear sin ningún iniciador. Los grupos de hosts vacíos se pueden asignar a los discos como marcadores de posición, pero deben definirse completamente para permitir el acceso al disco. El uso de grupos de hosts permite:
++
+** Asigne varios discos al mismo conjunto de iniciadores
+** Actualizar el conjunto de iniciadores en varios discos.
+
+
+
+
+Esta sección contiene información sobre:
+
+* Trabajo con grupos de hosts:
++
+** Ver los grupos de hosts
+** Cree un grupo de hosts
+** Modifique los iniciadores del grupo de hosts
+** Eliminar un grupo de hosts
+
+
+* Trabajar con discos:
++
+** Ver discos
+** Crear un nuevo disco
+** Crear un disco a partir de una instantánea
+** Modificar un disco
+** Eliminar un disco
+** Crear una instantánea ad hoc de un disco
+
+
+

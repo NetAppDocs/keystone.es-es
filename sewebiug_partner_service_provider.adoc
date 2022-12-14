@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_partner_service_provider.html 
+keywords: netapp, service, engine, web, portal, partner, service provider 
+summary: Funciones del partner del motor de servicios de NetApp y del proveedor de servicios 
+---
+= Funciones y operaciones de proveedores de servicios y clientes
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+En función de su rol de proveedor de servicios o partner (utilizado indistintamente) o administrador de un cliente o inquilino (utilizado de manera intercambiable), se determinan las vistas y funciones del portal web del motor de servicio de NetApp.
+
+
+
+== Actividades que puede realizar como administrador de proveedor de servicios
+
+Como administrador de proveedor de servicios en un entorno multi-tenant, puede realizar las funciones de aprovisionamiento, creación de informes, facturación y gestión de los clientes que tengan sus propias suscripciones a través de la interfaz de usuario web del motor de servicios de NetApp. Puede realizar las siguientes funciones:
+
+* Vea el almacenamiento suscrito y aprovisionado como parte de su servicio de suscripción Flex.
++
+
+NOTE: Como prestación de un servicio, puede vender más capacidad a sus clientes de la que adquirió a NetApp (exceso de suscripción). Las suscripciones de arrendatario pueden extenderse más allá del período de suscripción Flex actual, sin embargo, se muestra una advertencia en el momento de creación de la suscripción y en paneles/informes.
+
+* Crear, ver, modificar y eliminar inquilinos, subinquilinos, y usuarios.
+* Ver zonas y regiones de sus suscripciones.
+* Gestione y aloje varios inquilinos dentro del servicio de suscripción Flex: Cree y gestione suscripciones de inquilinos y vea sus propios detalles de suscripción Flex.
++
+
+NOTE: Las suscripciones de inquilino se pueden crear en función de las zonas correspondientes y las suscripciones de Keystone Flex. Se crean según los niveles de servicio proporcionados bajo la capacidad suscrita de su suscripción Flex.
+
+* Cree servidores de archivos o almacenes de bloques e inicialice el almacenamiento de bloques, archivos y objetos cuando conozca los requisitos de red para aprovisionar cada tipo de almacenamiento para sus clientes.
+* También puede crear y administrar subredes para sus inquilinos,
+* Vea los recursos compartidos de archivos, discos y bloques creados como parte de su suscripción Flex. También cree y gestione grupos de almacenamiento de objetos y usuarios.
+* Cree informes de consumo con sus suscripciones a Flex e inquilinos de NetApp Keystone y el uso que haga de todos los clientes para utilizarlos en los sistemas de facturación y clasificación respectivos.
+* Consulte la facturación y la creación de informes para todos los clientes y clientes, y solo para el almacenamiento suscrito o aprovisionado.
+* Vea y gestione las solicitudes de servicios que han generado los clientes dentro de su propia herramienta de solicitud de servicio (integrada con OpsRamp/GSSC).
+
+
+
+
+== Actividades que puede realizar como administrador de clientes/inquilinos
+
+Como administrador de inquilinos, puede ver los detalles de suscripción de su propio tenancy y realizar tareas administrativas para sus subinquilinos. Es posible realizar las siguientes acciones:
+
+* Consulte el almacenamiento suscrito y aprovisionado como parte de su servicio de suscripción de inquilinos.
+* Gestione y edite subinquilinos para su tenancy.
+* Vea las zonas, regiones, subinquilinos y subredes.
+* Vea los servidores de archivos creados por los proveedores de servicios.
+* Cree recursos compartidos de archivos, discos y bloques, y asigne niveles de servicio a ellos.
+* Vea informes para inquilinos y subinquilinos en *Informes > utilización de la capacidad* para ver los datos de consumo sólo para el almacenamiento suscrito o aprovisionado para su usuario y sus subinquilinos.
+* Vea informes para inquilinos y subinquilinos en *Informes > rendimiento* para ver el rendimiento y el cumplimiento del servicio de su cliente para cada servicio suscrito y servicios complementarios (Protección de datos y Protección avanzada).
++
+
+NOTE: Para suscripciones adicionales, puede utilizar la herramienta de solicitud de servicio.
+
+

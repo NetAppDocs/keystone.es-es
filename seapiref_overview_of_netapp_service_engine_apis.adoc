@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: seapiref_overview_of_netapp_service_engine_apis.html 
+keywords: netapp, overview, service, engine, apis, 
+summary: Descripción general de las API de los motores de servicio de NetApp 
+---
+= Descripción general de las API de Service Engine de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+El motor de servicios de NetApp proporciona un conjunto de API para gestionar recursos de almacenamiento en los sistemas de almacenamiento compatibles a través de una interfaz de servicio web RESTful para cualquier integración de terceros. Las API cubren todas las funcionalidades que se admiten a través de la interfaz gráfica de usuario. NetApp proporciona la documentación de API, pero es responsabilidad del cliente integrarse en sus aplicaciones.
+
+Esta Guía de referencia de API de Service Engine de NetApp le proporciona información acerca de las API y códigos de muestra. La información que se proporciona en la guía le permite crear clientes RESTful del motor de servicio de NetApp. Las API se basan en el estilo arquitectónico de transferencia de estado representacional (REST).
+
+
+
+== Público objetivo
+
+Esta guía está destinada a los desarrolladores que creen aplicaciones que interface con el software del motor de servicio de NetApp mediante las API REST.
+
+Debe usar esta guía si desea utilizar el proveedor de almacenamiento, el clúster ONTAP de NetApp y las API de administración de gestión para gestionar el almacenamiento.
+
+
+
+== Acceso y categorías de API del motor de servicios de NetApp
+
+
+
+=== Creación de una URL para acceder directamente a las API de REST
+
+Puede acceder a las API DE REST directamente mediante un lenguaje de programación, como Python, C#, C++, JavaScript, y así sucesivamente. Para acceder a las API de REST en la `https:// <hostname> /api` Con formato, introduzca el nombre de host o la dirección IP y la URL.
+
+
+
+=== API de consumo y administrador
+
+Este documento divide las descripciones de la API en dos secciones que constan de:
+
+* API de consumo
+* API de administrador
+
+
+
+
+== Conceptos clave del motor de servicio de NetApp
+
+El motor de servicio de NetApp admite los conceptos de regiones y zonas, como se muestra en la siguiente figura. Una región representa un centro de datos o un sitio, mientras que una zona representa una subunidad de almacenamiento dentro de la región (técnicamente, un clúster dentro de un centro/sitio de datos). Las múltiples zonas admiten funciones de disponibilidad y protección de datos (DP).
+
+image:seapiref_image1.png["Error: Falta la imagen gráfica"]
+
+Una sola instancia de Service Engine de NetApp puede admitir uno o más inquilinos. El motor de servicios de NetApp usa los conceptos de inquilino y subinquilino como entidades jerárquicas que poseen o gestionan el servicio de almacenamiento.
+
+Un inquilino puede ser un cliente, un partner o una entidad de facturación. Un inquilino mantiene la suscripción (o varias suscripciones) al servicio de suscripción Flex.
+
+Un subarrendatario es una entidad totalmente dentro del arrendatario. Se puede utilizar para showback, separación de seguridad, etc.
+
+Los elementos de almacenamiento se crean por subinquilino. Cada subinquilino puede contener varios elementos de almacenamiento del tipo y número adecuado para ese subinquilino.
+
+Motor de servicio de NetApp admite los siguientes tipos de almacenamiento:
+
+* Almacenamiento basado en bloques en almacenes de bloques y discos
+* Almacenamiento de archivos en servidores de archivos y recursos compartidos de archivos
+* Almacenamiento de objetos en bloques
+

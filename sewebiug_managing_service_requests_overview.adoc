@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_service_requests_overview.html 
+keywords: netapp, keystone, managing, service, requests, overview, 
+summary: Información general sobre la gestión de solicitudes de servicio de Keystone 
+---
+= Descripción general
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Las solicitudes de servicio le permiten plantear un problema al equipo de GSSC para que puedan resolver el problema y actualizar el estado que desea ver.
+
+
+NOTE: Puede ver el menú *asistencia > solicitudes de servicio* sólo si es administrador asociado. Como administrador de partner, también puede ver una lista de las solicitudes de servicio que ha generado para el inquilino seleccionado en el panel. No puede plantear una solicitud de servicio con el soporte de NetApp si es un administrador de inquilinos.
+
+El flujo de trabajo está en link:https://docs.netapp.com/us-en/keystone/sewebiug_service_request_process.html["Proceso de solicitud de servicio"]
+
+Realice una solicitud de servicio para:
+
+* Restauración de backups
+* Recuperación tras fallos
+* Un problema técnico con el motor de servicios de NetApp
+* Volúmenes no estándares: Los volúmenes que se importan en su suscripción Flex comparten el mismo estándar que los discos y recursos compartidos de archivos existentes en Service Engine de NetApp. Tras la importación, estos discos y recursos compartidos de archivos se clasifican con `Non-Standard` estado. Usted plantea una solicitud de servicio para cambiar su estado a uno estándar.
+* Cualquier otro problema que no se trate en esta lista.
+
+
+Los otros temas de esta sección tratan:
+
+* Cómo plantear una solicitud de servicio
+* Cómo realizar el seguimiento de una solicitud de servicio
+* El proceso de solicitud de servicio
+

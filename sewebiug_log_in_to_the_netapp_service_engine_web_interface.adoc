@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_log_in_to_the_netapp_service_engine_web_interface.html 
+keywords: netapp, keystone, log, in, netapp, service, engine, web, interface, 
+summary: Inicie sesión en la interfaz web del motor de servicios de NetApp 
+---
+= Inicie sesión en la interfaz web del motor de servicios de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Para utilizar la interfaz web de Service Engine de NetApp, debe tener una cuenta. A su cuenta se le asignan una o más roles (por su administrador de motores de servicio de NetApp) que determinan sus permisos y, por lo tanto, qué actividades puede realizar en el portal del motor de servicios de NetApp.
+
+Service Engine de NetApp le permite iniciar sesión con las siguientes credenciales:
+
+* Nombre de usuario y contraseña (consulte link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-in-with-user-name-and-password["Inicie sesión con el nombre de usuario y la contraseña"])
+* SSO de NetApp (consulte link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-in-with-netapp-sso["Inicie sesión con SSO de NetApp"])
++
+Confirme la opción de inicio de sesión que se utiliza con su instancia del motor de servicio de NetApp con el administrador del motor de servicio de NetApp.
+
+
+
+
+
+== Acceso basado en funciones
+
+En la siguiente tabla, se enumeran las descripciones de acceso basado en roles.
+
+|===
+| Función | Acceso 
+
+
+| Administrador de partner/propietario de la cuenta | Puede realizar todas las tareas de administración de inquilinos y sus suscripciones. Para obtener más información, consulte link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html#activities-that-you-can-perform-as-a-service-provider-administrator["este enlace"]. 
+
+
+| Administrador de cliente/inquilino | El cliente o el administrador de inquilinos pueden realizar todas las acciones relacionadas con la gestión de subinquilinos. Para obtener más información, consulte link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html#activities-that-you-can-perform-as-a-customertenant-administrator["este enlace"]. 
+
+
+| Administrador de NetApp (lectura) | Acceso de sólo lectura en todos los componentes. 
+
+
+| Administrador de NetApp | Acceso completo y permisos para realizar todas las funciones del portal web de Service Engine de NetApp para gestionar la suscripción Flex de NetApp Keystone y todas las actividades destinadas a la administración de partners e inquilinos. 
+|===
+
+
+=== Inicie sesión con el nombre de usuario y la contraseña
+
+Para iniciar sesión con un nombre de usuario y una contraseña, necesita:
+
+* Nombre de usuario y contraseña de la interfaz web del motor de servicios de NetApp
+* La URL del portal del motor de servicios de NetApp
+* Un navegador web
+
+
+.Pasos
+. En su navegador web, vaya a la URL de su portal de motor de servicios de NetApp. Se muestra la página de inicio de sesión.
+. Seleccione *Inicio de sesión de usuario local*.
+. En la página Iniciar sesión en el motor de servicio de NetApp, introduzca su nombre de usuario y contraseña y haga clic en *Iniciar sesión*.
+. Después de iniciar sesión correctamente, la interfaz web del motor de servicios de NetApp se carga, abra en la consola. Para obtener información general de la GUI, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["Información general de la interfaz web del motor de servicios de NetApp"].
+
+
+
+NOTE: Si su inicio de sesión se ha realizado correctamente, pero no puede ver la consola, consulte al administrador del portal del motor de servicios de NetApp para asegurarse de que su cuenta del portal del motor de servicios de NetApp ha asignado el rol correcto.
+
+
+
+=== Inicie sesión con SSO de NetApp
+
+Para iniciar sesión con SSO de NetApp, necesita lo siguiente:
+
+* Una cuenta SSO de NetApp. Puede solicitar una cuenta en el sitio de soporte de NetApp; desde la pantalla de inicio de sesión seleccionando *Crear una cuenta de SSO de NetApp* y siguiendo los siguientes pasos.
+* La URL del portal del motor de servicios de NetApp.
+* Un navegador web.
+
+
+.Pasos
+. En su navegador web, vaya a la URL de su portal de motor de servicios de NetApp. Se muestra la página de inicio de sesión.
+. Seleccione NetApp SSO.
+. En la página de inicio de sesión SSO, introduzca su nombre de usuario y contraseña y haga clic en *Iniciar sesión*.
++
+Una vez que se haya iniciado sesión correctamente con las cargas de la interfaz web del motor de servicios de NetApp, se mostrará la consola de suscripción Flex. Para obtener información general de la GUI, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["Información general de la interfaz web del motor de servicios de NetApp"].
+
+
+
+
+
+=== Cierre la sesión en la interfaz web del motor de servicios de NetApp
+
+.Pasos
+. Para cerrar la sesión en la interfaz, haga clic en el icono de usuario y haga clic en *Cerrar sesión*.
+
+
+image:sewebiug_image7.png["Error: Falta la imagen gráfica"]

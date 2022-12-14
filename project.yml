@@ -1,0 +1,264 @@
+---
+settings:
+  name: Keystone
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr
+sidebar:
+  entries:
+  - title: Suscripción flexible de NetApp Keystone
+    url: "/index.html"
+    entries:
+    - title: Términos y descripción del servicio
+      url: "/nkfsosm_service_terms_and_description_overview.html"
+      entries:
+      - title: Definiciones de capacidad de servicios
+        url: "/nkfsosm_keystone_service_capacity_definitions.html"
+      - title: Nivel de servicio o nivel de servicio de rendimiento
+        url: "/nkfsosm_performance.html"
+      - title: Definiciones y métricas de nivel de servicio
+        url: "/nkfsosm_service_level_metrics_and_definitions.html"
+      - title: Facturación
+        url: "/nkfsosm_kfs_billing.html"
+      - title: Protección de datos
+        url: "/nkfsosm_data_protection.html"
+      - title: Organización en niveles
+        url: "/nkfsosm_tiering.html"
+      - title: Disco no retornable
+        url: "/nkfsosm_nrd.html"
+      - title: Soporte de ciudadanos de EE. UU
+        url: "/nkfsosm_uscs.html"
+      - title: Suscripción Flex y Equinix
+        url: "/nkfsosm_equinix.html"
+    - title: Modelo operativo y responsabilidades
+      url: "/nkfsosm_overview.html"
+    - title: Soporte para multi-tenancy y multi-tenancy
+      url: "/nkfsosm_tenancy_overview.html"
+    - title: Infraestructura de suscripción Flex
+      url: "/nkfsosm_keystone_service_delivery_architecture_overview.html"
+    - title: Los requisitos del centro
+      url: "/nkfsosm_site_requirements.html"
+    - title: Operaciones
+      url: "/nkfsosm_netapp_global_services_and_support_center_@gssc@.html"
+    - title: Suscripción Flex y Active IQ
+      url: "/nkfsosm-keystone-and-aiq.html"
+  - title: Notas de la versión
+    entries:
+    - title: Novedades
+      url: "/rn_whats_new.html"
+    - title: Problemas solucionados
+      url: "/rn_fixed_issues.html"
+    - title: Problemas conocidos
+      url: "/rn_known_issues.html"
+  - title: Preguntas frecuentes sobre la suscripción a Flex
+    url: "/nkfsfaq_overview.html"
+    entries:
+    - title: Suscripción Flex
+      url: "/nkfsfaq_keystone_subscription.html"
+    - title: Detalles de la oferta de servicios
+      url: "/nkfsfaq_service_offer_details.html"
+    - title: Modelo operativo
+      url: "/nkfsfaq_operating_models.html"
+    - title: Portal de acceso a motores de servicio/autoservicio de NetApp
+      url: "/nkfsfaq_netapp_service_engine_self-service_access_portal.html"
+  - title: Interfaz web del motor de servicios de NetApp
+    url: "/sewebiug_overview.html"
+    entries:
+    - title: Cuentas de facturación, suscripciones, servicios y rendimiento
+      url: "/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html"
+    - title: Manos a la obra
+      entries:
+      - title: Descripción general
+        url: "/sewebiug_getting_started_overview.html"
+      - title: Inicie sesión
+        url: "/sewebiug_log_in_to_the_netapp_service_engine_web_interface.html"
+      - title: Funciones y operaciones de proveedores de servicios y clientes
+        url: "/sewebiug_partner_service_provider.html"
+      - title: Seleccione inquilino
+        url: "/sewebiug_select_tenant.html"
+      - title: Consulte la interfaz web del motor de servicios de NetApp
+        url: "/sewebiug_netapp_service_engine_web_interface_overview.html"
+    - title: Ver el panel de suscripciones de Flex
+      url: "/sewebiug_dashboard.html"
+    - title: Ver facturación
+      url: "/sewebiug_billing.html"
+    - title: Trabajar con servicios de archivos
+      url: "/sewebiug_working_with_file_services_overview.html"
+      entries:
+      - title: Ver servidores
+        url: "/sewebiug_view_servers.html"
+      - title: Cree un servidor de archivos
+        url: "/sewebiug_create_a_file_server.html"
+      - title: Modificar servidor de archivos
+        url: "/sewebiug_modify_file_server.html"
+      - title: Eliminar servidor de archivos
+        url: "/sewebiug_delete_file_server.html"
+      - title: Ver recursos compartidos
+        url: "/sewebiug_view_shares.html"
+      - title: Cree un recurso compartido de archivos
+        url: "/sewebiug_create_a_new_file_share.html"
+      - title: Crear recurso compartido de archivos a partir de la instantánea
+        url: "/sewebiug_create_file_share_from_snapshot.html"
+      - title: Modificar un recurso compartido de archivos
+        url: "/sewebiug_modify_a_file_share.html"
+      - title: Eliminar un recurso compartido de archivos
+        url: "/sewebiug_delete_a_file_share.html"
+      - title: Crear instantánea ad hoc de un recurso compartido de archivos
+        url: "/sewebiug_create_adhoc_snapshot_of_a_file_share.html"
+    - title: Trabajar con el almacenamiento basado en bloques
+      url: "/sewebiug_working_with_block_storage_overview.html"
+      entries:
+      - title: Trabajar con grupos de hosts
+        url: "/sewebiug_view_host_groups.html"
+      - title: Ver discos
+        url: "/sewebiug_view_disks.html"
+      - title: Crear un disco
+        url: "/sewebiug_create_a_new_disk.html"
+      - title: Crear un disco a partir de una instantánea
+        url: "/sewebiug_create_a_disk_from_a_snapshot.html"
+      - title: Modificar un disco
+        url: "/sewebiug_modify_a_disk.html"
+      - title: Eliminar un disco
+        url: "/sewebiug_delete_a_disk.html"
+      - title: Crear una instantánea ad hoc de un disco
+        url: "/sewebiug_create_an_adhoc_snapshot_of_a_disk.html"
+    - title: Trabajar con el almacenamiento de objetos
+      entries:
+      - title: Descripción general
+        url: "/sewebiug_working_with_object_storage_overview.html"
+      - title: Ver cubos
+        url: "/sewebiug_view_buckets.html"
+      - title: Inicializar el almacenamiento de objetos
+        url: "/sewebiug_initialize_object_storage.html"
+      - title: Crear cubos
+        url: "/sewebiug_create_buckets.html"
+      - title: Se ven el grupo de almacenamiento de objetos y los usuarios
+        url: "/sewebiug_view_the_object_storage_group_and_users.html"
+      - title: Cree un grupo de almacenamiento de objetos
+        url: "/sewebiug_create_an_object_storage_group.html"
+      - title: Modificar un grupo de almacenamiento de objetos
+        url: "/sewebiug_modify_an_object_storage_group.html"
+      - title: Eliminar un grupo de almacenamiento de objetos
+        url: "/sewebiug_delete_an_object_storage_group.html"
+      - title: Cree un usuario de almacenamiento de objetos
+        url: "/sewebiug_create_object_storage_user.html"
+      - title: Modificar un usuario de almacenamiento de objetos
+        url: "/sewebiug_modify_an_object_storage_user.html"
+      - title: Cree una clave S3 para un usuario
+        url: "/sewebiug_create_an_s3_key_for_a_user.html"
+      - title: Elimine una clave de S3 para un usuario
+        url: "/sewebiug_delete_an_s3_key_for_a_user.html"
+    - title: Gestione los servicios cloud
+      entries:
+      - title: Gestione los servicios cloud
+        entries:
+        - title: Descripción general
+          url: "/sewebiug_managing_subscribed_services_overview.html"
+        - title: Ver una lista de servicios suscritos
+          url: "/sewebiug_view_a_list_of_subscribed_services.html"
+        - title: Agregue un servicio suscrito
+          url: "/sewebiug_add_a_subscribed_service.html"
+        - title: Modifique los detalles del servicio suscrito
+          url: "/sewebiug_modify_the_subscribed_service_details.html"
+        - title: Eliminar un servicio suscrito
+          url: "/sewebiug_delete_a_subscribed_service.html"
+      - title: Gestione Azure NetApp Files
+        entries:
+        - title: Gestione cuentas de Azure NetApp
+          url: "/sewebiug_managing_azure_netapp_accounts.html"
+        - title: Gestione pools de capacidad de Azure
+          url: "/sewebiug_managing_azure_capacity_pools.html"
+        - title: Gestione volúmenes de Azure
+          url: "/sewebiug_managing_azure_volumes.html"
+      - title: Gestione Cloud Volumes Service para Google Cloud Platform
+        url: "/sewebiug_managing_gcp_cvs.html"
+    - title: Ver informes
+      url: "/sewebiug_working_with_reports.html"
+    - title: Realice un backup de los volúmenes
+      url: "/sewebiug_back_up_file_shares_and_disks.html"
+    - title: Administrar suscripciones
+      url: "/sewebiug_managing_subscriptions.html"
+    - title: Gestionar las solicitudes de servicio
+      entries:
+      - title: Descripción general
+        url: "/sewebiug_managing_service_requests_overview.html"
+      - title: Elevar una solicitud de servicio
+        url: "/sewebiug_raise_a_service_request.html"
+      - title: Realizar un seguimiento de una solicitud de servicio
+        url: "/sewebiug_track_a_service_request.html"
+      - title: Proceso de solicitud de servicio
+        url: "/sewebiug_service_request_process.html"
+    - title: Realizar tareas administrativas
+      entries:
+      - title: Gestionar usuarios
+        entries:
+        - title: Ver una lista de usuarios
+          url: "/sewebiug_view_a_list_of_users.html"
+        - title: Agregar un usuario
+          url: "/sewebiug_add_a_user.html"
+        - title: Modifique los detalles del usuario
+          url: "/sewebiug_modify_user_details.html"
+        - title: Eliminar un usuario
+          url: "/sewebiug_delete_a_user.html"
+      - title: Gestione inquilinos y subinquilinos
+        url: "/sewebiug_managing_tenants_and_subtenants.html"
+      - title: Ver y gestionar alertas
+        url: "/sewebiug_alerts.html"
+    - title: Gestionar redes
+      url: "/sewebiug_define_network_configurations.html"
+  - title: Referencia de API del motor de servicios de NetApp
+    url: "/seapiref_overview_of_netapp_service_engine_apis.html"
+    entries:
+    - title: Autorización y autenticación
+      url: "/seapiref_authorization_and_authentication.html"
+    - title: API de REST del motor de servicios de NetApp
+      url: "/seapiref_netapp_service_engine_rest_apis.html"
+    - title: API de consumo
+      entries:
+      - title: Descripción general
+        url: "/seapiref_consumer_apis_overview.html"
+      - title: API de orquestación de cloud
+        url: "/seapiref_cloud_orchestration_apis.html"
+      - title: API de almacenamiento basado en bloques
+        url: "/seapiref_block_storage_apis.html"
+      - title: API de servicios de archivos
+        url: "/seapiref_file_services_apis.html"
+      - title: API de almacenamiento de objetos
+        url: "/seapiref_object_storage_apis.html"
+      - title: API de backup
+        url: "/seapiref_backups_apis.html"
+      - title: API de creación de informes
+        url: "/seapiref_reporting_apis.html"
+      - title: Crear subredes mediante las API
+        url: "/seapiref_subnets_apis.html"
+      - title: API de administración de (consumidor)
+        url: "/seapiref_@consumer@_administration_apis.html"
+    - title: API de administrador
+      entries:
+      - title: Descripción general
+        url: "/seapiref_administrator_apis_overview.html"
+      - title: Clientes
+        url: "/seapiref_tenants.html"
+      - title: Subinquilinos
+        url: "/seapiref_subtenants.html"
+      - title: Usuarios
+        url: "/seapiref_users.html"
+      - title: Zonas
+        url: "/seapiref_zones.html"
+      - title: Regiones
+        url: "/seapiref_regions.html"
+      - title: Clústeres ONTAP
+        url: "/seapiref_ontap_clusters.html"
+      - title: Instancias de StorageGRID
+        url: "/seapiref_storagegrid_instances.html"
+      - title: Niveles de servicio
+        url: "/seapiref_service_levels.html"
+      - title: Solicitudes de servicio
+        url: "/seapiref_service_requests.html"
+      - title: Trabajos
+        url: "/seapiref_jobs.html"
+  - title: Avisos legales
+    url: "/legal-notices.html"

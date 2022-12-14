@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_delete_a_file_share.html 
+keywords: netapp, keystone, delete, file, share, 
+summary: Keystone elimine un recurso compartido de archivos 
+---
+= Eliminar un recurso compartido de archivos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Esta sección describe cómo eliminar un recurso compartido de archivos.
+
+*Atención:*
+
+* No se puede deshacer la eliminación de un recurso compartido. Una vez eliminado, los datos no pueden recuperarse.
+* La eliminación de un recurso compartido de archivos primario eliminará todos los backups asociados
+
+
+.Pasos
+. Vea la link:sewebiug_view_shares.html#view-shares["Lista de recursos compartidos"].
+. Busque el recurso compartido en la lista y haga clic en el icono Delete para ese recurso compartido. (Para obtener información detallada sobre cómo trabajar con elementos de las listas, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Acciones de vista de lista"]).
+. En el cuadro de diálogo Confirmar eliminación, introduzca el nombre del recurso compartido de archivos para confirmar que desea eliminar el recurso compartido de archivos.
++
+image:sewebiug_image25.png["Error: Falta la imagen gráfica"]
+
+. Haga clic en *Confirmar*. Esto crea un trabajo para eliminar el recurso compartido.
+
+
+.Después de terminar
+El recurso compartido de eliminación se ejecuta como un trabajo asíncrono. Podrá:
+
+* Compruebe el estado del trabajo en la lista de trabajos. Para obtener información acerca del seguimiento de trabajos, consulte link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["aquí"].
+* Una vez terminado el trabajo, compruebe que el recurso compartido se ha eliminado de la lista de recursos compartidos.
+

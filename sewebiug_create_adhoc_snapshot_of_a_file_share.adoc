@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_adhoc_snapshot_of_a_file_share.html 
+keywords: netapp, keystone, create, adhoc, snapshot, file, share, 
+summary: Keystone cree una snapshot ad hoc de un recurso compartido de archivos 
+---
+= Crear instantánea ad hoc de un recurso compartido de archivos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+En esta sección se describe cómo crear una instantánea ad hoc de un recurso compartido de archivos.
+
+.Pasos
+. Vea la link:sewebiug_view_shares.html#view-shares["Lista de recursos compartidos"].
+. Localice el recurso compartido en la lista y haga clic en el icono de snapshot para ese recurso compartido. (Para obtener información detallada sobre cómo trabajar con elementos de las listas, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Acciones de vista de lista"].
+. En el cuadro de diálogo Crear instantánea, escriba un nombre para la instantánea y haga clic en *Crear*.
+
+
+.Después de terminar
+La copia Snapshot puede tardar varios minutos en estar disponible. Si está disponible, puede crear otro recurso compartido clonando esta snapshot. Para obtener más información, consulte link:sewebiug_create_file_share_from_snapshot.html["Cree un recurso compartido de archivos a partir de una instantánea"].

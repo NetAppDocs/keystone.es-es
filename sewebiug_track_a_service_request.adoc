@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_track_a_service_request.html 
+keywords: netapp, keystone, track, service, request, 
+summary: Keystone sigue una solicitud de servicio 
+---
+= Realizar un seguimiento de una solicitud de servicio
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Una solicitud de servicio sigue el proceso descrito en esta sección.
+
+En la tabla siguiente se proporciona una lista de los Estados de las solicitudes de servicio.
+
+|===
+| Estado | Descripción 
+
+
+| Nuevo | Esta es una solicitud recién creada. 
+
+
+| Abierto | La solicitud se encuentra en revisión/cumplimiento. 
+
+
+| Pendiente | La solicitud está a la espera de la acción de un tercero (es decir, esperando información adicional). 
+
+
+| Resuelto | Se ha resuelto la solicitud. 
+
+
+| En espera | La solicitud espera una actividad que esté fuera del control de soporte y que pueda tardar algún tiempo en resolverse la solicitud. 
+
+
+| Cerrada | Se cierra la solicitud. 
+|===
+Puede seguir el estado de una solicitud de servicio revisando el estado de Service Engine de NetApp, como se describe a continuación, o bien puede seguir el estado en los correos electrónicos automatizados enviados como parte del proceso.
+
+. En el menú, seleccione *asistencia > peticiones de servicio*. La lista se filtra según la prioridad predeterminada `Urgent`.
+. Seleccione la prioridad y el estado necesarios para ver la lista de solicitudes de servicio.
+. Busque la solicitud de servicio en la lista y vea el estado en `Status` columna.
+

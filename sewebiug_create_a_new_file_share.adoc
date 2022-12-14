@@ -1,0 +1,127 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_a_new_file_share.html 
+keywords: netapp, keystone, create, new, file, share, 
+summary: Keystone cree un nuevo recurso compartido de archivos 
+---
+= Cree un recurso compartido de archivos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+En esta sección se describe cómo crear un nuevo recurso compartido especificando directamente los detalles del recurso compartido. Para crear un recurso compartido nuevo basado en una snapshot de un recurso compartido existente, consulte link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share["Crear recurso compartido a partir de snapshot"].
+
+.Antes de empezar
+* Se crea un recurso compartido en un servidor de archivos. El servidor de archivos debe existir y estar en estado operativo para poder crear un nuevo recurso compartido de archivos.
+* Para crear un recurso compartido de archivos CIFS o NFS, el servidor debe estar habilitado para el servicio correspondiente. En el caso de recursos compartidos de archivos multiprotocolo, el servidor debe admitir servicios CIFS y NFS.
+* Para habilitar las opciones de recuperación ante desastres asíncrona para el recurso compartido, debe crear el recurso compartido en un servidor que tenga habilitada la recuperación ante desastres asíncrona. Para obtener más información, consulte link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["Recuperación tras siniestros"].
+* Para habilitar la recuperación ante desastres síncrona de un recurso compartido, cree el recurso compartido en una zona que tenga habilitada la función MetroCluster.
+* Puede definir una política de copia de seguridad para capturar copias de seguridad del recurso compartido de archivos en una programación. Para obtener más información, consulte link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups["Completos"].
+* Puede definir una política de instantánea para capturar instantáneas del recurso compartido de archivos de forma programada. Para obtener más información, consulte link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["Snapshot"].
+
+
+.Pasos
+. Vaya a *SERVICIOS de ARCHIVOS > Recursos compartidos*.
+. Haga clic en *Crear recurso compartido*.
+. En el cuadro de diálogo Create Share, seleccione Create New Share.
++
+image:sewebiug_image22.png["Error: Falta la imagen gráfica"]
+
++
+Se muestra la página Create Share.
+
+. Seleccione el tipo de recurso compartido: NFS, CIFS o multiprotocolo. Las opciones se habilitan en función de los servicios que admite el servidor.
+. Complete los siguientes campos:
++
+|===
+| Campo | Descripción 
+
+
+| Nombre | Introduzca el nombre del recurso compartido. 
+
+
+| Comparta la ruta | Introduzca la ruta de acceso al recurso compartido de archivos. En el caso de los recursos compartidos CIFS, si se agrega un carácter $ al final de la ruta de acceso compartida, se crea un recurso compartido oculto (por ejemplo, pathtomyhiddenshare$). 
+
+
+| Región | Seleccione la región en la que reside el recurso compartido. 
+
+
+| Zona | Seleccione la zona del recurso compartido. 
+
+
+| Servidor de archivos | Seleccione el servidor de archivos que va a alojar el recurso compartido. La lista del servidor de archivos depende de la región, la zona y el tipo de recurso compartido seleccionados. 
+
+
+| Estilo de seguridad | Seleccione el estilo de seguridad aplicable al recurso compartido de archivos. Esta lista se completa automáticamente en función del tipo de recurso compartido seleccionado. 
+|===
+. Seleccione un nivel de servicio. Los límites de IOPS y rendimiento se muestran según el nivel de servicio seleccionado.
++
+
+NOTE: Seleccione una opción para ver los detalles de rendimiento para ese nivel de servicio (como pico/tasa prevista de IOPS/rendimiento). Seleccione el nivel de servicio que mejor se adapte a sus necesidades.
+
+. Especifique la capacidad del recurso compartido de archivos.
++
+
+NOTE: El motor de servicio de NetApp muestra una advertencia y la barra de capacidad cambia de color si la capacidad especificada pone la capacidad consumida en ráfaga (o incluso más en ráfaga si ya se encuentra en una ráfaga). La comprobación de capacidad se realiza con respecto a la capacidad total de todas las suscripciones del inquilino.
+
+. Si se habilita la recuperación ante desastres asíncrona en el servidor de archivos subyacente, la replicación de recuperación ante desastres asíncrona se habilita automáticamente para el nuevo recurso compartido. Si desea excluir el recurso compartido de la replicación de recuperación ante desastres asíncrona, active el botón Asynchronous Disaster Recovery para desactivarlo.
+. Si el recurso compartido se está creando en una zona con MetroCluster habilitado, el botón Synchronous Disaster Recovery se habilita automáticamente y no se puede deshabilitar. El recurso compartido se replicará en la zona que se muestra en el panel debajo de la palanca de recuperación de desastres síncrona.
+. Si se requieren instantáneas para este recurso compartido de archivos:
++
+.. Cambie para habilitar la política de Snapshot y ver los campos de política de Snapshot.
+.. Especifique cuándo desea crear las snapshots:
++
+*** *Hora.* especifique qué minuto (de la hora) desea tomar la instantánea y el número de instantáneas por hora que desea retener.
+*** *Diario.* especifique cuándo (hora y minuto) tomar la instantánea el número de instantáneas diarias que desea retener. Si desea especificar varias horas cuando tenga que realizar la snapshot a diario, puede añadir los valores de las horas en una lista separada por comas; por ejemplo, 5, 10, 15, y así sucesivamente.
+*** *Semanal.* especifique cuándo (día de la semana, hora y minutos) tomar instantánea y el número de instantáneas semanales que retener.
+*** *Mensual.* especifique cuándo (día del mes, hora y minutos) tomar la instantánea y el número de instantáneas mensuales que desea retener.
+
+
+
+
+. Para habilitar las copias de seguridad para este recurso compartido de archivos:
++
+.. Active los campos Política de copia de seguridad y Política de copia de seguridad.
+.. Especifique la zona de copia de seguridad.
+.. Especifique cuántos de cada tipo de backup se conservarán: Diario, semanal o mensual. Para obtener más información, consulte link:sewebiug_back_up_file_shares_and_disks.html["Realice una copia de seguridad de los discos y recursos compartidos de archivos"].
+
+
+. En el caso de los recursos compartidos NFS o multiprotocolo, especifique la Política de exportación. Puede aplicar varias políticas de exportación a un recurso compartido. Esta sección solo está disponible para recursos compartidos NFS y multiprotocolo.
++
+.. Agregue la dirección IPv4 (con una máscara de subred expresada como un número de bits) del cliente al que se aplica la regla.
+.. Especifique el acceso de lectura y escritura y si el cliente tiene acceso raíz (superusuario).
+
+
+. En el caso de recursos compartidos CIFS (SMB) o varios protocolos, especifique la lista de control de acceso (ACL) para restringir el acceso de los usuarios. Esta sección solo está disponible para recursos compartidos CIFS y multiprotocolo.
++
+.. Especifique el usuario o grupo de Windows según la configuración de Active Directory (AD) que desee agregar a la ACL. Si especifica el nombre de usuario, incluya el dominio del usuario en `<domain>\<username>` formato. El valor predeterminado es `Everyone`.
+.. Especifique el permiso de Windows. El valor predeterminado es `Full control`. Si un usuario forma parte de dos grupos, los permisos del grupo que tiene privilegios más altos se aplican al acceso del usuario.
++
+
+NOTE: El nombre de usuario o de grupo debe seguir el formato AD estándar. Si el usuario o grupo introducido no coincide con el usuario o el grupo de usuarios configurados en ONTAP, se produce un error en la validación de ACL durante una operación CIFS, incluso cuando el recurso compartido de archivos está operativo.
+
+
+
+. Si desea agregar etiquetas (pares clave-valor) al recurso compartido de archivos, especifíquelas en la sección Etiquetas.
+. Haga clic en *Crear*. Esto crea un trabajo para crear el recurso compartido.
+
+
+.Después de terminar
+* Para recursos compartidos de tipo CIFS only: Para que los recursos compartidos estén disponibles por nombre de host, el administrador de dominio debe actualizar los registros DNS con el nombre del servidor CIFS y la dirección IP. De lo contrario, solo se puede acceder al recurso compartido a través de la dirección IP. Por ejemplo:
++
+** Con los registros DNS actualizados, utilice el nombre de host o IP para acceder al recurso compartido: Por ejemplo file://hostname/share["\\hostname\share"^] o. file://IP/share["\\IP\share"^]
+** Sin actualizar registros DNS, debe utilizar la dirección IP para acceder al recurso compartido, es decir file://IP/share["\\IP\share"^]
+
+
+* Create share se ejecuta como un trabajo asíncrono. Podrá:
++
+** Compruebe el estado del trabajo en la lista de trabajos. Para obtener información acerca del seguimiento de trabajos, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["aquí"].
+** Una vez terminado el trabajo, compruebe el estado del recurso compartido en la lista de recursos compartidos.
+
+
+

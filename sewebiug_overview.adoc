@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_overview.html 
+keywords: netapp, service, engine, web, portal, 
+summary: Descripción del portal web del motor de servicios de NetApp 
+---
+= Interfaz web del motor de servicios de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+El portal web de motor de servicios de NetApp le permite gestionar y supervisar un servicio de suscripción flexible (suscripción flexible) de NetApp Keystone. El portal consta de los siguientes componentes:
+
+* Una interfaz gráfica de usuario (interfaz web del motor de servicio de NetApp) que admite supervisión y aprovisionamiento simple del almacenamiento. Las opciones de menú de la interfaz de usuario (UI) están disponibles en función de los servicios y suscripciones del arrendatario y el subarrendatario.
+* Un conjunto de API DE REST que permiten realizar acciones más avanzadas de configuración y gestión del almacenamiento. En esta guía se describe cómo usar la interfaz web del motor de servicio de NetApp. La funcionalidad que solo está disponible a través de las API DE REST no se incluye en este documento.
+
+
+En esta sección se describen los conceptos y elementos del motor de servicio de NetApp.
+
+
+
+=== Conceptos clave del motor de servicio de NetApp
+
+El motor de servicios de NetApp admite los conceptos de regiones y zonas. Una región representa un centro de datos o sitio, mientras que una zona representa una subunidad de almacenamiento de la región (técnicamente, un clúster dentro de un centro de datos o sitio). Las múltiples zonas admiten funciones de disponibilidad y protección de datos (DP).
+
+image:sewebiug_image1.png["Error: Falta la imagen gráfica"]
+
+Una sola instancia de Service Engine de NetApp puede admitir uno o más inquilinos. El motor de servicios de NetApp usa los conceptos de inquilino y subinquilino como entidades jerárquicas que poseen o gestionan el servicio de almacenamiento.
+
+Un inquilino puede ser un cliente, un partner o una entidad de facturación. Un inquilino mantiene la suscripción (o varias suscripciones) al servicio de suscripción Flex.
+
+Un subarrendatario es una entidad totalmente dentro del arrendatario. Se puede utilizar para mostrar, separación de seguridad, etc.
+
+Los elementos de almacenamiento se crean por subinquilino. Cada subinquilino puede contener varios elementos de almacenamiento del tipo y número adecuado para ese subinquilino.
+
+Motor de servicio de NetApp admite los siguientes tipos de almacenamiento:
+
+* Almacenamiento basado en bloques en almacenes de bloques y discos
+* Almacenamiento de archivos en servidores de archivos y recursos compartidos de archivos
+* Almacenamiento de objetos en bloques
+* Servicios de volúmenes de cloud para Google Cloud Platform y Azure NetApp Files
+
+
+
+
+=== Disponibilidad de funciones basada en suscripciones
+
+Según su suscripción, soporte y rol en el modelo de operaciones del motor de servicio de NetApp, pueden disponer de las características y opciones (pantallas y pestañas). Para obtener más información, consulte proveedores de servicios y clientes y modelos operativos, funciones y responsabilidades.

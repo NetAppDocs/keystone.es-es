@@ -1,0 +1,86 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_azure_netapp_accounts.html 
+keywords: netapp, keystone, managing, azure, accounts, 
+summary: Gestionar cuentas de Azure NetApp 
+---
+= Gestionar cuentas de Azure NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+En esta sección se describe cómo gestionar cuentas de Azure NetApp:
+
+
+NOTE: Para gestionar cuentas de Azure NetApp, es necesario acceder al administrador de clientes.
+
+En esta sección:
+
+* Consulte una lista de cuentas de Azure de NetApp
+* Añadir una cuenta de Azure NetApp
+* Modifique los detalles de la cuenta de Azure NetApp
+* Eliminar una cuenta de Azure NetApp
+
+
+
+
+== Consulte una lista de cuentas de Azure NetApp
+
+La lista de cuentas de Azure NetApp muestra una lista de todas las cuentas de Azure NetApp en las instancias a las que el usuario que ha iniciado sesión tiene acceso. Para ver la lista, seleccione *ADMINISTRACIÓN > Cuentas de NetApp de Azure* en el menú.
+
+La lista muestra información sencilla sobre cada cuenta de Azure NetApp. Los iconos de acción junto a cada cuenta de Azure NetApp permiten modificar o eliminar la cuenta de Azure NetApp.
+
+
+
+== Añadir una cuenta de Azure NetApp
+
+En esta sección se describe cómo añadir una cuenta de Azure NetApp.
+
+.Antes de empezar
+Necesitará:
+
+* El subinquilino a el que pertenece la cuenta de NetApp de Azure
+* La instancia ANF
+* La ubicación de Azure (región)
+* El grupo de recursos de Azure
+* Un nombre para la cuenta
+
+
+.Pasos
+. Seleccione *ADMINISTRATION > Azure NetApp Accounts* en el menú.
+. Haga clic en *Crear*.
+. En el cuadro de diálogo Create Azure NetApp Account, especifique el subinquilino, la ubicación de Azure (región), el grupo de recursos de Azure y un nombre para la cuenta de Azure NetApp.
+. Si es necesario, agregue etiquetas a la cuenta.
+. Haga clic en *Crear*. Cuando se cree correctamente, el estado de la cuenta se realizará correctamente (se puede ver en la lista de cuentas de Azure NetApp).
+
+
+
+
+== Modificar las etiquetas de cuenta de Azure NetApp
+
+Utilice este método para modificar las etiquetas asociadas con una cuenta de Azure NetApp.
+
+.Pasos
+. Seleccione *ADMINISTRATION > Azure NetApp Accounts* en el menú.
+. Localice la cuenta de Azure NetApp en la lista y haga clic en el icono de edición.
+. En el cuadro de diálogo Manage Azure NetApp Account, añada, quite o edite las etiquetas según sea necesario.
+. Haga clic en *Actualizar*.
+
+
+
+
+== Eliminar una cuenta de Azure NetApp
+
+Utilice este método para eliminar una cuenta de Azure NetApp.
+
+.Pasos
+. Seleccione *ADMINISTRATION > Azure NetApp Accounts* en el menú.
+. Localice la cuenta de Azure NetApp en la lista y haga clic en el icono para eliminar.
+. En el cuadro de diálogo Confirmar eliminación, introduzca el nombre de la cuenta de Azure NetApp que desea eliminar.
+. Haga clic en *Confirmar*.
+

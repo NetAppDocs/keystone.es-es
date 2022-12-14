@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_buckets.html 
+keywords: netapp, keystone, create, buckets, 
+summary: Crear cubos Keystone 
+---
+= Crear cubos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Los bloques se crean en un subinquilino.
+
+.Pasos
+. Vea la link:sewebiug_view_buckets.html#view-buckets["Lista de cucharones"] y seleccione el subarrendatario en el que desea crear el bloque.
+. Haga clic en *Crear bloque*.
+. En el cuadro de diálogo Crear bloque, introduzca el nombre del nuevo bloque y la región.
+. Haga clic en *Crear*. Esto crea un trabajo para crear el bloque.
+
+
+.Después de terminar
+Create bucket se ejecuta como un trabajo asíncrono. Podrá:
+
+* Compruebe el estado del trabajo en la lista de trabajos.
+* Una vez terminado el trabajo, compruebe el estado del servidor en la lista Cuches. Para obtener más información, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Indicador de estado de trabajos y trabajos"].
+

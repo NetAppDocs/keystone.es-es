@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_alerts.html 
+keywords: netapp, keystone, alert, create, custom alert 
+summary: Creación y gestión de alertas 
+---
+= Creación y gestión de alertas
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Las alertas son mensajes que se activan automáticamente o se crean manualmente para compartir información sobre eventos críticos en su entorno.
+
+Al aprovisionar almacenamiento, se activan alertas automáticas en las siguientes situaciones:
+
+* El nuevo disco o recurso compartido de archivos inserta la suscripción en ráfaga
+* El nuevo disco o recurso compartido de archivos se ha aprovisionado en una nueva suscripción
+* La capacidad consumida dentro de la suscripción ha superado el umbral de capacidad o está cerca de la capacidad comprometida
+
+
+La pantalla *Alertas* le permite ver las alertas generadas por el sistema y generadas por el usuario en su entorno.
+
+También puede crear alertas personalizadas y mostrarlas a otros usuarios. Pueden ver y descartar las alertas para sí mismos y otros usuarios dentro del tenancy, según sea necesario.
+
+
+
+== Cree una alerta en su entorno multi-tenant
+
+Si es un administrador de partners, puede crear y enviar manualmente alertas a un único inquilino o a todos los inquilinos de su entorno.
+
+
+NOTE: Puede ignorar una alerta que ha creado. Sin embargo, se desestima sólo para los inquilinos que todavía no lo han visto.
+
+.Pasos
+. Seleccione *ADMINISTRACIÓN* > *Alertas* en el menú.
+. Haga clic en *Crear alerta*.
+. En la pantalla *Crear alerta*, seleccione el estado y el arrendatario al que desea enviar la alerta y agregue el mensaje.
++
+
+NOTE: Si desea enviar la alerta a todos los inquilinos del entorno, seleccione "todo".
+
+. Haga clic en *Crear*. Se creará la nueva alerta.
+
+
+
+
+== Cree una alerta en su multi-tenancy
+
+Si es un administrador de inquilinos, puede crear y enviar manualmente alertas a todos los usuarios del entorno.
+
+
+NOTE: Puede ignorar una alerta que ha creado. Sin embargo, sólo se descarta para los usuarios que todavía no lo han visto.
+
+.Pasos
+. Seleccione *ADMINISTRACIÓN* > *Alertas* en el menú.
+. Haga clic en *Crear alerta*.
+. En la pantalla *Crear alerta*, seleccione el estado y agregue el mensaje.
+. Haga clic en *Crear*. Se creará la nueva alerta.
+

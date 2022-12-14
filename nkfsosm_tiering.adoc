@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_tiering.html 
+keywords: netapp, keystone, tiering, 
+summary: Organización en niveles de Keystone 
+---
+= Organización en niveles
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+El servicio de suscripción flexible de NetApp Keystone incluye una funcionalidad de organización en niveles que identifica datos que se usan con menor frecuencia y los organiza para un almacenamiento en frío de propiedad de NetApp, que se implementa y gestiona.
+
+La funcionalidad de organización en niveles aprovecha la tecnología FabricPool de NetApp que permite una organización en niveles automatizada de los datos en niveles de almacenamiento de objetos de bajo coste dentro o fuera de las instalaciones. Con esta funcionalidad, los datos a los que se accede con poca frecuencia se organizan automáticamente en niveles en un almacenamiento más barato, ya sea en las instalaciones o en el cloud, según los servicios acordados.
+
+Los partners e inquilinos pueden aprovechar esta funcionalidad fácilmente al optar por los dos niveles de servicio preconfigurados, la clasificación por niveles extrema y los niveles de servicio Premium mientras aprovisionan su almacenamiento. La organización en niveles extremos tiene las mismas políticas de calidad de servicio que los niveles de servicio estándar, extremo y Premium.
+
+La funcionalidad de organización en niveles complementaria solo está disponible en niveles de servicio Extreme y Premium. NetApp asume que un 25% de los datos están activos y un 75% menos de frecuencia se usan y se pueden trasladar a un almacenamiento en frío. La facturación se determina en función de la duración por volumen en cada nivel de servicio.
+
+Se habilitan las siguientes funciones:
+
+* Puede crear informes de los datos inactivos para sus discos y recursos compartidos de archivos, y decidir si cambiar el nivel de servicio. Al mover o cambiar la política de organización en niveles, las latencias pueden ser más altas si se accede a los datos desde el nivel de datos fríos.
+* Puede cambiar el nivel de servicio de los volúmenes de Extreme y Premium a Extreme-Tiering y Premium Tiering respectivamente, siempre que la organización en niveles de destino esté habilitada en el clúster.
+* Del mismo modo, puede cambiar los niveles de servicio de organización en niveles a una organización en niveles para sus volúmenes.
+* Habilitar y deshabilitar los backups para un volumen en un nivel de servicio de organización en niveles.
+* Habilite y deshabilite la recuperación ante desastres para un volumen en un nivel de servicio de organización en niveles.
+
+
+Para obtener información sobre facturación, consulte link:nkfsosm_kfs_billing.html#billing-for-fabricpool-usage["Facturación para el uso de FabricPool"].

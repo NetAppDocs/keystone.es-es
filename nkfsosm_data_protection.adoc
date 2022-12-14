@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_data_protection.html 
+keywords: netapp, keystone, data, protection, 
+summary: Protección de datos 
+---
+= Protección de datos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+El servicio de protección de datos de la suscripción flexible de NetApp Keystone (suscripción flexible) puede realizar backups de sus datos y recuperarlos en caso necesario. Los servicios de protección de datos disponibles son:
+
+* Instantáneas de discos y recursos compartidos
+* Backups de discos y recursos compartidos (requiere un servicio de protección de datos como parte de la suscripción)
+* Recuperación ante desastres de discos y recursos compartidos (requiere servicio de protección de datos como parte de la suscripción)
+
+
+
+NOTE: Los servicios de backup y recuperación ante desastres están disponibles como servicios complementarios, mientras que Snapshot está disponible como parte del servicio de almacenamiento básico.
+
+|===
+|  | Snapshots de una sola región (disponibles como parte del servicio de almacenamiento básico) | Backup de varias regiones (complemento de protección de datos) | Recuperación ante desastres en varias regiones (complemento de protección de datos) 
+
+
+| Caso de uso | Mitigue el riesgo que se produce al eliminar o dañar los datos de usuarios o aplicaciones, no frente a la pérdida o el fallo de la infraestructura | Reduzca el riesgo de pérdida completa de datos en el volumen primario debido a una pérdida o fallo de la infraestructura | Reduzca el riesgo de pérdida completa de datos en el volumen primario debido a la pérdida o fallo de la infraestructura con un objetivo de tiempo de recuperación 
+
+
+| Política | Cada hora, cada día, cada semana y cada mes | Número de backups para retener en función de snapshots por hora, diarias, semanales y mensuales | 1 hora, 4 horas y todos los días 
+
+
+| Topología | Solo origen | Backup | Destino de replicación asincrónica 
+
+
+| Nivel de servicio de replicación de destino 1 | n.a. | Estándar | Igual que primario 
+|===
+Esta 1 capacidad de almacenamiento adicional a ser suscrita
+
+
+NOTE: La suscripción a un servicio básico de suscripción Flex no realiza automáticamente copias de seguridad de sus datos. Debe suscribirse a servicios de protección de datos complementarios y configurar su sistema para servicios de backup de datos y recuperación ante desastres. Si su sistema de almacenamiento no está gestionado por los servicios de suscripción Flex, NetApp aún puede ofrecerle soporte para proteger los datos de su sistema de almacenamiento y ayuda para conectarlo con sus servicios de suscripción Flex. Sin embargo, NetApp no es responsable de los fallos de backup.

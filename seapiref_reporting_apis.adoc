@@ -1,0 +1,108 @@
+---
+sidebar: sidebar 
+permalink: seapiref_reporting_apis.html 
+keywords: netapp, keystone, reporting, apis, 
+summary: API de generación de informes de Keystone 
+---
+= API de creación de informes
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Utilice los métodos de la siguiente tabla para recuperar y generar informes.
+
+|===
+| Método HTTP | Ruta | Descripción 
+
+
+| `GET` | `/v2.1/reports` | Recuperar toda la lista de informes. 
+
+
+| `POST` | `/v2.1/reports/{filename}` | Recuperar un informe. 
+|===
+
+
+== Recuperar una lista de informes
+
+Utilice el método que se muestra en la siguiente tabla para recuperar una lista de informes.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `GET` | `/v2.1/reports` | Recuperar todos los informes disponibles para un inquilino. Los informes se pueden filtrar por intervalo de fechas.  a| 
+* `tenant_id (string)`
+* `start(string)`: Recuperar informes más recientes que la fecha especificada en START.
+* `end (string)`: Recuperar informes anteriores a la fecha especificada en fin
+
+
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+none
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "filename": "string"
+      }
+    ]
+  }
+}
+....
+
+
+=== Recuperar un informe identificado por nombre de archivo
+
+Utilice el método de la siguiente tabla para recuperar un informe identificado por el nombre de archivo.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `GET` | `/v2.1/reports/{filename}` | Recuperar un informe identificado por el nombre de archivo. | `filename (string)`: El nombre del archivo de informe. 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+none
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "filename": "string"
+      }
+    ]
+  }
+}
+....

@@ -1,0 +1,387 @@
+---
+sidebar: sidebar 
+permalink: seapiref_tenants.html 
+keywords: netapp, keystone, tenants, 
+summary: Inquilinos Keystone 
+---
+= Clientes
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Utilice los métodos enumerados en la siguiente tabla para recuperar, crear, modificar y eliminar arrendatarios.
+
+|===
+| Método HTTP | Ruta | Descripción 
+
+
+| `GET` | `/v2.1/tenants` | Recupere una lista de todos los inquilinos. 
+
+
+| `GET` | `/v2.1/tenants/{id}` | Recuperar un inquilino por el ID de inquilino. 
+
+
+| `POST` | `/v2.1/tenants` | Cree un nuevo inquilino. 
+
+
+| `PUT` | `/v2.1/tenants/{id}` | Modifique los detalles de un arrendatario. 
+
+
+| `DELETE` | `/v2.1/tenants/{id}` | Eliminar un arrendatario. 
+|===
+
+
+== Atributos del inquilino
+
+La siguiente tabla enumera los atributos de arrendatario.
+
+|===
+| Atributo | Tipo | Descripción 
+
+
+| `id` | Cadena | Identificador único del arrendatario. 
+
+
+| `code` | Cadena | Código especificado por el cliente (o predeterminado) que representa al arrendatario. Este atributo puede contener letras minúsculas, números y guiones bajos. 
+
+
+| `name` | Cadena | El nombre del inquilino. 
+
+
+| `zuora_account_name` | Cadena | El nombre de la cuenta de facturación: El nombre de la suscripción en Zuora. 
+
+
+| `zuora_account_number` | Cadena | El número de cuenta de facturación: El número de suscripción en Zuora. 
+
+
+| `description` | Cadena | La descripción del inquilino. 
+
+
+| `usage` | – | Los servicios y detalles de servicio aplicables al inquilino. Para cada nivel de servicio, este atributo muestra lo siguiente: *Nombre:* Nombre de nivel de servicio *tamaño_utilizado:* Nombre de nivel de servicio *nombre_rol:* rol de usuario (usuario, administrador, lectura, socio o raíz) 
+|===
+
+
+== Recuperar todos los inquilinos
+
+Utilice el método indicado en la siguiente tabla para recuperar todos los clientes o un subconjunto de todos los clientes.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `GET` | `/v2.1/tenants` | Recuperar todos los inquilinos. | `offset` y.. `limit` – consulte link:seapiref_netapp_service_engine_rest_apis.html#pagination>["Paginación común"] 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+none
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 2 records.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 2,
+    "total_records": 23,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 2,
+    "records": [
+      {
+        "id": "5e7c3af7aab46c00014ce877",
+        "name": "MyTenant",
+        "zuora_account_name": "MyAccount",
+        "zuora_account_number": "A00000415",
+        "description": "",
+        "code": "mytenantcode",
+        "usage": {
+          "A-S00003875": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 10,
+              "burst": 0
+            },
+            {
+              "service_level": "standard",
+              "consumed": 1.94,
+              "committed": 30,
+              "burst": 0
+            }
+          ],
+          "A-S00004566": [
+            {
+              "service_level": "object",
+              "consumed": 3.31,
+              "committed": 300,
+              "burst": 0
+            }
+          ]
+        }
+      },
+      {
+        "id": "5d914499869caefed0f39eee",
+        "name": "MyOrg",
+        "zuora_account_name": "MyOrg Inc",
+        "zuora_account_number": "A00000415",
+        "description": "",
+        "code": "myorg",
+        "usage": {
+          "A-S00003875": [
+            {
+              "service_level": "standard",
+              "consumed": 12.33,
+              "committed": 30,
+              "burst": 0
+            },
+            {
+              "service_level": "object",
+              "consumed": 0,
+              "committed": 40,
+              "burst": 0
+            }
+          ],
+          "A-S00003969": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 5,
+              "burst": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+....
+
+
+== Recuperar un inquilino por ID
+
+Utilice el método que se muestra en la siguiente tabla para recuperar un arrendatario por ID.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `GET` | `/v2.1/tenants/{id}` | Recuperar el arrendatario especificado por el ID. | `id (string)`: El identificador único del arrendatario. 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+Ejemplo de cuerpo de solicitud:
+
+....
+none
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5e7c3af7aab46c00014ce877",
+        "name": "MyTenant",
+        "zuora_account_name": "MyAccount",
+        "zuora_account_number": "A00000415",
+        "description": "",
+        "code": "mytenantcode",
+        "usage": {
+          "A-S00003875": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 10,
+              "burst": 0
+            },
+            {
+              "service_level": "premium",
+              "consumed": 2.4,
+              "committed": 20,
+              "burst": 0
+            },
+            {
+              "service_level": "standard",
+              "consumed": 1.94,
+              "committed": 30,
+              "burst": 0
+            },
+            {
+              "service_level": "object",
+              "consumed": 0,
+              "committed": 40,
+              "burst": 0
+            }
+          ],
+          "A-S00003969": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 5,
+              "burst": 0
+            },
+            {
+              "service_level": "standard",
+              "consumed": 0,
+              "committed": 30,
+              "burst": 0
+            }
+          ],
+          "A-S00004566": [
+            {
+              "service_level": "object",
+              "consumed": 3.31,
+              "committed": 300,
+              "burst": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+....
+
+
+== Cree un inquilino
+
+Utilice el método que se muestra en la siguiente tabla para crear un arrendatario.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `POST` | `/v2.1/tenants` | Cree un nuevo inquilino. | Ninguno 
+|===
+Atributos de cuerpo de solicitud necesarios: `code`, `name`, `zuora_account_name`, `zuora_account_number`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+{
+  "name": "MyNewTenant",
+  "code": "mytenant",
+  "zuora_account_name": "string",
+  "zuora_account_number": "A00000415",
+  "description": "DescriptionOfMyTenant"
+}
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5ac802c356a0001a735af",
+        "name": "MyNewTenant",
+        "zuora_account_name": "string",
+        "zuora_account_number": "A00000415",
+        "description": "DescriptionOfMyTenant",
+        "code": "mytenant",
+        "usage": null
+      }
+    ]
+  }
+}
+....
+
+
+== Modifique el inquilino
+
+Utilice el método que se muestra en la siguiente tabla para modificar el arrendatario.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `PUT` | `/v2.1/tenants/{id}` | Modifique el arrendatario especificado por el ID. Puede cambiar el nombre, los detalles de suscripción de Zuora (nombre de cuenta o número de suscripción) y la descripción del inquilino. | `id (string)`: El identificador único del arrendatario. 
+|===
+Atributos de cuerpo de solicitud necesarios: `code`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+{
+  "name": "MyNewTenant",
+  "code": "mytenant",
+  "zuora_account_name": "string",
+  "zuora_account_number": "A00000415",
+  "description": "New description of my tenant"
+}
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5ac802c356a0001a735af",
+        "name": "MyNewTenant",
+        "zuora_account_name": "string",
+        "zuora_account_number": "A00000415",
+        "description": "New description of my tenant",
+        "code": "mytenant",
+        "usage": null
+      }
+    ]
+  }
+}
+....
+
+
+== Eliminar el arrendatario
+
+Utilice el método que se muestra en la siguiente tabla para eliminar el arrendatario.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `DELETE` | `/v2.1/tenants/{id}` | Eliminar el arrendatario especificado por el ID. | `id (string)`: El identificador único del arrendatario. 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+none
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+No content for successful delete
+....

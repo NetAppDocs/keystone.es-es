@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_object_storage_user.html 
+keywords: netapp, keystone, create, object, storage, user, 
+summary: Keystone cree un usuario de almacenamiento de objetos 
+---
+= Cree un usuario de almacenamiento de objetos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede crear usuarios y añadirlos a grupos específicos para asignar acceso al almacenamiento de objetos a ellos.
+
+.Antes de empezar
+Dado que un usuario de almacenamiento de objetos pertenece a un grupo de almacenamiento de objetos, debe existir el grupo de almacenamiento de objetos antes de poder crear el usuario.
+
+.Pasos
+. Vaya a *ALMACENAMIENTO DE OBJETOS > Administración de usuarios > usuarios*.
+. Asegúrese de que el subarrendatario correcto está seleccionado y ha hecho clic en la ficha *usuarios*.
+. Haga clic en *Crear usuario*.
+. En el cuadro de diálogo Create User:
++
+.. Introduzca el nombre de usuario.
+.. Seleccione el grupo al que pertenece el miembro.
+
+
+. Haga clic en *Crear*. Esto crea un trabajo para crear el usuario con la configuración especificada.
+
+
+.Después de terminar
+Create user se ejecuta como un trabajo asíncrono. Podrá:
+
+* Compruebe el estado del trabajo en la lista de trabajos. Para obtener más información, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Indicador de estado de trabajos y trabajos"].
+* Una vez terminado el trabajo, compruebe el estado del recurso compartido en la lista usuarios.
+

@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_view_a_list_of_users.html 
+keywords: netapp, keystone, view, list, users, 
+summary: Keystone consulte una lista de usuarios 
+---
+= Ver una lista de usuarios
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La lista usuarios muestra una lista de todos los usuarios de las tareas de trabajo a las que tiene acceso el usuario que ha iniciado sesión. Para ver la lista, seleccione Administración > usuarios en el menú.
+
+La lista muestra información sencilla sobre cada usuario, como el nombre de usuario, el nombre y los apellidos, la dirección de correo electrónico, el usuario principal y la fecha de creación.
+
+Los iconos de acción situados junto a cada usuario permiten modificar o eliminar el usuario.

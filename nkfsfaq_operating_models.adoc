@@ -1,0 +1,90 @@
+---
+sidebar: sidebar 
+permalink: nkfsfaq_operating_models.html 
+keywords: netapp, keystone, operating, models, 
+summary: Modelos operativos 
+---
+= Modelos y responsabilidades operacionales
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Existen tres modelos operativos en las suscripciones Flex. Estas preguntas frecuentes están relacionadas con esos modelos operativos.
+
+* ¿Cuáles son los diferentes modelos operativos y quién es responsable de las principales actividades?*
+
+El siguiente gráfico es una descripción general de los tres modelos operativos que puede seleccionar un cliente: Operado por NetApp, operada por un partner y operada por el cliente.
+
+* *Modelo operado por NetApp*: NetApp realiza la gestión completa de la instalación, la puesta en funcionamiento, las operaciones, la supervisión, la optimización y el soporte.
+* *Modelo operado por un partner*: La participación de funciones y responsabilidades depende del SLA entre usted y el proveedor de servicios o socio. Póngase en contacto con su proveedor de servicios para obtener información.
+* *Modelo gestionado por el cliente*: La tabla siguiente resume el modelo general del ciclo de vida del servicio y las funciones y responsabilidades asociadas con ellos en un entorno operado por el cliente.
+
+
+|===
+| Tarea | NetApp | Cliente 
+
+
+ a| 
+Instalación y tareas relacionadas
+
+* Instale
+* Configurar
+* Puesta en marcha
+* Integradas
+
+| image:check.png[""] | Ninguno 
+
+
+ a| 
+Administración y supervisión
+
+* Supervisar
+* Informes
+* Realizar tareas administrativas
+* Alerta
+
+| Ninguno | image:check.png[""] 
+
+
+ a| 
+Operaciones y optimización
+
+* Gestione la capacidad
+* Gestión del rendimiento
+* Administrar SLA
+
+| Ninguno | image:check.png[""] 
+
+
+ a| 
+Soporte técnico
+
+* Cliente de soporte
+* Reparación de fallos de hardware
+* Soporte de software
+* Actualizaciones y parches
+
+| image:check.png[""] | Ninguno 
+|===
+*¿Qué es un modelo operado por NetApp?*
+
+Este modelo operativo permite al cliente suscribirse a los servicios ofrecidos, según los niveles de rendimiento y los tipos de servicio de almacenamiento seleccionados, y selecciona la opción operada por NetApp a un coste adicional. NetApp define la arquitectura y los productos, se instala en las instalaciones del cliente y NetApp gestiona las operaciones diarias de gestión de la infraestructura con nuestros recursos DE TECNOLOGÍA y de almacenamiento. Los tipos de servicio de almacenamiento disponibles son archivo, bloque (iSCSI) y objeto. También son compatibles Cloud Volumes Service para GCP y AWS.
+
+NetApp también crea y gestiona los partners, los inquilinos, según corresponda, y las suscripciones.
+
+*¿Qué es un modelo operado por socios?*
+
+El modelo operativo del partner o proveedor de servicios es similar al modelo gestionado por NetApp, pero con el partner operando el servicio para su cliente final. En este modelo, el partner es la parte contratada que se hace referencia. Los clientes son clientes de los proveedores de servicios y no tienen relación de facturación con NetApp. Gestionan el tenancy y los clientes. El proveedor de servicios triñará primero las solicitudes de soporte para los inquilinos antes de escalarlas a NetApp.
+
+*¿Qué es un modelo operado por el cliente?*
+
+Este modelo operativo permite al cliente suscribirse a un servicio ofrecido, según los niveles de rendimiento y los tipos de servicio de almacenamiento seleccionados. NetApp define la arquitectura y los productos e instala en las instalaciones del cliente y permite que los clientes gestionen la infraestructura utilizando sus recursos DE almacenamiento y TECNOLOGÍA. Los tipos de servicio de almacenamiento disponibles son archivo, bloque (iSCSI) y objeto. En este modelo, el cliente hace referencia a la parte contratada, que puede ser un usuario final o un partner.
+
+* ¿Quién es dueño del equipo?*
+
+En los tres modelos operativos, NetApp es propietario de la titularidad de todo el hardware y software instalado en las instalaciones del cliente.

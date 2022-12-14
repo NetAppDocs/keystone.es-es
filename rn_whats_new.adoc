@@ -1,0 +1,249 @@
+---
+sidebar: sidebar 
+permalink: rn_whats_new.html 
+keywords: 'netapp, keystone, release notes, new features, what"s new,' 
+summary: Nuevas funciones del motor de servicio de NetApp 
+---
+= Novedades de esta versión de los servicios de suscripción Flex de NetApp Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Las notas de la versión le informan de las nuevas funciones y mejoras introducidas en los servicios de suscripción flexible de NetApp Keystone (suscripción flexible), junto con las limitaciones y correcciones conocidas.
+
+Las siguientes funciones se han introducido en diferentes versiones del motor de servicios de NetApp para admitir las funcionalidades mejoradas que se ofrecen mediante la suscripción Flex de NetApp Keystone (suscripción Flex):
+
+
+
+== Funciones introducidas en el motor de servicio de NetApp 2.2
+
+Las nuevas funciones de esta versión incluyen un panel renovado para nuevos widgets en facturación, uso de la capacidad, solicitudes de servicio y alertas. Esta versión también incluye nuevas pantallas para la gestión de facturación y alertas, y el cambio de nombre del menú de Servicios suscritos a Servicios en la nube.
+
+
+
+=== Vista de consola mejorada
+
+La consola del motor de servicio de NetApp se ha rediseñado para incluir los siguientes componentes nuevos:
+
+* *Utilización de la capacidad* para ver la capacidad utilizada para sus servicios suscritos.
+* *Cargos mensuales (facturación)* para ver los cargos mensuales agregados para todas sus suscripciones.
+* *Alertas* para ver el resumen de las alertas más recientes de su entorno.
+* *Peticiones de servicio* para ver la lista de las solicitudes de servicio más recientes generadas en su entorno. Para obtener más información, consulte link:sewebiug_dashboard.html["Ver el panel de suscripciones de Flex"].
+
+
+
+
+=== Nueva pantalla de facturación
+
+Se ha añadido una nueva pantalla *facturación* para facilitar la accesibilidad y el cálculo de los datos históricos de facturación. La pantalla proporciona una vista holística de los cargos mensuales asociados a todos los servicios suscritos.
+
+Navegue a esta pantalla desde el widget *cargos mensuales* en el panel o desde *ADMINISTRACIÓN > facturación* para ver un desglose mensual a nivel de suscripción de los cargos por todos los servicios suscritos. Los datos de facturación se basan en su uso de capacidad confirmada y en ráfagas, y están disponibles para su uso en los meses anteriores. Para obtener más información, consulte link:sewebiug_billing.html["Ver facturación"].
+
+
+
+=== Pantalla nuevas alertas
+
+En esta versión se introduce una nueva pantalla *Alertas* que enumera todas las alertas generadas por el sistema y por el usuario. La pantalla también le permite crear mensajes de alerta personalizados para eventos críticos relacionados con su entorno y transmitirlos a otros usuarios. Pueden ver y descartar las alertas, según sea necesario. Para obtener más información, consulte link:sewebiug_alerts.html["Creación y gestión de alertas"].
+
+
+
+=== Interfaz de usuario mejorada
+
+Se han realizado las siguientes mejoras en la interfaz de usuario del motor de servicio de NetApp:
+
+* El menú *Tablero* del panel de navegación izquierdo presenta un intuitivo punto de navegación para acceder al tablero de a bordo.
+* El menú *Servicios suscritos* en el panel de navegación izquierdo ha cambiado a *Servicios en nube*. + +
+
+
+
+
+== Funciones introducidas en el motor de servicio de NetApp 2.1
+
+Las nuevas funciones de esta versión incluyen la compatibilidad con multi-tenancy en un entorno de suscripción Flex y la funcionalidad de organización en niveles que facilita el traslado de datos inactivos a un nivel de cloud o local de menor coste.
+
+
+
+=== Presentación de los servicios de suscripción Flex para proveedores de servicios
+
+El motor de servicios de NetApp ahora admite la gestión de un entorno multi-tenancy por parte de un proveedor de servicios. Puede realizar las funciones de aprovisionamiento, creación de informes, facturación y gestión de clientes que tengan sus propias suscripciones. Para dar soporte a esta función, se han realizado las siguientes mejoras:
+
+* *Panel:* el Panel muestra información sobre las suscripciones de almacenamiento, como niveles de servicio, uso de capacidad para cada nivel de servicio y servicios complementarios de protección de datos, para un número de suscripción específico. Como proveedor de servicios, puede ver los detalles de sus suscripciones a NetApp Keystone Flex Subscription y a inquilinos. Como administrador de arrendatarios, puede ver los detalles de todas las suscripciones de arrendatario de su arrendatario.
+* *Informe:* puede crear informes de capacidad y rendimiento con respecto al uso de su suscripción NetApp Keystone Flex y también para su uso de usuario. Como administrador asociado, puede ver el informe de capacidad del uso de su suscripción Flex desde *Informes* > *uso de Keystone*. Como administrador asociado, puede ver los informes de uso de capacidad para un arrendatario específico en *Informes* > *uso de arrendatario*/*uso de capacidad*. Como administrador de arrendatarios, puede ver los informes de arrendamiento desde *Informes* > *uso de arrendatario*.
+* *Suscripción:* como administrador de un socio, puede ver y actualizar sus suscripciones de suscripción y inquilino de Flex desde *SUSCRIPCIONES* > *Suscripciones de Keystone* y *SUSCRIPCIONES* > *Suscripciones de inquilino* respectivamente. Como administrador de arrendatarios, sólo puede ver sus suscripciones de arrendatario.
+* *Usuarios:* en función de su función, puede asignar privilegios a un usuario nuevo o existente dentro de un usuario de acuerdo con el requisito. El rol puede ser administrador de NetApp, administrador de NetApp con privilegios de solo lectura, administrador de partners o administrador de inquilinos. Como administrador de partner, puede asignar solo roles de administrador del partner o de administrador de inquilinos a nuevos usuarios. Un usuario administrador de inquilinos puede asignar solo el rol de administrador de inquilinos a otros usuarios.
+* *Menú redes:* como administrador asociado, puede ver las redes definidas para su uso. También puede crear subredes para su subarrendatario y zona desde *REDES* > *subredes*. Esto es necesario a la vez que se aprovisiona el almacenamiento para los clientes finales o los subclientes.
+* Soporte de API: El `/tenants/{tenant_id}/zones/{zone_name}/subnets` y.. `/tenants/{tenant_id}/zones/{zone_name}/subnets/{id}/tags` Se están ofreciendo API como parte de esta versión para crear y ver subredes para subinquilinos.
+
+
+Para obtener más información sobre esta función, consulte los siguientes vínculos:
+
+* link:nkfsosm_overview.html["Modelo operativo, funciones y responsabilidades"]
+* link:nkfsosm_tenancy_overview.html["Soporte para multi-tenancy y suscripción flexible"]
+* link:sewebiug_dashboard.html["Ver el panel de suscripciones de Flex"]
+* link:sewebiug_working_with_reports.html["Ver informes"]
+* link:sewebiug_managing_subscriptions.html["Gestión de suscripciones"]
+* link:sewebiug_managing_tenants_and_subtenants.html["Gestión de inquilinos y subinquilinos"]
+* link:sewebiug_define_network_configurations.html["Definir redes para inquilinos y subinquilinos"]
+
+
+
+
+=== Organización en niveles
+
+El servicio de suscripción flexible de NetApp Keystone ahora incluye una capacidad de organización en niveles que aprovecha la tecnología FabricPool de NetApp. Identifica datos usados con menos frecuencia y los organiza en niveles para un almacenamiento en frío de propiedad, que es implementado y gestionado en las instalaciones por NetApp. Para optar a la organización en niveles, debe suscribirse a los niveles de servicio de nivel extremo o premium por niveles.
+
+Se han modificado las siguientes API para incluir nuevos valores de atributos para los nuevos niveles de servicio de organización en niveles:
+
+* API de servicios de archivos
+* API de almacenamiento de bloques
+
+
+Para más información, consulte los siguientes enlaces:
+
+* link:nkfsosm_tiering.html["Organización en niveles"]
+* link:nkfsosm_performance.html["niveles de servicio"]
+
+
+{sp} + {sp} + {sp}
+
+
+
+== Funciones introducidas en el motor de servicio de NetApp 2.0.1
+
+Las nuevas funciones de esta versión incluyen las siguientes:
+
+
+
+=== Se ofrece soporte ampliado a Cloud Volumes Services para Google Cloud Platform
+
+Service Engine de NetApp ahora tiene la capacidad de admitir Cloud Volumes Services para Google Cloud Platform (GCP) además de su soporte actual para Azure NetApp Files. Ahora puede gestionar los servicios suscritos y aprovisionar y modificar Google Cloud Volumes desde Service Engine de NetApp.
+
+
+NOTE: Las suscripciones a Cloud Volumes Services se gestionan fuera del motor de servicio de NetApp. Las credenciales relevantes se proporcionan al motor de servicio de NetApp para permitir la conexión con los servicios cloud.
+
+
+
+=== Capacidad de gestionar objetos aprovisionados fuera del motor de servicio de NetApp
+
+Los volúmenes (discos y recursos compartidos de archivos) que ya existen en el entorno del cliente y que pertenecen a los equipos virtuales de almacenamiento configurados en Service Engine de NetApp, ahora se pueden ver y gestionar como parte de su suscripción Flex de NetApp Keystone (suscripción flexible). Los volúmenes aprovisionados fuera del motor de servicio de NetApp aparecen ahora en las páginas *shares* y *discos* con los códigos de estado correspondientes. Un proceso en segundo plano se ejecuta en un intervalo periódico e importa las cargas de trabajo externas dentro de la instancia del motor de servicios de NetApp.
+
+Es posible que los discos y los recursos compartidos de archivos importados no sean del mismo estándar que los discos y los recursos compartidos de archivos existentes en el motor de servicios de NetApp. Tras la importación, estos discos y recursos compartidos de archivos se clasifican con `Non-Standard` estado. Puede solicitar un servicio de *Soporte > solicitud de servicio > Nueva solicitud de servicio* para que se normalicen y gestionen a través del portal del motor de servicios de NetApp.
+
+
+
+=== Integración de SnapCenter con el motor de servicios de NetApp
+
+Como parte de la integración de SnapCenter con el motor de servicio de NetApp, ahora puede clonar sus discos y recursos compartidos de archivos desde las Snapshots creadas en su entorno SnapCenter, fuera de su instancia del motor de servicio de NetApp. Al clonar un recurso compartido de archivos o un disco desde una snapshot existente en el portal del motor de servicio de NetApp, estas Snapshots se enumeran como su selección. Se ejecuta un proceso de adquisición en segundo plano a un intervalo periódico para importar las Snapshots dentro de la instancia del motor de servicios de NetApp.
+
+
+
+=== Nueva pantalla para mantener backups
+
+La nueva pantalla * Backup* le permite ver y administrar las copias de seguridad de los discos y recursos compartidos de archivos creados en su entorno. Es posible editar las políticas de backup, dividir la relación de backup con el volumen de origen y eliminar también el volumen de backup con todos sus puntos de recuperación. Esta función permite conservar los backups (como backups huérfanos) incluso cuando se eliminan los volúmenes de origen, para su restauración posterior. Para restaurar un recurso compartido de archivos o disco desde un punto de recuperación específico, puede solicitar un servicio desde *Soporte > solicitud de servicio > Nueva solicitud de servicio*.
+
+
+
+=== Aprovisionamiento para restringir el acceso de los usuarios a los recursos compartidos CIFS
+
+Ahora puede especificar la lista de control de acceso (ACL) para restringir el acceso de los usuarios en un recurso compartido de CIFS (SMB) o varios protocolos. Puede especificar usuarios o grupos de Windows de acuerdo con la configuración de Active Directory (AD) para agregarlo a la ACL.link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps["Leer más"].
+
+
+
+== Funciones introducidas en el motor de servicio de NetApp 2.0
+
+Las nuevas funciones de esta versión incluyen las siguientes:
+
+
+
+=== Soporte de MetroCluster
+
+El motor de servicio de NetApp admite sitios configurados con configuraciones MetroCluster. MetroCluster es una función de protección de datos de ONTAP que proporciona objetivos de punto de recuperación (RPO) 0 o objetivos de tiempo de recuperación (RTO) 0 mediante mirroring síncrono para almacenamiento siempre disponible. El soporte de MetroCluster se traduce en una función de recuperación ante desastres síncrona dentro del motor de servicios de NetApp. Cada lado de una instancia de MetroCluster se registra como una zona independiente, cada una con su propia suscripción que incluye un plan de tarifas de Data Protection Advanced. Los recursos compartidos o discos creados en una zona habilitada para MetroCluster se replican de forma síncrona en la segunda zona. El consumo de la zona replicada sigue al plan de tasa avanzada de protección de datos aplicable a la zona en la que se aprovisiona el almacenamiento.
+
+
+
+=== Compatibilidad con Cloud Volumes Services
+
+Service Engine de NetApp ahora tiene la capacidad de admitir Cloud Volumes Services. Ahora es compatible con Azure NetApp Files.
+
+
+NOTE: Las suscripciones a Cloud Volumes Services se gestionan fuera del motor de servicio de NetApp. Las credenciales relevantes se proporcionan al motor de servicio de NetApp para permitir la conexión con los servicios cloud.
+
+El motor de servicio de NetApp admite:
+
+* Aprovisionar o modificar los volúmenes de Cloud Volumes Services (incluida la posibilidad de realizar snapshots)
+* Realizar backups de datos en una zona de Cloud Volumes Services
+* Ver Cloud Volumes Services en el inventario de NSE
+* Ver el uso de Cloud Volumes Services.
+
+
+
+
+=== Grupos de hosts
+
+Motor de servicio de NetApp admite el uso de grupos de hosts. Un grupo de hosts es un grupo de nombres de puertos de host de protocolo de FC para todo el mundo (WWPN) o nombres de nodos de host iSCSI (IQN). Puede definir los grupos de hosts y asignarlas a discos para controlar qué iniciadores tienen acceso a los discos. Sustituya los grupos de hosts por la necesidad de especificar iniciadores individuales para cada disco y permitir lo siguiente:
+
+* Un disco adicional que se presentará al mismo conjunto de iniciadores
+* Actualizar el conjunto de iniciadores en varios discos
+
+
+
+
+=== Uso en ráfaga y notificaciones
+
+Algunas suscripciones de almacenamiento compatibles con el motor de servicios de NetApp permiten a los clientes utilizar una capacidad de ráfaga por encima de su capacidad comprometida, esta carga se realiza por separado o por encima de la capacidad comprometida de la suscripción. Es importante que los usuarios entiendan cuándo están a punto de usar o han utilizado la capacidad de ráfaga para controlar su uso y sus costos.
+
+
+
+==== Notificación cuando un cambio propuesto provoca el uso de la capacidad de ráfaga
+
+Una notificación para mostrar un cambio en el aprovisionamiento propuesto que hará que una suscripción entre en ráfaga. El usuario puede elegir continuar sabiendo que la suscripción se pondrá en ráfaga o elegir no continuar con la acción.link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["Leer más"].
+
+
+
+==== Notificación cuando la suscripción está en ráfaga
+
+Cuando una suscripción está en ráfaga, se muestra un banner de notificación.link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["Leer más"].
+
+
+
+==== El informe de capacidad muestra el uso de ráfagas
+
+Informe de capacidad que muestra el número de días que la suscripción ha estado en ráfaga y la cantidad de capacidad de ráfaga utilizada.link:sewebiug_working_with_reports.html#capacity-usage["Leer más"].
+
+
+
+=== Informe de rendimiento
+
+Un nuevo informe de rendimiento de la interfaz web del motor de servicio de NetApp muestra información sobre el rendimiento de los discos o recursos compartidos individuales en las siguientes medidas de rendimiento:
+
+* IOPS/TIB (operaciones de entrada/salida por segundo por tebibyte): La velocidad a la que se producen las operaciones de entrada y salida por segundo (IOPS) en el dispositivo de almacenamiento.
+* Rendimiento en Mbps: La velocidad de transferencia de datos hacia y desde los medios de almacenamiento en megabytes por segundo.
+* Latencia (ms): El tiempo medio para las lecturas y escrituras desde el disco o la cuota en milisegundos.
+
+
+
+
+=== Gestión de suscripciones
+
+Se ha mejorado la gestión de suscripciones. Ahora puede:
+
+* Solicite un complemento de protección de datos o solicite capacidad adicional para un complemento de protección de datos para una suscripción o un servicio
+* Consulte la capacidad de uso de la protección de datos
+
+
+
+
+=== Mejora de la facturación
+
+Ahora, la facturación permite medir el uso de instantáneas para el almacenamiento de ONTAP (archivos y bloques) y facturarlo.
+
+
+
+=== Recursos compartidos CIFS ocultos
+
+El motor de servicios de NetApp admite la creación de recursos compartidos CIFS ocultos.

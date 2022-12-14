@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: rn_known_issues.html 
+keywords: netapp, keystone, release notes, known issues 
+summary: Problemas conocidos en el motor de servicio de NetApp 
+---
+= Problemas conocidos en el motor de servicio de NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se notificaron los siguientes problemas conocidos en Service Engine de NetApp. Es posible que tenga estos problemas cuando aprovisiona o utiliza su almacenamiento como parte de su suscripción Flex.
+
+[cols="3*"]
+|===
+| Problema conocido | Descripción | Solución alternativa 
+
+
+| Limitaciones en la protección de datos sincrónica | Se produce un problema cuando las VLAN, los espacios IP y los dominios de retransmisión no se definen en la pareja secundaria de un clúster de MetroCluster. Este problema puede afectar a la recuperación de datos de la zona de réplica. | Solicite un servicio para que GSSC realice una configuración de red manual en el clúster de partners. La configuración de red puede realizarse por adelantado si se conocen los componentes de red (VLAN, espacio IP y dominios de retransmisión). 
+
+
+| Limitaciones al deshabilitar y eliminar volúmenes que tienen la función de recuperación ante desastres habilitada | Si hay dos o más volúmenes en un equipo virtual de almacenamiento que están habilitados para la recuperación ante desastres, no se puede deshabilitar la recuperación ante desastres para un recurso compartido de archivos o un disco. | Solicite un servicio para que GSSC resuelva el problema. 
+
+
+| Limitaciones a la hora de eliminar servidores de archivos y almacenes de bloques habilitados para la recuperación ante desastres | Es posible que se produzca un error al eliminar un almacén de bloques o un recurso compartido de archivos habilitados para la recuperación de desastres, ya que no se elimina la relación de paridad debido al tiempo de espera. | La eliminación fallida está disponible en “Contact Support” (asistencia técnica de contacto) y el servicio de asistencia se notificará a través del ticket de OpsRamp. 
+
+
+| Limitación al crear varias snapshots | Cuando se activan varias instantáneas para su creación, la página web muestra inicialmente sólo la última instantánea emitida. | El trabajo automático recoge las otras instantáneas en 15 minutos. 
+
+
+| Los servidores de archivos habilitados para recuperación ante desastres en las controladoras secundarias no se eliminan. | Se eliminan todos los volúmenes primarios y las relaciones de replicación. Sin embargo, el objeto de recuperación ante desastres no se elimina. Este objeto no consume ninguna capacidad ni redes. | Este problema no tiene ninguna solución alternativa. 
+
+
+| Limitación de la deshabilitación del backup en volúmenes | Solicite un servicio para que GSSC resuelva el problema. | Este problema no tiene ninguna solución alternativa. 
+
+
+| Limitación de la eliminación de subredes de red | Los clientes no pueden eliminar subredes de red. | Solicite un servicio para que GSSC resuelva el problema. 
+
+
+| Limitación de eliminación de VLAN mediante API | La eliminación de una VLAN que tiene una subred asociada deja un código stub de subred vacío en la interfaz de usuario. | Solicite un servicio para que GSSC resuelva el problema. 
+
+
+| Limitación de la importación de máquinas virtuales de almacenamiento con una subred no estándar | Las máquinas virtuales de almacenamiento (máquinas virtuales de almacenamiento, también conocidas como SVM), creadas fuera del motor de servicio de NetApp no pueden estar operativas debido a una subred no estándar. Las máquinas virtuales de almacenamiento se importan con el estado `Contacted Support`. | Solicite un servicio para que GSSC resuelva el problema. 
+
+
+| Los informes de capacidad y facturación pueden no ser precisos en entornos gestionados por NetApp | En un entorno gestionado por NetApp, los informes de capacidad y facturación generados desde la interfaz de usuario pueden verse afectados debido a la ausencia de métricas de tamaño de LUN y niveles de servicio en los volúmenes de backup. | Solicite un servicio para que GSSC resuelva el problema. 
+
+
+ a| 
+Un retraso de 15 minutos en la generación de informes de la capacidad comprometida de los gráficos tras la creación de la suscripción.
+ a| 
+Cuando se crea una suscripción de inquilino y los gráficos de informe se comprueban inmediatamente (en un plazo de 15 minutos desde la creación de la suscripción), la capacidad comprometida no se informa correctamente.
+ a| 
+Compruebe los gráficos de informes al menos 15 minutos después de crear la suscripción.
+
+
+
+ a| 
+El cambio de los niveles de servicio no mueve los volúmenes
+ a| 
+Si se utilizan dos agregados diferentes en el mismo clúster para dos niveles de servicio, el cambio del nivel de servicio de un volumen a otro no mueve el volumen al otro agregado. Solo se aplica la política de calidad de servicio adaptativa.
+ a| 
+Solicite un servicio para que GSSC resuelva el problema.
+
+
+
+ a| 
+La creación de la SVM FCP requiere la activación de iSCSI
+ a| 
+Para crear una máquina virtual de almacenamiento (SVM) y habilitar la compatibilidad FCP en ella, se requiere una activación de la interfaz de iSCSI.
+ a| 
+Solicite un servicio para que GSSC resuelva el problema.
+
+
+
+ a| 
+Limitación con varios grupos de hosts con el mismo iniciador
+ a| 
+Si se crean varios grupos de hosts con el mismo nombre de iniciador y los discos se asignan a todos los grupos de hosts, los discos se asignan solo a un grupo de hosts del clúster.
+ a| 
+Solicite un servicio para que GSSC resuelva el problema.
+
+|===

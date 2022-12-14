@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_site_requirements.html 
+keywords: netapp, keystone, sire, requirements, 
+summary: Requisitos del sitio de Keystone 
+---
+= Los requisitos del centro
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Existen varios requisitos para habilitar los servicios de suscripción flexible de NetApp Keystone en su entorno, como espacio, racks, PDU, energía y la refrigeración, y los requisitos de red y seguridad adicionales se comentarán más adelante.
+
+
+
+== Espacio
+
+Espacio físico para alojar el equipo de la infraestructura de suscripción flexible (a disposición de los clientes). NetApp proporciona las especificaciones de peso basadas en la configuración final.
+
+
+
+== Racks
+
+Cuatro bastidores de poste en la oferta operada por el cliente (a ser proporcionados por los clientes). En la oferta dirigida por NetApp, NetApp o el cliente pueden proporcionar los racks, en función de sus necesidades. NetApp proporciona 42 racks de profundidad.
+
+
+
+== PDU
+
+Debe proporcionar las unidades de distribución de energía (PDU) conectadas a dos circuitos protegidos separados con suficientes tomas C13. En la oferta dirigida por el cliente, en algunos casos se requieren tomas C19. En la oferta gestionada por NetApp, NetApp o el cliente pueden proporcionar estas PDU, según unos requisitos.
+
+
+
+== Potencia
+
+Debe proporcionar la alimentación necesaria. NetApp le proporcionará las especificaciones de los requisitos de alimentación en función de la clasificación de 200 V (Normalmente A, máximo A, W típico, máximo W, tipo de cable de alimentación, y cantidad), en función de la configuración final. Todos los componentes tienen fuentes de alimentación redundantes. NetApp proporcionará los cables de alimentación dentro del armario.
+
+
+
+== Refrigeración
+
+NetApp puede proporcionar las especificaciones de requisitos de refrigeración (BTU típico, BTU máximo) en función de la configuración y los requisitos finales.
+
+
+
+== Redes
+
+En función de los requisitos del cliente y de las controladoras de almacenamiento utilizadas, NetApp puede proporcionar conectividad de 10 GIB, 40 GIB y 100 GIB en las instalaciones del cliente.
+
+NetApp proporciona los transceptores necesarios para dispositivos de infraestructura de suscripción Flex proporcionados por NetApp únicamente. Debe suministrar los transceptores necesarios para dispositivos de cliente y cableado a los dispositivos de infraestructura de suscripción Flex proporcionados por NetApp.

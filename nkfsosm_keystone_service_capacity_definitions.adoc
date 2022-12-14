@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_keystone_service_capacity_definitions.html 
+keywords: netapp, keystone, service, capacity, definitions, burst, committed capacity, consumed capacity, billed capacity 
+summary: Definiciones de la capacidad del servicio de Keystone 
+---
+= Definiciones de capacidad del servicio de suscripción Flex
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Las capacidades del servicio de suscripción flexible (suscripción flexible) de NetApp Keystone incluyen:
+
+
+
+== Capacidad lógica
+
+Estos son los datos que un cliente ha colocado en la infraestructura de suscripción flexible. Todas las capacidades de suscripción Flex hacen referencia a una capacidad lógica. Por ejemplo, si un archivo de 1 TIB se almacena en la infraestructura de suscripción Flex, debe comprar al menos 1 TIB de capacidad.
+
+
+
+== Capacidad comprometida
+
+La capacidad lógica mínima que se factura cada mes durante el periodo:
+
+* La capacidad se compromete con cada nivel de servicio.
+* La capacidad comprometida no puede disminuir durante este periodo.
+* Durante el período de vigencia se puede añadir la capacidad comprometida y los niveles de servicio adicionales.
+
+
+
+
+=== Cambios en la capacidad comprometida
+
+Durante la duración de una suscripción, puede cambiar las capacidades comprometidas. Sin embargo, existen algunas condiciones previas:
+
+* No es posible reducir la capacidad proporcionada
+* La capacidad comprometida no puede aumentarse 90 días antes del vencimiento de la suscripción, a menos que la suscripción se renueve por un plazo adicional de 12 meses.
+* Puede solicitar cambios en la capacidad comprometida a través de la interfaz del motor de servicio de NetApp o a través de Keystone Success Manager. Para obtener información acerca de cómo solicitar cambios, consulte link:sewebiug_raise_a_service_request.html["Elevar una solicitud de servicio"].
+
+
+
+
+== Capacidad de ráfaga
+
+Esta es la capacidad lógica que ha superado la capacidad comprometida. Tenga en cuenta lo siguiente:
+
+* El servicio de suscripción Flex proporciona un 20% de capacidad por encima de la capacidad comprometida.
+* La capacidad de ráfaga se puede consumir sobre una base flexible y se cobra diariamente por la media consumida.
+* Hasta un 20 % de la capacidad de ráfaga se carga a la misma tasa que la capacidad comprometida.
+* Una capacidad de ráfaga superior al 20 % del compromiso se cobra a una tasa premium. Póngase en contacto con el soporte para cualquier requisito de ráfaga adicional superior al 20 %.
+
+
+
+
+== Capacidad consumida/aprovisionada
+
+La capacidad consumida hace referencia a la capacidad en TIB del almacenamiento que se está consumiendo actualmente en el servicio. El servicio de suscripción Flex considera la suma de los tamaños aprovisionados (no la capacidad lógica o física utilizada) de todos los volúmenes en un nivel de servicio en particular para considerarlos como capacidad consumida para ese nivel de servicio. Estos recursos incluyen:
+
+* La capacidad que se aprovisiona mediante la creación, la modificación, la eliminación o el posible crecimiento automático de los volúmenes.
+* Las copias y los clones Snapshot.
++
+
+NOTE: No se tiene en cuenta la cantidad de datos almacenados dentro de la capacidad aprovisionada o la cantidad de datos escritos en el disco.
+
+
+
+
+
+== Capacidad facturada
+
+Factura mensual = (capacidad comprometida [TIB] * tasa comprometida [$/TIB]) + (capacidad de ráfaga aprovisionada media diaria [TIB] * tasa de ráfaga [$/TIB]). La factura mensual contiene un cargo mínimo basado en la capacidad comprometida.
+
+La factura mensual varía más allá del cargo mínimo en función del consumo medio de capacidad de ráfaga diaria. Para obtener más información sobre facturación, consulte link:nkfsosm_kfs_billing.html["Facturación de suscripción flexible"].

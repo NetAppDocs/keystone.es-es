@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_netapp_global_services_and_support_center_@gssc@.html 
+keywords: netapp, keystone, global, services, support, center, gssc, 
+summary: 'Centro de soporte y servicios globales de NetApp (GSSC)' 
+---
+= Operaciones de servicios de suscripción de Flex
+:allow-uri-read: 
+
+
+[role="lead"]
+Los servicios de suscripción flexibles de NetApp Keystone se ejecutan aprovechando el centro de soporte y servicios globales de NetApp (GSSC), el director de éxito de NetApp Keystone y el gestor de prestación de servicios de NetApp Keystone.
+
+
+
+== Centro de soporte y servicios globales de NetApp (GSSC)
+
+NetApp proporciona servicios operativos de forma remota a clientes de NetApp Keystone. Estos servicios abarcan una amplia gama de disciplinas operativas en todas las actividades de gestión del almacenamiento, incluida la gestión de activos y configuración, la gestión de la capacidad y el rendimiento, la gestión de cambios, la gestión de eventos, incidentes y problemas, el cumplimiento de solicitudes de servicio y la creación de informes. NetApp demostrará el estado de control y los testimonios complementarios disponibles, según sea necesario.
+
+
+
+== Información adicional y contacto de soporte
+
+El equipo del centro de soporte y servicios globales (GSSC) de NetApp presta soporte principalmente a los servicios prestados a los clientes de la suscripción Flex de NetApp Keystone.
+
+Solicite un ticket directamente en el portal del motor de servicio de NetApp (*Soporte > solicitudes de servicio*) con los detalles adecuados del problema para obtener ayuda.
+
+También puede utilizar la siguiente información para ponerse en contacto con el equipo de soporte.
+
+* Contactos de servicio globales:https://www.netapp.com/us/contact-us/support.aspx[]
+* Si tiene un caso o una incidencia abiertos que es necesario escalar, envíe un correo electrónico a una de las siguientes direcciones: Keystone.services@netapp.com Keystone.escalations@netapp.com
+* NetApp utiliza OpsRamp, una solución de puerta de enlace remota basada en cloud para supervisar y conectar de forma proactiva el entorno NetApp Keystone a efectos de solución de problemas. Para obtener más información sobre OpsRamp, consulte https://www.opsramp.com/#[].
+
+
+
+NOTE: En un modelo operado por un partner, las solicitudes de servicio del inquilino y el subinquilino se asignan al servicio técnico del partner. La herramienta de soporte del partner podría tener integración con las aplicaciones OpsRamp y GSSC. Solo se escalan a NetApp los problemas de nivel 3 a través de GSSC.
+
+Si quiere más información sobre el contenido de este documento, consulte los siguientes documentos o sitios web:
+
+* NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
+* Documentación de productos de NetApphttps://docs.netapp.com["https://docs.netapp.com"^]
+

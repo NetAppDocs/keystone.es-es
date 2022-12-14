@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_delete_a_subscribed_service.html 
+keywords: netapp, keystone, delete, cloud, service, 
+summary: Keystone elimine un servicio cloud 
+---
+= Eliminar un servicio cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Use este método para eliminar una suscripción CVS del portal web de Service Engine de NetApp.
+
+.Pasos
+. Seleccione *Servicios en la nube* > *Servicios en la nube* en el menú.
+. Busque el servicio en la nube en la lista y haga clic en el icono Delete.
+. En el cuadro de diálogo Confirmar eliminación, introduzca el nombre del servicio cloud que desea eliminar.
+. Haga clic en *Confirmar*.
+

@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_a_file_server.html 
+keywords: netapp, keystone, create, file, server, 
+summary: Keystone cree un servidor de archivos 
+---
+= Cree un servidor de archivos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Los servidores de archivos pertenecen a un subarrendatario y se crean dentro de una zona. Al crear un servidor, puede:
+
+* Recuperación ante desastres asíncrona Protección de datos para el servidor. Para obtener más información sobre cómo funciona la recuperación ante desastres en el motor de servicio de NetApp, consulte link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["Recuperación tras siniestros"].
+* Si tiene una suscripción a la protección de datos de recuperación ante desastres síncrona, esta función está habilitada de forma predeterminada.
+* Habilitado para CIFS. Los servicios NFS están habilitados de forma predeterminada.
+
+
+.Antes de empezar
+Asegúrese de que dispone de lo siguiente para crear el servidor:
+
+* El subarrendatario que alojará el servidor.
+* Región y zona en la que pertenece el servidor.
+* Detalles de redes, como la subred y la dirección IP (opcional). Si no está familiarizado con la red, consulte los valores adecuados en el departamento DE TI.
+* Para permitir la recuperación asíncrona ante desastres en el servidor de archivos, la zona de recuperación ante desastres (la zona en la que se replicará el servidor de archivos).
+* Para el servidor CIFS, debe conocer las credenciales de Active Directory, los servidores DNS, el nombre del servidor y, opcionalmente, la unidad organizativa (OU) de Active Directory. Las credenciales de Active Directory deben corresponder a un usuario que tenga el privilegio de unirse a un equipo al dominio de Active Directory.
+
+
+Cuando la estructura de OU de Active Directory es jerárquica, como se muestra en la siguiente imagen, especifique las unidades organizativas del nivel inferior al superior. En este ejemplo, para especificar la unidad organizativa de Melbourne, establezca `cifs_ou` como `"cifs_ou": "ou=melbourne,ou=cifs".`
+
+image:sewebiug_image20.png["Error: Falta la imagen gráfica"].Pasos
+
+. Vea la link:sewebiug_view_servers.html#view-servers["Servidores de archivos"].
+. Haga clic en *Crear servidor*.
+. En la página Create Server, complete los siguientes campos:
++
+|===
+| Campo | Descripción 
+
+
+| Subinquilino | Seleccione el subarrendatario de la lista. 
+
+
+| Región | Seleccione la región en la que residirá el servidor. 
+
+
+| Zona | Seleccione la zona en la que residirá el servidor. 
+
+
+| Nombre | Introduzca el nombre del servidor. 
+
+
+| Subred | Seleccione cualquier subred predefinida de la lista. 
+
+
+| Dirección IP | (Opcional) especifique una dirección IP. Si no se especifica, el servidor recibirá la siguiente dirección IP disponible. 
+|===
+. Seleccione los servicios:
++
+NFS está habilitado de forma predeterminada. Aparece el protocolo NFS en uso.
+
++
+Si crea un servidor de archivos con CIFS activado:
+
++
+.. Active el botón CIFS-enabled para ver los campos relacionados con CIFS.
+.. Agregue el nombre de dominio, la IP del servidor DNS, el nombre del servidor y, opcionalmente, el nombre de la unidad organizativa de Active Directory.
+
+
+. Para activar la recuperación ante desastres asíncrona en este servidor de archivos:
++
+.. Active el botón Asynchronous Disaster Recovery para activarlo.
+.. Seleccione la región y la zona de recuperación ante desastres.
+.. Seleccione la programación de replicación de recuperación ante desastres.
++
+
+NOTE: Si ha suscrito la protección de datos de recuperación ante desastres síncrona, la función se activa automáticamente en su zona y el botón de alternar recuperación ante desastres síncrona se activa de forma predeterminada. No puede desactivar el botón.
+
+
+
+. Si lo desea, puede agregar etiquetas y valores.
+. Haga clic en *Crear*. Esto crea un trabajo para crear el servidor.
+
+
+
+NOTE: Si está creando un servidor con CIFS activado, para el nombre de dominio introducido (FQDN) debe introducir el nombre de usuario de Active Directory y la contraseña de Active Directory, y hacer clic en *Confirmar*.
+
+.Después de terminar
+La creación del servidor se ejecuta como un trabajo asíncrono. Podrá:
+
+* Compruebe el estado del trabajo en la lista de trabajos. Para obtener información acerca del seguimiento de trabajos, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["aquí"].
+* Una vez finalizado el trabajo, compruebe el estado del servidor en la lista servidores de
+

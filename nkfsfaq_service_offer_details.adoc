@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: nkfsfaq_service_offer_details.html 
+keywords: netapp, keystone, service, offer, details, 
+summary: Detalles de la oferta de servicios 
+---
+= El servicio de suscripción Flex ofrece detalles
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Las siguientes preguntas proporcionan respuestas a sus preguntas frecuentes acerca de la oferta del servicio de suscripción flexible de NetApp Keystone.
+
+* ¿Cuál es la capacidad mínima comprometida?*
+
+La capacidad mínima comprometida para una suscripción flexible de NetApp Keystone (suscripción flexible) es de 100 TIB por sitio en uno o más niveles de servicio.
+
+*Cuál es la duración típica de un acuerdo de suscripción flexible?*
+
+La suscripción Flex ofrece períodos de periodos de 12, 24 y 36 meses.
+
+*¿Cómo puedo acceder al almacenamiento?*
+
+En un modelo operado por NetApp (estándar), las controladoras de almacenamiento (ONTAP System Manager o acceso administrativo a los sistemas) son propiedad de NetApp y las gestiona. Puede supervisar y gestionar el almacenamiento únicamente mediante las API e IU del motor de servicios de NetApp. En una implementación gestionada por los clientes (o Lite), donde las API e interfaz de usuario del motor de servicios de NetApp se utilizan principalmente para funciones de facturación, puede acceder a las controladoras de almacenamiento como Active IQ Unified Manager y ONTAP System Manager, así como acceder directamente a los clústeres de ONTAP.
+
+*¿Cómo puedo administrar el servicio?*
+
+El motor de servicios de NetApp es la herramienta de orquestación y gestión que puede utilizar para aprovisionar almacenamiento y obtener informes sobre el uso del servicio.
+
+*¿Cómo puedo aumentar la capacidad comprometida en una suscripción?*
+
+Puede enviar una solicitud de adición de la capacidad a través de la herramienta de gestión del motor de servicio de NetApp o a través de su gestor de éxito de NetApp Keystone.
+
+* ¿El aumento de la capacidad extiende el término?*
+
+Todas las adiciones son de covigencia para el período de vigencia existente, excepto si la solicitud se realiza en los últimos 90 días de la suscripción, en cuyo caso el plazo debe extenderse por lo menos 12 meses.
+
+* ¿Pueden las suscripciones co-term entre sí?*
+
+No, los términos de suscripción son independientes entre sí.
+
+*¿Puedo añadir almacenamiento de copia de seguridad a una suscripción existente?*
+
+Para un caso de uso de respaldo, puede añadir capacidad a una suscripción existente para un nivel de servicio nuevo o existente, incluidos los niveles de servicio Estándar o valor. Esto no cambia el término de la suscripción existente. Sin embargo, hay una advertencia, es decir, si desea añadir capacidad dentro de los últimos 90 días del plazo de suscripción (es decir, los últimos 90 días antes de que finalice la suscripción), también debe renovar la suscripción durante al menos un año.
+
+* ¿Tiene una nueva suscripción flexibilidad para venir con un nuevo término anual?*
+
+Sí, las nuevas suscripciones pueden tener términos nuevos separados de las suscripciones existentes.
+
+*¿Pueden los términos de suscripción a inquilinos extenderse más allá del plazo de suscripción del socio?*
+
+Las suscripciones de inquilino pueden extenderse más allá del período de suscripción Flex actual del partner. Se mostrará una advertencia cuando se creen suscripciones y también en los informes de uso.
+
+*¿Puedo mezclar varias suscripciones en el mismo clúster de ONTAP?*
+
+No, cada clúster está asignado a una suscripción determinada.
+
+* ¿Quién realiza el monitoreo y las operaciones?*
+
+Para el servicio gestionado por NetApp, NetApp es responsable de supervisar la infraestructura de forma remota para que el servicio se realice de acuerdo con las expectativas previamente fijadas.
+
+Para el servicio proporcionado por el partner, el partner es responsable de supervisar la infraestructura de forma remota para que el servicio se realice de acuerdo con las expectativas previamente fijadas.
+
+En cuanto al servicio que presta el cliente, el cliente es responsable de supervisar la infraestructura y plantear cualquier problema a NetApp.
+
+*¿Qué sucede si termino el servicio temprano?*
+
+El compromiso de servicio mínimo es de 12 meses. Si cancela el servicio antes de tiempo, el valor residual debe ser pagado por adelantado.
+
+* ¿Existe la oportunidad de convertirse en una compra después de que se complete el plazo inicial?* no La oferta no incluye una opción para convertir en una compra. Además, los productos de NetApp adquiridos previamente se encuentran fuera del alcance de este programa.
+
+*¿Puedo solicitar una versión de software en particular?*
+
+No NetApp Keystone ha estandarizado la versión de software en toda su base de clientes.
+
+*¿Me informaré acerca de las actualizaciones de software?*
+
+Sí. Todas las actividades de mantenimiento/actualización se comunican y se programan en un momento que el administrador de éxito de NetApp Keystone establece un acuerdo mutuo con el cliente.

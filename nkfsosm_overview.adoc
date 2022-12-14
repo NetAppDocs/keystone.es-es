@@ -1,0 +1,92 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_overview.html 
+keywords: netapp, keystone, kfs, overview, 
+summary: Información general sobre la suscripción Flex de NetApp 
+---
+= Modelo operativo, funciones y responsabilidades
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La suscripción flexible de NetApp Keystone (suscripción flexible) se basa en el modelo de multi-tenancy.
+
+La suscripción Flex ofrece tres modelos operativos para la prestación de servicios.
+
+* *El modelo operado por NetApp* permite al cliente suscribirse a los servicios ofrecidos (según los niveles de rendimiento seleccionados y los tipos de servicio de almacenamiento) y selecciona la opción gestionada por NetApp por un coste adicional. NetApp define la arquitectura y los productos, se instala en las instalaciones del cliente y gestiona las operaciones diarias de gestión de la infraestructura utilizando recursos TECNOLÓGICOS y de almacenamiento de NetApp. Los tipos de servicio de almacenamiento disponibles son archivo, bloque y objeto. Las suscripciones de almacenamiento basadas en Cloud Volumes Service para GCP y AWS también se pueden gestionar a través de su instancia de NetApp Keystone.
+* *El modelo *operado por un partner* es similar al modelo operado por NetApp, pero con el partner funcionando el servicio a sus clientes finales. En este modelo, el partner es la parte contratada que se hace referencia. Los clientes son clientes de partners o proveedores de servicios y no tienen relación de facturación con NetApp. El modelo operado por un partner suele tener un entorno multi-tenancy en el que los inquilinos y los clientes finales/subclientes tienen sus propias suscripciones facturadas por el proveedor de servicios/partner. El administrador de partners realiza las tareas administrativas para todos los inquilinos. Las funciones que puede realizar un administrador en un modelo operado por un partner son diferentes a las de un administrador en un modelo operado por NetApp.
+* *Modelo * operado por el cliente* permite al cliente suscribirse a un servicio ofrecido, según los niveles de rendimiento y tipos de servicio de almacenamiento seleccionados. NetApp define la arquitectura y los productos e instala en las instalaciones del cliente y permite que los clientes gestionen la infraestructura utilizando sus recursos DE almacenamiento y TECNOLOGÍA. Un cliente puede estar vinculado a NetApp o a un partner o proveedor de servicios y, en función de ello, pueden plantearse las solicitudes de servicio y dirigirse a NetApp o al proveedor de servicios. Un administrador del cliente puede realizar las tareas administrativas en un entorno operado por el cliente. Estas tareas están vinculadas a los inquilinos y subinquilinos del cliente específico.
+
+
+Las características y opciones de la oferta varían en función de los modelos. Para obtener más información, consulte link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["Funciones y operaciones de proveedores de servicios y clientes"]
+
+
+
+== Funciones y responsabilidades a lo largo del ciclo de vida del servicio
+
+* *Modelo operado por NetApp*: NetApp realiza la gestión completa de la instalación, la puesta en funcionamiento, las operaciones, la supervisión, la optimización y el soporte.
+* *Modelo operado por un partner*: La participación de funciones y responsabilidades depende del SLA entre usted y el proveedor de servicios o socio. Póngase en contacto con su proveedor de servicios para obtener información.
+* *Modelo gestionado por el cliente*: La tabla siguiente resume el modelo general del ciclo de vida del servicio y las funciones y responsabilidades asociadas con ellos en un entorno operado por el cliente.
+
+
+|===
+| Tarea | NetApp | Cliente 
+
+
+ a| 
+Instalación y tareas relacionadas
+
+* Instale
+* Configurar
+* Puesta en marcha
+* Integradas
+
+| image:check.png[""] | Ninguno 
+
+
+ a| 
+Administración y supervisión
+
+* Supervisar
+* Informes
+* Realizar tareas administrativas
+* Alerta
+
+| Ninguno | image:check.png[""] 
+
+
+ a| 
+Operaciones y optimización
+
+* Gestione la capacidad
+* Gestión del rendimiento
+* Administrar SLA
+
+| Ninguno | image:check.png[""] 
+
+
+ a| 
+Soporte técnico
+
+* Cliente de soporte
+* Reparación de fallos de hardware
+* Soporte de software
+* Actualizaciones y parches
+
+| image:check.png[""] | Ninguno 
+|===
+
+
+=== Resumen de funciones y responsabilidades
+
+La lista siguiente resume las funciones y responsabilidades de NetApp:
+
+* NetApp proporciona, instala, configura y habilita el servicio aplicable (incluida la versión aplicable del motor de servicio de NetApp en un centro de datos designado por el cliente o en un centro de colocación). NetApp es responsable de la desinstalación que se produzca al final de la vigencia del contrato o si el cliente decide rescindir el contrato antes.
+* Mientras se intertrabaja con otros proveedores de servicios TECNOLÓGICOS, NetApp colabora con los proveedores de servicios DE TI del cliente o con su equipo técnico.
+* Se incluye el rendimiento de los servicios operados por NetApp, suponiendo que las responsabilidades compartidas se aplican al entorno compatible.
+

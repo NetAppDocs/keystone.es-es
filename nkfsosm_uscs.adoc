@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_uscs.html 
+keywords: netapp, keystone, US citizen support, USCS GSSC, Keystone Success Manager, USCS support 
+summary: 'Soporte de ciudadanos DE EE. UU. (USCS)' 
+---
+= EE. UU Soporte para ciudadanos de EE. UU. (USCS)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La asistencia al ciudadano de los Estados Unidos (USCS) es una oferta complementaria para las suscripciones a NetApp Keystone. Le da derecho a recibir la entrega y el soporte de los servicios de Keystone continuos de la Administración de Estados Unidos Ciudadanos en los Estados Unidos residentes en este país.
+
+Lea las siguientes secciones para comprender qué elementos de sus suscripciones están vinculados por este servicio complementario y se proporcionan en los términos del acuerdo de NetApp Keystone.nota al pie de página:renunciotera1[los servicios y ofertas descritos aquí están sujetos a un acuerdo de Keystone totalmente ejecutado y están limitados y regulados por él].
+
+
+
+== Supervisión del centro de soporte de servicios globales de NetApp
+
+El centro de soporte y servicios globales de NetApp (GSSC) supervisa el estado de sus productos y los servicios suscritos, ofrece soporte remoto y colabora con su Keystone Success Manager. Todo el personal que supervise los productos asociados a los pedidos de suscripción de Keystone relevantes será ciudadano de EE. UU. Que opera en EE. UU residentes en este país.
+
+
+
+== Keystone Success Manager
+
+Keystone Success Manager es la Administración del cliente Estadounidense residentes en este país. Sus responsabilidades se especifican en el Acuerdo de NetApp Keystone.
+
+
+
+== Actividades para la implementación
+
+Las actividades de instalación e instalación, in situ y remotas, siempre que estén disponibles, se llevan a cabo en las oficinas de la Administración de Estados Unidos Ciudadanos en los Estados Unidos residentes en este país. Nota al pie:renuncia de responsabilidad[la disponibilidad del personal adecuado para las actividades in situ depende de la ubicación geográfica en la que se implementen los sistemas Keystone].
+
+
+
+== Soporte técnico
+
+Las actividades de solución de problemas y soporte in situ necesarias, siempre que estén disponibles, se llevan a cabo a cargo de las organizaciones de EE. UU Ciudadanos en los Estados Unidos residentes en este país. nota al pie:renuncia de responsabilidad[]

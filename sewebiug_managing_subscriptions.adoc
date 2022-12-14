@@ -1,0 +1,108 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_subscriptions.html 
+keywords: netapp, keystone, managing, subscriptions, 
+summary: Gestión de suscripciones de Keystone 
+---
+= Gestión de suscripciones
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La gestión de las suscripciones incluye la asignación de niveles de servicio a sus servicios de suscripción flexible (suscripción flexible) de NetApp Keystone y de suscripción de inquilinos, o la asignación y el cambio de capacidades a los niveles de servicio mediante la interfaz del motor de servicios de NetApp.
+
+Las suscripciones flexibles representadas por la relación entre los proveedores/partners de servicios y las suscripciones de cliente y NetApp representan la relación entre el proveedor de servicios y sus clientes e inquilinos (clientes finales). Cuando los administradores de NetApp o GSSC crean servicios de suscripción Flex para partners e inquilinos, implica que se ha logrado la asignación del almacenamiento. No obstante, a menos que se creen los niveles de servicio y se complete la asignación de capacidad correspondiente, los subclientes o los clientes finales no podrán consumir el almacenamiento. Los administradores de partners pueden gestionar el almacenamiento para sus suscripciones de Flex e inquilinos. Los administradores de inquilinos solo pueden ver los detalles de la suscripción de inquilinos para sus propios usuarios.
+
+
+
+== Gestionar suscripción Flex (Suscripciones de Keystone)
+
+Si es un administrador de partners, puede ver y administrar sus servicios de suscripción Flex desde *SUSCRIPCIONES* > *Suscripciones de Keystone*. *Las suscripciones de Keystone* representan los servicios de suscripción Flex creados por los administradores de NetApp para partners. Los administradores de partners pueden ver sus servicios de suscripción Flex y crear solicitudes de servicio para:
+
+* Aumentar la capacidad de una suscripción
+* Agregar un servicio a una suscripción (asignar nivel de servicio y capacidad)
+
+
+El equipo de soporte recibe y trata las solicitudes de servicio.
+
+También puede ver y administrar los servicios de protección de datos y protección avanzada a los que está suscrito, en fichas independientes. Para obtener más información, consulte link:index.html#flex-subscription["Protección de datos y protección avanzada"].
+
+
+
+=== Aumentar la capacidad de una suscripción
+
+Puede aumentar la capacidad confirmada de cualquiera de los niveles de servicio suscritos para satisfacer sus requisitos de crecimiento.
+
+.Pasos
+. Seleccione la suscripción para la que desea aumentar la capacidad en el menú desplegable.
+. Haga clic en *aumentar capacidad* para el nivel de servicio que desee.
+. Especifique la capacidad (en TIB) requerida.
+. Haga clic en *Confirmar*.vuelve a la página Administrar suscripciones de Keystone.
+. Haga clic en *Enviar cambios*. Se crea una solicitud de servicio para que GSSC aumente la capacidad. Puede ver y realizar un seguimiento del progreso de la solicitud de servicio con el número de SR que aparece en un mensaje. Para obtener información sobre el seguimiento, consulte link:sewebiug_track_a_service_request.html["Realizar un seguimiento de una solicitud de servicio"].
+
+
+
+
+=== Agregar un servicio a una suscripción
+
+Puede agregar un servicio a una suscripción. La adición de un servicio incluye la asignación de un nivel de servicio a su suscripción y la especificación de la capacidad para el mismo nivel de servicio.
+
+Cada suscripción puede tener uno de los niveles de servicio. Por ejemplo, si su suscripción ya contiene un servicio Extreme y Standard, puede agregar un servicio Premium o Block.
+
+.Pasos
+. Seleccione el nivel de servicio que desea agregar a su suscripción en el menú desplegable.
+. Haga clic en *Agregar servicio*.
+. Seleccione el nivel de servicio al que desea suscribirse en el menú desplegable, por ejemplo `Extreme-tiering`Y agregue la capacidad (en TIB) que desea confirmar al nivel de servicio.
+. Haga clic en *Confirmar*. Volverá a la página Administrar suscripciones de Keystone.
+. Haga clic en *Enviar cambios*. Se crea una solicitud de servicio para que GSSC asigne el nivel de servicio a su suscripción. Puede ver y realizar un seguimiento del progreso de la solicitud de servicio con el número de SR que aparece en un mensaje.
+
+
+Para obtener información sobre el seguimiento, consulte link:sewebiug_track_a_service_request.html["Realizar un seguimiento de una solicitud de servicio"].
+
+
+
+== Gestione las suscripciones de inquilino
+
+Si es un administrador de partners, puede crear, ver y actualizar sus suscripciones de inquilino desde *SUSCRIPCIONES* > *Suscripciones de inquilino*. Si es un administrador de arrendatarios, sólo puede ver las suscripciones.
+
+
+
+=== Cree y edite una suscripción de inquilino
+
+Puede crear nuevas suscripciones para sus inquilinos.
+
+.Pasos
+. Haga clic en *Nueva suscripción*.
+. Especifique la región, la zona, el plazo de suscripción, los planes de tarifas y otros detalles. La suscripción de inquilino se asigna a una suscripción de Keystone según la zona seleccionada. Esto se debe a que cada suscripción de Keystone está vinculada a una zona.
++
+
+NOTE: No puede crear suscripciones superpuestas. La fecha de inicio debe ser al menos el día siguiente, ya que las suscripciones comienzan un día antes de la fecha de inicio especificada. Además, no puede ser superior a 30 días a partir de la fecha actual.
+
+. Haga clic en *Crear*.
+
+
+No puede eliminar ninguna suscripción. Solo puede editar las suscripciones de arrendatarios existentes y agregar nuevos niveles de servicio, aumentar la capacidad comprometida de un nivel de servicio y agregar etiquetas a las suscripciones.
+
+Si es un administrador de partners, puede editar las suscripciones de inquilino. Puede agregar nuevos niveles de servicio a una suscripción y editar las capacidades de los niveles de servicio ya agregados. Para añadir un nuevo nivel de servicio, siga estos pasos:
+
+.Pasos
+. Seleccione la suscripción que desea editar haciendo clic en `+` .
+. En la página *Agregar un nuevo nivel de servicio a la suscripción*, seleccione el nuevo nivel de servicio y añada la capacidad necesaria. Si el nivel de servicio ya está agregado, no puede agregarlo ni eliminarlo.
+. Haga clic en *Actualizar*.
+
+
+También puede agregar etiquetas haciendo clic en el icono de etiquetas de la suscripción.
+
+Para editar las capacidades suscritas a los niveles de servicio que ya están asignados a la suscripción, siga estos pasos:
+
+.Pasos
+. Haga clic y expanda la suscripción que desea editar haciendo clic en `v` . Se muestran los niveles de servicio de esa suscripción.
+. Seleccione el nivel de servicio que desea editar haciendo clic en el icono del lápiz de edición correspondiente.
+. Cambie el plan de tarifas aumentando o disminuyendo la capacidad en TIBs.
+. Haga clic en *Actualizar*.
+

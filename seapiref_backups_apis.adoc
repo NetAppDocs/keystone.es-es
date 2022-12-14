@@ -1,0 +1,153 @@
+---
+sidebar: sidebar 
+permalink: seapiref_backups_apis.html 
+keywords: netapp, keystone, backups, apis, 
+summary: API de backup de Keystone 
+---
+= API de backup
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede utilizar la API de backup para ver y gestionar los backups o puntos de recuperación de los volúmenes (discos y recursos compartidos de archivos) del entorno.
+
+[cols="1,1,3,2"]
+|===
+| HTTP Verbo | Ruta | Descripción | Parámetros obligatorios/cuerpo de solicitud 
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/backups`
+| Puede recuperar los detalles de todos los objetos de copia de seguridad de todos los volúmenes creados para el subinquilino bajo inquilino. Recupera los detalles del volumen de origen y el objeto de backup, como la política de backup, la zona y las etiquetas.  a| 
+`offset`: El número de elementos que se deben omitir antes de comenzar a recopilar el conjunto de resultados.
+`limit`: Los números de elementos que se van a devolver.
+
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/backups/{id}`
+| Puede recuperar los detalles de un objeto de backup específico creado para un volumen para el subinquilino bajo inquilino. Recupera los detalles del volumen de origen y el objeto de backup, como la política de backup, la zona y las etiquetas, de acuerdo con el ID introducido.  a| 
+`id`: El ID del objeto de copia de seguridad.
+
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/backups/{id}/`
+`recovery_points`
+| Es posible recuperar detalles de todos los puntos de recuperación de un objeto de backup específico. Se recuperan detalles, como la Marca de hora y el nombre.  a| 
+`id`: El ID del objeto de copia de seguridad.
+
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/backups/{id}/`
+`recovery_points/{name}`
+| Es posible recuperar los detalles de cualquier punto de recuperación de un objeto de backup específico. Se recuperan detalles, como la Marca de hora y el nombre.  a| 
+`id`: El ID del objeto de copia de seguridad.
+`name`: El nombre del punto de recuperación.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/backups`
+| Es posible crear un objeto de backup para un volumen de origen determinado. Añada los valores del cuerpo de la solicitud para crear un objeto de backup con los parámetros especificados, como la política de backup, el número de copias de backup que se retendrán e ID de recurso de origen.  a| 
+``
+{
+  "primary_resource_type": "<Resource Type>",
+  "source_resource_id": "<ID>",
+  "backup_zone": "<Backup Zone>",
+  "backup_policy": {
+    "daily_backups_to_keep": <Number of daily backups to keep>,
+    "weekly_backups_to_keep": <Number of weekly backups to keep>,
+    "monthly_backups_to_keep": <Number of monthly backups to keep>,
+    "adhoc_backups_to_keep": <Number of adhoc backups to keep>
+  },
+  "tags": {
+    "key1": "<Tag 1>",
+    "key2": "<Tag 2>",
+    "keyN": "<Tag N>"
+  }
+}
+``
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/backups/{id}/tags`
+| Puede crear o reemplazar etiquetas para un objeto de copia de seguridad para su subinquilino. Agregue el ID del objeto de copia de seguridad y los valores de las etiquetas en el formato "par clave:valor" del cuerpo de la solicitud.  a| 
+`id`: El ID del objeto de copia de seguridad.``
+{
+  "key1": "<Tag 1>",
+  "key2": "<Tag 2>",
+  "keyN": "<Tag N>"
+}
+``
+
+
+
+ a| 
+`PATCH`
+ a| 
+`/v2.1/backups/{id}`
+ a| 
+Es posible modificar cualquier objeto de backup para un volumen de acuerdo con su ID. Añada el ID del objeto de backup y los valores que desea modificar en el cuerpo de la solicitud, como los detalles de la política de backup, la cantidad de backups que se retendrán y el ID de recurso de origen.
+
+[NOTE]
+====
+Puede convertir un objeto de copia de seguridad en huérfano estableciendo el valor de `source_resource_id` parámetro como nulo en el `PATCH` solicitud. Esto elimina la relación de SnapMirror, pero conserva el volumen de backup y los puntos de recuperación bajo él.
+
+==== a| 
+`id`: El ID del objeto de copia de seguridad.``
+{ "source_resource_id": "<Resource ID>",
+  "backup_policy": {
+    "daily_backups_to_keep": <Number of daily backups to keep>,
+    "weekly_backups_to_keep": <Number of weekly backups to keep>,
+    "monthly_backups_to_keep": <Number of monthly backups to keep>,
+    "adhoc_backups_to_keep": <Number of adhoc backups to keep>
+  },
+  "tags": {
+    "key1": "<Tag 1>",
+    "key2": "<Tag 2>",
+    "keyN": "<Tag 3>"
+  }
+}
+``
+
+
+
+ a| 
+`DELETE`
+ a| 
+`/v2.1/backups/{id}`
+| Es posible eliminar cualquier objeto de backup, junto con todos los puntos de recuperación de un volumen.  a| 
+`id`: El ID del objeto de copia de seguridad.
+
+
+
+ a| 
+`DELETE`
+ a| 
+`/v2.1/backups/{id}/`
+`recovery_points/{name}`
+| Es posible eliminar cualquier punto de recuperación de un objeto de backup específico de un volumen.  a| 
+`id`: El ID del objeto de copia de seguridad.
+`name`: El nombre del punto de recuperación.
+
+|===

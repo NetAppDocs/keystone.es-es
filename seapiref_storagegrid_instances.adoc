@@ -1,0 +1,274 @@
+---
+sidebar: sidebar 
+permalink: seapiref_storagegrid_instances.html 
+keywords: netapp, keystone, storagegrid, instances, 
+summary: Instancias de Keystone StorageGRID 
+---
+= Instancias de StorageGRID
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Utilice los métodos que se enumeran en la siguiente tabla para configurar y gestionar instancias de StorageGRID para admitir el almacenamiento de objetos.
+
+|===
+| Método HTTP | Ruta | Descripción 
+
+
+| `GET` | `/v2.1/storagegridinstances` | Recuperar instancias de StorageGRID. 
+
+
+| `POST` | `/v2.1/storagegridinstances` | Cree una nueva instancia de StorageGRID para alojar el almacenamiento de objetos. 
+
+
+| `GET` | `/v2.1/storagegridinstances/{id}` | Recuperar una instancia de StorageGRID por ID. 
+
+
+| `PUT` | `/v2.1/storagegridinstances/{id}` | Actualizar una instancia de StorageGRID. 
+|===
+
+
+== Atributos de instancia de StorageGRID
+
+En la siguiente tabla, se enumeran los atributos de instancia de StorageGRID.
+
+|===
+| Atributo | Tipo | Descripción 
+
+
+| `id` | Cadena | El identificador único de la instancia de StorageGRID. 
+
+
+| `name` | Cadena | Nombre de la instancia de StorageGRID. 
+
+
+| `admin_rest_uri` | Cadena ($uri) | El extremo del nodo de administración de StorageGRID. 
+
+
+| `s3_endpoints` | Cadena ($uri) | Los extremos de StorageGRID. Por ejemplo: [ `"https://s3.examplegrid.com", "https://s3.location.company.com"` ] 
+
+
+| `grid_username` | Cadena | El nombre de usuario StorageGRID. 
+
+
+| `grid_password` | Cadena | La contraseña de StorageGRID. 
+
+
+| `tenant_username` | Cadena | El nombre de usuario del inquilino StorageGRID. 
+
+
+| `tenant_password` | Cadena | La contraseña de inquilino de StorageGRID. 
+
+
+| `subscription_number` | Cadena | El número de suscripción de Zuora. 
+|===
+
+
+== Recuperar instancias de StorageGRID
+
+Utilice el método que se indica en la siguiente tabla para recuperar las instancias de StorageGRID.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `GET` | `/v2.1/storagegridinstances` | Recuperar instancias de StorageGRID. | Ninguno 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+none
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5e3ba2840271823644cb8ab6",
+        "name": "NSE StorageGRID Dev1",
+        "user_id": "5bbee380a2df7a04d43acaee",
+        "admin_rest_uri": "https://sggmi-dev.dev.ausngs.netapp.au",
+        "s3_endpoints": [
+          "https://sgs3.dev.ausngs.netapp.au"
+        ],
+        "subscription_number": "A-S00004566"
+      }
+    ]
+  }
+}
+....
+
+
+== Recuperar instancias de StorageGRID por ID
+
+Utilice el método que se muestra en la siguiente tabla para recuperar instancias de StorageGRID por ID.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `GET` | `/v2.1/storagegridinstances/{id}` | Recuperar una instancia de StorageGRID por ID. | `id (string)`: Identificador único de la instancia de StorageGRID. 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+none
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5e3ba2840271823644cb8ab6",
+        "name": "NSE StorageGRID Dev1",
+        "user_id": "5bbee380a2df7a04d43acaee",
+        "admin_rest_uri": "https://sggmi-dev.dev.ausngs.netapp.au",
+        "s3_endpoints": [
+          "https://sgs3.dev.ausngs.netapp.au"
+        ],
+        "subscription_number": "A-S00004566"
+      }
+    ]
+  }
+}
+....
+
+
+== Cree una instancia de StorageGRID por ID
+
+Utilice el método que figura en la siguiente tabla para crear una instancia de StorageGRID por ID.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `POST`` | `/v2.1/storagegridinstances/{id}` | Recuperar una instancia de StorageGRID por ID. | `id (string):` El identificador único de la instancia de StorageGRID. 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+{
+  "name": "Grid1",
+  "admin_rest_uri": "https://examplegrid.com",
+  "s3_endpoints": [
+    "https://s3.examplegrid.com",
+    "https://s3.location.company.com"
+  ],
+  "grid_username": "root",
+  "grid_password": "string",
+  "tenant_username": "root",
+  "tenant_password": "string",
+  "subscription_number": "A-S00003969"
+}
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "name": "Grid1",
+        "admin_rest_uri": "https://examplegrid.com",
+        "user_id": "5d2fb0fb4f47df00015274e3",
+        "s3_endpoints": [
+          "https://s3.examplegrid.com",
+          "https://s3.location.company.com"
+        ],
+        "subscription_number": "A-S00003969"
+      }
+    ]
+  }
+}
+....
+
+
+== Modificar una instancia de StorageGRID por ID
+
+Utilice el método que se muestra en la siguiente tabla para modificar una instancia de StorageGRID por ID.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `PUT` | `/v2.1/storagegridinstances/{id}` | Modificar una instancia de StorageGRID por ID. | `id (string)`: Identificador único de la instancia de StorageGRID. 
+|===
+Atributos necesarios del cuerpo de solicitud: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+{
+  "name": "Grid1",
+  "admin_rest_uri": "https://examplegrid.com",
+  "s3_endpoints": [
+    "https://s3.examplegrid.com",
+    "https://s3.location.company.com"
+  ],
+  "grid_username": "root",
+  "grid_password": "string",
+  "tenant_username": "root",
+  "tenant_password": "string",
+  "subscription_number": "A-S00003969"
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "name": "Grid1",
+        "admin_rest_uri": "https://examplegrid.com",
+        "user_id": "5d2fb0fb4f47df00015274e3",
+        "s3_endpoints": [
+          "https://s3.examplegrid.com",
+          "https://s3.location.company.com"
+        ],
+        "subscription_number": "A-S00003969"
+      }
+    ]
+  }
+}
+....

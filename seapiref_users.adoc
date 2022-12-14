@@ -1,0 +1,414 @@
+---
+sidebar: sidebar 
+permalink: seapiref_users.html 
+keywords: netapp, keystone, users, 
+summary: Usuarios de Keystone 
+---
+= Usuarios
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Utilice los métodos enumerados en la siguiente tabla para recuperar, crear, modificar y eliminar subarrendatarios.
+
+|===
+| Método HTTP | Ruta | Descripción 
+
+
+| `GET` | `/v2.1/users` | Recuperar una lista de todos los usuarios. 
+
+
+| `GET` | `/v2.1/users/{id}` | Recuperar un usuario por el ID de usuario. 
+
+
+| `POST` | `/v2.1/users` | Cree un nuevo usuario. 
+
+
+| `PUT` | `/v2.1/users/{id}` | Modifique los detalles de un usuario. 
+
+
+| `DELETE` | `/v2.1/users/{id}` | Eliminar un usuario. 
+
+
+| `GET` | `/v2.1/users/{username}` | Recuperar un usuario por el nombre de usuario. 
+|===
+
+
+== Atributos de usuario
+
+En la siguiente tabla, se enumeran los atributos de usuario.
+
+|===
+| Atributo | Tipo | Descripción 
+
+
+| `id` | Cadena | Identificador único del usuario. 
+
+
+| `username` | Cadena | El nombre de usuario. 
+
+
+| `password` | Cadena | La contraseña del usuario. 
+
+
+| `firstName` | Cadena | Nombre del usuario. 
+
+
+| `lastName` | Cadena | Apellido del usuario. 
+
+
+| `displayName` | Cadena | Nombre para mostrar del usuario. 
+
+
+| `email` | Cadena | La dirección de correo electrónico del usuario. 
+
+
+| `phone` | Cadena | El número de teléfono del usuario. 
+
+
+| `profileImageURL` | Cadena | La dirección URL de la imagen de perfil del usuario. 
+
+
+| `tenant_id` | Cadena | El identificador de inquilino primario de este usuario. 
+
+
+| `tenancies` | –  a| 
+El tenancy al que pertenece el usuario; una cabina compuesta por:
+
+* `tenant_id`, y.
+* `role_name`Este es el rol del usuario; uno de los usuarios, administrador, lectura, socio, o raíz.
+
+
+
+
+| `provider` | Cadena | Proveedor de autenticación: `local` o. `activeDirectory` 
+
+
+| `provider data` | –  a| 
+Detalles del proveedor de autenticación, que constan de:
+
+* `email_address`, y.
+* `member_of` (pertenencia a grupos)
+
+
+|===
+
+
+== Recuperar todos los usuarios
+
+Utilice el método que se muestra en la siguiente tabla para recuperar todos los usuarios.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `GET` | `/v2.1/users` | Recuperar todos los usuarios. | Ninguno 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+none
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5dddbe0ef071fe0001b889fd",
+        "username": "TestUser3",
+        "firstName": "Test",
+        "lastName": "User",
+        "displayName": "",
+        "email": "testuser@netapp.com",
+        "tenancies": [
+          {
+            "id": "5d914499869caefed0f39eee",
+            "name": "MyOrg",
+            "code": "myorg",
+            "role": "admin"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+== Recuperar un usuario por ID
+
+Utilice el método que se muestra en la siguiente tabla para recuperar un usuario por ID.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `GET` | `/v2.1/users` | Recuperar un usuario por ID. | `id (string)`: El identificador único del usuario. 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+none
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e585df6896bd80001dd4b44",
+        "username": "testuser01",
+        "firstName": "",
+        "lastName": "",
+        "displayName": "",
+        "email": "",
+        "tenancies": [
+          {
+            "id": "5d914499869caefed0f39eee",
+            "name": "MyOrg",
+            "code": "myorg",
+            "role": "user"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+== Recuperar un usuario por nombre de usuario
+
+Utilice el método que se muestra en la siguiente tabla para recuperar un usuario por el nombre de usuario.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `GET` | `/v2.1/users` | Recuperar un usuario por nombre de usuario. | `username (string)`: El nombre de usuario del usuario. 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+none
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e61aa814559c20001df1a5f",
+        "username": "MyName",
+        "firstName": "MyFirstName",
+        "lastName": "MySurname",
+        "displayName": "CallMeMYF",
+        "email": "user@example.com",
+        "tenancies": [
+          {
+            "id": "5e5f1c4f253c820001877839",
+            "name": "MyTenant",
+            "code": "testtenantmh",
+            "role": "user"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+== Cree un usuario
+
+Utilice el método que se muestra en la siguiente tabla para crear un usuario.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `POST` | `/v2.1/users` | Cree un nuevo usuario. | Ninguno 
+|===
+Atributos de cuerpo de solicitud necesarios: `username`, `tenant_id`, `tenancies, provider`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+{
+  "username": "MyUser",
+  "password": "mypassword",
+  "firstName": "My",
+  "lastName": "User",
+  "displayName": "CallMeMyUser",
+  "email": "user@example.com",
+  "phone": "string",
+  "profileImageURL": "string",
+  "tenant_id": "5e7c3af7aab46c00014ce877",
+  "tenancies": [
+    {
+      "tenant_id": "5e7c3af7aab46c00014ce877",
+      "role_name": "admin"
+    }
+  ],
+  "provider": "local",
+  "provider_data": {
+    "email": "user@example.com",
+    "member_of": "string"
+  }
+}
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed6f463129e5d000102f7e1",
+        "username": "MyUser",
+        "firstName": "My",
+        "lastName": "User",
+        "displayName": "CallMeMyUser",
+        "email": "user@example.com",
+        "tenancies": [
+          {
+            "id": "5e7c3af7aab46c00014ce877",
+            "name": "MyTenant",
+            "code": "mytenantcode",
+            "role_name": "admin"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+== Modificar un usuario por ID
+
+Utilice el método que se muestra en la siguiente tabla para modificar un usuario por ID de usuario.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `PUT` | `/v2.1/users/{id}` | Modificar un usuario identificado por el ID de usuario. Puede modificar el nombre de usuario, el nombre para mostrar, la contraseña, la dirección de correo electrónico, el número de teléfono, URL de imagen de perfil y detalles del uso. | `id (string)`: El identificador único del usuario. 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+{
+  "password": "MyNewPassword",
+   "firstName": "MyFirstName",
+   "lastName": "MySurname",
+   "displayName": "CallMeMYF",
+   "email": "user@example.com",
+   "phone": "string",
+  "profileImageURL": "string",
+  "tenant_id": "5e5f1c4f253c820001877839",
+  "tenancies": [
+    {
+      "tenant_id": "5e5f1c4f253c820001877839",
+      "role_name": "user"
+    }
+  ]
+}
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e61aa814559c20001df1a5f",
+        "username": "MyName",
+        "firstName": "MyFirstName",
+        "lastName": "MySurname",
+        "displayName": "CallMeMYF",
+        "email": "user@example.com",
+        "tenancies": [
+          {
+            "id": "5e5f1c4f253c820001877839",
+            "name": "MyTenant",
+            "code": "testtenantmh",
+            "role": "user"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+== Eliminar un usuario por ID
+
+Utilice el método que se muestra en la siguiente tabla para eliminar un usuario por ID.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `DELETE` | `/v2.1/users/{name}` | Eliminar el usuario identificado por el ID. | `id (string)`: El identificador único del usuario. 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+none
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+No content for succesful delete
+....

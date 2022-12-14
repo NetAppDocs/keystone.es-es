@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: seapiref_subnets_apis.html 
+keywords: netapp, keystone, subnets, networks, apis 
+summary: API de red Keystone 
+---
+= Defina las configuraciones de red con las API de subredes
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puede usar las API de subredes para ver y crear subredes para el subinquilino y la zona. Se pueden usar para definir la configuración de red.
+
+[cols="1,1,3,2"]
+|===
+| HTTP Verbo | Ruta | Descripción | Parámetros obligatorios/cuerpo de solicitud 
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/tenants/{tenant_id}/`
+`zones/{zone_name}/subnets`
+| Puede recuperar todos los objetos de subred para un inquilino y una zona. Recupera detalles de la subred, como VLAN, subtenant, zona, rutas, y etiquetas.  a| 
+`tenant_id`: El código del inquilino.
+`zone_name`: El nombre de la zona.
+`offset`: El número de elementos que se deben omitir antes de comenzar a recopilar el conjunto de resultados.
+`limit`: Los números de elementos que se van a devolver.
+
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/tenants/{tenant_id}/`
+`zones/{zone_name}/subnets/`
+`{id}`
+| Puede recuperar los detalles de un objeto de subred específico creado para un inquilino y una zona. Recupera detalles de la subred, como VLAN, subtenant, zona, rutas, Y etiquetas basadas en el ID introducido.  a| 
+`tenant_id`: El código del inquilino.
+`zone_name`: El nombre de la zona.
+`id`: El código de la subred.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/tenants/{tenant_id}/`
+`zones/{zone_name}/subnets`
+| Puede crear un objeto de subred para un inquilino y una zona particulares. Añada los valores del cuerpo de la solicitud para crear un objeto subtenant con los parámetros especificados, como name, VLAN, CIDR, subtenant ID, rutas y etiquetas.  a| 
+`tenant_id`: El código del inquilino.
+`zone_name`: El nombre de la zona.``
+{
+  "name": "string",
+  "vlan": "1000",
+  "cidr": "10.0.0.0/24",
+  "subtenant_id": "5d2fb0fb4f47df00015274e3",
+  "routes": [
+    {
+      "destination": "10.0.0.0/24",
+      "gateway": "10.0.0.1",
+      "metric": "20"
+    }
+  ],
+  "tags": {
+    "key1": "Value 1",
+    "key2": "Value 2",
+    "keyN": "Value N"
+  }
+}
+``
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/tenants/{tenant_id}/`
+`zones/{zone_name}/subnets/`
+`{id}/tags`
+| Puede crear o reemplazar etiquetas para un objeto de subred para su inquilino. Agregue el ID del objeto de subred y los valores de las etiquetas en el formato "par clave:valor" del cuerpo de la solicitud.  a| 
+`tenant_id`: El código del inquilino.
+`zone_name`: El nombre de la zona.
+`id`: El ID del objeto de copia de seguridad.``
+{
+  "key1": "<Tag 1>",
+  "key2": "<Tag 2>",
+  "keyN": "<Tag N>"
+}
+``
+
+|===

@@ -1,0 +1,627 @@
+---
+sidebar: sidebar 
+permalink: seapiref_ontap_clusters.html 
+keywords:  
+summary:  
+---
+= Clústeres ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Use los métodos que se enumeran en la siguiente tabla para recuperar, crear, modificar y eliminar clústeres de ONTAP.
+
+|===
+| Método HTTP | Ruta | Descripción 
+
+
+| `GET` | `/v2.1/ontapclusters` | Recupere todos los clústeres de ONTAP. 
+
+
+| `GET` | `/v2.1/ontapclusters/{id}` | Recupere un clúster de ONTAP por ID. 
+
+
+| `POST` | `/v2.1/ontapclusters` | Cree un nuevo clúster de ONTAP. 
+
+
+| `PUT` | `/v2.1/ontapclusters/{id}` | Actualice el inventario del clúster de ONTAP por ID. 
+
+
+| `DELETE` | `/v2.1/ontapclusters/{id}` | Elimine un clúster ONTAP. 
+|===
+
+
+== Atributos del clúster ONTAP
+
+En la siguiente tabla se enumeran los atributos del clúster de ONTAP.
+
+|===
+| Atributo | Tipo | Descripción 
+
+
+| `id` | Cadena | El identificador único del clúster ONTAP. 
+
+
+| `name` | Cadena | El nombre del clúster ONTAP. 
+
+
+| `uuid` | Cadena | El identificador único universal (UUID) del clúster ONTAP. 
+
+
+| `management_ip` | Cadena | La dirección IPv4 de gestión del clúster ONTAP. 
+
+
+| `username` | Cadena | El nombre del clúster ONTAP 
+
+
+| `password` | Cadena | La contraseña del clúster de ONTAP 
+
+
+| `provisioning_state` | Cadena  a| 
+Identifica si hay un clúster disponible para las operaciones de aprovisionamiento. Las opciones incluyen:
+
+* Abierto
+* Cerrada
+
+
+
+
+| `data_network_ip_cidr` | Cadena | Notación CIDR de una subred. 
+
+
+| `data_network_default_gateway` | Cadena | La dirección IPV4. 
+
+
+| `data_network_ports` | –  a| 
+Una lista de los puertos de red de datos del clúster de ONTAP.
+
+[listing]
+----
+For example:
+[
+  {
+  "node_name": "dev-ots-per01-01",
+  "port_name": "e0c-120",
+  "parent_port": "e0c"
+  }
+]
+----
+
+
+| `intercluster_lifs` | –  a| 
+Las LIF de interconexión de clústeres del clúster de ONTAP.
+
+[listing]
+----
+For example:
+[
+  {
+  "name": "peer1",
+  "node": "aff-01",
+  "port": "a0a-103",
+  "address": "10.128.113.232",
+  "netmask": "255.255.255.0"
+  },
+{
+  "name": "peer2",
+  "node": "aff-02",
+  "port": "a0a-103",
+  "address": "10.128.113.233",
+  "netmask": "255.255.255.0"
+  }
+]
+----
+
+
+| `svm_root_service_level` | Cadena | El nombre del nivel de servicio raíz de la máquina virtual de almacenamiento del clúster de ONTAP. Los valores aplicables son Standard, Extreme o Premium. De forma predeterminada, este nivel de servicio asigna a todas las SVM creadas en el clúster. El clúster debe tener un agregado asociado para el nivel de servicio mencionado. 
+
+
+| `zone` | Cadena | El nombre de la zona. 
+
+
+| `Subscription_number` | Cadena | La suscripción a Zuora. 
+
+
+| `services_available` | –  a| 
+Lista de servicios disponibles y su estado. Por ejemplo:
+
+[listing]
+----
+{
+  "fcp": false,
+  "iscsi": true,
+  "nas": true
+  }
+----
+
+
+| `data_fcp_ports` | –  a| 
+Lista de nodos y puertos para los clústeres de ONTAP habilitados para FCP. Por ejemplo:
+
+[listing]
+----
+[  {   "node_name": "aff-01",   "port_name": "0g"  },  {   "node_name": "aff-01",   "port_name": "0h"
+  ]
+----
+
+
+| `is_mcc` | Booleano | Indica si el clúster está habilitado o no para MetroCluster. El valor predeterminado es False. 
+
+
+| `mcc_partner_cluster` | Cadena | El identificador del clúster de partners del clúster actual en una pareja MetroCluster. Es necesario si el clúster está habilitado para MetroCluster. 
+|===
+
+
+== Recupere todos los clústeres de ONTAP
+
+Use el método indicado en el siguiente documento para recuperar todos los clústeres de ONTAP o un subconjunto de clústeres de ONTAP.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `GET` | `/v2.1/ontapclusters` | Recupere todos los clústeres de ONTAP. | `offset` y.. `limit` – consulte link:seapiref_netapp_service_engine_rest_apis.html#pagination>["Paginación común"] 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+none
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 2 records.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 2,
+    "total_records": 5,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 3,
+    "limit": 2,
+    "records": [
+      {
+        "id": "5c5bb9f16680a7002a5f7450",
+        "name": "dev-ots-per01",
+        "region": "au-west1",
+        "zone": "au-west1-a",
+        "uuid": "63053baa-ada4-11ea-b197-005056a4c0ef",
+        "management_ip": "10.128.115.173",
+        "username": "admin",
+        "services_available": {
+          "fcp": false,
+          "iscsi": true,
+          "nas": true
+        },
+        "provisioning_state": "open",
+        "data_network_ports": [
+          {
+            "node_name": "dev-ots-per01-01",
+            "port_name": "e0c-120",
+            "parent_port": "e0c"
+          }
+        ],
+        "data_network_ip_cidr": "10.96.120.0/24",
+        "data_network_default_gateway": "10.96.120.1",
+        "svm_root_service_level": "performance",
+        "intercluster_lifs": [
+          {
+            "name": "dev-ots-per01-01-icl01",
+            "node": "dev-ots-per01-01",
+            "port": "e0b",
+            "address": "10.128.115.144",
+            "netmask": "255.255.255.0"
+          }
+        ],
+        "subscription_number": "A-S00003875",
+        "created": "2019-02-22T03:38:38.867Z",
+        "data_fcp_ports": []
+      },
+      {
+        "id": "5eaf5249f038943eb46b6608",
+        "name": "aff",
+        "region": "au-east1",
+        "zone": "au-east1-b",
+        "uuid": "62d649d2-07a1-11e6-9549-00a0985c0dcb",
+        "management_ip": "10.128.113.69",
+        "username": "admin",
+        "services_available": {
+          "fcp": true,
+          "iscsi": true,
+          "nas": true
+        },
+        "provisioning_state": "open",
+        "data_network_ports": [
+          {
+            "node_name": "aff-01",
+            "port_name": "a0a-2000",
+            "parent_port": "a0a"
+          },
+          {
+            "node_name": "aff-02",
+            "port_name": "a0a-2000",
+            "parent_port": "a0a"
+          }
+        ],
+        "data_network_ip_cidr": "10.50.50.0/24",
+        "data_network_default_gateway": "10.50.50.1",
+        "svm_root_service_level": "premium",
+        "intercluster_lifs": [
+          {
+            "name": "peer1",
+            "node": "aff-01",
+            "port": "a0a-103",
+            "address": "10.128.113.232",
+            "netmask": "255.255.255.0"
+          },
+          {
+            "name": "peer2",
+            "node": "aff-02",
+            "port": "a0a-103",
+            "address": "10.128.113.233",
+            "netmask": "255.255.255.0"
+          }
+        ],
+        "subscription_number": "A-S00004635",
+        "created": "2019-02-22T03:38:38.867Z",
+        "data_fcp_ports": [
+          {
+            "node_name": "aff-01",
+            "port_name": "0g"
+          },
+          {
+            "node_name": "aff-01",
+            "port_name": "0h"
+          },
+          {
+            "node_name": "aff-02",
+            "port_name": "0g"
+          },
+          {
+            "node_name": "aff-02",
+            "port_name": "0h"
+          }
+        ],
+        "is_mcc": false,
+        "created": "1995-09-07T10:40:52Z"
+      }
+    ]
+  }
+}
+....
+
+
+== Recupere los clústeres ONTAP por ID
+
+Utilice el método que se indica en el siguiente documento para recuperar los clústeres de ONTAP por ID.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `GET` | `/v2.1/ontapclusters/{id}` | Recupere los clústeres de ONTAP identificados por ID. | `id (string)`: El identificador único del clúster ONTAP. 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+none
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5c5bb9f16680a7002a5f7450",
+        "name": "dev-ots-per01",
+        "region": "au-west1",
+        "zone": "au-west1-a",
+        "uuid": "63053baa-ada4-11ea-b197-005056a4c0ef",
+        "management_ip": "10.128.115.173",
+        "username": "admin",
+        "services_available": {
+          "fcp": false,
+          "iscsi": true,
+          "nas": true
+        },
+        "provisioning_state": "open",
+        "data_network_ports": [
+          {
+            "node_name": "dev-ots-per01-01",
+            "port_name": "e0c-120",
+            "parent_port": "e0c"
+          }
+        ],
+        "data_network_ip_cidr": "10.96.120.0/24",
+        "data_network_default_gateway": "10.96.120.1",
+        "svm_root_service_level": "performance",
+        "intercluster_lifs": [
+          {
+            "name": "dev-ots-per01-01-icl01",
+            "node": "dev-ots-per01-01",
+            "port": "e0b",
+            "address": "10.128.115.144",
+            "netmask": "255.255.255.0"
+          }
+        ],
+        "subscription_number": "A-S00003875",
+        "created": "2019-02-22T03:38:38.867Z",
+        "data_fcp_ports": [],
+        "is_mcc": false,
+        "created": "1995-09-07T10:40:52Z"
+      }
+    ]
+  }
+}
+....
+
+
+== Cree un clúster de ONTAP
+
+Use la API de la siguiente tabla para crear un clúster de ONTAP.
+
+Los clústeres ONTAP siempre se crean con el servicio iSCSI habilitado. Opcionalmente, el servicio FCP se puede habilitar si la infraestructura lo admite.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `POST` | `/v2.1/ontapclusters` | Cree un clúster de ONTAP. | Ninguno 
+|===
+Atributos de cuerpo de solicitud necesarios: `name`, `uuid, management_ip`, `username`, `password`, `data_network_ip_cidr`, `data_network_default_gateway`, `intercluster_lifs`, `zone`
+
+Si está habilitado FCP (mediante el `services_available` FCP), son necesarios los "puertos_FCP_de_data".
+
+Si `is_mcc` es verdad, el `mcc_partner_cluster` es obligatorio.
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+{
+  "name": "clustername",
+  "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef",
+  "management_ip": "10.128.112.165",
+  "username": "admin",
+  "password": "ClusterPassword",
+  "provisioning_state": "open",
+  "data_network_ip_cidr": "10.96.112.0/24",
+  "data_network_default_gateway": "10.96.112.1",
+  "data_network_ports": [
+    {
+      "node_name": "clustername-01",
+      "port_name": "e0c-112",
+      "parent_port": "e0c"
+    }
+  ],
+  "intercluster_lifs": [
+    {
+      "name": "clustername-01-icl01",
+      "node": "clustername-01",
+      "port": "e0b",
+      "address": "10.128.112.222",
+      "netmask": "255.255.255.0"
+    }
+  ],
+  "svm_root_service_level": "extreme",
+  "zone": "MyZone",
+  "subscription_number": "",
+  "services_available": {
+    "fcp": false,
+    "iscsi": true,
+    "nas": true
+  },
+  "data_fcp_ports": [
+  ],
+  "is_mcc": false,
+}
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+    "status": {
+        "user_message": "Okay. New resource created.",
+        "verbose_message": "",
+        "code": 201
+    },
+    "result": {
+        "returned_records": 1,
+        "records": [
+            {
+                "id": "5ef155b8f5591100010a75c5",
+                "name": "clustername",
+                "region": "MyRegion",
+                "zone": "MyZone",
+                "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef",
+                "management_ip": "10.128.112.165",
+                "username": "admin",
+                "services_available": {
+                    "fcp": false,
+                    "iscsi": true,
+                    "nas": true
+                },
+                "provisioning_state": "open",
+                "data_network_ports": [
+                    {
+                        "node_name": "clustername-01",
+                        "port_name": "e0c-112",
+                        "parent_port": "e0c"
+                    }
+                ],
+                "data_network_ip_cidr": "10.96.112.0/24",
+                "data_network_default_gateway": "10.96.112.1",
+                "svm_root_service_level": "extreme",
+                "intercluster_lifs": [
+                    {
+                        "name": "clustername-01-icl01",
+                        "node": "clustername-01",
+                        "port": "e0b",
+                        "address": "10.128.112.222",
+                        "netmask": "255.255.255.0"
+                    }
+                ],
+                "subscription_number": "",
+                "created": "2020-06-23T01:07:04.563Z",
+                "data_fcp_ports": [],
+                "is_mcc": false,
+                "mcc_partner_cluster": "5d2fb0fb4f47df00015274e3",
+                "created": "1995-09-07T10:40:52Z"
+            }
+        ]
+    }
+}
+....
+
+
+== Modifique el clúster ONTAP
+
+Utilice el método indicado en el siguiente para modificar el clúster de ONTAP.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `PUT` | `/v2.1/ontapclusters/{id}` | Modifique los detalles del clúster de ONTAP identificado por ID. | `id (string)`: El identificador único del clúster ONTAP. 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+{
+  "name": "clustername",
+  "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef",
+  "management_ip": "10.128.112.165",
+  "username": "admin",
+  "password": "ClusterPassword",
+  "provisioning_state": "open",
+  "data_network_ip_cidr": "10.96.112.0/24",
+  "data_network_default_gateway": "10.96.112.1",
+  "data_network_ports": [
+    {
+      "node_name": "dev-ots-syd01-01",
+      "port_name": "e0c-112",
+      "parent_port": "e0c"
+    }
+  ],
+  "intercluster_lifs": [
+    {
+      "name": "dev-ots-syd01-01-icl01",
+      "node": "dev-ots-syd01-01",
+      "port": "e0b",
+      "address": "10.128.112.222",
+      "netmask": "255.255.255.0"
+    }
+  ],
+  "svm_root_service_level": "standard",
+  "zone": "MyZone",
+  "subscription_number": "",
+  "services_available": {
+    "fcp": false,
+    "iscsi": true,
+    "nas": false
+  },
+  "data_fcp_ports": [
+  ]
+}
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+{
+    "status": {
+        "user_message": "Okay. Accepted for processing.",
+        "verbose_message": "",
+        "code": 202
+    },
+    "result": {
+        "returned_records": 1,
+        "records": [
+            {
+                "id": "5ef155b8f5591100010a75c5",
+                "name": "clustername",
+                "region": "MyRegion",
+                "zone": "MyZone",
+                "uuid": "49b6e08e-513a-11ea-b197-005056a4c0ef",
+                "management_ip": "10.128.112.165",
+                "username": "admin",
+                "services_available": {
+                    "fcp": false,
+                    "iscsi": true,
+                    "nas": true
+                },
+                "provisioning_state": "open",
+                "data_network_ports": [
+                    {
+                        "node_name": "dev-ots-syd01-01",
+                        "port_name": "e0c-112",
+                        "parent_port": "e0c"
+                    }
+                ],
+                "data_network_ip_cidr": "10.96.112.0/24",
+                "data_network_default_gateway": "10.96.112.1",
+                "svm_root_service_level": "standard",
+                "intercluster_lifs": [
+                    {
+                        "name": "dev-ots-syd01-01-icl01",
+                        "node": "dev-ots-syd01-01",
+                        "port": "e0b",
+                        "address": "10.128.112.222",
+                        "netmask": "255.255.255.0"
+                    }
+                ],
+                "subscription_number": "",
+                "created": "2020-06-23T01:07:04.563Z",
+                "data_fcp_ports": [],
+                "is_mcc": false,
+                "mcc_partner_cluster": "5d2fb0fb4f47df00015274e3",
+                "created": "1995-09-07T10:40:52Z"
+            }
+        ]
+    }
+}
+....
+
+
+== Elimine un clúster ONTAP
+
+Use el método indicado en la siguiente tabla para eliminar un clúster de ONTAP.
+
+|===
+| Método HTTP | Ruta | Descripción | Parámetros 
+
+
+| `DELETE` | `/v2.1/ontapclusters/{id}` | Elimine el clúster de ONTAP identificado por ID. | `id (string)`: El identificador único del clúster ONTAP. 
+|===
+Atributos de cuerpo de solicitud necesarios: `none`
+
+*Ejemplo de cuerpo de solicitud:*
+
+....
+none
+....
+*Ejemplo de cuerpo de respuesta:*
+
+....
+No content for succesful delete
+....

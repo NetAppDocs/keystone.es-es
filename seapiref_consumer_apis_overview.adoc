@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: seapiref_consumer_apis_overview.html 
+keywords: netapp, keystone, consumer, apis, overview, 
+summary: Descripción general de las API para consumidores Keystone 
+---
+= Descripción general
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Esta sección describe las siguientes API de consumidor:
+
+* API de orquestación de cloud
+* API de almacenamiento basado en bloques
+* API de servicios de archivos
+* API de almacenamiento de objetos
+* API de creación de informes
+* API de administración (consumidor)
+

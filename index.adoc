@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: index.html 
+keywords: netapp, keystone, service, offering, 
+summary: Le damos la bienvenida al portal de documentación de Keystone. 
+---
+= Documentación para la suscripción NetApp Keystone Flex
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+La suscripción flexible de NetApp Keystone forma parte de la oferta de servicios de NetApp Keystone. NetApp Keystone es una cartera de alternativas de gastos de capital en las instalaciones para facilitar la transición al cloud, entre las NetApp Keystone que se incluyen los servicios de suscripción Flex Pay y NetApp Keystone Flex. NetApp Keystone ofrece una experiencia fluida del cloud híbrido con servicios de almacenamiento que abarcan tanto en las instalaciones como en el cloud. Para obtener más información sobre NetApp Keystone, consulte link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
+
+Para obtener más información acerca de la suscripción NetApp Keystone Flex, consulte link:https://www.netapp.com/services/subscriptions/keystone/flex-subscription["Suscripción a Keystone Flex"]
+
+Flex Subscription es una oferta de almacenamiento como servicio que ofrece una experiencia similar al cloud en sus sistemas locales con conectividad al cloud, disponible bajo sus propias condiciones.
+
+* * NetApp Keystone Flex Pay* - NetApp Keystone Flex Pay (Flex Pay) es una cartera de alternativas financieras flexibles que incluyen financiamiento tradicional, leasing, y opciones fijas/variables para satisfacer las necesidades de flujo de caja de sus clientes.
+* *Suscripción flexible de NetApp Keystone* - la Suscripción flexible de NetApp Keystone (Suscripción flexible) es un servicio de suscripción basado en resultados, de pago según el crecimiento, que aporta una experiencia similar a la de la nube en las instalaciones.
+
+
+image:nkfsosm_image1.png["Error: Falta la imagen gráfica"]
+
+
+
+== Suscripción Flex
+
+La suscripción Flex es un modelo de servicio basado en suscripción de pago por crecimiento que ofrece una experiencia de cloud híbrido perfecta para aquellos que prefieren modelos de consumo de gastos operativos hasta gastos de capital o arrendamiento iniciales. Permite a los clientes acelerar la rentabilidad de la inversión reduciendo los obstáculos relacionados con la gestión del crecimiento impredecible de la capacidad y pasando por los complejos ciclos de adquisición. La suscripción Flex permite a los clientes alinear la economía y las operaciones con sus prioridades empresariales.
+
+image:nkfsosm_image2.png["Error: Falta la imagen gráfica"]
+
+Flex Subscription es una oferta de servicios basada en suscripción que proporciona capacidad de almacenamiento, en niveles de servicio de rendimiento predefinidos (niveles de servicio), para tipos de datos de bloques, archivos y objetos que pueden ponerse en marcha de forma local y que puede ser operada por NetApp, un partner o el cliente. Además del servicio básico que ofrece Flex Subscription, se pueden elegir servicios complementarios a un coste adicional. Estos servicios se describen en la siguiente figura.
+
+* *El servicio Data Protection Basic* proporciona las capacidades SnapMirror y SnapVault de NetApp con configuración predeterminada.
+* *Data Protection Advanced* proporciona un servicio con acuerdos de nivel de servicio de RPO=0 aprovechando las capacidades de MetroCluster de NetApp.
+
+
+
+NOTE: La suscripción Flex utiliza la tecnología SnapVault para las operaciones de backup y SnapMirror para la recuperación ante desastres y replica los datos de forma remota; no realiza la conmutación al nodo de respaldo y la restauración automática de aplicaciones.
+
+image:nkfsosm_image3.png["Error: Falta la imagen gráfica"]
+
+
+
+=== Ventajas de la suscripción Flex
+
+La suscripción Flex ofrece las siguientes ventajas:
+
+* Libera al personal DE TECNOLOGÍA de tareas complicadas relacionadas con el almacenamiento y le permite centrarse en la gestión de aplicaciones
+* Reduce la inversión de capital inicial
+* Permite a los clientes satisfacer sus demandas sin sobreaprovisionamiento
+* Alinea los costes del almacenamiento de datos con las necesidades/actividades del negocio
+* Simplifica el aprovisionamiento de infraestructuras evitando los complejos procedimientos de adquisición organizativos
+* Mantiene los datos seguros en sus instalaciones
+* Permite un control adecuado sobre el cumplimiento, el rendimiento y la seguridad
+
+
+image:nkfsosm_image4.png["Error: Falta la imagen gráfica"]

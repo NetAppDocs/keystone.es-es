@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_view_a_list_of_subscribed_services.html 
+keywords: netapp, keystone, view, list, cloud, services, 
+summary: Keystone vea una lista de servicios cloud 
+---
+= Consulte una lista de servicios cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La lista Cloud Services muestra una lista de todos los servicios cloud del cliente seleccionado.
+
+Para ver la lista, seleccione *Servicios en la nube* > *Servicios en la nube* en el menú.
+
+La lista muestra información simple sobre cada servicio de cloud.
+
+Los iconos de acción junto a cada servicio de cloud permiten modificar o eliminar el servicio de cloud.
