@@ -1,0 +1,193 @@
+---
+sidebar: sidebar 
+permalink: aiq-keystone-details.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports 
+summary: Informes y gráficos de suscripción de Keystone 
+---
+= Panel de Digital Advisor y generación de informes para la suscripción Flex
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+El panel de asesor digital (asesor digital) de Active IQ le proporciona la capacidad de supervisar el uso correspondiente a sus suscripciones a NetApp Keystone y de generar informes. Al suscribirse a los servicios de Keystone, puede ver los detalles de su suscripción y uso en el widget *Suscripciones de Keystone* del panel de control de Digital Advisor.
+
+
+NOTE: La información disponible aquí es aplicable tanto a ONTAP como a StorageGRID. Se han señalado excepciones en las secciones correspondientes.
+
+Para obtener información sobre el widget Keystone Digital Advisor, consulte https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Vea el uso de la capacidad con la suscripción a NetApp Keystone"^].
+
+Para ver los detalles, realice los siguientes pasos:
+
+.Pasos
+. En Digital Advisor, haga clic en *Ver más detalles* en el widget para ver los detalles de uso y alertas de sus volúmenes en la página *Suscripciones de Keystone*. Como alternativa, desde el panel de navegación izquierdo, vaya a *GENERAL > Suscripciones de Keystone*.
+
+
+Los detalles de las suscripciones, los gráficos de uso de cada nivel de servicio y los detalles de volumen se muestran en las distintas pestañas de la pantalla *Suscripciones de Keystone*.
+
+
+NOTE: El consumo de capacidad en las suscripciones de Keystone se muestra en los informes y paneles de control, hasta dos decimales. Si el uso es inferior a 0.01 TIB, el valor se muestra como `0` o. `No Usage`. Para obtener más información sobre otras medidas de uso, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["Definiciones y métricas de nivel de servicio"]. Para obtener información sobre las distintas capacidades que se utilizan en Keystone, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Definiciones de capacidad del servicio de suscripción Flex"].
+
+
+
+== Ver detalles de la suscripción
+
+Puede ver todas las suscripciones para un nombre de cuenta en la pestaña *Detalles de suscripción*.
+
+image:aiq-ks-dtls.png[""]
+
+Para cada número de suscripción, puede ver la siguiente información:
+
+* * Número de suscripción*: El número de suscripción de la suscripción de Keystone que asigna NetApp.
+* *ID de seguimiento*: El ID de seguimiento asignado en el momento de la activación de la suscripción. Se trata de un ID exclusivo para cada suscripción y sitio, que se utiliza para realizar el seguimiento de la suscripción.
+* *Período de facturación*: El período de facturación de la suscripción, como mensual, trimestral o anual.
+* *Fecha de inicio*: La fecha de inicio de la suscripción.
+* *Fecha de finalización*: Fecha de finalización de la suscripción. Según esta fecha, podría ver mensajes de información para las suscripciones que están a punto de expirar.
+* *Estado del uso*: Indica la cantidad de la suscripción que se ha utilizado o que se ha utilizado en exceso. Puede ordenar la lista por esta columna si desea ver los registros de consumo más altos.
+* image:aiq-ks-time-icon.png[""]: Al hacer clic en este icono se abre la ficha *serie de tiempo de suscripción*, donde puede ver los datos de uso históricos de cada nivel de servicio incluido en esta suscripción.
+
+
+Para ver más detalles, haga clic en la flecha hacia abajo de un registro de suscripción. En TIB, se muestran detalles, como el nombre del nivel de servicio, el compromiso, el consumo, las capacidades disponibles y el uso de ráfaga actual y acumulado. Se destacan niveles de servicio específicos que registran un consumo superior. También se muestran todas las advertencias y alertas que se generan en los volúmenes.
+
+Para obtener más información sobre sus servicios de almacenamiento de Keystone y los niveles de servicio relevantes, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html["Niveles de servicio"].
+
+Puede consultar los siguientes indicadores de uso para comprobar el estado de uso de cada suscripción:
+
+image:usage-indicator.png[""]
+
+.Índice
+image:icon-grey.png[""]: No se ha registrado ningún uso de la capacidad con respecto a la capacidad comprometida del nivel de servicioimage:icon-green.png[""]: El consumo es normal, dentro del 80% de la capacidad comprometidaimage:icon-amber.png[""]: Consumo máximo, es decir, el uso está a punto de alcanzar el 100% o más de la capacidad comprometida. La columna *consumido* muestra este indicador para cualquier consumo superior al 80% de la capacidad comprometidaimage:icon-red.png[""]: El consumo está dentro del límite de ráfaga. El consumo en ráfaga es el consumo que supera el 100% de capacidad comprometida de un nivel de servicio, y se encuentra dentro del límite de uso acordado en ráfaga, como el 120%image:icon-purple.png[""]: Indica un consumo superior al límite de ráfaga estipulado
+
+
+
+== Ver datos históricos de suscripción
+
+La ficha *serie de tiempo de suscripción* muestra los datos históricos de sus suscripciones durante un período específico. Los gráficos verticales muestran los detalles de uso del intervalo de tiempo seleccionado con los indicadores adecuados para que pueda comparar y generar informes.
+
+.Pasos
+. Haga clic en la ficha *serie de tiempo de suscripción*.
+. Seleccione la suscripción necesaria para la que desea ver los detalles. La primera suscripción en el nombre de su cuenta se selecciona de forma predeterminada.
+. Seleccione el intervalo de tiempo de los iconos del calendario en los campos *desde fecha* y *hasta fecha*. El intervalo de tiempo predeterminado es desde la fecha de inicio del período de facturación hasta la fecha actual.
+. Haga clic en *Ver detalles*. Los datos de consumo históricos de la suscripción para cada nivel de servicio se muestran en función del intervalo de tiempo seleccionado. Puede pasar el cursor del ratón por encima de los gráficos para ver el desglose de uso en términos de datos comprometidos, consumidos, en ráfaga y por encima del límite de ráfaga en ese punto de datos.
+
+
+image:aiq-ks-subtime-2.png[""]
+
+Se muestran los siguientes detalles:
+
+* *Detalles de la suscripción*: La fecha de inicio y finalización de la suscripción, y el período de facturación, por ejemplo, trimestral, anual, etc.
+* *Gráficos de uso*: Los gráficos de barras muestran el nombre del nivel de servicio y la capacidad que se consume en relación con ese nivel de servicio para el intervalo de fechas. La fecha y la hora de la colección se muestran en la parte inferior del gráfico.
++
+
+NOTE: En función del intervalo de fechas de la consulta, los gráficos de uso se muestran en un intervalo de 30 puntos de datos.
+
++
+Los siguientes colores de los gráficos de barras indican la capacidad consumida según se define en el nivel de servicio:
+
++
+** Verde: Dentro del 80%.
+** Ámbar: 80% - 100%.
+** Rojo: Uso de ráfagas (100% de la capacidad comprometida con el límite de ráfaga acordado)
+** Morado: Por encima del límite de ráfaga o. `Above Limit`.
+** Gris: _Uso provisional_ - uso registrado cuando los datos exactos del período de tiempo no están disponibles y se sustituyen por los datos disponibles en el punto de recopilación de datos anterior.
+
+
+* *Corriente consumida*: Indicador de la capacidad consumida (en TIB) definido para el nivel de servicio. Este campo utiliza colores específicos para su uso:
++
+** Gris: Ninguno.
+** Verde: Dentro del 80% de la capacidad comprometida.
+** Ámbar: Cualquier consumo superior al 80% de la capacidad comprometida.
+
+
+* *Ráfaga actual*: Indicador de la capacidad consumida dentro o por encima del límite de ráfaga definido. Cualquier uso dentro del límite de ráfaga acordado, por ejemplo, un 20 % por encima de la capacidad comprometida se encuentra dentro del límite de ráfaga. Se considera un uso adicional por encima del límite de ráfaga. Este campo utiliza colores específicos para su uso:
++
+** Gris: Ninguno.
+** Rojo: Ráfaga.
+** Morado: Por encima del límite de ráfaga.
+
+
+* *Ráfaga acumulada*: Indicador para el uso acumulado de la ráfaga o la capacidad consumida calculada por mes para el período de facturación actual. El uso de ráfaga acumulado se calcula en función de la capacidad comprometida y consumida para un nivel de servicio: `(consumed - committed)/365.25/12`.
++
+
+NOTE: Los indicadores *consumo actual*, *ráfaga actual* y *ráfaga acumulada* determinan el consumo con respecto al período de facturación de la suscripción y no se basan en el intervalo de fechas de la consulta.
+
+
+
+
+
+== Ver detalles del sistema
+
+En la ficha *Detalles del sistema*, puede ver el consumo y otros detalles de los volúmenes en ONTAP. Para StorageGRID, esta pestaña muestra los nodos y su uso individual en su entorno de almacenamiento de objetos.
+
+.<strong> OLUME </strong>
+[%collapsible]
+====
+Para ONTAP, la pestaña *Detalles del sistema* muestra información, como el uso de la capacidad, el tipo de volumen, el clúster, el agregado y el nivel de servicio de los volúmenes del entorno de almacenamiento gestionado por la suscripción a Keystone.
+
+.Pasos
+. Haga clic en la ficha *Detalles del sistema*.
+. Seleccione el número de suscripción. De forma predeterminada, se selecciona el primer número de suscripción disponible.
++
+Se muestran los detalles del volumen. Puede desplazarse por las columnas y obtener más información al pasar el ratón por los iconos de información situados junto a los encabezados de las columnas. Puede ordenar por las columnas y filtrar las listas para ver información específica. Puede copiar números de serie de nodos individuales haciendo clic en el botón *Copiar series de nodos*.
+
+
+
+image:aiq-ks-sysdtls.png[""]
+
+====
+.Nodos <strong> de bajo rendimiento y </strong> de consumo detallados
+[%collapsible]
+====
+Para StorageGRID, esta pestaña muestra el uso lógico de los nodos en el entorno de almacenamiento de objetos.
+
+.Pasos
+. Haga clic en la ficha *Detalles del sistema*.
+. Seleccione el número de suscripción. De forma predeterminada, se selecciona el primer número de suscripción disponible. Al seleccionar el número de suscripción, se habilita el enlace de detalles del almacenamiento de objetos.
++
+image:sg-link.png[""]
+
+. Haga clic en el enlace para ver los nombres de los nodos y los detalles de uso lógico de cada nodo.
++
+image:sg-link-2.png[""]
+
+
+
+====
+
+
+== Generar informes
+
+Puede generar y ver informes para los detalles de su suscripción, los datos de uso históricos de un intervalo de tiempo y los detalles del sistema desde cada una de las pestañas haciendo clic en el botón *Descargar CSV*: image:download-icon.png[""]
+
+Los detalles se generan en formato CSV que se puede guardar para usarlo más adelante.
+
+En la ficha *serie de tiempo de suscripción*, puede descargar el informe para los 30 puntos de datos predeterminados del intervalo de fechas de la consulta o los informes diarios.
+
+image:aiq-report-dnld.png[""]
+
+Un informe de ejemplo para la ficha *serie de tiempo de suscripción*, donde se convierten los datos gráficos:
+
+image:report.png[""]
+
+
+
+== Ver las alertas
+
+Las alertas de la consola envían mensajes de precaución que le permiten comprender los problemas que se producen en el entorno de almacenamiento.
+
+Las alertas pueden ser de dos tipos:
+
+* *Información*: Para problemas, como sus suscripciones que están a punto de finalizar, puede ver alertas de información. Pase el cursor sobre el icono de información para obtener más información sobre el problema.
+* *Advertencia*: Los problemas, como el incumplimiento, se muestran como advertencias. Por ejemplo, si hay volúmenes en los clústeres gestionados que no tienen asociadas políticas de QoS (AQoS) adaptativa, puede ver un mensaje de advertencia. Puede hacer clic en el enlace del mensaje de advertencia para ver la lista de los volúmenes no compatibles en la ficha *Detalles del sistema*.
++
+Para obtener información acerca de las políticas AQoS, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_kfs_billing.html#billing-and-adaptive-qos-policies["Facturación y políticas de calidad de servicio adaptativas"].
+
+
+
+image:alert-aiq.png[""]
+
+Póngase en contacto con el soporte de NetApp si desea obtener más información sobre estos mensajes de precaución y advertencia. Para obtener más información, consulte https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["Elevar una solicitud de servicio"].
