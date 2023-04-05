@@ -93,7 +93,10 @@ Los siguientes colores de los gráficos de barras indican la capacidad consumida
 ** Ámbar: 80% - 100%.
 ** Rojo: Uso de ráfagas (100% de la capacidad comprometida con el límite de ráfaga acordado)
 ** Morado: Por encima del límite de ráfaga o. `Above Limit`.
-** Gris: _Uso provisional_ - uso registrado cuando los datos exactos del período de tiempo no están disponibles y se sustituyen por los datos disponibles en el punto de recopilación de datos anterior.
++
+
+NOTE: Al pasar el ratón por encima de un gráfico de barras, puede ver los datos _Provisional usage_. Este es el uso registrado cuando los datos exactos del período de tiempo no están disponibles y se sustituyen por los datos disponibles en el punto de recopilación de datos anterior.
+
 
 
 * *Corriente consumida*: Indicador de la capacidad consumida (en TIB) definido para el nivel de servicio. Este campo utiliza colores específicos para su uso:

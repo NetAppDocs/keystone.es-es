@@ -22,7 +22,7 @@ Antes de crear recursos compartidos de archivos, debe crear servidores de archiv
 
 == API de servidores de archivos
 
-Puede usar las API de servidores de archivos para ver y gestionar los servidores de archivos. Para obtener más información sobre los servidores de archivos, consulte link:hsewebiug_create_a_file_server.html["Cree un servidor de archivos"].
+Puede usar las API de servidores de archivos para ver y gestionar los servidores de archivos. Para obtener más información sobre los servidores de archivos, consulte link:sewebiug_create_a_file_server.html["Cree un servidor de archivos"].
 
 [cols="1,1,3,2"]
 |===
