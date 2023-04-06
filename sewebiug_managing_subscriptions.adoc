@@ -14,15 +14,15 @@ summary: Gestión de suscripciones de Keystone
 
 
 [role="lead"]
-La gestión de las suscripciones incluye la asignación de niveles de servicio a sus servicios de suscripción flexible (suscripción flexible) de NetApp Keystone y de suscripción de inquilinos, o la asignación y el cambio de capacidades a los niveles de servicio mediante la interfaz del motor de servicios de NetApp.
+La gestión de las suscripciones incluye la asignación de niveles de servicio a su suscripción de NetApp Keystone y servicios de suscripción de inquilinos, o la asignación y el cambio de funcionalidades a los niveles de servicio mediante la interfaz del motor de servicios de NetApp.
 
-Las suscripciones flexibles representadas por la relación entre los proveedores/partners de servicios y las suscripciones de cliente y NetApp representan la relación entre el proveedor de servicios y sus clientes e inquilinos (clientes finales). Cuando los administradores de NetApp o GSSC crean servicios de suscripción Flex para partners e inquilinos, implica que se ha logrado la asignación del almacenamiento. No obstante, a menos que se creen los niveles de servicio y se complete la asignación de capacidad correspondiente, los subclientes o los clientes finales no podrán consumir el almacenamiento. Los administradores de partners pueden gestionar el almacenamiento para sus suscripciones de Flex e inquilinos. Los administradores de inquilinos solo pueden ver los detalles de la suscripción de inquilinos para sus propios usuarios.
+Los servicios de suscripción representados por la relación entre los proveedores de servicios/partners y NetApp y las suscripciones de inquilino representan la relación entre el proveedor de servicios y sus inquilinos y subinquilinos (clientes finales). Cuando los administradores de NetApp o GSSC crean servicios de suscripción de Keystone para partners e inquilinos, implica que se ha cumplido la asignación del almacenamiento. No obstante, a menos que se creen los niveles de servicio y se complete la asignación de capacidad correspondiente, los subclientes o los clientes finales no podrán consumir el almacenamiento. Los administradores de partners pueden gestionar el almacenamiento para sus servicios de suscripción de Keystone y sus suscripciones de inquilinos. Los administradores de inquilinos solo pueden ver los detalles de la suscripción de inquilinos para sus propios usuarios.
 
 
 
-== Gestionar suscripción Flex (Suscripciones de Keystone)
+== Gestiona las suscripciones de Keystone
 
-Si es un administrador de partners, puede ver y administrar sus servicios de suscripción Flex desde *SUSCRIPCIONES* > *Suscripciones de Keystone*. *Las suscripciones de Keystone* representan los servicios de suscripción Flex creados por los administradores de NetApp para partners. Los administradores de partners pueden ver sus servicios de suscripción Flex y crear solicitudes de servicio para:
+Si eres administrador de socios, puedes ver y administrar tus servicios de suscripción de Keystone desde *SUSCRIPCIONES* > *suscripciones de Keystone*. * Las suscripciones de Keystone* representan los servicios de suscripción de Keystone creados por los administradores de NetApp para partners. Los administradores de partners pueden ver sus servicios de suscripción de Keystone y crear solicitudes de servicio para:
 
 * Aumentar la capacidad de una suscripción
 * Agregar un servicio a una suscripción (asignar nivel de servicio y capacidad)

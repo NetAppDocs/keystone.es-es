@@ -4,7 +4,7 @@ permalink: sewebiug_dashboard.html
 keywords: netapp, keystone, view, dashboard, capacity utilization, monthly charges, alerts, service request 
 summary: Vista Consola 
 ---
-= Ver el panel de suscripciones de Flex
+= Consulta la consola de Keystone en el motor de servicio de NetApp
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,7 +18,7 @@ La consola ofrece una descripción rápida de sus suscripciones de sistema de al
 
 El panel muestra información importante en los siguientes widgets, en los que puede hacer clic para realizar un análisis en profundidad:
 
-* *Utilización de la capacidad:* muestra la utilización de la capacidad de los servicios suscritos, por ejemplo, Keystone Flex Subscription, Keystone Flex Utility y Cloud Services. Al hacer clic en un gráfico de barras, irá a los gráficos de uso desglosados por nivel de servicio. Puede ver el uso sin usar, consumido y en ráfaga de cada nivel de servicio y sus servicios complementarios, como la protección de datos y la protección avanzada. Le ayuda a identificar si necesita añadir más capacidad a sus suscripciones o si desea optar por un nivel de servicio diferente.
+* *Utilización de la capacidad:* Muestra el uso de la capacidad para los servicios suscritos, por ejemplo, los servicios de suscripción de Keystone y los servicios en la nube. Al hacer clic en un gráfico de barras, irá a los gráficos de uso desglosados por nivel de servicio. Puede ver el uso sin usar, consumido y en ráfaga de cada nivel de servicio y sus servicios complementarios, como la protección de datos y la protección avanzada. Le ayuda a identificar si necesita añadir más capacidad a sus suscripciones o si desea optar por un nivel de servicio diferente.
 * *Costes hasta la fecha (facturación):* esta sección está disponible en función de sus derechos de socio-administrador. Muestra los cargos mensuales agregados para todas sus suscripciones. Puede ver los detalles de facturación de los últimos cuatro meses. Al pasar el cursor por encima del gráfico, puede ver los cargos divididos según el uso comprometido y en ráfaga. Si tiene varias suscripciones para un servicio suscrito, al hacer clic en el gráfico de barras durante un mes, la lista de suscripciones se muestra en la pantalla facturación. Para obtener más información sobre facturación, consulte link:sewebiug_billing.html["Ver facturación"].
 * *Alertas:* muestra el resumen de las alertas más recientes, como el estado, el mensaje y la fecha de creación. Para obtener más información sobre las alertas, consulte link:sewebiug_alerts.html["Creación y gestión de alertas"].
 * *Peticiones de servicio:* muestra el resumen de las peticiones de servicio más recientes, ordenadas por prioridad y cuando se crearon. Para obtener más información sobre las solicitudes de servicio, consulte link:sewebiug_raise_a_service_request.html["Elevar una solicitud de servicio"].

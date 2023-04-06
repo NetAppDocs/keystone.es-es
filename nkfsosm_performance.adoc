@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: nkfsosm_performance.html 
-keywords: netapp, keystone, performance, 
-summary: Rendimiento de la suscripción Keystone Flex 
+keywords: netapp, keystone, performance, service levels 
+summary: Keystone realiza el nivel de servicio 
 ---
 = Niveles de servicio
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: Rendimiento de la suscripción Keystone Flex
 
 
 [role="lead"]
-La suscripción flexible de NetApp Keystone (suscripción flexible) ofrece capacidad con niveles de servicio de rendimiento predefinidos (niveles de servicio).
+NetApp Keystone ofrece capacidad en niveles de servicio de rendimiento predefinidos (niveles de servicio).
 
 Cada nivel de servicio está definido por su densidad de I/o, que es la proporción de rendimiento (operaciones de entrada/salida por segundo [IOPS]) y almacenamiento utilizado (TIB de datos almacenados), que es IOPS/TIB.
 
-Cada volumen gestionado por los servicios de suscripción Flex está asociado a un nivel de servicio. Todas las operaciones de E/S y todo el almacenamiento usado en el volumen correspondiente se incluyen en el cálculo de la densidad de E/S del volumen.
+Cada volumen gestionado por los servicios de Keystone se asocia con un nivel de servicio. Todas las operaciones de I/O y todo el almacenamiento utilizado en el volumen correspondiente se tienen en cuenta en el cálculo de densidad de I/O del volumen.
 
 En la tabla siguiente se definen los niveles de servicio.
 
@@ -129,4 +129,4 @@ NOTE: Este 1 plazo mínimo de un año y una capacidad mínima de 100 TIB para un
 
 NOTE: Este 1 plazo mínimo de un año y una capacidad mínima de 100 TIB para una combinación de cualquier recurso compartido de archivos y niveles de servicio de bloque para oportunidades directas de NetApp. Plazo mínimo de un año y capacidad mínima establecida por nivel de servicio seleccionados para las oportunidades de canales. El plazo mínimo de un año y la capacidad mínima indicada por cada nivel de servicio seleccionados para cualquier tipo de oportunidad se establecen en 3.
 
-Puede asignar niveles de servicio a sus suscripciones desde varias pantallas de la interfaz de usuario del motor de servicios de NetApp. Para obtener más información, consulte link:nkfsosm_tenancy_overview.html["Soporte para multi-tenancy y suscripción flexible"].
+Puede asignar niveles de servicio a sus suscripciones desde varias pantallas de la interfaz de usuario del motor de servicios de NetApp. Para obtener más información, consulte link:nkfsosm_tenancy_overview.html["Tenancy y multi-tenancy en Keystone"].

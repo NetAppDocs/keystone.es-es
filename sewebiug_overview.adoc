@@ -14,7 +14,7 @@ summary: Descripción del portal web del motor de servicios de NetApp
 
 
 [role="lead"]
-El portal web de motor de servicios de NetApp le permite gestionar y supervisar un servicio de suscripción flexible (suscripción flexible) de NetApp Keystone. El portal consta de los siguientes componentes:
+El portal web del motor de servicios de NetApp permite gestionar y supervisar un servicio de NetApp Keystone. El portal consta de los siguientes componentes:
 
 * Una interfaz gráfica de usuario (interfaz web del motor de servicio de NetApp) que admite supervisión y aprovisionamiento simple del almacenamiento. Las opciones de menú de la interfaz de usuario (UI) están disponibles en función de los servicios y suscripciones del arrendatario y el subarrendatario.
 * Un conjunto de API DE REST que permiten realizar acciones más avanzadas de configuración y gestión del almacenamiento. En esta guía se describe cómo usar la interfaz web del motor de servicio de NetApp. La funcionalidad que solo está disponible a través de las API DE REST no se incluye en este documento.
@@ -32,7 +32,7 @@ image:sewebiug_image1.png["Error: Falta la imagen gráfica"]
 
 Una sola instancia de Service Engine de NetApp puede admitir uno o más inquilinos. El motor de servicios de NetApp usa los conceptos de inquilino y subinquilino como entidades jerárquicas que poseen o gestionan el servicio de almacenamiento.
 
-Un inquilino puede ser un cliente, un partner o una entidad de facturación. Un inquilino mantiene la suscripción (o varias suscripciones) al servicio de suscripción Flex.
+Un inquilino puede ser un cliente, un partner o una entidad de facturación. Un inquilino sujeta la suscripción (o varias) al servicio de suscripción de Keystone.
 
 Un subarrendatario es una entidad totalmente dentro del arrendatario. Se puede utilizar para mostrar, separación de seguridad, etc.
 

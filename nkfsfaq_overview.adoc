@@ -18,50 +18,27 @@ Las siguientes preguntas proporcionan respuestas a sus consultas frecuentes sobr
 
 * ¿Qué es NetApp Keystone?*
 
-NetApp Keystone es una cartera de alternativas de gastos de capital en las instalaciones (CAPEX), compuesta por NetApp Keystone Flex Pay (Flex Pay) y NetApp Keystone Flex Subscription (Flex Subscription).
-
-* *Flex Pay:* una cartera de soluciones de pago que incluye financiamiento tradicional, leasing y opciones fijas/variables para satisfacer las necesidades de flujo de caja de su cliente.
-* *Suscripción flexible:* Servicio de pago por suscripción de pago por crecimiento que ofrece una experiencia similar a la del cloud en las instalaciones, con una opción de servicio basada en resultados (operado por NetApp). Para obtener más información, consulte link:https://docs.netapp.com/us-en/keystone/index.html["aquí"].
-
+NetApp Keystone es una cartera de alternativas de gastos de capital (capex) en las instalaciones. Para obtener más información, consulte https://www.netapp.com/services/keystone/["NetApp Keystone"].
 
 *¿Cómo beneficia NetApp Keystone a mis clientes?*
 
 NetApp Keystone es un puente que conecta los pilares de nuestra estrategia de gastos de capital y cloud híbrido, y ofrece agilidad, flexibilidad financiera y un riesgo financiero reducido que ayuda a los clientes a satisfacer sus necesidades empresariales y de flujo de caja.
 
-La Marca NetApp Keystone ofrece una cartera de soluciones de pago flexibles que incluyen opciones tradicionales de financiación, arrendamiento y fijas y variables para clientes preocupados por el efectivo junto con la suscripción Flex.
+La marca NetApp Keystone ofrece una cartera de soluciones de pago flexibles que incluyen opciones tradicionales de financiación, arrendamiento, y fijas o variables para clientes que tienen un gran peso en efectivo, junto con los servicios Keystone.
 
-* * Flex Pay (flexibilidad financiera, soluciones de pago):*
-+
-** Prefiere poseer el título del activo, pero necesita el pago/flexibilidad financiera (modelo de alquiler, arrendamiento, préstamo, cuotas)
-** Estrictos requisitos de seguridad sin opciones de conectividad de datos externos para activar la suscripción
-** Las cargas de trabajo tienen un crecimiento de la capacidad previsible y se alinean con los presupuestos de gastos de capital
-** Infraestructura bien administrada con un alto uso de activos
-** Prefieren adquirir almacenamiento según la capacidad bruta y conservar los beneficios de eficiencia
+*Servicios Keystone (OPEX, experiencia similar a la nube):* * Prefiere un 100 % de gastos operativos, por lo que los activos no terminarán en el balance de tu cliente * Proveedores de servicios internos/externos que busquen alinear los costes con el uso/los ingresos * Cargas de trabajo con un crecimiento de capacidad impredecible * Recursos de TI reasignados a las tareas de almacenamiento típicas (migraciones, actualizaciones técnicas, actualizaciones, Y así sucesivamente) * Solución a corto plazo antes de migrar las cargas de trabajo a la nube * repatriar las cargas de trabajo del cloud a las instalaciones
 
+* ¿Qué es NetApp Keystone?*
 
-* *Suscripción flexible (OPEX, experiencia similar a la nube):*
-+
-** Prefiera un 100% de gastos operativos, de modo que los activos no terminarán en el balance de su cliente
-** Proveedores de servicios internos y externos que desean alinear los costes con el uso y los ingresos
-** Con un crecimiento de capacidad impredecible
-** Reasignar recursos DE TI de tareas de almacenamiento típicas (migraciones, actualizaciones tecnológicas, actualizaciones, etc.)
-** Solución a corto plazo antes de migrar cargas de trabajo al cloud
-** Repatriar las cargas de trabajo de nuevo del cloud a las instalaciones
-
-
-
-
-*¿Qué es la suscripción Flex?*
-
-La suscripción Flex es un nuevo modelo de adquisición basado en suscripción flexible y en las instalaciones. Permite a los clientes acelerar la rentabilidad de la inversión eliminando los obstáculos a la hora de gestionar los recursos y pasando por el largo ciclo de adquisición. La suscripción Flex permite a los clientes alinear la economía con sus prioridades empresariales. Para obtener más información, consulte link:https://docs.netapp.com/us-en/keystone/index.html#netapp-keystone-flex-subscription["aquí"].
+NetApp Keystone es un nuevo modelo de adquisición basado en suscripción en las instalaciones y flexible. Permite a los clientes acelerar la rentabilidad de la inversión eliminando los obstáculos a la hora de gestionar los recursos y pasando por el largo ciclo de adquisición. Los servicios Keystone permiten a los clientes alinear la economía con sus prioridades empresariales. Para obtener más información, consulte link:https://docs.netapp.com/us-en/keystone/index.html#netapp-keystone-flex-subscription["aquí"].
 
 * ¿Qué significa en las instalaciones?*
 
 En las instalaciones se define como un centro de datos propiedad del cliente o un espacio propiedad del cliente en una instalación de colocación. El cliente es responsable del espacio, la electricidad y la refrigeración.
 
-*¿Cuáles son las ventajas de los servicios de suscripción Flex?*
+*¿Cuáles son los beneficios de los servicios Keystone?*
 
-Algunas de las ventajas de los servicios de suscripción Flex son:
+Algunas de las ventajas de los servicios de Keystone son las siguientes:
 
 * Libera al personal DE TECNOLOGÍA de tareas complicadas relacionadas con el almacenamiento y le permite centrarse en la gestión de aplicaciones
 * Reduce la inversión de capital inicial

@@ -4,7 +4,7 @@ permalink: nkfsfaq_keystone_subscription.html
 keywords: netapp, keystone, subscription, subscriptions, 
 summary: Suscripción a NetApp Keystone 
 ---
-= Preguntas frecuentes sobre la suscripción a NetApp Keystone Flex
+= Preguntas frecuentes de NetApp Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,23 +14,23 @@ summary: Suscripción a NetApp Keystone
 
 
 [role="lead"]
-Las siguientes preguntas proporcionan respuestas a sus preguntas frecuentes acerca de los servicios de suscripción Flex de NetApp Keystone.
+Las siguientes preguntas dan respuesta a tus consultas frecuentes acerca de los servicios Keystone de NetApp Keystone.
 
-*¿Qué se ofrece como parte de la suscripción flexible de NetApp Keystone?* la suscripción flexible de NetApp Keystone (suscripción flexible) es una oferta de servicio basada en suscripción para servicios de datos de bloques, archivos y objetos que puede ponerse en marcha localmente y que puede ser operada por NetApp, un partner o un cliente.
+*¿Qué se ofrece como parte de NetApp Keystone?* NetApp Keystone es una oferta de servicio basado en suscripción para servicios de datos de bloques, archivos y objetos que se pueden poner en marcha en las instalaciones y que pueden gestionar NetApp, un partner o un cliente.
 
-*¿Qué ofertas de servicios de almacenamiento se proporcionan como parte de la suscripción Flex?* para obtener información, consulte link:nkfsosm_performance.html["Niveles de servicio"]
+*¿Qué ofertas de servicios de almacenamiento se proporcionan como parte de Keystone?* Para obtener información, consulte link:nkfsosm_performance.html["Niveles de servicio"]
 
 *¿Qué servicios complementarios son compatibles?* la protección avanzada de datos (backup y recuperación ante desastres) y la organización en niveles del cloud híbrido con FabricPool son servicios adicionales que se pueden elegir a un coste adicional.
 
 *¿Qué niveles de servicio garantiza NetApp con el servicio?* en un escenario operado por NetApp, NetApp Keystone garantiza IOPS/TIB para el almacenamiento aprovisionado y la latencia de cada nivel de servicio.
 
-*¿A qué se asigna Flex Subscription?* Flex Subscription se asigna a un solo sitio o a un único centro de datos y puede abarcar diferentes niveles de servicio.
+*¿A qué se asigna Keystone?* Keystone se asigna a un solo sitio o a un único centro de datos y puede abarcar diferentes niveles de servicio.
 
 *¿Cuáles son las ventajas de los niveles de servicio de niveles superiores y de niveles extremos?* la segmentación está activada en los niveles de servicio de niveles superiores y de niveles extremos, lo que le permite reducir el espacio de almacenamiento y los costes asociados. NetApp asume que un 25% de los datos tienen datos calientes, mientras que el 75% restante con menos frecuencia se usan o inactivos y los mueve a almacenamiento frío. Además, puede comprobar los informes de uso para comprender la frecuencia de acceso a los datos y habilitar el servicio de organización en niveles en función de la información.
 
 *¿Pueden vender los partners más capacidad de la que han comprado a NetApp a los clientes?* las suscripciones de inquilino no están limitadas por la capacidad que ha adquirido el partner. Los partners pueden vender más capacidad de la que han comprado a NetApp a sus clientes. La capacidad que supera la capacidad adquirida se denomina sobresuscripción.
 
-* ¿Se proporcionan API para integrarse con herramientas de cliente?* Sí, las API RESTful están disponibles para integrarse en sus propias aplicaciones. Vaya a *SUPPORT> API Documentation* para ver la documentación de API de los servicios de suscripción Flex. Para obtener más información, consulte link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html["Guía de suscripción a la API de Keystone Flex"].
+* ¿Se proporcionan API para integrarse con herramientas de cliente?* Sí, las API RESTful están disponibles para integrarse en sus propias aplicaciones. Vaya a *SUPPORT> API Documentation* para ver la documentación de la API para los servicios de Keystone. Para obtener más información, consulte link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html["Guía de la API de Keystone"].
 
 * ¿Qué es la capacidad de ráfaga?* puede aumentar y disminuir el uso hasta un 20% por encima de la capacidad comprometida. El uso de la capacidad de ráfaga se mide a diario y solo se factura cuando se utiliza. Por ejemplo, si la capacidad comprometida es de 100 TIB, puede utilizar ráfagas hasta 120 TIB.
 
@@ -44,7 +44,7 @@ Las siguientes preguntas proporcionan respuestas a sus preguntas frecuentes acer
 
 *¿Habrá notificaciones si alcancé un cierto porcentaje de uso de la capacidad comprometida?* Sí, las herramientas de gestión proporcionan notificaciones sobre el uso de la capacidad a través de la consola del motor de servicios de NetApp.
 
-*¿Cómo puedo ver el uso de la suscripción Flex?* Service Engine de NetApp proporciona una vista de panel con información sobre todos los servicios a los que se ha suscrito y cuánto se consume. Para obtener más información sobre Service Engine de NetApp, consulte link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html["aquí"].
+*¿Cómo veo el uso de Keystone?* El motor de servicios de NetApp proporciona una vista de consola, con información sobre todos los servicios a los que está suscrito y cuánto se consume. Para obtener más información sobre Service Engine de NetApp, consulte link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html["aquí"].
 
 *¿Cómo puedo informar de cualquier problema con el servicio?* se puede acceder al soporte de NetApp Keystone a través de estos diversos canales:
 

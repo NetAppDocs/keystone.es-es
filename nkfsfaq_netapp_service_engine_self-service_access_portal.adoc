@@ -18,7 +18,7 @@ Las siguientes preguntas frecuentes se aplican al motor de servicio de NetApp.
 
 *¿Qué es el motor de servicio de NetApp?*
 
-Motor de servicios de NetApp es un portal de autoservicio que está disponible en el modelo operado por NetApp y que le permite iniciar sesión y aprovisionar almacenamiento en función de su servicio de suscripción Flex de NetApp Keystone. La herramienta también proporciona informes sobre cuáles son sus niveles de consumo con respecto a su suscripción e inicia cualquier solicitud de servicio o cambio de suscripción.
+Service Engine de NetApp es un portal de autoservicio que está disponible en el modelo operado por NetApp para que inicie sesión y aprovisione almacenamiento basado en su servicio de NetApp Keystone. La herramienta también proporciona informes sobre cuáles son sus niveles de consumo con respecto a su suscripción e inicia cualquier solicitud de servicio o cambio de suscripción.
 
 *Se requiere el motor de servicio de NetApp en el modelo operado por el cliente?*
 
@@ -42,8 +42,8 @@ Están disponibles los siguientes controles de acceso:
 
 * *Administrador del partner* un administrador del socio que tiene derechos para crear y administrar inquilinos, administrar suscripciones para inquilinos, ver informes de uso y gestionar aspectos técnicos del almacenamiento.
 * *Cliente/inquilino Admin* una persona administrativa del cliente que tiene derechos para solicitar cambios en la suscripción, crear nuevos usuarios y subinquilinos, y también crear y ver recursos compartidos de archivos, discos y cubos.
-* *Administración de NetApp (lectura).* un administrador de NetApp que tiene acceso a todos los componentes del portal web y que puede ver todos los detalles, como todas las suscripciones Flex de NetApp Keystone, suscripciones a partners e inquilinos, y almacenamiento. Sin embargo, este usuario no tiene permisos para crear, editar o eliminar.
-* *Administrador de NetApp* este usuario tiene acceso completo y permisos para realizar todas las funciones del portal web de Service Engine de NetApp para gestionar la suscripción Flex de NetApp Keystone, y todas las actividades para la administración de partners e inquilinos.
+* * Administrador de NetApp (lectura).* Un administrador de NetApp que tiene acceso a todos los componentes del portal web y puede ver todos los detalles, como todos los NetApp Keystone, suscripciones de partners e inquilinos y almacenamiento. Sin embargo, este usuario no tiene permisos para crear, editar o eliminar.
+* *Administrador de NetApp* Este usuario tiene acceso completo y permisos para llevar a cabo todas las funciones en el portal web del motor de servicios de NetApp para gestionar NetApp Keystone y todas las actividades para la administración de partners e inquilinos.
 
 
 * ¿Dónde puedo ver la facturación contra mi uso?*

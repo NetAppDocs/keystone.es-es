@@ -14,13 +14,13 @@ summary: Requisitos del sitio de Keystone
 
 
 [role="lead"]
-Existen varios requisitos para habilitar los servicios de suscripción flexible de NetApp Keystone en su entorno, como espacio, racks, PDU, energía y la refrigeración, y los requisitos de red y seguridad adicionales se comentarán más adelante.
+Existen varios requisitos para habilitar los servicios de NetApp Keystone en su entorno, como espacio, racks, PDU, energía, y refrigeración, con requisitos de seguridad y red adicionales que se comentarán más adelante.
 
 
 
 == Espacio
 
-Espacio físico para alojar el equipo de la infraestructura de suscripción flexible (a disposición de los clientes). NetApp proporciona las especificaciones de peso basadas en la configuración final.
+Espacio físico para alojar el equipo de infraestructura de Keystone (a disposición de los clientes). NetApp proporciona las especificaciones de peso basadas en la configuración final.
 
 
 
@@ -52,4 +52,4 @@ NetApp puede proporcionar las especificaciones de requisitos de refrigeración (
 
 En función de los requisitos del cliente y de las controladoras de almacenamiento utilizadas, NetApp puede proporcionar conectividad de 10 GIB, 40 GIB y 100 GIB en las instalaciones del cliente.
 
-NetApp proporciona los transceptores necesarios para dispositivos de infraestructura de suscripción Flex proporcionados por NetApp únicamente. Debe suministrar los transceptores necesarios para dispositivos de cliente y cableado a los dispositivos de infraestructura de suscripción Flex proporcionados por NetApp.
+NetApp proporciona los transceptores necesarios solo para dispositivos de infraestructura de Keystone proporcionados por NetApp. Debe proporcionar los transceptores necesarios para dispositivo de cliente y cableado a los dispositivos de infraestructura Keystone proporcionados por NetApp.

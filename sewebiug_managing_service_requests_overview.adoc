@@ -26,7 +26,7 @@ Realice una solicitud de servicio para:
 * Restauración de backups
 * Recuperación tras fallos
 * Un problema técnico con el motor de servicios de NetApp
-* Volúmenes no estándares: Los volúmenes que se importan en su suscripción Flex comparten el mismo estándar que los discos y recursos compartidos de archivos existentes en Service Engine de NetApp. Tras la importación, estos discos y recursos compartidos de archivos se clasifican con `Non-Standard` estado. Usted plantea una solicitud de servicio para cambiar su estado a uno estándar.
+* Volúmenes no estándares: Los volúmenes que se importan en tus servicios de suscripción de Keystone comparten el mismo estándar que los discos y recursos compartidos de archivos existentes en NetApp Service Engine. Tras la importación, estos discos y recursos compartidos de archivos se clasifican con `Non-Standard` estado. Usted plantea una solicitud de servicio para cambiar su estado a uno estándar.
 * Cualquier otro problema que no se trate en esta lista.
 
 

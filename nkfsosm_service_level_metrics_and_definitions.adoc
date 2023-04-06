@@ -14,7 +14,7 @@ summary: Definiciones y métricas del nivel de servicio de Keystone
 
 
 [role="lead"]
-Los siguientes términos y definiciones se utilizan en el servicio Suscripción flexible de NetApp Keystone (suscripción flexible):
+Los siguientes términos y definiciones se utilizan en la NetApp Keystone:
 
 * * GIB, TIB e IB.* mediciones de capacidad de almacenamiento de datos utilizando base de 1024 (1 GIB = 1024 3 bytes, 1 TIB = 1024 4 bytes y 1 PIB = 1024 5 bytes).
 * *IOPS/TIB.* las operaciones de protocolo por segundo solicitadas por la aplicación divididas por el tamaño lógico asignado del volumen.

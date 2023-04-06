@@ -4,7 +4,7 @@ permalink: nkfsosm-keystone-and-aiq.html
 keywords: netapp, keystone, aiq keystone customers, Active IQ, Digital Advisor 
 summary: Lo que los clientes observan en Active IQ para obtener una solución Keystone 
 ---
-= ¿Qué pueden ver los clientes de la suscripción flexible en el asesor digital de Active IQ?
+= ¿Qué pueden ver los clientes de Keystone en el asesor digital de Active IQ?
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,19 +14,10 @@ summary: Lo que los clientes observan en Active IQ para obtener una solución Ke
 
 
 [role="lead"]
-Si se ha suscrito a los servicios de suscripción flexible (suscripción flexible) de NetApp Keystone, puede ver sus informes de uso y gráficos en el panel de control del asesor digital (asesor digital) de Active IQ.
+Si se ha suscrito a los servicios de NetApp Keystone, puede ver sus informes de uso y gráficos en el panel de control del asesor digital (asesor digital) de Active IQ.
+
+Al iniciar sesión en el asesor digital, puedes ver el widget *Suscripciones de Keystone* que resume el uso de la capacidad con los servicios de Keystone que has adquirido.
 
 Para obtener más información acerca de Digital Advisor, consulte link:https://docs.netapp.com/us-en/active-iq/index.html["Documentación de Digital Advisor"].
 
-Si su sitio tiene instalado Service Engine de NetApp de forma predeterminada, puede ver los gráficos de consumo a través de la interfaz Service Engine de NetApp además de Digital Advisor. Sin embargo, en un entorno gestionado por el cliente, no tiene acceso a la interfaz del motor de servicio de NetApp y solo puede ver sus gráficos de capacidad e informes de uso a través del panel de asesor digital. Para obtener más información sobre los entornos gestionados por el cliente, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_overview.html["Modelo operativo, funciones y responsabilidades"]
-
-El intervalo de recopilación de datos de métricas de su sitio es de 5 minutos.
-
-Como cliente, si se ha suscrito a los servicios de suscripción Flex, puede ver la siguiente información en el asesor digital:
-
-* *Widget de suscripción de Keystone Flex*: Si ha iniciado sesión en Digital Advisor, puede ver el widget *Suscripción de Keystone Flex* que resume el uso de la capacidad en comparación con los servicios de suscripción Flex adquiridos.
-
-
-Para obtener más información, consulte link:https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Vea el uso de la capacidad con la suscripción flexible de NetApp Keystone"].
-
-Para obtener información acerca de la ficha *Suscripciones de Keystone*, consulte _Panel de control de Digital Advisor e informes para la suscripción Flex_.
+Para obtener información sobre la pestaña *Suscripciones de Keystone*, consulta el panel _Digital Advisor y la generación de informes para Keystone_.

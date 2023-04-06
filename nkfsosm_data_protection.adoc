@@ -14,7 +14,7 @@ summary: Protección de datos
 
 
 [role="lead"]
-El servicio de protección de datos de la suscripción flexible de NetApp Keystone (suscripción flexible) puede realizar backups de sus datos y recuperarlos en caso necesario. Los servicios de protección de datos disponibles son:
+El servicio de protección de datos de NetApp Keystone puede realizar backups de sus datos y poder recuperarlos si es necesario. Los servicios de protección de datos disponibles son:
 
 * Instantáneas de discos y recursos compartidos
 * Backups de discos y recursos compartidos (requiere un servicio de protección de datos como parte de la suscripción)
@@ -42,4 +42,4 @@ NOTE: Los servicios de backup y recuperación ante desastres están disponibles 
 Esta 1 capacidad de almacenamiento adicional a ser suscrita
 
 
-NOTE: La suscripción a un servicio básico de suscripción Flex no realiza automáticamente copias de seguridad de sus datos. Debe suscribirse a servicios de protección de datos complementarios y configurar su sistema para servicios de backup de datos y recuperación ante desastres. Si su sistema de almacenamiento no está gestionado por los servicios de suscripción Flex, NetApp aún puede ofrecerle soporte para proteger los datos de su sistema de almacenamiento y ayuda para conectarlo con sus servicios de suscripción Flex. Sin embargo, NetApp no es responsable de los fallos de backup.
+NOTE: La suscripción a un servicio básico de Keystone no realiza automáticamente backups de tus datos. Debe suscribirse a servicios de protección de datos complementarios y configurar su sistema para servicios de backup de datos y recuperación ante desastres. Si los servicios de Keystone no gestionan su sistema de almacenamiento, NetApp puede seguir admitiendo la protección de los datos en su sistema de almacenamiento y ayuda en su conexión con sus servicios de Keystone. Sin embargo, NetApp no es responsable de los fallos de backup.

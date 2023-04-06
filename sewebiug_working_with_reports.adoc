@@ -14,13 +14,13 @@ summary: Keystone trabaja con informes
 
 
 [role="lead"]
-Puede crear informes de capacidad y rendimiento con respecto al uso de su suscripción flexible de NetApp Keystone y también para su uso por parte de los usuarios.
+Puede crear informes de capacidad y rendimiento con respecto al uso de su suscripción a NetApp Keystone y el uso de sus inquilinos.
 
 
 
 == Informe de uso de la capacidad de suscripción de Keystone
 
-La página uso de capacidad para suscripciones de Keystone muestra el uso de la capacidad de cada nivel de servicio de almacenamiento en una suscripción a lo largo del tiempo. Como administrador de NetApp, puede ver el informe de uso de la capacidad de todos los inquilinos y partners en una suscripción. Como administrador de partners, puede ver el informe de capacidad del uso de su suscripción Flex con respecto a cada nivel de servicio suscrito.
+La página uso de capacidad para suscripciones de Keystone muestra el uso de la capacidad de cada nivel de servicio de almacenamiento en una suscripción a lo largo del tiempo. Como administrador de NetApp, puede ver el informe de uso de la capacidad de todos los inquilinos y partners en una suscripción. Como administrador de socios, puede ver el informe de capacidad para el uso de su suscripción con respecto a cada nivel de servicio suscrito.
 
 Utilice los informes gráficos de esta página para ver el uso de las tendencias de todos los niveles de servicio, así como los servicios de protección de datos complementarios, en pestañas independientes. Cuando un servicio está en ráfaga, un banner muestra la capacidad de ráfaga utilizada en el ciclo de facturación actual.
 
@@ -40,7 +40,7 @@ Para ver el uso de la capacidad de un servicio, realice los pasos siguientes:
 
 == Informe de uso de capacidad de suscripción de inquilino
 
-La página uso de capacidad para suscripciones de inquilino muestra el uso de la capacidad con el tiempo para cada cliente para los servicios de almacenamiento suscritos en Flex Subscription. Esta página está disponible para los administradores de NetApp, partners, clientes o clientes para ver los informes de uso de capacidad para un inquilino específico.
+La página Uso de la capacidad para suscripciones de inquilinos muestra el uso de la capacidad a lo largo del tiempo de cada inquilino para los servicios de almacenamiento suscritos en la suscripción de Keystone. Esta página está disponible para los administradores de NetApp, partners, clientes o clientes para ver los informes de uso de capacidad para un inquilino específico.
 
 
 NOTE: Para el administrador de inquilinos, la página aparece como "Capacity Usage".

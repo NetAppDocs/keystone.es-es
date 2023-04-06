@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: nkfsosm_overview.html 
 keywords: netapp, keystone, kfs, overview, 
-summary: Información general sobre la suscripción Flex de NetApp 
+summary: Información general de NetApp Keystone 
 ---
 = Modelo operativo, funciones y responsabilidades
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: Información general sobre la suscripción Flex de NetApp
 
 
 [role="lead"]
-La suscripción flexible de NetApp Keystone (suscripción flexible) se basa en el modelo de multi-tenancy.
+NetApp Keystone se basa en el modelo de tenancy.
 
-La suscripción Flex ofrece tres modelos operativos para la prestación de servicios.
+Keystone ofrece tres modelos operativos para la prestación de servicios.
 
 * *El modelo operado por NetApp* permite al cliente suscribirse a los servicios ofrecidos (según los niveles de rendimiento seleccionados y los tipos de servicio de almacenamiento) y selecciona la opción gestionada por NetApp por un coste adicional. NetApp define la arquitectura y los productos, se instala en las instalaciones del cliente y gestiona las operaciones diarias de gestión de la infraestructura utilizando recursos TECNOLÓGICOS y de almacenamiento de NetApp. Los tipos de servicio de almacenamiento disponibles son archivo, bloque y objeto. Las suscripciones de almacenamiento basadas en Cloud Volumes Service para GCP y AWS también se pueden gestionar a través de su instancia de NetApp Keystone.
 * *El modelo *operado por un partner* es similar al modelo operado por NetApp, pero con el partner funcionando el servicio a sus clientes finales. En este modelo, el partner es la parte contratada que se hace referencia. Los clientes son clientes de partners o proveedores de servicios y no tienen relación de facturación con NetApp. El modelo operado por un partner suele tener un entorno multi-tenancy en el que los inquilinos y los clientes finales/subclientes tienen sus propias suscripciones facturadas por el proveedor de servicios/partner. El administrador de partners realiza las tareas administrativas para todos los inquilinos. Las funciones que puede realizar un administrador en un modelo operado por un partner son diferentes a las de un administrador en un modelo operado por NetApp.

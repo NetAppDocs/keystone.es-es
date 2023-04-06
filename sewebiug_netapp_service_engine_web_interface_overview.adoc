@@ -26,7 +26,7 @@ La siguiente ilustración muestra un ejemplo de la interfaz web del motor de ser
 * *Logotipo de NetApp.* haga clic en este icono en cualquier momento para devolver la pantalla a la vista de panel.
 * *Arrendatario.* muestra el arrendatario seleccionado actualmente. Para cambiar el arrendatario, consulte link:sewebiug_select_tenant.html["Seleccione el inquilino"].
 * *Trabajos.* haga clic para ver el estado de los trabajos de aprovisionamiento más recientes. El icono cambia de color para mostrar el estado del trabajo de configuración. Para obtener más información, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Indicador de estado de trabajos y trabajos"].
-* *Inicio de sesión del usuario.* muestra el nombre del usuario que ha iniciado sesión actualmente. Haga clic en este icono para cerrar sesión. Para obtener más información, consulte link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface["Cierre la sesión en la interfaz web del motor de servicios de NetApp"].
+* *Inicio de sesión de usuario.* Muestra el nombre nKeystoneame del usuario que ha iniciado sesión actualmente. Haga clic en este icono para cerrar sesión. Para obtener más información, consulte link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface["Cierre la sesión en la interfaz web del motor de servicios de NetApp"].
 
 
 image:sewebiug_image9_dashboard1.png["Consola de NSE-1"]
@@ -37,7 +37,7 @@ image:sewebiug_image9_dashboard2.png["NSe Dashboard-2"]
 
 == Vista Consola
 
-La consola muestra información sobre sus suscripciones de almacenamiento de NetApp Keystone, como la capacidad utilizada, la facturación contra el uso, y las alertas recientes y solicitudes de servicio. Es la vista predeterminada cuando se inicia sesión por primera vez en Service Engine de NetApp. Para obtener más información acerca de la consola, consulte link:sewebiug_dashboard.html["Ver el panel de suscripciones de Flex"].
+La consola muestra información sobre sus suscripciones de almacenamiento de NetApp Keystone, como la capacidad utilizada, la facturación contra el uso, y las alertas recientes y solicitudes de servicio. Es la vista predeterminada cuando se inicia sesión por primera vez en Service Engine de NetApp. Para obtener más información acerca de la consola, consulte link:sewebiug_dashboard.html["Consulta la consola de Keystone"].
 
 
 
@@ -88,15 +88,15 @@ Se produce cuando se produce un cambio en un recurso de almacenamiento (servidor
 * *Operativo.* indica que el recurso de almacenamiento se ha aprovisionado/modificado correctamente y está disponible, en línea y funcional.
 * *Eliminando.* el objeto se está eliminando y se está procesando.
 * *Objeto en cola.* el objeto está en estado en cola y se está procesando.
-* *Los objetos importados* aprovisionados fuera del motor de servicio de NetApp se importan con este estado cuando no cumplen los criterios de la suscripción Flex de NetApp Keystone (suscripción Flex).
+* *Importados* Los objetos aprovisionados fuera del Motor de servicio de NetApp se importan con este estado cuando no cumplen con los criterios de suscripción a NetApp Keystone.
 +
 
-NOTE: Normalmente, este estado implica que no se aplica ninguna política de calidad de servicio en el objeto y, por lo tanto, no puede gestionarla Service Engine de NetApp como parte de su suscripción Flex. Puede modificar el objeto (mediante el lápiz de edición) y asignar un nivel de servicio adecuado. Esto cambia el estado de ese objeto a operativo.
+NOTE: Este estado normalmente implica que no se aplica ninguna política de calidad de servicio al objeto y, por lo tanto, Service Engine de NetApp no se puede gestionar como parte de su suscripción a Keystone. Puede modificar el objeto (mediante el lápiz de edición) y asignar un nivel de servicio adecuado. Esto cambia el estado de ese objeto a operativo.
 
-* *Los objetos que no son estándar*.* los objetos que se aprovisionan fuera del motor de servicio de NetApp se importan con este estado cuando no cumplen los criterios de la suscripción Flex de NetApp Keystone (suscripción Flex).
+* *No Estándar.* Los objetos aprovisionados fuera del Motor de servicio de NetApp se importan con este estado si no cumplen los criterios de suscripción a NetApp Keystone.
 +
 
-NOTE: Normalmente, este estado implica que el objeto falta uno o varios criterios para su gestión por parte del motor de servicios de NetApp, como parte de su suscripción Flex. Puede hacerlo link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["elevar una solicitud de servicio"] Para que sean estandarizados y gestionados a través del portal del motor de servicios de NetApp y realicen operaciones con el equipo de soporte.
+NOTE: Este estado normalmente implica que el objeto pierde uno o varios criterios para gestionarlo NetApp Service Engine, como parte de su suscripción a Keystone. Puede hacerlo link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["elevar una solicitud de servicio"] Para que sean estandarizados y gestionados a través del portal del motor de servicios de NetApp y realicen operaciones con el equipo de soporte.
 
 * *Asistencia de contacto.* este estado ocurre cuando la tarea de aprovisionamiento o modificación no se completa completamente. En el caso de elementos en este estado, envíe una solicitud de soporte para solucionar el problema.
 * *Operativo (para el objeto de origen de una copia de seguridad).* los siguientes son los Estados posibles:

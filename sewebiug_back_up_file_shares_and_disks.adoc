@@ -21,7 +21,7 @@ NOTE: Los backups se crean automáticamente en el sistema cuando se crea o se ed
 
 Para obtener más información, consulte link:seapiref_backups_apis.html["API de backups"]
 
-El backup de sus volúmenes de origen está habilitado mediante la tecnología SnapMirror de NetApp, habilitada con su suscripción Flex. Para obtener más información, consulte link:index.html#flex-subscription["aquí"].
+La realización de backups de los volúmenes de origen se habilita mediante la tecnología SnapMirror de NetApp, habilitada con los servicios de suscripción de Keystone. Para obtener más información, consulte link:index.html#flex-subscription["aquí"].
 
 Cuando se crea o se edita un volumen, se define su programación de backup. La copia de seguridad se realiza a intervalos previstos y se almacena en un sistema de destino. Para que los backups funcionen, la relación de SnapMirror debe establecerse con el entorno de destino. Los discos y recursos compartidos de archivos replicados de diferentes zonas se almacenan en una máquina virtual de almacenamiento de backup dedicada (máquina virtual de almacenamiento, también conocida como SVM) en cada clúster. Pueden realizarse backups entre dos clústeres de ONTAP separados en zonas diferentes.
 

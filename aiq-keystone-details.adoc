@@ -4,7 +4,7 @@ permalink: aiq-keystone-details.html
 keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports 
 summary: Informes y gráficos de suscripción de Keystone 
 ---
-= Panel de Digital Advisor y generación de informes para la suscripción Flex
+= Consola del asesor digital y generación de informes para Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -24,13 +24,14 @@ Para obtener información sobre el widget Keystone Digital Advisor, consulte htt
 Para ver los detalles, realice los siguientes pasos:
 
 .Pasos
-. En Digital Advisor, haga clic en *Ver más detalles* en el widget para ver los detalles de uso y alertas de sus volúmenes en la página *Suscripciones de Keystone*. Como alternativa, desde el panel de navegación izquierdo, vaya a *GENERAL > Suscripciones de Keystone*.
+. Inicie sesión en Digital Advisor. Puedes ver el widget *Suscripciones de Keystone*, que resume el uso de la capacidad con respecto a los servicios de Keystone adquiridos.
+. En el widget *Suscripciones Keystone*, haz clic en *Ver más detalles* para ver los detalles de uso y las alertas de tus volúmenes en la página *Suscripciones Keystone*. Como alternativa, desde el panel de navegación izquierdo, vaya a *GENERAL > Suscripciones de Keystone*.
 
 
 Los detalles de las suscripciones, los gráficos de uso de cada nivel de servicio y los detalles de volumen se muestran en las distintas pestañas de la pantalla *Suscripciones de Keystone*.
 
 
-NOTE: El consumo de capacidad en las suscripciones de Keystone se muestra en los informes y paneles de control, hasta dos decimales. Si el uso es inferior a 0.01 TIB, el valor se muestra como `0` o. `No Usage`. Para obtener más información sobre otras medidas de uso, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["Definiciones y métricas de nivel de servicio"]. Para obtener información sobre las distintas capacidades que se utilizan en Keystone, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Definiciones de capacidad del servicio de suscripción Flex"].
+NOTE: El consumo de capacidad en las suscripciones de Keystone se muestra en los informes y paneles de control, hasta dos decimales. Si el uso es inferior a 0.01 TIB, el valor se muestra como `0` o. `No Usage`. Para obtener más información sobre otras medidas de uso, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["Definiciones y métricas de nivel de servicio"]. Para obtener información sobre las distintas capacidades que se utilizan en Keystone, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Definiciones de la capacidad del servicio de Keystone"].
 
 
 

@@ -27,7 +27,7 @@ Para comenzar sus actividades en este portal:
 ** Inicie sesión con SSO de NetApp para obtener más información, consulte link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html["Inicie sesión en la interfaz web del motor de servicios de NetApp"]
 
 
-* Seleccione inquilino. Aparecerá el panel de control. Para obtener más información, consulte link:sewebiug_dashboard.html["Ver el panel de suscripciones de Flex"]
+* Seleccione inquilino. Aparecerá el panel de control. Para obtener más información, consulte link:sewebiug_dashboard.html["Consulta la consola de Keystone"]
 
 
 Para obtener información general de la interfaz web del motor de servicios de NetApp, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html["Información general de la interfaz web del motor de servicios de NetApp"]

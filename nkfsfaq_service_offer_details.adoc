@@ -4,7 +4,7 @@ permalink: nkfsfaq_service_offer_details.html
 keywords: netapp, keystone, service, offer, details, 
 summary: Detalles de la oferta de servicios 
 ---
-= El servicio de suscripción Flex ofrece detalles
+= Oferta de servicios Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,15 +14,15 @@ summary: Detalles de la oferta de servicios
 
 
 [role="lead"]
-Las siguientes preguntas proporcionan respuestas a sus preguntas frecuentes acerca de la oferta del servicio de suscripción flexible de NetApp Keystone.
+Las siguientes preguntas dan respuesta a tus consultas frecuentes sobre la oferta del servicio Keystone de NetApp Keystone.
 
 * ¿Cuál es la capacidad mínima comprometida?*
 
-La capacidad mínima comprometida para una suscripción flexible de NetApp Keystone (suscripción flexible) es de 100 TIB por sitio en uno o más niveles de servicio.
+La capacidad mínima comprometida para un servicio de suscripción de NetApp Keystone es de 100 TiB por sitio en uno o más niveles de servicio.
 
-*Cuál es la duración típica de un acuerdo de suscripción flexible?*
+*¿Cuál es la duración típica de un acuerdo de servicios de Keystone?*
 
-La suscripción Flex ofrece períodos de periodos de 12, 24 y 36 meses.
+Los servicios de Keystone ofrecen períodos de 12, 24 y 36 meses.
 
 *¿Cómo puedo acceder al almacenamiento?*
 
@@ -54,7 +54,7 @@ Sí, las nuevas suscripciones pueden tener términos nuevos separados de las sus
 
 *¿Pueden los términos de suscripción a inquilinos extenderse más allá del plazo de suscripción del socio?*
 
-Las suscripciones de inquilino pueden extenderse más allá del período de suscripción Flex actual del partner. Se mostrará una advertencia cuando se creen suscripciones y también en los informes de uso.
+Las suscripciones de inquilinos pueden ampliar más allá de la condición actual de los servicios de Keystone del partner. Se mostrará una advertencia cuando se creen suscripciones y también en los informes de uso.
 
 *¿Puedo mezclar varias suscripciones en el mismo clúster de ONTAP?*
 

@@ -14,7 +14,7 @@ summary: Problemas solucionados en el motor de servicios de NetApp
 
 
 [role="lead"]
-Los siguientes problemas encontrados en una versión anterior del motor de servicios de NetApp se han solucionado para que usted utilice sus servicios de suscripción Flex de NetApp Keystone.
+Los siguientes problemas encontrados en una versión anterior del motor de servicio de NetApp se han solucionado para que pueda utilizar correctamente los servicios de NetApp Keystone.
 
 [cols="3*"]
 |===

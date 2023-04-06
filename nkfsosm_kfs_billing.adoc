@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: nkfsosm_kfs_billing.html 
-keywords: netapp, keystone, billing, flex subscription billing logic, charges, charging, billing cycle, billing schedule, MetroCluster billing, TMP temporary volumes, Adaptive QoS policy billing, cloned volumes, burst billing 
-summary: Facturación de suscripción Keystone Flex 
+keywords: netapp, keystone, billing, Keystone billing logic, charges, charging, billing cycle, billing schedule, MetroCluster billing, TMP temporary volumes, Adaptive QoS policy billing, cloned volumes, burst billing 
+summary: Facturación de Keystone 
 ---
-= Facturación de suscripción flexible
+= Facturación de Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,21 +14,21 @@ summary: Facturación de suscripción Keystone Flex
 
 
 [role="lead"]
-La suscripción flexible de NetApp Keystone (suscripción flexible) ofrece un precio inicial y predecible para su suscripción de almacenamiento.
+NetApp Keystone permite tarificar precios previsibles y por adelantado para su suscripción de almacenamiento.
 
-Si prefiere el modelo de consumo de gastos operativos (OpEx) para gastos de capital o arrendamiento, puede optar por el modelo de pago según crecimiento de suscripción Flex para sus necesidades de consumo flexibles y escalables.
+Si prefiere el modelo de consumo de gastos operativos (gastos operativos) a gastos de capital o arrendamiento, puede optar por el modelo de pago según crecimiento de Keystone para sus necesidades de consumo flexibles y escalables.
 
-La suscripción Flex le proporciona los siguientes servicios de facturación:
+Keystone le ofrece las siguientes instalaciones de facturación:
 
-* Puede pagar según las IOPS y la capacidad comprometida de latencia para satisfacer las necesidades de cargas de trabajo múltiples. Los diferentes niveles de servicio de rendimiento: Extreme, Premium, Standard y Value le permiten gestionar su almacenamiento en función del nivel de servicio que ha adquirido para su suscripción Flex.
+* Puede pagar según las IOPS y la capacidad comprometida de latencia para satisfacer las necesidades de cargas de trabajo múltiples. Los diferentes niveles de servicio de rendimiento: Extreme, Premium, Standard y Value le permiten gestionar el almacenamiento en función del nivel de servicio que haya adquirido para sus servicios de Keystone.
 * Presenta una facturación predecible para la capacidad comprometida y el pago por uso de la capacidad variable (en ráfaga).
 * Puede seleccionar un precio de paquete para el hardware, el SO principal y el soporte para un precio de $/TIB. Dispone de una única factura para cada tipo de almacenamiento, archivo, bloque, objeto o servicios de almacenamiento en cloud.
 * Seleccione un término flexible para los servicios y el pago: Puede optar por 12 meses, 100 TIB o más por sitio. A partir de entonces puede renovar automáticamente durante 12 meses o ir mes a mes.
 
 
-La facturación de la suscripción Flex se basa en la capacidad comprometida y en el consumo en ráfaga variable.
+La facturación de Keystone se basa en la capacidad comprometida y en el consumo en ráfaga variable.
 
-Para obtener información sobre el uso de la capacidad comprometida y de ráfaga, consulte link:nkfsosm_keystone_service_capacity_definitions.html["Definiciones de capacidad del servicio de suscripción Flex"].
+Para obtener información sobre el uso de la capacidad comprometida y de ráfaga, consulte link:nkfsosm_keystone_service_capacity_definitions.html["Definiciones de la capacidad del servicio de Keystone"].
 
 Para obtener información acerca de cómo ver los detalles de facturación, consulte link:sewebiug_billing.html["Ver facturación"].
 
@@ -36,10 +36,10 @@ Para obtener información acerca de cómo ver los detalles de facturación, cons
 
 == Facturación basada en la capacidad comprometida
 
-La capacidad comprometida se refiere a las capacidades de diversos servicios en una única suscripción acordada por las partes involucradas (NetApp/partner y cliente). Esta capacidad se indica en cada pedido de suscripción flexible y se factura con independencia del consumo real.
+La capacidad comprometida se refiere a las capacidades de diversos servicios en una única suscripción acordada por las partes involucradas (NetApp/partner y cliente). Esta capacidad se indica en cada pedido de Keystone y se factura, independientemente del consumo real.
 
 .Medición de la capacidad consumida
-Como parte de la puesta en marcha del servicio de suscripción Flex, NetApp supervisa y mide de forma continua el consumo del servicio. Cada cinco minutos, el sistema genera un registro de consumo en el que se detalla la capacidad consumida actualmente para la suscripción. Estos registros se agregan a lo largo del período de facturación para generar facturas e informes de uso.
+Como parte de la puesta en marcha del servicio Keystone, NetApp supervisa y mide de forma continua el consumo del servicio. Cada cinco minutos, el sistema genera un registro de consumo en el que se detalla la capacidad consumida actualmente para la suscripción. Estos registros se agregan a lo largo del período de facturación para generar facturas e informes de uso.
 
 
 
@@ -51,7 +51,7 @@ Cuando la capacidad consumida es mayor que la capacidad comprometida para un niv
 
 == Horarios de facturación
 
-Los servicios de suscripción Flex se facturan mensualmente y anualmente.
+Los servicios de Keystone se facturan mensualmente y anualmente.
 
 .Facturación mensual
 Las facturas se envían mensualmente. Para el mes en el que se han hecho los servicios, se enviará una factura el mes siguiente. Por ejemplo, la factura de los servicios que ha utilizado en enero se entrega a principios de febrero. Esta factura incluye los cargos por la capacidad comprometida y, si corresponde, cualquier uso de ráfaga.
@@ -60,13 +60,13 @@ Las facturas se envían mensualmente. Para el mes en el que se han hecho los ser
 Al principio de cada año de suscripción se genera una factura por el pago mínimo de la capacidad comprometida. Se genera en la fecha de inicio de la suscripción. Al final de un trimestre de suscripción se envía otra factura, en la que se suman los cargos aplicables de cualquier uso de ráfaga acumulado en ese trimestre. Si la capacidad comprometida cambia durante una suscripción, se enviará una factura el mismo día en que el cambio de la capacidad comprometida sea efectivo, por los pagos mínimos prorrateados para el resto de ese año de suscripción.
 
 .Período de gracia en facturación por ráfaga
-Durante los primeros 60 días de la activación de una suscripción, se registra cualquier consumo de ráfaga que acumule, pero no se cargará en la factura de suscripción de Flex. Este período de gracia le otorga el tiempo necesario para configurar su almacenamiento con la configuración de calidad de servicio adaptable (AQoS) adecuada para poder supervisarlo y facturarlo correctamente. Al configurar el almacenamiento correctamente, puede evitar cargos de ráfaga inesperados. Cualquier uso de ráfaga acumulado después del período de gracia inicial de 60 días se facturará en su próxima factura. Este período de gracia no afecta a ninguna modificación o renovación de sus suscripciones existentes.
+Durante los primeros 60 días de la activación de una suscripción, se registrará cualquier consumo de bursting que acumule, pero no se cargará en su factura del servicio de Keystone. Este período de gracia le otorga el tiempo necesario para configurar su almacenamiento con la configuración de calidad de servicio adaptable (AQoS) adecuada para poder supervisarlo y facturarlo correctamente. Al configurar el almacenamiento correctamente, puede evitar cargos de ráfaga inesperados. Cualquier uso de ráfaga acumulado después del período de gracia inicial de 60 días se facturará en su próxima factura. Este período de gracia no afecta a ninguna modificación o renovación de sus suscripciones existentes.
 
 
 
-== Escenarios varios para la facturación de suscripción Flex
+== Escenarios varios para la facturación Keystone
 
-Existen varios escenarios para la facturación de la suscripción flexible y debería estar familiarizado con estos escenarios.
+Hay varios escenarios para la facturación de Keystone y deberías estar familiarizado con esos escenarios.
 
 
 
@@ -84,9 +84,9 @@ Tenga en cuenta lo siguiente:
 
 === Facturación de MetroCluster
 
-La protección de datos avanzada utiliza MetroCluster de NetApp para reflejar datos entre dos clústeres separados físicamente. En los agregados duplicados de MetroCluster, los datos se escriben dos veces una en cada clúster. El servicio de suscripción Flex se cobra por el consumo en cada lado de forma independiente, lo que da como resultado dos registros de consumo idénticos. Si supervisa los clústeres mediante System Manager (System Manager) o Active IQ Unified Manager (Unified Manager) de ONTAP, puede que observe una discrepancia entre el consumo informado en estas herramientas y la suscripción Flex. System Manager y Unified Manager no informan sobre volúmenes en el clúster reflejado (remoto), y al hacerlo, informa de la mitad de las métricas de consumo que informa el servicio de suscripción de Flex.
+La protección de datos avanzada utiliza MetroCluster de NetApp para reflejar datos entre dos clústeres separados físicamente. En los agregados duplicados de MetroCluster, los datos se escriben dos veces una en cada clúster. El servicio Keystone cobra por el consumo en cada lado de forma independiente, lo que genera dos registros de consumo idénticos. Si supervisa los clústeres mediante ONTAP System Manager (System Manager) o Active IQ Unified Manager (Unified Manager), es posible que observe una discrepancia entre el consumo notificado en estas herramientas y los servicios de Keystone. System Manager y Unified Manager no notifican volúmenes en un clúster reflejado (remoto); al hacerlo, informa de la mitad de las métricas de consumo que informa el servicio de Keystone.
 
-Por ejemplo: El sitio A y el sitio B se configuran en una configuración de MetroCluster. Cuando un usuario crea un volumen de 10 TB en el sitio A, se crea un volumen idéntico de 10 TB en el sitio B. La suscripción Flex distingue tanto los volúmenes como registra 10 TB adicionales de consumo en cada sitio, para un aumento total de 20 TB. System Manager y Unified Manager informan sobre un volumen de 10 TB creado en el sitio A.
+Por ejemplo: El sitio A y el sitio B se configuran en una configuración de MetroCluster. Cuando un usuario crea un volumen de 10 TB en el sitio A, se crea un volumen idéntico de 10 TB en el sitio B. Keystone distingue los volúmenes y registra un consumo adicional de 10TB MB en cada sitio, lo que supone un aumento total de 20TB TB. System Manager y Unified Manager informan sobre un volumen de 10 TB creado en el sitio A.
 
 
 
@@ -98,7 +98,7 @@ Ocasionalmente, ONTAP crea volúmenes temporales (TMP) al mover volúmenes. Esto
 
 === Facturación y políticas de calidad de servicio adaptativas
 
-La suscripción Flex mide el consumo en función de los niveles de servicio. Cada nivel de servicio está asociado a una política de calidad de servicio (QoS) adaptable específica. Durante la implementación, se le informará de los detalles de cada política de QoS para sus servicios de suscripción Flex suscritos. Durante las operaciones de gestión del almacenamiento, asegúrese de que sus volúmenes tengan asignadas políticas de calidad de servicio adecuadas según sus niveles de servicio suscritos a fin de evitar facturas inesperadas. Para obtener más información sobre las políticas de calidad de servicio en ONTAP, consulte link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Garantice el rendimiento con información general de calidad de servicio"].
+Keystone mide el consumo en función de los niveles de servicio. Cada nivel de servicio está asociado a una política de calidad de servicio (QoS) adaptable específica. Durante la implementación, recibirá un informe de los detalles de cada política de calidad de servicio para los servicios de Keystone que haya suscrito. Durante las operaciones de gestión del almacenamiento, asegúrese de que sus volúmenes tengan asignadas políticas de calidad de servicio adecuadas según sus niveles de servicio suscritos a fin de evitar facturas inesperadas. Para obtener más información sobre las políticas de calidad de servicio en ONTAP, consulte link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Garantice el rendimiento con información general de calidad de servicio"].
 
 
 
@@ -136,4 +136,4 @@ Si quiere más información sobre el uso de la tecnología FabricPool en sus sus
 
 === Facturación para volúmenes raíz y del sistema
 
-Los volúmenes raíz y del sistema se supervisan como parte de la supervisión general del servicio de suscripción Flex, pero no se cuentan ni se facturan. El consumo en estos volúmenes está exento de facturación.
+Los volúmenes raíz y del sistema se supervisan como parte de la supervisión general del servicio de Keystone, pero no se cuentan o se facturan. El consumo en estos volúmenes está exento de facturación.

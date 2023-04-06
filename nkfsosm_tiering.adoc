@@ -14,7 +14,7 @@ summary: Organización en niveles de Keystone
 
 
 [role="lead"]
-El servicio de suscripción flexible de NetApp Keystone incluye una funcionalidad de organización en niveles que identifica datos que se usan con menor frecuencia y los organiza para un almacenamiento en frío de propiedad de NetApp, que se implementa y gestiona.
+El servicio NetApp Keystone incluye una funcionalidad de organización en niveles que identifica los datos que se utilizan con menos frecuencia y los organiza en niveles en un almacenamiento frío que NetApp posee, pone en marcha y gestiona.
 
 La funcionalidad de organización en niveles aprovecha la tecnología FabricPool de NetApp que permite una organización en niveles automatizada de los datos en niveles de almacenamiento de objetos de bajo coste dentro o fuera de las instalaciones. Con esta funcionalidad, los datos a los que se accede con poca frecuencia se organizan automáticamente en niveles en un almacenamiento más barato, ya sea en las instalaciones o en el cloud, según los servicios acordados.
 

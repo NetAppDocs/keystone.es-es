@@ -4,7 +4,7 @@ permalink: nkfsosm_service_terms_and_description_overview.html
 keywords: netapp, keystone, service, terms, description, overview, 
 summary: Descripción general de los términos y condiciones del servicio de Keystone 
 ---
-= Términos y descripciones del servicio de suscripción Flex
+= Términos y descripciones de los servicios de Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Descripción general de los términos y condiciones del servicio de Key
 
 
 [role="lead"]
-La suscripción flexible de NetApp Keystone (suscripción flexible) se guía por los siguientes términos y descripciones de servicios.
+NetApp Keystone se guía por los siguientes términos y descripciones de servicio.
 
-* La suscripción Flex está disponible durante un mínimo de un año y hasta tres años. Después de la primera legislatura, el servicio es renovable anualmente. La capacidad se puede aumentar en incrementos de apenas 1 TIB.
+* Los servicios de Keystone están disponibles por un año como mínimo y hasta tres años. Después de la primera legislatura, el servicio es renovable anualmente. La capacidad se puede aumentar en incrementos de apenas 1 TIB.
 * La capacidad mínima es de 100 TIB por sitio, y cada sitio puede tener uno o más clústeres para cumplir con el requisito de capacidad mínima. En un modelo gestionado por partners, se crean suscripciones con un mínimo flexible para un cliente, por sitio y entre distintos niveles de servicio.
 * La capacidad de 100 TIB puede ser un único nivel de servicio o una combinación de niveles.
 * Las suscripciones de inquilino se limitan a los niveles de servicio a los que están suscritos los partners.

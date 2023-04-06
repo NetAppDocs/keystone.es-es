@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: nkfsosm_tenancy_overview.html 
 keywords: netapp, keystone, tenants, subtenants, hierarchy, tenancy 
-summary: Información general sobre la suscripción flexible de NetApp Keystone 
+summary: Información general sobre el soporte para la suscripción a NetApp Keystone Keystone 
 ---
-= Soporte para multi-tenancy y suscripción flexible
+= Tenancy y multi-tenancy en Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,18 +14,18 @@ summary: Información general sobre la suscripción flexible de NetApp Keystone
 
 
 [role="lead"]
-La Suscripción flexible de NetApp Keystone (Suscripción flexible) utiliza los conceptos de *inquilino* y *subinquilino* como entidades jerárquicas que poseen recursos de almacenamiento lógico. También se admite el concepto de multi-tenancy, donde varios clientes están ligados a un partner o proveedor de servicios. Aquí se utilizan indistintamente el partner de entidades y el proveedor de servicios.
+NetApp Keystone utiliza los conceptos de *tenant* y *subtenant* como entidades jerárquicas que poseen recursos de almacenamiento lógico. También se admite el concepto de multi-tenancy, donde varios clientes están ligados a un partner o proveedor de servicios. Aquí se utilizan indistintamente el partner de entidades y el proveedor de servicios.
 
 
-NOTE: En el contexto de la suscripción Flex, un único cliente es un modelo operado por NetApp, mientras que el multi-tenancy es un modelo operado por un partner.
+NOTE: En el contexto de Keystone, un único inquilino es un modelo operado por NetApp, mientras que un multi-tenancy es un modelo operado por partners.
 
 .Clientes
-Un inquilino es la entidad de facturación principal definida en la Suscripción Flex. Cada cliente que se incorpora en la suscripción Flex y posee una suscripción a los servicios existe como inquilino de suscripción Flex. El cliente proporciona a NetApp un nombre y/o identificador de cliente con el fin de incorporar inquilinos y realizar el seguimiento de las fechas de suscripción y los términos de compromiso.
+Un inquilino es la entidad de facturación principal definida en Keystone. Cada cliente que se incorpora en Keystone y posee una suscripción a los servicios, existe como un inquilino de Keystone. El cliente proporciona a NetApp un nombre y/o identificador de cliente con el fin de incorporar inquilinos y realizar el seguimiento de las fechas de suscripción y los términos de compromiso.
 
-En multi-tenancy, un partner es un cliente/cliente de NetApp en un entorno de suscripción flexible. El partner, a su vez, puede tener múltiples clientes o clientes vinculados a clientes finales/subinquilinos. En este modelo, los inquilinos/subclientes son los clientes de los proveedores de servicios y no tienen relación de facturación con NetApp.
+En multi-tenancy, un partner es un cliente/inquilino de NetApp en un entorno Keystone. El partner, a su vez, puede tener múltiples clientes o clientes vinculados a clientes finales/subinquilinos. En este modelo, los inquilinos/subclientes son los clientes de los proveedores de servicios y no tienen relación de facturación con NetApp.
 
 .Subinquilinos
-Los subinquilinos de suscripción Flex existen completamente dentro de un inquilino principal con una relación de varios a uno. Los subinquilinos proporcionan separación lógica de recursos dentro de un tenancy y se usan como base para los informes de carácter general. Todos los recursos de almacenamiento (es decir, servicios de archivos, almacenamiento basado en bloques y almacenamiento de objetos) pertenecen a un subinquilino.
+Los subinquilinos Keystone existen completamente dentro de un inquilino principal con una relación muchos a uno. Los subinquilinos proporcionan separación lógica de recursos dentro de un tenancy y se usan como base para los informes de carácter general. Todos los recursos de almacenamiento (es decir, servicios de archivos, almacenamiento basado en bloques y almacenamiento de objetos) pertenecen a un subinquilino.
 
 image:nkfsosm_image10.png[""]
 
@@ -57,7 +57,7 @@ image:nkfsosm_image10.png[""]
 
 == Modelo de suscripción en un entorno multi-tenant
 
-* Los proveedores de servicios son clientes de suscripción Flex y tienen suscripciones como inquilinos. Las suscripciones se basan en:
+* Los proveedores de servicios son clientes de Keystone y tienen suscripciones como inquilinos. Las suscripciones se basan en:
 +
 ** Compromiso por nivel de servicio y zona
 ** Cargado sobre la capacidad asignada con un mínimo de 100 TIB
@@ -65,13 +65,13 @@ image:nkfsosm_image10.png[""]
 
 
 * NetApp cobra a los proveedores mensualmente, como parte de los términos de tenancy que suelen tener.
-* Para que el nivel de servicio esté disponible para los clientes, el proveedor de servicios o el partner deben disponer primero de una suscripción flexible para el nivel de servicio.
+* Para que un nivel de servicio esté disponible para los inquilinos, el proveedor de servicios o el partner debe contar en primer lugar con una Keystone para el nivel de servicio.
 * El proveedor de servicios crea suscripciones de inquilino por nivel de servicio, zona y mínimos flexibles.
 * Los proveedores de servicios pueden vender más capacidad a sus clientes de la que han adquirido a NetApp (exceso de suscripción). Por lo tanto, la capacidad utilizada por los inquilinos no está limitada por la capacidad que el proveedor de servicios ha suscrito.
 * Los inquilinos pueden utilizar la capacidad de almacenamiento por encima de la cantidad suscrita, que aparece como "en ráfaga" tras los informes de uso.
 * Los informes de uso de inquilinos están disponibles para los partners para su visualización diaria o mensual.
-* Los inquilinos pueden crear suscripciones durante más tiempo en comparación con la suscripción Flex correspondiente, pero se muestra un mensaje de advertencia al cliente final durante esa actividad.
-* La suscripción Flex para un partner la configuran los administradores de NetApp o GSSC. La gestión de las suscripciones a inquilinos y suscripciones de Flex la realiza un usuario con el rol de administrador del partner.
-* Los usuarios con los roles de administrador de inquilinos solo pueden ver la suscripción de inquilino (no la suscripción Flex de partner). Pueden actualizar la suscripción para cambiar la capacidad y el nivel de servicio. Pueden aumentar las solicitudes de servicio para suscripciones adicionales.
+* Los inquilinos pueden crear suscripciones durante más tiempo en comparación con la suscripción de Keystone correspondiente, pero se mostrará un mensaje de advertencia al cliente final durante esa actividad.
+* La suscripción a Keystone para un partner la configuran administradores de NetApp o GSSC. La gestión de la suscripción de Keystone y las suscripciones de inquilinos es realizada por un usuario con el rol de administrador del partner.
+* Los usuarios con roles de administrador de inquilino solo pueden ver la suscripción de inquilinos (no la suscripción a Keystone del partner). Pueden actualizar la suscripción para cambiar la capacidad y el nivel de servicio. Pueden aumentar las solicitudes de servicio para suscripciones adicionales.
 * El administrador de partners puede crear otra suscripción cuando la suscripción existente haya caducado o bien para una fecha futura en la que la suscripción existente ya no sea válida. La fecha de inicio de una nueva suscripción debe ser superior o igual a la fecha de finalización actual.
 

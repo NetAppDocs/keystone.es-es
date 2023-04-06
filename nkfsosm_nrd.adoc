@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: nkfsosm_nrd.html 
 keywords: netapp, keystone, NRD, Non-returnable disk 
-summary: Suscripción Keystone Flex y Equinix 
+summary: Keystone y Equinix 
 ---
 = Oferta de disco no retornable
 :hardbreaks:
@@ -14,14 +14,14 @@ summary: Suscripción Keystone Flex y Equinix
 
 
 [role="lead"]
-Como parte de la suscripción flexible de NetApp Keystone (suscripción flexible), NetApp amplía la oferta de disco no retornable (NRD).
+Como parte de los servicios NetApp Keystone, NetApp amplía la oferta de discos no retornables (NRD).
 
-Si adquiere la oferta de NRD para la suscripción Flex, NetApp no recupera los medios de almacenamiento físicos utilizados durante la totalidad de la duración del servicio debido a las actividades de soporte y mantenimiento, o a la finalización del servicio cuando NetApp recupera de otro modo todos sus activos físicos utilizados en la prestación del servicio.
+Si adquiere la oferta de NRD para Keystone, NetApp no recupera los medios de almacenamiento físico utilizados durante toda la vigencia del servicio debido a las actividades de soporte y mantenimiento, o en la finalización del servicio cuando NetApp recupera de otro modo todos sus activos físicos usados en la entrega del servicio.
 
 Si ha adquirido este servicio, tenga en cuenta lo siguiente:
 
 * Incluso al adquirir este servicio, puede optar por que NetApp recupere los medios de almacenamiento físico.
-* En caso de que NetApp no se haga responsable de la recuperación de los medios, usted tiene derecho a destruir los medios de almacenamiento o los discos utilizados en la prestación del servicio de suscripción Flex al final de la tenencia del servicio.
+* En caso de que NetApp no se responsabilice de la recuperación del medio, usted tendrá derecho a destruir los discos o medios de almacenamiento utilizados en la prestación del servicio Keystone al final de la titularidad del servicio.
 * Puede agregar, modificar o terminar la oferta de NRD durante la renovación de la suscripción y no en medio de la tenencia.
 * El costo asociado con el NRD ofrece cambios basados en la capacidad comprometida de la suscripción. Es decir, si usted opta por aumentar su capacidad comprometida en medio del período de suscripción, el costo de NRD se revisa igualmente. El aumento será proporcional al aumento de la capacidad comprometida.
 * Sólo puede conservar los medios de almacenamiento físico utilizados en el servicio. Controladoras, bandejas, cables, switches, tarjetas de red, Además, NetApp recuperará la capacidad de cualquier otro equipo que sea propiedad de NetApp.

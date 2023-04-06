@@ -4,7 +4,7 @@ permalink: rn_whats_new.html
 keywords: 'netapp, keystone, release notes, new features, what"s new,' 
 summary: Nuevas funciones del motor de servicio de NetApp 
 ---
-= Novedades de esta versión de los servicios de suscripción Flex de NetApp Keystone
+= Novedades de esta versión de servicios de NetApp Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Nuevas funciones del motor de servicio de NetApp
 
 
 [role="lead"]
-Las notas de la versión le informan de las nuevas funciones y mejoras introducidas en los servicios de suscripción flexible de NetApp Keystone (suscripción flexible), junto con las limitaciones y correcciones conocidas.
+En las notas de la versión se informan de las nuevas funciones y mejoras que se introducen en los servicios de suscripción de NetApp Keystone, junto con las limitaciones y correcciones conocidas.
 
-Las siguientes funciones se han introducido en diferentes versiones del motor de servicios de NetApp para admitir las funcionalidades mejoradas que se ofrecen mediante la suscripción Flex de NetApp Keystone (suscripción Flex):
+Las siguientes funciones se han introducido en diferentes versiones de Service Engine de NetApp para dar soporte a las funcionalidades mejoradas que se ofrecen a través de los servicios de suscripción de Keystone:
 
 
 
@@ -33,7 +33,7 @@ La consola del motor de servicio de NetApp se ha rediseñado para incluir los si
 * *Utilización de la capacidad* para ver la capacidad utilizada para sus servicios suscritos.
 * *Cargos mensuales (facturación)* para ver los cargos mensuales agregados para todas sus suscripciones.
 * *Alertas* para ver el resumen de las alertas más recientes de su entorno.
-* *Peticiones de servicio* para ver la lista de las solicitudes de servicio más recientes generadas en su entorno. Para obtener más información, consulte link:sewebiug_dashboard.html["Ver el panel de suscripciones de Flex"].
+* *Peticiones de servicio* para ver la lista de las solicitudes de servicio más recientes generadas en su entorno. Para obtener más información, consulte link:sewebiug_dashboard.html["Consulta la consola de Keystone"].
 
 
 
@@ -64,17 +64,17 @@ Se han realizado las siguientes mejoras en la interfaz de usuario del motor de s
 
 == Funciones introducidas en el motor de servicio de NetApp 2.1
 
-Las nuevas funciones de esta versión incluyen la compatibilidad con multi-tenancy en un entorno de suscripción Flex y la funcionalidad de organización en niveles que facilita el traslado de datos inactivos a un nivel de cloud o local de menor coste.
+Las nuevas funciones de esta versión incluyen compatibilidad con multi-tenancy en un entorno Keystone y la funcionalidad de organización en niveles que facilita el movimiento de datos inactivos a un nivel de cloud o local de menor coste.
 
 
 
-=== Presentación de los servicios de suscripción Flex para proveedores de servicios
+=== Presentamos los servicios de suscripción de Keystone para proveedores de servicios
 
 El motor de servicios de NetApp ahora admite la gestión de un entorno multi-tenancy por parte de un proveedor de servicios. Puede realizar las funciones de aprovisionamiento, creación de informes, facturación y gestión de clientes que tengan sus propias suscripciones. Para dar soporte a esta función, se han realizado las siguientes mejoras:
 
-* *Panel:* el Panel muestra información sobre las suscripciones de almacenamiento, como niveles de servicio, uso de capacidad para cada nivel de servicio y servicios complementarios de protección de datos, para un número de suscripción específico. Como proveedor de servicios, puede ver los detalles de sus suscripciones a NetApp Keystone Flex Subscription y a inquilinos. Como administrador de arrendatarios, puede ver los detalles de todas las suscripciones de arrendatario de su arrendatario.
-* *Informe:* puede crear informes de capacidad y rendimiento con respecto al uso de su suscripción NetApp Keystone Flex y también para su uso de usuario. Como administrador asociado, puede ver el informe de capacidad del uso de su suscripción Flex desde *Informes* > *uso de Keystone*. Como administrador asociado, puede ver los informes de uso de capacidad para un arrendatario específico en *Informes* > *uso de arrendatario*/*uso de capacidad*. Como administrador de arrendatarios, puede ver los informes de arrendamiento desde *Informes* > *uso de arrendatario*.
-* *Suscripción:* como administrador de un socio, puede ver y actualizar sus suscripciones de suscripción y inquilino de Flex desde *SUSCRIPCIONES* > *Suscripciones de Keystone* y *SUSCRIPCIONES* > *Suscripciones de inquilino* respectivamente. Como administrador de arrendatarios, sólo puede ver sus suscripciones de arrendatario.
+* *Panel:* el Panel muestra información sobre las suscripciones de almacenamiento, como niveles de servicio, uso de capacidad para cada nivel de servicio y servicios complementarios de protección de datos, para un número de suscripción específico. Como proveedor de servicios, puedes ver los detalles de tu suscripción a NetApp Keystone y tus suscripciones de inquilino. Como administrador de arrendatarios, puede ver los detalles de todas las suscripciones de arrendatario de su arrendatario.
+* *Informes:* Puede crear informes de capacidad y rendimiento con respecto al uso de su suscripción a NetApp Keystone y también para el uso de su inquilino. Como administrador de socios, puedes ver el informe de capacidad para el uso de tu suscripción desde *Informes* > *Uso de Keystone*. Como administrador asociado, puede ver los informes de uso de capacidad para un arrendatario específico en *Informes* > *uso de arrendatario*/*uso de capacidad*. Como administrador de arrendatarios, puede ver los informes de arrendamiento desde *Informes* > *uso de arrendatario*.
+* *Suscripción:* Como administrador asociado, puedes ver y actualizar tu suscripción y suscripciones de inquilino desde *SUSCRIPCIONES* > *Suscripciones Keystone* y *SUSCRIPCIONES* > *Suscripciones de inquilino* respectivamente. Como administrador de arrendatarios, sólo puede ver sus suscripciones de arrendatario.
 * *Usuarios:* en función de su función, puede asignar privilegios a un usuario nuevo o existente dentro de un usuario de acuerdo con el requisito. El rol puede ser administrador de NetApp, administrador de NetApp con privilegios de solo lectura, administrador de partners o administrador de inquilinos. Como administrador de partner, puede asignar solo roles de administrador del partner o de administrador de inquilinos a nuevos usuarios. Un usuario administrador de inquilinos puede asignar solo el rol de administrador de inquilinos a otros usuarios.
 * *Menú redes:* como administrador asociado, puede ver las redes definidas para su uso. También puede crear subredes para su subarrendatario y zona desde *REDES* > *subredes*. Esto es necesario a la vez que se aprovisiona el almacenamiento para los clientes finales o los subclientes.
 * Soporte de API: El `/tenants/{tenant_id}/zones/{zone_name}/subnets` y.. `/tenants/{tenant_id}/zones/{zone_name}/subnets/{id}/tags` Se están ofreciendo API como parte de esta versión para crear y ver subredes para subinquilinos.
@@ -83,8 +83,8 @@ El motor de servicios de NetApp ahora admite la gestión de un entorno multi-ten
 Para obtener más información sobre esta función, consulte los siguientes vínculos:
 
 * link:nkfsosm_overview.html["Modelo operativo, funciones y responsabilidades"]
-* link:nkfsosm_tenancy_overview.html["Soporte para multi-tenancy y suscripción flexible"]
-* link:sewebiug_dashboard.html["Ver el panel de suscripciones de Flex"]
+* link:nkfsosm_tenancy_overview.html["Tenancy y multi-tenancy en Keystone"]
+* link:sewebiug_dashboard.html["Consulta la consola de Keystone"]
 * link:sewebiug_working_with_reports.html["Ver informes"]
 * link:sewebiug_managing_subscriptions.html["Gestión de suscripciones"]
 * link:sewebiug_managing_tenants_and_subtenants.html["Gestión de inquilinos y subinquilinos"]
@@ -95,7 +95,7 @@ Para obtener más información sobre esta función, consulte los siguientes vín
 
 === Organización en niveles
 
-El servicio de suscripción flexible de NetApp Keystone ahora incluye una capacidad de organización en niveles que aprovecha la tecnología FabricPool de NetApp. Identifica datos usados con menos frecuencia y los organiza en niveles para un almacenamiento en frío de propiedad, que es implementado y gestionado en las instalaciones por NetApp. Para optar a la organización en niveles, debe suscribirse a los niveles de servicio de nivel extremo o premium por niveles.
+El servicio Keystone de NetApp Keystone ahora incluye una funcionalidad de organización en niveles que aprovecha la tecnología FabricPool de NetApp. Identifica datos usados con menos frecuencia y los organiza en niveles para un almacenamiento en frío de propiedad, que es implementado y gestionado en las instalaciones por NetApp. Para optar a la organización en niveles, debe suscribirse a los niveles de servicio de nivel extremo o premium por niveles.
 
 Se han modificado las siguientes API para incluir nuevos valores de atributos para los nuevos niveles de servicio de organización en niveles:
 
@@ -130,7 +130,7 @@ NOTE: Las suscripciones a Cloud Volumes Services se gestionan fuera del motor de
 
 === Capacidad de gestionar objetos aprovisionados fuera del motor de servicio de NetApp
 
-Los volúmenes (discos y recursos compartidos de archivos) que ya existen en el entorno del cliente y que pertenecen a los equipos virtuales de almacenamiento configurados en Service Engine de NetApp, ahora se pueden ver y gestionar como parte de su suscripción Flex de NetApp Keystone (suscripción flexible). Los volúmenes aprovisionados fuera del motor de servicio de NetApp aparecen ahora en las páginas *shares* y *discos* con los códigos de estado correspondientes. Un proceso en segundo plano se ejecuta en un intervalo periódico e importa las cargas de trabajo externas dentro de la instancia del motor de servicios de NetApp.
+Los volúmenes (los discos y los recursos compartidos de archivos) que ya existen en el entorno del cliente y pertenecen a los equipos virtuales de almacenamiento configurados en el motor de servicio de NetApp, ahora pueden verse y gestionarse como parte de su suscripción a NetApp Keystone. Los volúmenes aprovisionados fuera del motor de servicio de NetApp aparecen ahora en las páginas *shares* y *discos* con los códigos de estado correspondientes. Un proceso en segundo plano se ejecuta en un intervalo periódico e importa las cargas de trabajo externas dentro de la instancia del motor de servicios de NetApp.
 
 Es posible que los discos y los recursos compartidos de archivos importados no sean del mismo estándar que los discos y los recursos compartidos de archivos existentes en el motor de servicios de NetApp. Tras la importación, estos discos y recursos compartidos de archivos se clasifican con `Non-Standard` estado. Puede solicitar un servicio de *Soporte > solicitud de servicio > Nueva solicitud de servicio* para que se normalicen y gestionen a través del portal del motor de servicios de NetApp.
 

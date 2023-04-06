@@ -14,9 +14,9 @@ summary: Ver y descargar los detalles de facturación
 
 
 [role="lead"]
-Puede ver los cargos mensuales de todos los servicios suscritos en su suscripción flexible de NetApp Keystone (suscripción flexible) en la pantalla de facturación y panel del motor de servicios de NetApp.
+Puede ver los cargos mensuales de todos los servicios suscritos en sus servicios de suscripción de NetApp Keystone en la consola del motor de servicios de NetApp y la pantalla Facturación.
 
-Puede ver los detalles de facturación de todos los servicios suscritos para la suscripción Flex para los meses anteriores. Se resalta la facturación respecto a la capacidad en ráfaga de cada mes.
+Puedes ver los detalles de facturación de todos tus servicios suscritos para los servicios de suscripción de Keystone de los meses anteriores. Se resalta la facturación respecto a la capacidad en ráfaga de cada mes.
 
 image:billing.png[""]
 
@@ -37,4 +37,4 @@ NOTE: También puede hacer clic en la flecha situada en la esquina superior dere
 . Seleccione cualquier mes que aparezca en la tabla. Todas sus suscripciones para el mes, junto con la facturación asociada, se muestran en la tabla. Los cargos se dividen de acuerdo con la capacidad comprometida y el uso en ráfaga.
 
 
-Para obtener más información sobre facturación, consulte link:nkfsosm_kfs_billing.html["Facturación de suscripción flexible"]
+Para obtener más información sobre facturación, consulte link:nkfsosm_kfs_billing.html["Facturación de Keystone"]

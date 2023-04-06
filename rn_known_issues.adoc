@@ -14,7 +14,7 @@ summary: Problemas conocidos en el motor de servicio de NetApp
 
 
 [role="lead"]
-Se notificaron los siguientes problemas conocidos en Service Engine de NetApp. Es posible que tenga estos problemas cuando aprovisiona o utiliza su almacenamiento como parte de su suscripción Flex.
+Se notificaron los siguientes problemas conocidos en Service Engine de NetApp. Es posible que encuentre estos problemas al aprovisionar o utilizar su almacenamiento como parte de sus suscripciones a Keystone.
 
 [cols="3*"]
 |===

@@ -44,7 +44,7 @@ En la siguiente tabla, se enumeran las descripciones de acceso basado en roles.
 | Administrador de NetApp (lectura) | Acceso de sólo lectura en todos los componentes. 
 
 
-| Administrador de NetApp | Acceso completo y permisos para realizar todas las funciones del portal web de Service Engine de NetApp para gestionar la suscripción Flex de NetApp Keystone y todas las actividades destinadas a la administración de partners e inquilinos. 
+| Administrador de NetApp | Acceso completo y permisos para realizar todas las funciones del portal web del motor de servicio de NetApp con el fin de gestionar los servicios de suscripción de NetApp Keystone y todas las actividades para la administración de partners e inquilinos. 
 |===
 
 
@@ -83,7 +83,7 @@ Para iniciar sesión con SSO de NetApp, necesita lo siguiente:
 . Seleccione NetApp SSO.
 . En la página de inicio de sesión SSO, introduzca su nombre de usuario y contraseña y haga clic en *Iniciar sesión*.
 +
-Una vez que se haya iniciado sesión correctamente con las cargas de la interfaz web del motor de servicios de NetApp, se mostrará la consola de suscripción Flex. Para obtener información general de la GUI, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["Información general de la interfaz web del motor de servicios de NetApp"].
+Después de que se inicie sesión correctamente en la interfaz web del motor de servicios de NetApp, se mostrará la consola de servicios de suscripción de Keystone. Para obtener información general de la GUI, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["Información general de la interfaz web del motor de servicios de NetApp"].
 
 
 

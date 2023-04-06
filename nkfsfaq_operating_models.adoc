@@ -14,7 +14,7 @@ summary: Modelos operativos
 
 
 [role="lead"]
-Existen tres modelos operativos en las suscripciones Flex. Estas preguntas frecuentes están relacionadas con esos modelos operativos.
+Existen tres modelos operativos en los servicios de Keystone. Estas preguntas frecuentes están relacionadas con esos modelos operativos.
 
 * ¿Cuáles son los diferentes modelos operativos y quién es responsable de las principales actividades?*
 

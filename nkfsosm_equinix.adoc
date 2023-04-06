@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: nkfsosm_equinix.html 
 keywords: netapp, keystone, Equinix 
-summary: Suscripción Keystone Flex y Equinix 
+summary: Servicios de Keystone y Equinix 
 ---
-= Suscripción flexible con tecnología Equinix
+= Servicios de Keystone con tecnología de Equinix
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,8 +14,8 @@ summary: Suscripción Keystone Flex y Equinix
 
 
 [role="lead"]
-NetApp se ha asociado con Equinix para alojar la suscripción flexible de NetApp Keystone (suscripción flexible) en un centro de datos Equinix para garantizar la entrega de una solución unificada para usted.
+NetApp se ha asociado con Equinix para alojar servicios de NetApp Keystone en un centro de datos Equinix con el fin de garantizar la entrega de una solución unificada para usted.
 
-La suscripción flexible con la tecnología Equinix no ha cambiado con respecto a la oferta estándar de suscripción Flex.
+Los servicios Keystone con tecnología Equinix no cambian de la oferta estándar de servicios Keystone.
 
-Además de la oferta estándar de suscripción Flex, deberá seleccionar un centro de datos de Equinix para alojar su equipo de suscripción Flex.
+Además de la oferta estándar de servicios de Keystone, deberá seleccionar un centro de datos Equinix para alojar su equipo de Keystone.
