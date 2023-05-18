@@ -27,7 +27,7 @@ En multi-tenancy, un partner es un cliente/inquilino de NetApp en un entorno Key
 .Subinquilinos
 Los subinquilinos Keystone existen completamente dentro de un inquilino principal con una relación muchos a uno. Los subinquilinos proporcionan separación lógica de recursos dentro de un tenancy y se usan como base para los informes de carácter general. Todos los recursos de almacenamiento (es decir, servicios de archivos, almacenamiento basado en bloques y almacenamiento de objetos) pertenecen a un subinquilino.
 
-image:nkfsosm_image10.png[""]
+image:nkfsosm_image10.png["arquitectura de inquilino"]
 
 
 

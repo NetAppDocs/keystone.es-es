@@ -18,7 +18,7 @@ Puede ver los cargos mensuales de todos los servicios suscritos en sus servicios
 
 Puedes ver los detalles de facturación de todos tus servicios suscritos para los servicios de suscripción de Keystone de los meses anteriores. Se resalta la facturación respecto a la capacidad en ráfaga de cada mes.
 
-image:billing.png[""]
+image:billing.png["gráficos de facturación"]
 
 Como administrador partner, puede ver la separación mensual de la facturación de un subinquilino seleccionado.
 

@@ -18,7 +18,7 @@ Las siguientes preguntas proporcionan respuestas a sus consultas frecuentes sobr
 
 * ¿Qué es NetApp Keystone?*
 
-NetApp Keystone es una cartera de alternativas de gastos de capital (capex) en las instalaciones. Para obtener más información, consulte https://www.netapp.com/services/keystone/["NetApp Keystone"].
+NetApp Keystone es una cartera de alternativas de gastos de capital (capex) en las instalaciones. Para obtener más información, consulte https://["NetApp Keystone"].
 
 *¿Cómo beneficia NetApp Keystone a mis clientes?*
 

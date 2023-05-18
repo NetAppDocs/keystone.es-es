@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: aqos-kfs.html 
+keywords: aqos, qos, adaptive quality of service, quality of service 
+summary: 'Calidad de servicio (AQoS) adaptativa de Keystone' 
+---
+= Calidad de servicio adaptativa en Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La calidad de servicio (QoS) de almacenamiento es una tecnología vital que garantiza que las aplicaciones obtienen un rendimiento constante y predecible. Sin calidad de servicio, ciertas cargas de trabajo, como las para el arranque de varios sistemas, pueden consumir la mayoría o todos los recursos durante un periodo y afectar a las otras cargas de trabajo. Para obtener más información sobre QoS, consulte https://["Garantice el rendimiento con información general de calidad de servicio"^].
+
+
+
+== Calidad de servicio adaptativa
+
+Los servicios de Keystone utilizan la calidad de servicio adaptativa (AQoS) para mantener de forma dinámica la relación de IOPS/TiB en función del tamaño del volumen. Para obtener información acerca de las políticas AQoS, consulte https://["Acerca de la calidad de servicio adaptativa"^].
+
+Keystone le proporciona políticas de AQoS que puede configurar una vez que su clúster se encuentre en producción. Debe asegurarse de que todos los volúmenes estén asociados con las políticas de AQoS correctas que ya se han creado y están disponibles en el sistema.
+
+Un volumen de ONTAP no es compatible si no se aplica una política AQoS. Un volumen sin una política de calidad de servicio es el último de la lista de prioridades del sistema para que proporcione las operaciones de entrada y salida disponibles. Sin embargo, si hay alguna operación de entrada y salida disponible, el volumen podría consumir todos los iOS disponibles.
+
+
+NOTE: Si no has aplicado políticas de calidad de servicio (AQoS) a tus volúmenes, dichos volúmenes se medirán y cobrarán en el nivel de servicio más alto según tu suscripción. Esto puede resultar en cargos de ráfaga no intencionados.
+
+
+
+=== Configuración de calidad de servicio adaptativa
+
+La configuración de calidad de servicio adaptativa (AQoS) varía según los niveles de servicio.
+
+|===
+
+
+| *Nombre de la política* | *Extreme* y *Extreme Tiering* | *Premium* y *Premium Tiering* | *Estándar* | *Valor* 
+
+
+| *IOPS esperado* | 6,144 | 2,048 | 128 | 64 
+
+
+| *Asignación de IOPS esperada* 4+| Espacio asignado 
+
+
+| *Peak IOPS* | 12,288 | 4,096 | 512 | 128 
+
+
+| *Asignación de IOPS pico* 4+| Espacio asignado 
+
+
+| *Tamaño de bloque* 4+| 32K 
+|===

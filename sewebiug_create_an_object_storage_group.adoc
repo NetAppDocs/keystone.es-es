@@ -21,7 +21,7 @@ Use este método para crear un grupo de almacenamiento de objetos.
 . Asegúrese de que el subarrendatario correcto está seleccionado y ha hecho clic en la ficha *grupos*.
 . Haga clic en *Crear grupo*.
 . En el cuadro de diálogo Create Group, introduzca el nombre del grupo.
-. Seleccione la política de S3 de la lista. Para obtener más información sobre las políticas de S3, consulte https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["Especificar permisos en una directiva"].
+. Seleccione la política de S3 de la lista. Para obtener más información sobre las políticas de S3, consulte https://["Especificar permisos en una directiva"].
 . Haga clic en *Crear*. Esto crea un trabajo para crear el grupo con la configuración especificada.
 
 

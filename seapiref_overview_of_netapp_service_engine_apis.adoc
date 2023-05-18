@@ -52,7 +52,7 @@ Este documento divide las descripciones de la API en dos secciones que constan d
 
 El motor de servicio de NetApp admite los conceptos de regiones y zonas, como se muestra en la siguiente figura. Una región representa un centro de datos o un sitio, mientras que una zona representa una subunidad de almacenamiento dentro de la región (técnicamente, un clúster dentro de un centro/sitio de datos). Las múltiples zonas admiten funciones de disponibilidad y protección de datos (DP).
 
-image:seapiref_image1.png["Error: Falta la imagen gráfica"]
+image:seapiref_image1.png["zonas y relación regional"]
 
 Una sola instancia de Service Engine de NetApp puede admitir uno o más inquilinos. El motor de servicios de NetApp usa los conceptos de inquilino y subinquilino como entidades jerárquicas que poseen o gestionan el servicio de almacenamiento.
 

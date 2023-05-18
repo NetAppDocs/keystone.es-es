@@ -1,12 +1,17 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_keystone_service_capacity_definitions.html 
+keywords: netapp, keystone, service, capacity, definitions, burst, committed capacity, consumed capacity, billed capacity 
+summary: Definiciones de la capacidad del servicio de Keystone 
+---
 = Definiciones de la capacidad del servicio de Keystone
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
-
----definiciones barra lateral: enlace lateral permalink: nkfsosm_keystone_service_capacity_definitions.html palabras clave: netapp, keystone, servicio, capacidad, definiciones, Ráfaga, capacidad comprometida, capacidad consumida, resumen de la capacidad facturada: Definiciones de capacidad del servicio de Keystone ---
-
-
-
-= Definiciones de la capacidad del servicio de Keystone
 
 [role="lead"]
 Las capacidades del servicio NetApp Keystone incluyen:

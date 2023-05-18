@@ -46,7 +46,7 @@ Instalación y tareas relacionadas
 * Puesta en marcha
 * Integradas
 
-| image:check.png[""] | Ninguno 
+| image:check.pngcheck["comprobar"] | Ninguno 
 
 
  a| 
@@ -57,7 +57,7 @@ Administración y supervisión
 * Realizar tareas administrativas
 * Alerta
 
-| Ninguno | image:check.png[""] 
+| Ninguno | image:check.png["comprobar"] 
 
 
  a| 
@@ -67,7 +67,7 @@ Operaciones y optimización
 * Gestión del rendimiento
 * Administrar SLA
 
-| Ninguno | image:check.png[""] 
+| Ninguno | image:check.png["comprobar"] 
 
 
  a| 
@@ -78,7 +78,7 @@ Soporte técnico
 * Soporte de software
 * Actualizaciones y parches
 
-| image:check.png[""] | Ninguno 
+| image:check.png["comprobar"] | Ninguno 
 |===
 
 

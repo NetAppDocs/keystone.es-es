@@ -14,7 +14,7 @@ summary: Gestión de suscripciones de Cloud Volume en Google Cloud Platform
 
 
 [role="lead"]
-Las suscripciones a Cloud Volumes Service para Google Cloud Platform (GCP) se asocian con subclientes específicos dentro de un inquilino. Un subinquilino está suscrito a un único servicio de Google Cloud. Puede crear y gestionar servicios cloud (instancias de Google Cloud) para sus inquilinos y subinquilinos, y aprovisionar almacenamiento en Google Cloud según sus inquilinos. Las cuentas de Cloud Volumes Service de los inquilinos y los subinquilinos se deben configurar antes de poder gestionar las instancias de Google Cloud a través de Service Engine de NetApp. Para obtener información sobre Cloud Volumes Service en GCP, consulte https://docs.netapp.com/us-en/occm/concept_cvs_gcp.html["Más información sobre Cloud Volumes Service para Google Cloud"].
+Las suscripciones a Cloud Volumes Service para Google Cloud Platform (GCP) se asocian con subclientes específicos dentro de un inquilino. Un subinquilino está suscrito a un único servicio de Google Cloud. Puede crear y gestionar servicios cloud (instancias de Google Cloud) para sus inquilinos y subinquilinos, y aprovisionar almacenamiento en Google Cloud según sus inquilinos. Las cuentas de Cloud Volumes Service de los inquilinos y los subinquilinos se deben configurar antes de poder gestionar las instancias de Google Cloud a través de Service Engine de NetApp. Para obtener información sobre Cloud Volumes Service en GCP, consulte https://["Más información sobre Cloud Volumes Service para Google Cloud"].
 
 
 NOTE: Las cuentas de Cloud Volumes Service para inquilinos y subinquilinos ya deben estar configuradas para GCP. Póngase en contacto con el servicio técnico para obtener los detalles de la cuenta de servicio. Necesita acceso de administrador de clientes para gestionar Google Cloud Volumes.
@@ -30,7 +30,7 @@ Debe asegurarse de que:
 
 * El subinquilino está suscrito al servicio de Google Cloud.
 * Tiene el archivo JSON para la cuenta de servicio del suscriptor y conoce el número de proyecto de GCP asociado con la instancia de Google Cloud.
-* Para garantizar que Cloud Volumes Service para GCP ya está configurado en BlueXP por su equipo de soporte. Para obtener más información, consulte https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html["Configure Cloud Volumes Service para Google Cloud"].
+* Para garantizar que Cloud Volumes Service para GCP ya está configurado en BlueXP por su equipo de soporte. Para obtener más información, consulte https://["Configure Cloud Volumes Service para Google Cloud"].
 
 
 .Pasos

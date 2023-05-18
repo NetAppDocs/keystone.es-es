@@ -25,7 +25,7 @@ Asegúrese de capturar la clave inmediatamente después de crearla. No hay forma
 +
 Para obtener información detallada sobre cómo trabajar con elementos de las listas, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["Acciones de vista de lista"].
 
-. Aparece el cuadro de diálogo *Administrar claves S3* que muestra la lista de claves para el usuario. Para obtener más información sobre las teclas, consulte https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["Especificar permisos en una directiva"].
+. Aparece el cuadro de diálogo *Administrar claves S3* que muestra la lista de claves para el usuario. Para obtener más información sobre las teclas, consulte https://["Especificar permisos en una directiva"].
 . Si no hay claves existentes para el usuario, haga clic en *Crear clave S3* para ver los campos a fin de crear una clave.
 . Si desea que la clave caduque, especifique la fecha de caducidad y la hora de caducidad en UTC. De lo contrario, deje los valores predeterminados en estos campos.
 . Para crear la clave, haga clic en la Marca de verificación. Aparece el cuadro de diálogo *Detalles de la clave de S3* que muestra la clave de acceso y la clave secreta.
