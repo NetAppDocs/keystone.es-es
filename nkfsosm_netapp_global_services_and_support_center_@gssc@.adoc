@@ -27,9 +27,9 @@ Solicite un ticket directamente en el portal del motor de servicio de NetApp (*S
 
 También puede utilizar la siguiente información para ponerse en contacto con el equipo de soporte.
 
-* Contactos de servicio globales:https://[]
+* Contactos de servicio globales:https://www.netapp.com/us/contact-us/support.aspx[]
 * Si tiene un caso o una incidencia abiertos que es necesario escalar, envíe un correo electrónico a una de las siguientes direcciones: Keystone.services@netapp.com Keystone.escalations@netapp.com
-* NetApp utiliza OpsRamp, una solución de puerta de enlace remota basada en cloud para supervisar y conectar de forma proactiva el entorno NetApp Keystone a efectos de solución de problemas. Para obtener más información sobre OpsRamp, consulte https://[].
+* NetApp utiliza OpsRamp, una solución de puerta de enlace remota basada en cloud para supervisar y conectar de forma proactiva el entorno NetApp Keystone a efectos de solución de problemas. Para obtener más información sobre OpsRamp, consulte https://www.opsramp.com/#[].
 
 
 
@@ -37,6 +37,6 @@ NOTE: En un modelo operado por un partner, las solicitudes de servicio del inqui
 
 Si quiere más información sobre el contenido de este documento, consulte los siguientes documentos o sitios web:
 
-* NetApp Keystonehttps://["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
-* Documentación de productos de NetApphttps://["https://docs.netapp.com"^]
+* NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
+* Documentación de productos de NetApphttps://docs.netapp.com["https://docs.netapp.com"^]
 

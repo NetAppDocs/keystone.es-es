@@ -23,7 +23,7 @@ Use este método para modificar los detalles de un grupo de almacenamiento de ob
 +
 Para obtener información detallada sobre cómo trabajar con elementos de las listas, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["Acciones de vista de lista"].
 
-. En el cuadro de diálogo *Editar grupo*, modifique la directiva S3 aplicable al grupo. Para obtener más información sobre las políticas de S3, consulte https://["Especificar permisos en una directiva"].
+. En el cuadro de diálogo *Editar grupo*, modifique la directiva S3 aplicable al grupo. Para obtener más información sobre las políticas de S3, consulte https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["Especificar permisos en una directiva"].
 . Puede agregar sentencias de directiva adicionales según sea necesario.
 . Haga clic en *Actualizar*. Esto crea un trabajo para modificar el grupo con la configuración especificada. Para obtener información acerca del seguimiento de trabajos, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["aquí"].
 

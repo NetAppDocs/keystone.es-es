@@ -40,10 +40,10 @@ El uso en ráfaga se permite en servicios hasta cierto punto; se supervisa y fac
 
 Para obtener más información, consulte:
 
-* https://["Almacenamiento en bloques"]
-* https://["Servicios de archivos"]
-* https://["Almacenamiento de objetos"]
-* https://["Documentación de MetroCluster"]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_block_storage_overview.html["Almacenamiento en bloques"]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_file_services_overview.html["Servicios de archivos"]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_object_storage_overview.html["Almacenamiento de objetos"]
+* https://docs.netapp.com/us-en/ontap-metrocluster/index.html["Documentación de MetroCluster"]
 
 
 

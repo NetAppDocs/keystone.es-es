@@ -34,8 +34,8 @@ Puede buscar una copia de Snapshot en particular o seleccionar el tipo de progra
 .Después de terminar
 * Para recursos compartidos de tipo CIFS only: Para que los recursos compartidos estén disponibles por nombre de host, el administrador de dominio debe actualizar los registros DNS con el nombre del servidor CIFS y la dirección IP. De lo contrario, solo se puede acceder al recurso compartido a través de la dirección IP. Por ejemplo:
 +
-** Con los registros DNS actualizados, utilice el nombre de host o IP para acceder al recurso compartido: Por ejemplo file://["\\hostname\share"^] o. file://["\\IP\share"^]
-** Sin actualizar registros DNS, debe utilizar la dirección IP para acceder al recurso compartido, es decir file://["\\IP\share"^]
+** Con los registros DNS actualizados, utilice el nombre de host o IP para acceder al recurso compartido: Por ejemplo file://hostname/share["\\hostname\share"^] o. file://IP/share["\\IP\share"^]
+** Sin actualizar registros DNS, debe utilizar la dirección IP para acceder al recurso compartido, es decir file://IP/share["\\IP\share"^]
 
 
 * *Create Share* se ejecuta como un trabajo asíncrono. Podrá:

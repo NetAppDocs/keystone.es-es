@@ -15,7 +15,7 @@ summary: NetApp Keystone es una oferta de pago por crecimiento y almacenamiento 
 
 NetApp Keystone es una cartera de alternativas de gastos de capital (capex) en las instalaciones que dan paso al camino hacia el camino hacia el cloud. NetApp Keystone ofrece una experiencia fluida del cloud híbrido con servicios de almacenamiento que abarcan tanto en las instalaciones como en el cloud. Para obtener más información sobre NetApp Keystone, consulte link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
 
-Para obtener más información sobre NetApp Keystone, consulte https://["NetApp Keystone"].
+Para obtener más información sobre NetApp Keystone, consulte https://www.netapp.com/services/keystone/["NetApp Keystone"].
 
 Keystone es una oferta de almacenamiento como servicio que proporciona una experiencia similar al cloud en tus sistemas on-premises con conectividad al cloud, disponible según tus propias condiciones.
 

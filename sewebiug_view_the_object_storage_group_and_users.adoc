@@ -22,7 +22,7 @@ La lista Administración de usuarios muestra los usuarios y grupos de almacenami
 . Utilice las fichas *usuarios* y *grupos* para alternar la visualización entre usuarios y grupos.
 +
 ** La lista usuarios muestra los usuarios de almacenamiento de objetos definidos para el subarrendatario seleccionado. Para cada usuario, muestra su nombre y los grupos de almacenamiento de objetos a los que pertenecen.
-** La lista grupos muestra los grupos de almacenamiento de objetos definidos para el subarrendatario seleccionado. Muestra el nombre del grupo y la política S3 asignada a ese grupo. Para obtener más información sobre los grupos de bloques y las políticas de S3, consulte https://["Políticas de acceso a bloques y grupos"].
+** La lista grupos muestra los grupos de almacenamiento de objetos definidos para el subarrendatario seleccionado. Muestra el nombre del grupo y la política S3 asignada a ese grupo. Para obtener más información sobre los grupos de bloques y las políticas de S3, consulte https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#access-policy-overview["Políticas de acceso a bloques y grupos"].
 +
 Para obtener más información acerca de cómo utilizar las funciones de una lista, consulte link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["Acciones de vista de lista"].
 

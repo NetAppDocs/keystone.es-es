@@ -14,13 +14,13 @@ summary: 'Calidad de servicio (AQoS) adaptativa de Keystone'
 
 
 [role="lead"]
-La calidad de servicio (QoS) de almacenamiento es una tecnología vital que garantiza que las aplicaciones obtienen un rendimiento constante y predecible. Sin calidad de servicio, ciertas cargas de trabajo, como las para el arranque de varios sistemas, pueden consumir la mayoría o todos los recursos durante un periodo y afectar a las otras cargas de trabajo. Para obtener más información sobre QoS, consulte https://["Garantice el rendimiento con información general de calidad de servicio"^].
+La calidad de servicio (QoS) de almacenamiento es una tecnología vital que garantiza que las aplicaciones obtienen un rendimiento constante y predecible. Sin calidad de servicio, ciertas cargas de trabajo, como las para el arranque de varios sistemas, pueden consumir la mayoría o todos los recursos durante un periodo y afectar a las otras cargas de trabajo. Para obtener más información sobre QoS, consulte https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Garantice el rendimiento con información general de calidad de servicio"^].
 
 
 
 == Calidad de servicio adaptativa
 
-Los servicios de Keystone utilizan la calidad de servicio adaptativa (AQoS) para mantener de forma dinámica la relación de IOPS/TiB en función del tamaño del volumen. Para obtener información acerca de las políticas AQoS, consulte https://["Acerca de la calidad de servicio adaptativa"^].
+Los servicios de Keystone utilizan la calidad de servicio adaptativa (AQoS) para mantener de forma dinámica la relación de IOPS/TiB en función del tamaño del volumen. Para obtener información acerca de las políticas AQoS, consulte https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["Acerca de la calidad de servicio adaptativa"^].
 
 Keystone le proporciona políticas de AQoS que puede configurar una vez que su clúster se encuentre en producción. Debe asegurarse de que todos los volúmenes estén asociados con las políticas de AQoS correctas que ya se han creado y están disponibles en el sistema.
 
