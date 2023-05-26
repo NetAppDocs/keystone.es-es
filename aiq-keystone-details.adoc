@@ -47,7 +47,7 @@ Para cada número de suscripción, puede ver la siguiente información:
 * *ID de seguimiento*: El ID de seguimiento asignado en el momento de la activación de la suscripción. Se trata de un ID exclusivo para cada suscripción y sitio, que se utiliza para realizar el seguimiento de la suscripción.
 * *Período de facturación*: El período de facturación de la suscripción, como mensual, trimestral o anual.
 * *Fecha de inicio*: La fecha de inicio de la suscripción.
-* *Fecha de finalización*: Fecha de finalización de la suscripción. Según esta fecha, podría ver mensajes de información para las suscripciones que están a punto de expirar.
+* *Fecha de finalización*: Fecha de finalización de la suscripción. Una fecha en blanco indica que la suscripción no tiene fecha de finalización y que se renueva automáticamente. En función de esta fecha, es posible que vea mensajes de información de las suscripciones que están a punto de caducar o que tienen políticas de renovación automática asociadas.
 * *Estado del uso*: Indica la cantidad de la suscripción que se ha utilizado o que se ha utilizado en exceso. Puede ordenar la lista por esta columna si desea ver los registros de consumo más altos.
 * image:aiq-ks-time-icon.png["."]: Al hacer clic en este icono se abre la ficha *serie de tiempo de suscripción*, donde puede ver los datos de uso históricos de cada nivel de servicio incluido en esta suscripción.
 
@@ -105,7 +105,7 @@ Los siguientes colores de los gráficos de barras indican la capacidad consumida
 ** Morado: Por encima del límite de ráfaga o. `Above Limit`.
 +
 
-NOTE: Al pasar el ratón por encima de un gráfico de barras, puede ver los datos _Provisional usage_. Este es el uso registrado cuando los datos exactos del período de tiempo no están disponibles y se sustituyen por los datos disponibles en el punto de recopilación de datos anterior.
+NOTE: Un gráfico en blanco indica que no hay datos disponibles en el entorno en ese punto de recopilación de datos.
 
 
 
