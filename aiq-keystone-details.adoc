@@ -64,9 +64,11 @@ Puede consultar los siguientes indicadores de uso para comprobar el estado de us
 image:usage-indicator.png["iconos"]
 
 .Índice
-image:usage-indicator.png["."]
-image:usage-indicator.png["."]
-image:icon-grey.png["."]: No se ha registrado ningún uso de la capacidad con respecto a la capacidad comprometida del nivel de servicioimage:icon-green.png["."]: El consumo es normal, dentro del 80% de la capacidad comprometidaimage:icon-amber.png["."]: Consumo máximo, es decir, el uso está a punto de alcanzar el 100% o más de la capacidad comprometida. La columna *consumido* muestra este indicador para cualquier consumo superior al 80% de la capacidad comprometidaimage:icon-red.png["."]: El consumo está dentro del límite de ráfaga. El consumo en ráfaga es el consumo que supera el 100% de capacidad comprometida de un nivel de servicio, y se encuentra dentro del límite de uso acordado en ráfaga, como el 120%image:icon-purple.png["."]: Indica un consumo superior al límite de ráfaga estipulado
+image:icon-grey.png["."]: No se ha registrado ningún uso de la capacidad con respecto a la capacidad comprometida del nivel de servicio
+image:icon-green.png["."]: El consumo es normal, dentro del 80% de la capacidad comprometida
+image:icon-amber.png["."]: Consumo máximo, es decir, el uso está a punto de alcanzar el 100% o más de la capacidad comprometida. La columna *consumido* muestra este indicador para cualquier consumo superior al 80% de la capacidad comprometida
+image:icon-red.png["."]: El consumo está dentro del límite de ráfaga. El consumo en ráfaga es el consumo que supera el 100% de capacidad comprometida de un nivel de servicio, y se encuentra dentro del límite de uso acordado en ráfaga, como el 120%
+image:icon-purple.png["."]: Indica un consumo superior al límite de ráfaga estipulado
 
 
 
