@@ -14,7 +14,7 @@ summary: Keystone realiza el nivel de servicio
 
 
 [role="lead"]
-Keystone ofrece capacidad de almacenamiento de datos con niveles de servicio de rendimiento predefinidos (niveles de servicio) sobre la suscripción. Cada volumen gestionado por los servicios de Keystone se asocia con un nivel de servicio.
+Keystone ofrece capacidad de almacenamiento de datos con niveles de servicio de rendimiento predefinidos (niveles de servicio) o planes de tarifas basados en la suscripción. Cada volumen gestionado por los servicios de Keystone se asocia con un nivel de servicio.
 
 Cada nivel de servicio está definido por su densidad de I/O, que es IOPS/TiB/volumen. Esta es la proporción de rendimiento (operaciones de entrada/salida por segundo [IOPS]) y capacidad de almacenamiento asignada (TiB), que es IOPS/TiB con latencia media por volumen.
 
