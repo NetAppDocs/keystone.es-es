@@ -31,7 +31,7 @@ Para ver los detalles, realice los siguientes pasos:
 Los detalles de las suscripciones, los gráficos de uso de cada nivel de servicio y los detalles de volumen se muestran en las distintas pestañas de la pantalla *Suscripciones de Keystone*.
 
 
-NOTE: El consumo de capacidad en las suscripciones de Keystone se muestra en los informes y paneles de control, hasta dos decimales. Si el uso es inferior a 0.01 TIB, el valor se muestra como `0` o. `No Usage`. Para obtener más información sobre otras medidas de uso, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["Definiciones y métricas de nivel de servicio"]. Para obtener información sobre las distintas capacidades que se utilizan en Keystone, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Definiciones de la capacidad del servicio de Keystone"].
+NOTE: El consumo de capacidad en las suscripciones de Keystone se muestra en TIBs en las consolas e informes, y se redondea a dos posiciones decimales. Si el uso es inferior a 0.01 TIB, el valor se muestra como `0` o. `No Usage`. Para obtener más información sobre otras medidas de uso, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["Definiciones y métricas de nivel de servicio"]. Para obtener información sobre las distintas capacidades que se utilizan en Keystone, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Definiciones de la capacidad del servicio de Keystone"].
 
 
 
@@ -47,7 +47,7 @@ Para cada número de suscripción, puede ver la siguiente información:
 * *ID de seguimiento*: El ID de seguimiento asignado en el momento de la activación de la suscripción. Se trata de un ID exclusivo para cada suscripción y sitio, que se utiliza para realizar el seguimiento de la suscripción.
 +
 
-TIP: Si su suscripción tiene un nivel de servicio de protección de datos o un plan de tarifas asignado, una información sobre herramientas le ayudará a identificar el ID de seguimiento de la suscripción de partner en una configuración de MetroCluster. Para saber cómo ver el consumo detallado de suscripciones de partners en una configuración de MetroCluster, consulte https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#additional-details-for-data-protection["Detalles adicionales de Protección de datos"].
+TIP: Si su suscripción tiene un nivel de servicio de protección de datos o un plan de tarifas asignado, una información sobre herramientas le ayudará a identificar el ID de seguimiento de la suscripción de partner en una configuración de MetroCluster. Para saber cómo ver el consumo detallado de suscripciones de partners en una configuración de MetroCluster, consulte https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#additional-details-for-data-protection["Detalles adicionales para protección de datos"].
 
 * *Tipo de uso*: Es posible que te hayas suscrito a varias suscripciones de Keystone (versión 1) o Keystone STaaS (versión 2). Las reglas del plan de tarifas para los niveles de servicio pueden variar para los dos tipos de suscripción. Al observar el valor de esta columna, sabe si el tipo de uso se factura según el uso aprovisionado o lógico de cualquiera de ellos `v1` o. `v2`. Para obtener más información sobre STaaS de Keystone, consulte https://docs.netapp.com/us-en/keystone-staas/index.html["Documentación de STaaS de Keystone"].
 * *Período de facturación*: El período de facturación de la suscripción, como mensual, trimestral o anual.
@@ -139,41 +139,44 @@ NOTE: Los indicadores *consumo actual*, *ráfaga actual* y *ráfaga acumulada* d
 
 
 
-=== Detalles adicionales de Protección de datos
+=== Detalles adicionales para protección de datos
 
 .Haga clic aquí
 [%collapsible]
 ====
-Si se ha suscrito al servicio de protección de datos (DP), puede ver la división de los datos de consumo según los sitios asociados de MetroCluster en la pestaña *Serie de tiempo de suscripción*.
+Si se ha suscrito al servicio de protección de datos, puede ver la división de los datos de consumo de los sitios asociados de MetroCluster en la pestaña *Serie de tiempo de suscripción*.
 
 Para obtener más información sobre protección de datos, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_data_protection.html["Protección de datos"].
 
 Si los clústeres de su entorno de almacenamiento de ONTAP se configuran en una configuración de MetroCluster, los datos de consumo de su suscripción de Keystone se dividen en el mismo gráfico de serie de tiempo para mostrar el consumo en los sitios principales y de mirroring para los niveles de servicio básicos.
 
 
-NOTE: Los gráficos de barras de consumo se dividen sólo para los niveles de servicio básicos. Para los niveles de servicio DP, no aparece esta demarcación.
+NOTE: Los gráficos de barras de consumo se dividen sólo para los niveles de servicio básicos. Para los niveles de servicio de protección de datos, esta demarcación no aparece.
 
 .Niveles de servicio de protección de datos
-Para los niveles de servicio de la protección de datos, el consumo total se divide y el uso de cada sitio de partner se refleja y se factura en una suscripción independiente, es decir, una suscripción para el sitio principal y otra para el sitio de mirroring. Por eso, cuando selecciona el número de suscripción para el sitio principal en la pestaña *Serie de tiempo de suscripción*, los gráficos de consumo para los niveles de servicio DP muestran los detalles de consumo discreto solo para el sitio principal. Dado que cada sitio asociado de una configuración MetroCluster actúa como origen y mirroring, el consumo total de cada sitio incluye los volúmenes de origen y de reflejo creados en dicho sitio.
+Para los niveles de servicio de protección de datos, el consumo total se divide entre los sitios de partner y el uso en cada sitio de partner se refleja y se factura en una suscripción aparte, es decir, una suscripción para el sitio principal y otra para el sitio de mirroring. Por eso, cuando selecciona el número de suscripción para el sitio principal en la pestaña *Serie de tiempo de suscripción*, los gráficos de consumo para los niveles de servicio DP muestran los detalles de consumo discreto solo para el sitio principal. Dado que cada sitio asociado de una configuración MetroCluster actúa como origen y mirroring, el consumo total de cada sitio incluye los volúmenes de origen y de reflejo creados en dicho sitio.
+
+
+TIP: La información sobre herramientas junto al ID de tacking de tu suscripción en la pestaña *Detalles de la suscripción* te ayuda a identificar la suscripción de socio en la configuración de MetroCluster.
 
 .Niveles de servicio básicos
-Sin embargo, para los niveles de servicio básicos, cada volumen se carga según se aprovisiona en los sitios primarios y de duplicación, y por lo tanto, el mismo gráfico de barras se divide según el consumo en los sitios primarios y de duplicación.
+Para los niveles de servicio básicos, cada volumen se carga según se aprovisiona en los sitios primario y de mirroring, y, por lo tanto, se divide el mismo gráfico de barras según el consumo en los sitios primario y de mirroring.
 
 .Lo que puede ver para la suscripción principal
-La siguiente imagen muestra los gráficos para el nivel de servicio _Extreme_ y un número de suscripción principal. El mismo gráfico de serie temporal marca el consumo del sitio del espejo en un tono más claro del código de color utilizado para el sitio principal. La información de herramienta al pasar el ratón muestra el desglose de consumo (en TiB) para los sitios principales y de mirroring, 1,02 TiB y 1,05 TiB, respectivamente.
+La siguiente imagen muestra los gráficos para el nivel de servicio _Extreme_ (nivel de servicio base) y un número de suscripción principal. El mismo gráfico de serie temporal marca el consumo del sitio del espejo en un tono más claro del código de color utilizado para el sitio principal. La información de herramienta al pasar el ratón muestra el desglose de consumo (en TiB) para los sitios principales y de mirroring, 1,02 TiB y 1,05 TiB, respectivamente.
 
 image:mcc-chart.png["mcc primario"]
 
-Para el nivel de servicio _Data-Protect Extreme_, los gráficos aparecen de la siguiente manera:
+Para el nivel de servicio _Data-Protect Extreme_ (nivel de servicio de protección de datos), los gráficos aparecen de la siguiente manera:
 
 image:dp-src.png["base principal mcc"]
 
 .Qué puede ver para la suscripción secundaria (sitio de reflejo)
-Al comprobar la suscripción secundaria, puede ver que el gráfico de barras para el nivel de servicio _Extreme_ en el mismo punto de recopilación de datos se invierte, y la división de consumo en los sitios primario y duplicado es de 1,05 TiB y 1,02 TiB respectivamente.
+Al comprobar la suscripción secundaria, puede ver que el gráfico de barras del nivel de servicio _Extreme_ (nivel de servicio básico) en el mismo punto de recopilación de datos que el sitio del partner se invierte, y la división de consumo en los sitios primario y de reflejo es de 1,05 TiB y 1,02 TiB respectivamente.
 
 image:mcc-chart-mirror.png["espejo mcc"]
 
-Para el nivel de servicio _Data-Protect Extreme_, el gráfico aparece así en el mismo punto de recopilación:
+Para el nivel de servicio _Data-Protect Extreme_ (nivel de servicio de protección de datos), el gráfico aparece así en el mismo punto de recogida que el sitio del partner:
 
 image:dp-mir.png["base de espejo mcc"]
 
@@ -203,7 +206,7 @@ Se muestran los detalles del volumen. Puede desplazarse por las columnas y obten
 
 +
 
-NOTE: En el caso de los servicios de protección de datos, se muestra una columna adicional para indicar si el volumen es un volumen primario o reflejo en la configuración de MetroCluster. Puede copiar números de serie de nodos individuales haciendo clic en el botón *Copiar series de nodos*.
+NOTE: Para los servicios de protección de datos, se muestra una columna adicional para indicar si el volumen es un volumen primario o reflejo en la configuración de MetroCluster. Puede copiar números de serie de nodos individuales haciendo clic en el botón *Copiar series de nodos*.
 
 
 

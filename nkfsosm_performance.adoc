@@ -20,7 +20,9 @@ Cada nivel de servicio está definido por su densidad de I/O, que es IOPS/TiB/vo
 
 La densidad de I/O de un volumen se calcula en un intervalo por hora para informar sobre la densidad máxima de I/O. Los informes de densidad de I/O para los volúmenes se generan mensualmente.
 
-Aquí se enumeran los niveles de servicio para los tipos de almacenamiento de archivos, bloques y objetos.
+Usted selecciona los niveles de servicio en función del entorno de almacenamiento y las necesidades de almacenamiento y consumo. De forma predeterminada, tiene a su disposición los niveles de servicio básicos. Otros niveles de servicio están disponibles adicionalmente, si usted ha optado por servicios específicos. Por ejemplo, para el servicio de protección de datos, el nivel de servicio _Data-Protect <base-service-level>_ se asigna a su suscripción.
+
+Aquí se enumeran los niveles de servicio básicos para tipos de almacenamiento de archivos, bloques y objetos.
 
 
 
@@ -55,7 +57,7 @@ Aquí se enumeran los niveles de servicio para los tipos de almacenamiento de ar
 
 === Más información sobre niveles de servicio para el almacenamiento de archivos
 
-Las métricas de nivel de servicio dependen de las siguientes condiciones:
+Las métricas de nivel de servicio básico dependen de las siguientes condiciones:
 
 * Los niveles de servicio del almacenamiento de archivos y bloques son compatibles con ONTAP 9,7 y versiones posteriores.
 * Los valores de IOPS/TiB/volumen, MBps/TiB/volumen y latencia para los niveles de servicio se basan en la cantidad de datos lógicos almacenados en el volumen, el tamaño de bloque de 32KB KB y una combinación aleatoria de operaciones de I/O de lectura al 70 % y 30 % en escritura.

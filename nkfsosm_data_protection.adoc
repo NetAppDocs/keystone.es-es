@@ -24,6 +24,8 @@ El servicio de protección de datos de NetApp Keystone puede realizar backups de
 
 NOTE: Los servicios de backup y recuperación ante desastres están disponibles como servicios complementarios, mientras que Snapshot está disponible como parte del servicio de almacenamiento básico.
 
+Si se ha suscrito a servicios de protección de datos, se asignan niveles de servicio específicos a sus suscripciones, por ejemplo _Data-Protect Extreme_, _Data-Protect Premium_, etc. Para obtener más información, consulte https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#additional-details-for-data-protection["Detalles adicionales para protección de datos"]
+
 |===
 |  | Snapshots de una sola región (disponibles como parte del servicio de almacenamiento básico) | Backup de varias regiones (complemento de protección de datos) | Recuperación ante desastres en varias regiones (complemento de protección de datos) 
 
