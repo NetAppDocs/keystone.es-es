@@ -86,7 +86,7 @@ sidebar:
         url: "/sewebiug_select_tenant.html"
       - title: Consulte la interfaz web del motor de servicios de NetApp
         url: "/sewebiug_netapp_service_engine_web_interface_overview.html"
-    - title: Consulta la consola DSDashboard de las suscripciones de Keystone
+    - title: Consulta el panel de suscripciones de Keystone
       url: "/sewebiug_dashboard.html"
     - title: Ver facturación
       url: "/sewebiug_billing.html"
