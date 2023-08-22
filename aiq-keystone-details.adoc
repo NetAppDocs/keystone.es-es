@@ -34,27 +34,27 @@ NOTE: El consumo de capacidad en las suscripciones de Keystone se muestra en TIB
 
 
 
-== Ver todas las suscripciones
+== Ver suscripciones
 
-Puedes ver una lista de todas tus suscripciones en la pestaña *Todas las suscripciones*.
+Puedes ver una lista de tus suscripciones en la pestaña *Suscripciones*.
 
 image:all-subs.png["imagen de la pestaña todas las suscripciones"]
 
-Para cada número de suscripción, puede ver la siguiente información:
+Puede ver la siguiente información. Para determinados campos y columnas, puede ver información o iconos de advertencia y sugerencias de herramientas que le proporcionan información adicional sobre los datos.
 
 * * Número de suscripción*: El número de suscripción de la suscripción de Keystone que asigna NetApp.
 * *ID de seguimiento*: El ID de seguimiento asignado en el momento de la activación de la suscripción. Se trata de un ID exclusivo para cada suscripción y sitio, que se utiliza para realizar el seguimiento de la suscripción.
 +
 
-TIP: Si su suscripción tiene un nivel de servicio de protección de datos o un plan de tarifas asignado, una información sobre herramientas le ayudará a identificar el ID de seguimiento de la suscripción de partner en una configuración de MetroCluster. Para saber cómo ver el consumo detallado de suscripciones de partners en una configuración de MetroCluster, consulte https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#additional-details-for-data-protection["Detalles adicionales para protección de datos"].
+TIP: Si su suscripción tiene un nivel de servicio de protección de datos o un plan de tarifas asignado, una información sobre herramientas le ayudará a identificar el ID de seguimiento de la suscripción de partner en una configuración de MetroCluster. Para saber cómo ver el consumo detallado de suscripciones de partners en una configuración de MetroCluster, consulte https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#reference-charts-for-data-protection["Gráficos de referencia para la protección de datos"].
 
-* *Tipo de uso*: Es posible que te hayas suscrito a varias suscripciones de Keystone (versión 1) o Keystone STaaS (versión 2). Las reglas del plan de tarifas para los niveles de servicio pueden variar para los dos tipos de suscripción. Al observar el valor de esta columna, sabe si el tipo de uso se factura según el uso aprovisionado o lógico de cualquiera de ellos `v1` o. `v2`. Para obtener más información sobre STaaS de Keystone, consulte https://docs.netapp.com/us-en/keystone-staas/index.html["Documentación de STaaS de Keystone"].
+* *Tipo de uso*: Es posible que te hayas suscrito a varias suscripciones de Keystone (versión 1) o Keystone STaaS (versión 2). Las reglas del plan de tarifas para los niveles de servicio pueden variar para los dos tipos de suscripción. Al observar el valor de esta columna, sabe si el tipo de uso se factura según el uso aprovisionado o lógico de cualquiera de ellos `v1` o. `v2`. Para obtener más información sobre STaaS de Keystone, consulte https://docs.netapp.com/us-en/keystone-staas/index.html["Documentación de STaaS de Keystone"^].
 * *Período de facturación*: El período de facturación de la suscripción, como mensual, trimestral o anual.
 * *Fecha de inicio*: La fecha de inicio de la suscripción.
 * *Fecha de finalización*: Fecha de finalización de la suscripción. Una fecha en blanco indica que la suscripción no tiene fecha de finalización y que se renueva automáticamente. En función de esta fecha, es posible que vea mensajes de información de las suscripciones que están a punto de caducar o que tienen políticas de renovación automática asociadas.
 * *Estado del uso*: Indica la cantidad de la suscripción que se ha utilizado o que se ha utilizado en exceso. Puede ordenar la lista por esta columna si desea ver los registros de consumo más altos.
-* image:subs-dtls-icon.png["."]: Al hacer clic en este icono para una suscripción, se abre la pestaña *Detalles de la suscripción* con detalles adicionales de esa suscripción.
-* image:aiq-ks-time-icon.png["."]: Al hacer clic en este icono, se abre la pestaña *Serie de tiempo* donde puede ver los datos de uso históricos de cada nivel de servicio incluido en esta suscripción.
+* image:subs-dtls-icon.png["."]: Al hacer clic en este icono para una suscripción, se abre la pestaña *Uso actual* con detalles adicionales de esa suscripción.
+* image:aiq-ks-time-icon.png["."]: Al hacer clic en este icono, se abre la pestaña *Tendencia de capacidad*, donde puede ver los datos de uso históricos de cada nivel de servicio incluido en esta suscripción.
 Puede consultar los siguientes indicadores de uso para comprobar el estado de uso de cada suscripción:
 
 
@@ -69,11 +69,11 @@ image:icon-purple.png["."]: Indica un consumo superior al límite de ráfaga est
 
 
 
-== Ver detalles de la suscripción
+== Consulta de los detalles de uso de las suscripciones
 
-Para conocer los detalles de sus suscripciones, haga clic en la pestaña *Detalles de la suscripción* y seleccione el número de suscripción requerido.
+Para conocer los detalles de sus suscripciones, haga clic en la pestaña *Uso actual* y seleccione el número de suscripción requerido.
 
-image:aiq-ks-dtls.png["pestaña detalles de suscripción"]
+image:aiq-ks-dtls.png["Pestaña Uso actual"]
 
 En TIB, se muestran detalles, como el nombre del nivel de servicio, el compromiso, el consumo, las capacidades disponibles y el uso de ráfaga actual y acumulado.
 
@@ -84,12 +84,12 @@ Para obtener más información sobre sus servicios de almacenamiento de Keystone
 
 
 
-== Ver datos históricos de suscripción
+== Ver datos de uso históricos
 
-La pestaña *Serie de tiempo* muestra los datos históricos de tus suscripciones de Keystone durante un período específico. Los gráficos verticales muestran los detalles de uso del intervalo de tiempo seleccionado con los indicadores adecuados para que pueda comparar y generar informes.
+La pestaña *Tendencia de capacidad* muestra los datos históricos de tus suscripciones de Keystone durante un período específico. Los gráficos verticales muestran los detalles de uso del intervalo de tiempo seleccionado con los indicadores adecuados para que pueda comparar y generar informes.
 
 .Pasos
-. Haga clic en la pestaña *Serie de tiempo*.
+. Haga clic en la pestaña *Tendencia de capacidad*.
 . Seleccione la suscripción necesaria para la que desea ver los detalles. La primera suscripción en el nombre de su cuenta se selecciona de forma predeterminada.
 . Seleccione el intervalo de tiempo de los iconos del calendario en los campos *desde fecha* y *hasta fecha*. El intervalo de tiempo predeterminado es desde la fecha de inicio del período de facturación hasta la fecha actual.
 +
@@ -103,7 +103,7 @@ image:aiq-ks-subtime-2.png["datos históricos"]
 
 Se muestran los siguientes detalles:
 
-* *Detalles de la suscripción*: La fecha de inicio y finalización de la suscripción, y el período de facturación, por ejemplo, trimestral, anual, etc.
+* *Uso actual*: La fecha de inicio y finalización de la suscripción, y el período de facturación, por ejemplo, trimestral, anual, etc.
 * *Gráficos de uso*: Los gráficos de barras muestran el nombre del nivel de servicio y la capacidad que se consume en relación con ese nivel de servicio para el intervalo de fechas. La fecha y la hora de la colección se muestran en la parte inferior del gráfico.
 +
 
@@ -146,31 +146,31 @@ NOTE: Los indicadores *consumo actual*, *ráfaga actual* y *ráfaga acumulada* d
 
 
 
-=== Detalles adicionales para protección de datos
+=== Gráficos de referencia para la protección de datos
 
 .Leer más
 [%collapsible]
 ====
-Si se ha suscrito al servicio de protección de datos, puede ver la división de los datos de consumo de los sitios asociados de MetroCluster en la pestaña *Serie de tiempo*.
+Si se ha suscrito al servicio de protección de datos, puede ver el desglose de los datos de consumo de los sitios asociados de MetroCluster en la pestaña *Tendencia de capacidad*.
 
 Para obtener más información sobre protección de datos, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_data_protection.html["Protección de datos"].
 
-Si los clústeres de su entorno de almacenamiento de ONTAP se configuran en una configuración de MetroCluster, los datos de consumo de su suscripción de Keystone se dividen en el mismo gráfico de serie de tiempo para mostrar el consumo en los sitios principales y de mirroring para los niveles de servicio básicos.
+Si los clústeres de su entorno de almacenamiento de ONTAP se configuran en una configuración de MetroCluster, los datos de consumo de su suscripción de Keystone se dividen en el mismo gráfico de datos históricos para mostrar el consumo en los sitios principales y de mirroring para los niveles de servicio básicos.
 
 
 NOTE: Los gráficos de barras de consumo se dividen sólo para los niveles de servicio básicos. Para los niveles de servicio de protección de datos, esta demarcación no aparece.
 
 .Niveles de servicio de protección de datos
-Para los niveles de servicio de protección de datos, el consumo total se divide entre los sitios de partner y el uso en cada sitio de partner se refleja y se factura en una suscripción aparte, es decir, una suscripción para el sitio principal y otra para el sitio de mirroring. Por eso, cuando selecciona el número de suscripción para el sitio principal en la pestaña *Serie de tiempo*, los gráficos de consumo para los niveles de servicio DP muestran los detalles de consumo discreto solo para el sitio principal. Dado que cada sitio asociado de una configuración MetroCluster actúa como origen y mirroring, el consumo total de cada sitio incluye los volúmenes de origen y de reflejo creados en dicho sitio.
+Para los niveles de servicio de protección de datos, el consumo total se divide entre los sitios de partner y el uso en cada sitio de partner se refleja y se factura en una suscripción aparte, es decir, una suscripción para el sitio principal y otra para el sitio de mirroring. Por eso, cuando selecciona el número de suscripción para el sitio principal en la pestaña *Tendencia de capacidad*, los gráficos de consumo para los niveles de servicio DP muestran los detalles de consumo discretos solo para el sitio principal. Dado que cada sitio asociado de una configuración MetroCluster actúa como origen y mirroring, el consumo total de cada sitio incluye los volúmenes de origen y de reflejo creados en dicho sitio.
 
 
-TIP: La información sobre herramientas junto al ID de tacking de tu suscripción en la pestaña *Detalles de la suscripción* te ayuda a identificar la suscripción de socio en la configuración de MetroCluster.
+TIP: La información sobre herramientas junto al ID de tacking de tu suscripción en la pestaña *Uso actual* te ayuda a identificar la suscripción asociada en la configuración de MetroCluster.
 
 .Niveles de servicio básicos
 Para los niveles de servicio básicos, cada volumen se carga según se aprovisiona en los sitios primario y de mirroring, y, por lo tanto, se divide el mismo gráfico de barras según el consumo en los sitios primario y de mirroring.
 
 .Lo que puede ver para la suscripción principal
-La siguiente imagen muestra los gráficos para el nivel de servicio _Extreme_ (nivel de servicio base) y un número de suscripción principal. El mismo gráfico de serie temporal marca el consumo del sitio del espejo en un tono más claro del código de color utilizado para el sitio principal. La información de herramienta al pasar el ratón muestra el desglose de consumo (en TiB) para los sitios principales y de mirroring, 1,02 TiB y 1,05 TiB, respectivamente.
+La siguiente imagen muestra los gráficos para el nivel de servicio _Extreme_ (nivel de servicio base) y un número de suscripción principal. El mismo gráfico de datos históricos marca el consumo del sitio duplicado en un tono más claro del código de color utilizado para el sitio primario. La información de herramienta al pasar el ratón muestra el desglose de consumo (en TiB) para los sitios principales y de mirroring, 1,02 TiB y 1,05 TiB, respectivamente.
 
 image:mcc-chart.png["mcc primario"]
 
@@ -192,9 +192,12 @@ Para obtener más información sobre cómo MetroCluster protege sus datos, consu
 ====
 
 
-== Ver detalles del sistema
+== Ver detalles de volúmenes y objetos
 
-En la ficha *Detalles del sistema*, puede ver el consumo y otros detalles de los volúmenes en ONTAP. Para StorageGRID, esta pestaña muestra los nodos y su uso individual en su entorno de almacenamiento de objetos.
+En la pestaña *Volúmenes y objetos*, puede ver el consumo y otros detalles de sus volúmenes en ONTAP. Para StorageGRID, esta pestaña muestra los nodos y su uso individual en su entorno de almacenamiento de objetos.
+
+
+NOTE: El nombre de esta pestaña varía según la naturaleza de la implementación en el sitio. Si tiene tanto volúmenes como almacenamiento de objetos, puede ver la pestaña *Volúmenes y objetos*. Si solo tiene volúmenes en su entorno de almacenamiento, el nombre cambia a *volúmenes*. Solo para el almacenamiento de objetos, puede ver la pestaña *Objects*.
 
 
 
@@ -203,10 +206,10 @@ En la ficha *Detalles del sistema*, puede ver el consumo y otros detalles de los
 .Leer más
 [%collapsible]
 ====
-Para ONTAP, la pestaña *Detalles del sistema* muestra información, como el uso de la capacidad, el tipo de volumen, el clúster, el agregado y el nivel de servicio de los volúmenes del entorno de almacenamiento gestionado por la suscripción a Keystone.
+Para ONTAP, la pestaña *Volúmenes* muestra información, como el uso de la capacidad, el tipo de volumen, el clúster, el agregado y el nivel de servicio de los volúmenes en su entorno de almacenamiento gestionado por su suscripción a Keystone.
 
 .Pasos
-. Haga clic en la ficha *Detalles del sistema*.
+. Haga clic en la ficha *Volumes*.
 . Seleccione el número de suscripción. De forma predeterminada, se selecciona el primer número de suscripción disponible.
 +
 Se muestran los detalles del volumen. Puede desplazarse por las columnas y obtener más información al pasar el ratón por los iconos de información situados junto a los encabezados de las columnas. Puede ordenar por las columnas y filtrar las listas para ver información específica.
@@ -217,7 +220,7 @@ NOTE: Para los servicios de protección de datos, se muestra una columna adicion
 
 
 
-image:aiq-ks-sysdtls.png["pestaña detalles del sistema"]
+image:aiq-ks-sysdtls.png["Volúmenes  ficha Objetos"]
 
 ====
 
@@ -230,10 +233,10 @@ image:aiq-ks-sysdtls.png["pestaña detalles del sistema"]
 Para StorageGRID, esta pestaña muestra el uso lógico de los nodos en el entorno de almacenamiento de objetos.
 
 .Pasos
-. Haga clic en la ficha *Detalles del sistema*.
+. Haga clic en la pestaña *Objects*.
 . Seleccione el número de suscripción. De forma predeterminada, se selecciona el primer número de suscripción disponible. Al seleccionar el número de suscripción, se habilita el enlace de detalles del almacenamiento de objetos.
 +
-image:sg-link.png["Detalles del sistema SG"]
+image:sg-link.png["Objetos SG"]
 
 . Haga clic en el enlace para ver los nombres de los nodos y los detalles de uso lógico de cada nodo.
 +
@@ -246,15 +249,15 @@ image:sg-link-2.png["Ventana emergente SG"]
 
 == Generar informes
 
-Puede generar y ver informes para los detalles de su suscripción, los datos de uso históricos de un intervalo de tiempo y los detalles del sistema desde cada una de las pestañas haciendo clic en el botón *Descargar CSV*: image:download-icon.png["icono descargar informes"]
+Puede generar y ver informes de los detalles de su suscripción, datos históricos de uso de un intervalo de tiempo y detalles de volúmenes de cada una de las pestañas haciendo clic en el botón *Descargar CSV*: image:download-icon.png["icono descargar informes"]
 
 Los detalles se generan en formato CSV que se puede guardar para usarlo más adelante.
 
-En la pestaña *Serie de tiempo*, tienes la opción de descargar el informe para los 30 puntos de recopilación de datos predeterminados del rango de fechas de tu consulta, o informes diarios.
+En la pestaña *Capacity Trend*, tienes la opción de descargar el informe para los 30 puntos de recopilación de datos predeterminados del rango de fechas de tu consulta, o informes diarios.
 
 image:aiq-report-dnld.png["muestra informes"]
 
-Un informe de muestra para la pestaña *Serie de tiempo*, donde se convierten los datos gráficos:
+Un informe de muestra para la pestaña *Capacity Trend*, donde se convierten los datos gráficos:
 
 image:report.png["muestra informes"]
 
@@ -267,7 +270,7 @@ Las alertas de la consola envían mensajes de precaución que le permiten compre
 Las alertas pueden ser de dos tipos:
 
 * *Información*: Para problemas, como sus suscripciones que están a punto de finalizar, puede ver alertas de información. Pase el cursor sobre el icono de información para obtener más información sobre el problema.
-* *Advertencia*: Los problemas, como el incumplimiento, se muestran como advertencias. Por ejemplo, si hay volúmenes en los clústeres gestionados que no tienen asociadas políticas de QoS (AQoS) adaptativa, puede ver un mensaje de advertencia. Puede hacer clic en el enlace del mensaje de advertencia para ver la lista de los volúmenes no compatibles en la ficha *Detalles del sistema*.
+* *Advertencia*: Los problemas, como el incumplimiento, se muestran como advertencias. Por ejemplo, si hay volúmenes en los clústeres gestionados que no tienen asociadas políticas de QoS (AQoS) adaptativa, puede ver un mensaje de advertencia. Puede hacer clic en el enlace del mensaje de advertencia para ver la lista de los volúmenes no compatibles en la pestaña *Volúmenes*.
 +
 
 NOTE: Si se ha suscrito a un único nivel de servicio o plan de tarifas, no podrá ver la alerta de los volúmenes que no cumplen las normativas.
