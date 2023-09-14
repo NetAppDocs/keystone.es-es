@@ -33,7 +33,7 @@ La consola del motor de servicio de NetApp se ha rediseñado para incluir los si
 * *Utilización de la capacidad* para ver la capacidad utilizada para sus servicios suscritos.
 * *Cargos mensuales (facturación)* para ver los cargos mensuales agregados para todas sus suscripciones.
 * *Alertas* para ver el resumen de las alertas más recientes de su entorno.
-* *Peticiones de servicio* para ver la lista de las solicitudes de servicio más recientes generadas en su entorno. Para obtener más información, consulte link:sewebiug_dashboard.html["Consulta la consola de Keystone"].
+* *Peticiones de servicio* para ver la lista de las solicitudes de servicio más recientes generadas en su entorno.
 
 
 
@@ -42,13 +42,13 @@ La consola del motor de servicio de NetApp se ha rediseñado para incluir los si
 
 Se ha añadido una nueva pantalla *facturación* para facilitar la accesibilidad y el cálculo de los datos históricos de facturación. La pantalla proporciona una vista holística de los cargos mensuales asociados a todos los servicios suscritos.
 
-Navegue a esta pantalla desde el widget *cargos mensuales* en el panel o desde *ADMINISTRACIÓN > facturación* para ver un desglose mensual a nivel de suscripción de los cargos por todos los servicios suscritos. Los datos de facturación se basan en su uso de capacidad confirmada y en ráfagas, y están disponibles para su uso en los meses anteriores. Para obtener más información, consulte link:sewebiug_billing.html["Ver facturación"].
+Navegue a esta pantalla desde el widget *cargos mensuales* en el panel o desde *ADMINISTRACIÓN > facturación* para ver un desglose mensual a nivel de suscripción de los cargos por todos los servicios suscritos. Los datos de facturación se basan en su uso de capacidad confirmada y en ráfagas, y están disponibles para su uso en los meses anteriores.
 
 
 
 === Pantalla nuevas alertas
 
-En esta versión se introduce una nueva pantalla *Alertas* que enumera todas las alertas generadas por el sistema y por el usuario. La pantalla también le permite crear mensajes de alerta personalizados para eventos críticos relacionados con su entorno y transmitirlos a otros usuarios. Pueden ver y descartar las alertas, según sea necesario. Para obtener más información, consulte link:sewebiug_alerts.html["Creación y gestión de alertas"].
+En esta versión se introduce una nueva pantalla *Alertas* que enumera todas las alertas generadas por el sistema y por el usuario. La pantalla también le permite crear mensajes de alerta personalizados para eventos críticos relacionados con su entorno y transmitirlos a otros usuarios. Pueden ver y descartar las alertas, según sea necesario.
 
 
 
@@ -77,18 +77,6 @@ El motor de servicios de NetApp ahora admite la gestión de un entorno multi-ten
 * *Suscripción:* Como administrador asociado, puedes ver y actualizar tu suscripción y suscripciones de inquilino desde *SUSCRIPCIONES* > *Suscripciones Keystone* y *SUSCRIPCIONES* > *Suscripciones de inquilino* respectivamente. Como administrador de arrendatarios, sólo puede ver sus suscripciones de arrendatario.
 * *Usuarios:* en función de su función, puede asignar privilegios a un usuario nuevo o existente dentro de un usuario de acuerdo con el requisito. El rol puede ser administrador de NetApp, administrador de NetApp con privilegios de solo lectura, administrador de partners o administrador de inquilinos. Como administrador de partner, puede asignar solo roles de administrador del partner o de administrador de inquilinos a nuevos usuarios. Un usuario administrador de inquilinos puede asignar solo el rol de administrador de inquilinos a otros usuarios.
 * *Menú redes:* como administrador asociado, puede ver las redes definidas para su uso. También puede crear subredes para su subarrendatario y zona desde *REDES* > *subredes*. Esto es necesario a la vez que se aprovisiona el almacenamiento para los clientes finales o los subclientes.
-* Soporte de API: El `/tenants/{tenant_id}/zones/{zone_name}/subnets` y.. `/tenants/{tenant_id}/zones/{zone_name}/subnets/{id}/tags` Se están ofreciendo API como parte de esta versión para crear y ver subredes para subinquilinos.
-
-
-Para obtener más información sobre esta función, consulte los siguientes vínculos:
-
-* link:nkfsosm_overview.html["Modelo operativo, funciones y responsabilidades"]
-* link:nkfsosm_tenancy_overview.html["Tenancy y multi-tenancy en Keystone"]
-* link:sewebiug_dashboard.html["Consulta la consola de Keystone"]
-* link:sewebiug_working_with_reports.html["Ver informes"]
-* link:sewebiug_managing_subscriptions.html["Gestión de suscripciones"]
-* link:sewebiug_managing_tenants_and_subtenants.html["Gestión de inquilinos y subinquilinos"]
-* link:sewebiug_define_network_configurations.html["Definir redes para inquilinos y subinquilinos"]
 
 
 
@@ -150,7 +138,7 @@ La nueva pantalla * Backup* le permite ver y administrar las copias de seguridad
 
 === Aprovisionamiento para restringir el acceso de los usuarios a los recursos compartidos CIFS
 
-Ahora puede especificar la lista de control de acceso (ACL) para restringir el acceso de los usuarios en un recurso compartido de CIFS (SMB) o varios protocolos. Puede especificar usuarios o grupos de Windows de acuerdo con la configuración de Active Directory (AD) para agregarlo a la ACL.link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps["Leer más"].
+Ahora puede especificar la lista de control de acceso (ACL) para restringir el acceso de los usuarios en un recurso compartido de CIFS (SMB) o varios protocolos. Puede especificar usuarios o grupos de Windows de acuerdo con la configuración de Active Directory (AD) para agregarlo a la ACL.
 
 
 
@@ -201,19 +189,19 @@ Algunas suscripciones de almacenamiento compatibles con el motor de servicios de
 
 ==== Notificación cuando un cambio propuesto provoca el uso de la capacidad de ráfaga
 
-Una notificación para mostrar un cambio en el aprovisionamiento propuesto que hará que una suscripción entre en ráfaga. El usuario puede elegir continuar sabiendo que la suscripción se pondrá en ráfaga o elegir no continuar con la acción.link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["Leer más"].
+Una notificación para mostrar un cambio en el aprovisionamiento propuesto que hará que una suscripción entre en ráfaga. El usuario puede elegir continuar sabiendo que la suscripción se pondrá en ráfaga o elegir no continuar con la acción.
 
 
 
 ==== Notificación cuando la suscripción está en ráfaga
 
-Cuando una suscripción está en ráfaga, se muestra un banner de notificación.link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["Leer más"].
+Cuando una suscripción está en ráfaga, se muestra un banner de notificación.
 
 
 
 ==== El informe de capacidad muestra el uso de ráfagas
 
-Informe de capacidad que muestra el número de días que la suscripción ha estado en ráfaga y la cantidad de capacidad de ráfaga utilizada.link:sewebiug_working_with_reports.html#capacity-usage["Leer más"].
+Informe de capacidad que muestra el número de días que la suscripción ha estado en ráfaga y la cantidad de capacidad de ráfaga utilizada.
 
 
 

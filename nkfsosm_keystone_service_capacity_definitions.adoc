@@ -41,7 +41,7 @@ Durante la duración de una suscripción, puede cambiar las capacidades comprome
 
 * No es posible reducir la capacidad proporcionada
 * La capacidad comprometida no puede aumentarse 90 días antes del vencimiento de la suscripción, a menos que la suscripción se renueve por un plazo adicional de 12 meses.
-* Puede solicitar cambios en la capacidad comprometida a través de la interfaz del motor de servicio de NetApp o a través de Keystone Success Manager. Para obtener información acerca de cómo solicitar cambios, consulte link:sewebiug_raise_a_service_request.html["Elevar una solicitud de servicio"].
+* Puede solicitar cambios en la capacidad comprometida a través de Keystone Success Manager.
 
 
 

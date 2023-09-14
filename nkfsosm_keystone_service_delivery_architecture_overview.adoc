@@ -26,36 +26,10 @@ La arquitectura, el diseño, la selección de tecnología y los productos de com
 
 La infraestructura Keystone incluye varios componentes:
 
-* Interfaz de usuario (portal web) de Service Engine de NetApp.
-* API del motor de servicios de NetApp para la integración.
 * La infraestructura de Keystone que incluye las controladoras de almacenamiento
-* Herramientas para gestionar y operar el servicio como OpsRamp, Active IQ y Active IQ Unified Manager.
+* Herramientas para gestionar y operar el servicio, como OpsRamp, el asesor digital de Active IQ y Active IQ Unified Manager.
 
 
 Para obtener más información sobre la integración de NetApp Keystone con Active IQ, consulte link:https://docs.netapp.com/us-en/active-iq/["Documentación del asesor digital de Active IQ"]
 
 image:nkfsosm_image8.png["infraestructura ks"]
-
-
-
-== Motor de servicio de NetApp
-
-Puede usar el portal web del motor de servicios de NetApp para gestionar y supervisar su servicio Keystone en un modelo operado por NetApp, para partners o por clientes. El portal consta de las siguientes funciones:
-
-* Una interfaz gráfica (interfaz web del motor de servicio de NetApp) que admite la supervisión y el aprovisionamiento simple del almacenamiento.
-* Un conjunto de API DE REST de Service Engine de NetApp que permiten realizar acciones de configuración y gestión del almacenamiento más avanzadas.
-
-
-image:nkfsosm_image9.png["arquitectura ks"]
-
-El portal del motor de servicios de NetApp es una única interfaz que permite a los clientes realizar las siguientes tareas:
-
-* Panel de suscripción. Consulte el estado de la capacidad suscrita y cuánto se está consumiendo.
-* Aprovisionamiento de almacenamiento. Flujos de trabajo para crear sus recursos compartidos de archivos NFS/CIFS, discos FC/iSCSI y bloque S3.
-* Protección de datos. Cree copias Snapshot y establezca una política de backup o replicación de datos en el disco o el recurso compartido de archivos aprovisionado.
-* Leídos. Consulte el inventario de recursos compartidos de archivos y discos, así como la tendencia sobre el uso de la capacidad en función de los diferentes niveles de servicio.
-* Gestionar la suscripción. Solicite capacidad adicional a una suscripción existente o a un servicio nuevo a través del portal.
-* Envíe solicitudes de servicio o problemas de soporte y vea su estado
-
-
-La funcionalidad completa del motor de servicio de NetApp solo está disponible en el modelo operado por NetApp. En el caso de un modelo gestionado por un cliente o un partner, las funcionalidades del motor de servicio de NetApp se limitan a la gestión de la suscripción y la creación de informes.

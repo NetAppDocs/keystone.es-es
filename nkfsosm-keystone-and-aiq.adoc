@@ -47,6 +47,8 @@ TIP: Haga clic en el enlace *Suscripciones* para ver la lista de suscripciones f
 
 
 
+image:db-card.png["sin sla"]
+
 Para obtener más información acerca de Digital Advisor, consulte link:https://docs.netapp.com/us-en/active-iq/index.html["Documentación de Digital Advisor"].
 
 Para obtener información sobre la pestaña *Suscripciones de Keystone*, consulta el panel _Digital Advisor y la generación de informes para Keystone_.

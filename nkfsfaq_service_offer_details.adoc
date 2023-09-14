@@ -26,15 +26,16 @@ Los servicios de Keystone ofrecen períodos de 12, 24 y 36 meses.
 
 *¿Cómo puedo acceder al almacenamiento?*
 
-En un modelo operado por NetApp (estándar), las controladoras de almacenamiento (ONTAP System Manager o acceso administrativo a los sistemas) son propiedad de NetApp y las gestiona. Puede supervisar y gestionar el almacenamiento únicamente mediante las API e IU del motor de servicios de NetApp. En una implementación gestionada por los clientes (o Lite), donde las API e interfaz de usuario del motor de servicios de NetApp se utilizan principalmente para funciones de facturación, puede acceder a las controladoras de almacenamiento como Active IQ Unified Manager y ONTAP System Manager, así como acceder directamente a los clústeres de ONTAP.
+En un modelo operado por NetApp (estándar), las controladoras de almacenamiento (ONTAP System Manager o acceso administrativo a los sistemas) son propiedad de NetApp y las gestiona. Solo puede supervisar su almacenamiento a través de la interfaz de usuario del asesor digital de Active IQ.
+En una puesta en marcha gestionada por el cliente (o Lite), donde la interfaz de usuario del asesor digital de Active IQ se usa principalmente para las funciones de facturación, puede acceder a las controladoras de almacenamiento, como Active IQ Unified Manager y ONTAP System Manager, y acceder directamente a los clústeres de ONTAP.
 
 *¿Cómo puedo administrar el servicio?*
 
-El motor de servicios de NetApp es la herramienta de orquestación y gestión que puede utilizar para aprovisionar almacenamiento y obtener informes sobre el uso del servicio.
+Puede recaudar tickets de soporte para cualquier requisito.
 
 *¿Cómo puedo aumentar la capacidad comprometida en una suscripción?*
 
-Puede enviar una solicitud de adición de la capacidad a través de la herramienta de gestión del motor de servicio de NetApp o a través de su gestor de éxito de NetApp Keystone.
+A través de su gestor de éxito de NetApp Keystone.
 
 * ¿El aumento de la capacidad extiende el término?*
 

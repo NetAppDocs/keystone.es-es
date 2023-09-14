@@ -30,8 +30,6 @@ La facturación de Keystone se basa en la capacidad comprometida y en el consumo
 
 Para obtener información sobre el uso de la capacidad comprometida y de ráfaga, consulte link:nkfsosm_keystone_service_capacity_definitions.html["Definiciones de la capacidad del servicio de Keystone"].
 
-Para obtener información acerca de cómo ver los detalles de facturación, consulte link:sewebiug_billing.html["Ver facturación"].
-
 
 
 == Facturación basada en la capacidad comprometida

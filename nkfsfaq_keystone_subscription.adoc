@@ -30,8 +30,6 @@ Las siguientes preguntas dan respuesta a tus consultas frecuentes acerca de los 
 
 *¿Pueden vender los partners más capacidad de la que han comprado a NetApp a los clientes?* las suscripciones de inquilino no están limitadas por la capacidad que ha adquirido el partner. Los partners pueden vender más capacidad de la que han comprado a NetApp a sus clientes. La capacidad que supera la capacidad adquirida se denomina sobresuscripción.
 
-* ¿Se proporcionan API para integrarse con herramientas de cliente?* Sí, las API RESTful están disponibles para integrarse en sus propias aplicaciones. Vaya a *SUPPORT> API Documentation* para ver la documentación de la API para los servicios de Keystone. Para obtener más información, consulte link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html["Guía de la API de Keystone"].
-
 * ¿Qué es la capacidad de ráfaga?* puede aumentar y disminuir el uso hasta un 20% por encima de la capacidad comprometida. El uso de la capacidad de ráfaga se mide a diario y solo se factura cuando se utiliza. Por ejemplo, si la capacidad comprometida es de 100 TIB, puede utilizar ráfagas hasta 120 TIB.
 
 * ¿Existe un cargo extra por usar Burst?* el uso de la capacidad de ráfaga hasta el 20% de la capacidad comprometida se factura a la misma tasa que la capacidad comprometida, cualquier uso por encima del 20% de la capacidad comprometida se factura con una prima del 50%.
@@ -40,11 +38,14 @@ Las siguientes preguntas dan respuesta a tus consultas frecuentes acerca de los 
 
 *¿Cómo se asigna la capacidad de ráfaga a los inquilinos?* la capacidad de ráfaga se asigna a los socios, que la asignan aún más a sus clientes en función de los requisitos.
 
-*¿Dónde puedo ver el uso de la capacidad comprometida y en ráfaga?* Service Engine de NetApp cuenta con consolas integradas para informar sobre la capacidad consumida frente a la capacidad comprometida.
+* ¿Dónde puedo ver el uso de capacidad comprometida y explosiva?*
+En el panel del asesor digital Active IQ.
 
-*¿Habrá notificaciones si alcancé un cierto porcentaje de uso de la capacidad comprometida?* Sí, las herramientas de gestión proporcionan notificaciones sobre el uso de la capacidad a través de la consola del motor de servicios de NetApp.
+* ¿Habrá alguna notificación si alcanzo un cierto porcentaje en el uso de capacidad comprometida?*
+Sí, las herramientas de gestión proporcionan notificaciones sobre el uso de la capacidad mediante la consola del asesor digital de Active IQ.
 
-*¿Cómo veo el uso de Keystone?* El motor de servicios de NetApp proporciona una vista de consola, con información sobre todos los servicios a los que está suscrito y cuánto se consume. Para obtener más información sobre Service Engine de NetApp, consulte link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html["aquí"].
+* ¿Cómo puedo ver el uso de Keystone?*
+El asesor digital de Active IQ proporciona una vista de panel, con información sobre todos los servicios a los que se suscribe y cuánto se consume.
 
 *¿Cómo puedo informar de cualquier problema con el servicio?* se puede acceder al soporte de NetApp Keystone a través de estos diversos canales:
 
@@ -52,7 +53,8 @@ Las siguientes preguntas dan respuesta a tus consultas frecuentes acerca de los 
 * Correo electrónico escalaciones: Correo electrónico:keystone.escalations@netapp.com[keystone.escalations@netapp.com^]
 
 
-*¿Puedo solicitar un nuevo servicio de almacenamiento?* Sí, se puede solicitar un nuevo servicio de almacenamiento o ampliación al servicio de almacenamiento a través del portal del motor de servicio de NetApp. El equipo de operaciones de NetApp Keystone procesa la solicitud antes de que esté disponible para su uso.
+* ¿Puedo pedir un nuevo servicio de almacenamiento? *
+Sí, es posible solicitar un nuevo servicio de almacenamiento o ampliación al servicio de almacenamiento desde los ksmos. El equipo de operaciones de NetApp Keystone procesa la solicitud antes de que esté disponible para su uso.
 
 *¿Están disponibles inmediatamente aumentos en compromisos de almacenamiento?* dependiendo de la cantidad de capacidad solicitada, se realiza una determinación si la capacidad ya está desplegada, o requiere que se envíe e instale equipo adicional.
 

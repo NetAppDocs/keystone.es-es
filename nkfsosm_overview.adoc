@@ -23,7 +23,7 @@ Keystone ofrece tres modelos operativos para la prestación de servicios.
 * *Modelo * operado por el cliente* permite al cliente suscribirse a un servicio ofrecido, según los niveles de rendimiento y tipos de servicio de almacenamiento seleccionados. NetApp define la arquitectura y los productos e instala en las instalaciones del cliente y permite que los clientes gestionen la infraestructura utilizando sus recursos DE almacenamiento y TECNOLOGÍA. Un cliente puede estar vinculado a NetApp o a un partner o proveedor de servicios y, en función de ello, pueden plantearse las solicitudes de servicio y dirigirse a NetApp o al proveedor de servicios. Un administrador del cliente puede realizar las tareas administrativas en un entorno operado por el cliente. Estas tareas están vinculadas a los inquilinos y subinquilinos del cliente específico.
 
 
-Las características y opciones de la oferta varían en función de los modelos. Para obtener más información, consulte link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["Funciones y operaciones de proveedores de servicios y clientes"]
+Las características y opciones de la oferta varían en función de los modelos.
 
 
 
@@ -86,7 +86,7 @@ Soporte técnico
 
 La lista siguiente resume las funciones y responsabilidades de NetApp:
 
-* NetApp proporciona, instala, configura y habilita el servicio aplicable (incluida la versión aplicable del motor de servicio de NetApp en un centro de datos designado por el cliente o en un centro de colocación). NetApp es responsable de la desinstalación que se produzca al final de la vigencia del contrato o si el cliente decide rescindir el contrato antes.
+* NetApp entrega, instala, configura y habilita el servicio aplicable. NetApp es responsable de la desinstalación que se produzca al final de la vigencia del contrato o si el cliente decide rescindir el contrato antes.
 * Mientras se intertrabaja con otros proveedores de servicios TECNOLÓGICOS, NetApp colabora con los proveedores de servicios DE TI del cliente o con su equipo técnico.
 * Se incluye el rendimiento de los servicios operados por NetApp, suponiendo que las responsabilidades compartidas se aplican al entorno compatible.
 

@@ -51,7 +51,7 @@ TIP: Si su suscripción tiene un nivel de servicio de protección de datos o un 
 * *Tipo de uso*: Es posible que te hayas suscrito a varias suscripciones de Keystone (versión 1) o Keystone STaaS (versión 2). Las reglas del plan de tarifas para los niveles de servicio pueden variar para los dos tipos de suscripción. Al observar el valor de esta columna, sabe si el tipo de uso se factura según el uso aprovisionado o lógico de cualquiera de ellos `v1` o. `v2`. Para obtener más información sobre STaaS de Keystone, consulte https://docs.netapp.com/us-en/keystone-staas/index.html["Documentación de STaaS de Keystone"^].
 * *Período de facturación*: El período de facturación de la suscripción, como mensual, trimestral o anual.
 * *Fecha de inicio*: La fecha de inicio de la suscripción.
-* *Fecha de finalización*: Fecha de finalización de la suscripción. Una fecha en blanco indica que la suscripción no tiene fecha de finalización y que se renueva automáticamente. En función de esta fecha, es posible que vea mensajes de información de las suscripciones que están a punto de caducar o que tienen políticas de renovación automática asociadas.
+* *Fecha de finalización*: Fecha de finalización de la suscripción. Si tiene una suscripción facturable mensual que se renueva automáticamente cada mes, verá `Month-on-month` en lugar de la fecha de finalización. En función de esta fecha, es posible que vea mensajes de información de las suscripciones que están a punto de caducar o que tienen políticas de renovación automática asociadas.
 * *Estado del uso*: Indica la cantidad de la suscripción que se ha utilizado o que se ha utilizado en exceso. Puede ordenar la lista por esta columna si desea ver los registros de consumo más altos.
 * image:subs-dtls-icon.png["."]: Al hacer clic en este icono para una suscripción, se abre la pestaña *Uso actual* con detalles adicionales de esa suscripción.
 * image:aiq-ks-time-icon.png["."]: Al hacer clic en este icono, se abre la pestaña *Tendencia de capacidad*, donde puede ver los datos de uso históricos de cada nivel de servicio incluido en esta suscripción.
@@ -91,10 +91,10 @@ La pestaña *Tendencia de capacidad* muestra los datos históricos de tus suscri
 .Pasos
 . Haga clic en la pestaña *Tendencia de capacidad*.
 . Seleccione la suscripción necesaria para la que desea ver los detalles. La primera suscripción en el nombre de su cuenta se selecciona de forma predeterminada.
-. Seleccione el intervalo de tiempo de los iconos del calendario en los campos *desde fecha* y *hasta fecha*. El intervalo de tiempo predeterminado es desde la fecha de inicio del período de facturación hasta la fecha actual.
+. Seleccione el intervalo de tiempo de los iconos del calendario en los campos *desde fecha* y *hasta fecha*. Para las suscripciones que han caducado, el rango de fechas predeterminado son las fechas de inicio y finalización de la suscripción. Para las suscripciones existentes, el intervalo de tiempo predeterminado es desde la fecha de inicio del período de facturación hasta la fecha actual. No puede seleccionar una fecha futura.
 +
 
-TIP: Para obtener un rendimiento óptimo y una experiencia de usuario, limite el rango de fechas de la consulta a tres meses o menos.
+TIP: Para obtener un rendimiento óptimo y una experiencia de usuario, limite el rango de fechas de la consulta a tres meses.
 
 . Haga clic en *Ver detalles*. Los datos de consumo históricos de la suscripción para cada nivel de servicio se muestran en función del intervalo de tiempo seleccionado. Puede pasar el cursor del ratón sobre los gráficos para ver el desglose del uso en términos de datos comprometidos, consumidos, ráfagas y por encima de los datos del límite de ráfaga en ese punto de recopilación de datos.
 
@@ -123,17 +123,18 @@ NOTE: Un gráfico en blanco indica que no hay datos disponibles en el entorno en
 
 
 
-* *Corriente consumida*: Indicador de la capacidad consumida (en TIB) definido para el nivel de servicio. Este campo utiliza colores específicos para su uso:
+* *Corriente consumida*: Indicador de la capacidad consumida (en TIB) definido para el nivel de servicio. Este campo utiliza colores específicos:
 +
-** Gris: Ninguno.
+** Ningún color: Ráfaga o por encima del uso de ráfaga.
+** Gris: Sin uso.
 ** Verde: Dentro del 80% de la capacidad comprometida.
-** Ámbar: Cualquier consumo superior al 80% de la capacidad comprometida.
+** Ámbar: El 80 % de la capacidad comprometida con la ráfaga.
 
 
-* *Ráfaga actual*: Indicador de la capacidad consumida dentro o por encima del límite de ráfaga definido. Cualquier uso dentro del límite de ráfaga acordado, por ejemplo, un 20 % por encima de la capacidad comprometida se encuentra dentro del límite de ráfaga. Se considera un uso adicional por encima del límite de ráfaga. Este campo utiliza colores específicos para su uso:
+* *Ráfaga actual*: Indicador de la capacidad consumida dentro o por encima del límite de ráfaga definido. Cualquier uso dentro del límite de ráfaga acordado, por ejemplo, un 20 % por encima de la capacidad comprometida se encuentra dentro del límite de ráfaga. Se considera un uso adicional por encima del límite de ráfaga. Este campo muestra colores específicos:
 +
-** Gris: Ninguno.
-** Rojo: Ráfaga.
+** Sin color: Sin uso de ráfaga.
+** Rojo: Uso en ráfaga.
 ** Morado: Por encima del límite de ráfaga.
 
 
@@ -282,4 +283,4 @@ Para obtener información acerca de las políticas AQoS, consulte https://docs.n
 
 image:alert-aiq.png["alertas"]
 
-Póngase en contacto con el soporte de NetApp si desea obtener más información sobre estos mensajes de precaución y advertencia. Para obtener más información, consulte https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["Elevar una solicitud de servicio"].
+Póngase en contacto con el soporte de NetApp si desea obtener más información sobre estos mensajes de precaución y advertencia.
