@@ -248,6 +248,71 @@ image:sg-link-2.png["Ventana emergente SG"]
 ====
 
 
+== Vea el rendimiento del volumen de ONTAP
+
+Puedes hacer clic en la pestaña *Rendimiento* para ver los detalles de rendimiento de los volúmenes de ONTAP administrados por tus suscripciones de Keystone.
+
+Es posible que esta pestaña no esté disponible para ver las métricas de rendimiento en los volúmenes de ONTAP. Póngase en contacto con el soporte técnico para ver esta pestaña.
+
+.Pasos
+. Haga clic en la pestaña *Rendimiento*.
+. Seleccione el número de suscripción. De forma predeterminada, se selecciona el primer número de suscripción.
+. Seleccione el nombre del volumen requerido de la lista.
++
+Como alternativa, puede hacer clic en el image:aiq-ks-time-icon.png["icono de gráfico"] Icono contra un volumen de ONTAP en la pestaña *Volúmenes* para navegar a esta pestaña.
+
+. Seleccione el rango de fechas de la consulta. El rango de fechas puede ser el comienzo del mes o la fecha de inicio de la suscripción hasta la fecha actual o la fecha de finalización de la suscripción.
+
+
+Los detalles recuperados se basan en el objetivo de nivel de servicio para cada nivel de servicio. Por ejemplo, el valor máximo de IOPS, el rendimiento máximo, la latencia objetivo y otras métricas vienen determinadas por la configuración individual del nivel de servicio. Para obtener más información sobre la configuración, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html["Niveles de servicio"].
+
+
+NOTE: Si selecciona la casilla de verificación *SLO Reference Line*, los gráficos de IOPS, rendimiento y latencia se representan en función del objetivo de nivel de servicio para el nivel de servicio. De lo contrario, se muestran en números reales.
+
+Los datos de rendimiento que se muestran en el gráfico horizontal son el promedio de cada intervalo de cinco minutos, y se organizan según el intervalo de fechas de la consulta. Puede desplazarse por los gráficos y pasar el ratón por los puntos de datos específicos para explorar en profundidad los datos recopilados.
+
+Puede ver y comparar las métricas de rendimiento en las siguientes secciones en función de la combinación del número de suscripción, el nombre del volumen y el rango de fechas seleccionado. Los detalles se muestran por nivel de servicio asignado al volumen. Es posible ver el nombre del clúster y el tipo de volumen, es decir, los permisos de lectura y escritura asignados al volumen. También se muestra cualquier mensaje de advertencia asociado con el volumen.
+
+
+
+=== IOPS/TiB
+
+En esta sección, se muestran los gráficos de entrada y salida para las cargas de trabajo del volumen según el rango de fechas de la consulta. Se muestran los picos de IOPS correspondientes al nivel de servicio y el IOPS actual (en los últimos cinco minutos, no basándose en el rango de fechas de la consulta), junto con el valor de IOPS mínimo, máximo y medio para el intervalo de tiempo, en IOPS/TiB.
+
+image:perf-iops.png["Sección IOPS del gráfico"]
+
+
+
+=== Rendimiento (MBps/TiB)
+
+En esta sección, se muestran los gráficos de rendimiento de las cargas de trabajo del volumen según el intervalo de fechas de la consulta. Se muestra el rendimiento máximo del nivel de servicio (SLO Max) y el rendimiento actual (en los últimos cinco minutos, no basado en el rango de fechas de la consulta), junto con el rendimiento mínimo, máximo y promedio del intervalo de tiempo, en MBps/TiB.
+
+image:perf-thr.png["Gráficos de rendimiento"]
+
+
+
+=== Latencia (ms)
+
+Esta sección muestra los gráficos de latencia de las cargas de trabajo del volumen según el rango de fechas de la consulta. Se muestran la latencia máxima para el nivel de servicio (SLO Target) y la latencia actual (en los últimos cinco minutos, no basada en el rango de fechas de la consulta), junto con la latencia mínima, máxima y media del intervalo de tiempo, en milisegundos.
+
+Este gráfico tiene los siguientes colores:
+
+* Azul claro: _Latencia_. Esta es la latencia real que incluye cualquier otra latencia que no sea la del servicio de Keystone. Esto puede incluir latencia adicional, como la latencia que se produce entre la red y el cliente.
+* Azul oscuro: _Latencia efectiva_. La latencia efectiva es la latencia solo aplicable a su servicio de Keystone respecto al acuerdo de nivel de servicio.
+
+
+image:perf-lat.png["gráficos de rendimiento"]
+
+
+
+=== Lógico usado (TiB)
+
+Esta sección muestra las capacidades aprovisionadas y lógicas utilizadas del volumen. La capacidad utilizada lógica actual (en los últimos cinco minutos, no basada en el rango de fechas de la consulta), junto con el uso mínimo, máximo y promedio para el rango de tiempo se muestran en los TIBs. En este gráfico, el área gris representa la capacidad comprometida y el gráfico amarillo indica el uso lógico.
+
+image:perf-log-usd.png["gráfico de capacidad utilizada lógica"]
+
+
+
 == Generar informes
 
 Puede generar y ver informes de los detalles de su suscripción, datos históricos de uso de un intervalo de tiempo y detalles de volúmenes de cada una de las pestañas haciendo clic en el botón *Descargar CSV*: image:download-icon.png["icono descargar informes"]

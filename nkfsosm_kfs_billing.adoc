@@ -37,7 +37,7 @@ Para obtener información sobre el uso de la capacidad comprometida y de ráfaga
 La capacidad comprometida se refiere a las capacidades de diversos servicios en una única suscripción acordada por las partes involucradas (NetApp/partner y cliente). Esta capacidad se indica en cada pedido de Keystone y se factura, independientemente del consumo real.
 
 .Medición de la capacidad consumida
-Como parte de la puesta en marcha del servicio Keystone, NetApp supervisa y mide de forma continua el consumo del servicio. Cada cinco minutos, el sistema genera un registro de consumo en el que se detalla la capacidad consumida actualmente para la suscripción. Estos registros se agregan a lo largo del período de facturación para generar facturas e informes de uso.
+Como parte de la puesta en marcha del servicio Keystone, NetApp supervisa y mide de forma continua el consumo del servicio. Al menos una vez cada cinco minutos, el sistema genera un registro de consumo, detallando la capacidad consumida actual para la suscripción. Estos registros se agregan a lo largo del período de facturación para generar facturas e informes de uso.
 
 
 
@@ -74,8 +74,9 @@ Si los volúmenes se clonan en ONTAP y se los utiliza para realizar un backup y 
 
 Tenga en cuenta lo siguiente:
 
-* El consumo de los volúmenes clonados no se considera durante las primeras 24 horas de creación del clon, ni durante este tiempo se cobran cargos.
-* Los volúmenes clonados con los niveles de servicio estándar y de valor no se consideran para el consumo, si no se escriben datos nuevos en el volumen. Por ejemplo, en un caso práctico de backup o restauración, el backup o la restauración de datos de un volumen clonado no cambia los datos del propio volumen clonado, y no se considera un consumo.
+* Los volúmenes clonados no pueden cargarse siempre que su tamaño sea inferior al 10 % del volumen principal (la capacidad física utilizada en el volumen clonado en comparación con la capacidad física utilizada en el volumen principal).
+* No hay periodo de gracia de 24 horas para los volúmenes clonados, solo se considera el tamaño del clon.
+* Una vez que el volumen clonado supera el 10 % del tamaño físico del volumen principal, el clon se factura como volumen estándar (capacidad utilizada lógica).
 
 
 
