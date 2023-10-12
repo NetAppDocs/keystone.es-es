@@ -30,7 +30,9 @@ Los detalles de las suscripciones, los gráficos de uso de cada nivel de servici
 
 
 
-NOTE: El consumo de capacidad en las suscripciones de Keystone se muestra en TIBs en las consolas e informes, y se redondea a dos posiciones decimales. Si el uso es inferior a 0.01 TIB, el valor se muestra como `0` o. `No Usage`. Para obtener más información sobre otras medidas de uso, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["Definiciones y métricas de nivel de servicio"]. Para obtener información sobre las distintas capacidades que se utilizan en Keystone, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Definiciones de la capacidad del servicio de Keystone"].
+NOTE: El consumo de capacidad en las suscripciones de Keystone se muestra en TIBs en las consolas e informes, y se redondea a dos posiciones decimales. Si el uso es inferior a 0.01 TIB, el valor se muestra como `0` o. `No Usage`. La hora local introducida para la consulta en estas pestañas se convierte a la hora UTC. Por lo tanto, es posible que observe diferencias menores en los datos devueltos en función del tiempo consultado.
+
+Para obtener más información sobre las métricas de uso, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["Definiciones y métricas de nivel de servicio"]. Para obtener información sobre las distintas capacidades que se utilizan en Keystone, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Definiciones de la capacidad del servicio de Keystone"].
 
 
 
@@ -91,37 +93,43 @@ La pestaña *Tendencia de capacidad* muestra los datos históricos de tus suscri
 .Pasos
 . Haga clic en la pestaña *Tendencia de capacidad*.
 . Seleccione la suscripción necesaria para la que desea ver los detalles. La primera suscripción en el nombre de su cuenta se selecciona de forma predeterminada.
-. Seleccione el intervalo de tiempo de los iconos del calendario en los campos *desde fecha* y *hasta fecha*. Para las suscripciones que han caducado, el rango de fechas predeterminado son las fechas de inicio y finalización de la suscripción. Para las suscripciones existentes, el intervalo de tiempo predeterminado es desde la fecha de inicio del período de facturación hasta la fecha actual. No puede seleccionar una fecha futura.
+. Seleccione *Tendencia de capacidad* si desea ver los datos históricos y analizar la tendencia de uso de capacidad. Selecciona *Explosión acumulada* si deseas ver los datos de uso de ráfaga históricos y analiza el uso facturado según tu factura.
+
+
+
+
+=== Ver la tendencia de capacidad
+
+.Leer más
+[%collapsible]
+====
+Si ha seleccionado la opción *Tendencia de capacidad*, siga estos pasos:
+
+.Pasos
+. Seleccione el intervalo de tiempo de los iconos del calendario en los campos *desde fecha* y *hasta fecha*. Seleccione el rango de fechas de la consulta. El rango de fechas puede ser el comienzo del mes o la fecha de inicio de la suscripción hasta la fecha actual o la fecha de finalización de la suscripción. No puede seleccionar una fecha futura.
 +
 
 TIP: Para obtener un rendimiento óptimo y una experiencia de usuario, limite el rango de fechas de la consulta a tres meses.
 
-. Haga clic en *Ver detalles*. Los datos de consumo históricos de la suscripción para cada nivel de servicio se muestran en función del intervalo de tiempo seleccionado. Puede pasar el cursor del ratón sobre los gráficos para ver el desglose del uso en términos de datos comprometidos, consumidos, ráfagas y por encima de los datos del límite de ráfaga en ese punto de recopilación de datos.
+. Haga clic en *Ver detalles*. Los datos de consumo históricos de la suscripción para cada nivel de servicio se muestran en función del intervalo de tiempo seleccionado.
 
+
+Los gráficos de barras muestran el nombre del nivel de servicio y la capacidad consumida respecto a ese nivel de servicio para el rango de fechas. La fecha y la hora de la colección se muestran en la parte inferior del gráfico. Según el rango de fechas de la consulta, los gráficos de uso se muestran en un rango de 30 puntos de recopilación de datos. Puede pasar el cursor del ratón sobre los gráficos para ver el desglose del uso en términos de datos comprometidos, consumidos, ráfagas y por encima de los datos del límite de ráfaga en ese punto de recopilación de datos.
 
 image:aiq-ks-subtime-2.png["datos históricos"]
 
-Se muestran los siguientes detalles:
+Los siguientes colores en los gráficos de barras indican la capacidad consumida tal y como se define en el nivel de servicio. Los datos mensuales a través de los gráficos están separados por una línea vertical.
 
-* *Uso actual*: La fecha de inicio y finalización de la suscripción, y el período de facturación, por ejemplo, trimestral, anual, etc.
-* *Gráficos de uso*: Los gráficos de barras muestran el nombre del nivel de servicio y la capacidad que se consume en relación con ese nivel de servicio para el intervalo de fechas. La fecha y la hora de la colección se muestran en la parte inferior del gráfico.
-+
+* Verde: Dentro del 80%.
+* Ámbar: 80% - 100%.
+* Rojo: Uso de ráfagas (100% de la capacidad comprometida con el límite de ráfaga acordado)
+* Morado: Por encima del límite de ráfaga o. `Above Limit`.
 
-NOTE: Según el rango de fechas de la consulta, los gráficos de uso se muestran en un rango de 30 puntos de recopilación de datos.
 
-+
-Los siguientes colores de los gráficos de barras indican la capacidad consumida según se define en el nivel de servicio:
-
-+
-** Verde: Dentro del 80%.
-** Ámbar: 80% - 100%.
-** Rojo: Uso de ráfagas (100% de la capacidad comprometida con el límite de ráfaga acordado)
-** Morado: Por encima del límite de ráfaga o. `Above Limit`.
-+
 
 NOTE: Un gráfico en blanco indica que no hay datos disponibles en el entorno en ese punto de recopilación de datos.
 
-
+Puede hacer clic en el botón de alternar *Mostrar el uso actual* para ver el consumo actual y el uso en ráfaga con respecto al período de facturación de la suscripción. No se basan en el rango de fechas de la consulta.
 
 * *Corriente consumida*: Indicador de la capacidad consumida (en TIB) definido para el nivel de servicio. Este campo utiliza colores específicos:
 +
@@ -138,13 +146,26 @@ NOTE: Un gráfico en blanco indica que no hay datos disponibles en el entorno en
 ** Morado: Por encima del límite de ráfaga.
 
 
-* *Ráfaga acumulada*: Indicador para el uso acumulado de la ráfaga o la capacidad consumida calculada por mes para el período de facturación actual. El uso de ráfaga acumulado se calcula en función de la capacidad comprometida y consumida para un nivel de servicio: `(consumed - committed)/365.25/12`.
-+
-
-NOTE: Los indicadores *consumo actual*, *ráfaga actual* y *ráfaga acumulada* determinan el consumo con respecto al período de facturación de la suscripción y no se basan en el intervalo de fechas de la consulta.
 
 
+====
 
+
+=== Ver datos históricos de ráfaga
+
+.Leer más
+[%collapsible]
+====
+Si ha seleccionado la opción *Explosión acumulada*, de forma predeterminada, puede ver los datos de uso de ráfaga acumulados mensualmente durante los últimos 12 meses. Puede realizar una consulta por el rango de fechas de hasta los últimos 30 meses.
+
+
+TIP: El uso de bursting acumulado o la capacidad consumida se calcula por mes para el período de facturación actual. El uso de ráfaga acumulado se calcula en función de la capacidad comprometida y consumida para un nivel de servicio mediante esta fórmula: `(consumed - committed)/365.25/12`.
+
+image:accr-burst.png["gráficos de uso de ráfaga acumulados"]
+
+Esta función está disponible en modo de sólo vista previa. Póngase en contacto con su KSM para obtener más información sobre esta función.
+
+====
 
 
 === Gráficos de referencia para la protección de datos
@@ -261,7 +282,7 @@ Es posible que esta pestaña no esté disponible para ver las métricas de rendi
 +
 Como alternativa, puede hacer clic en el image:aiq-ks-time-icon.png["icono de gráfico"] Icono contra un volumen de ONTAP en la pestaña *Volúmenes* para navegar a esta pestaña.
 
-. Seleccione el rango de fechas de la consulta. El rango de fechas puede ser el comienzo del mes o la fecha de inicio de la suscripción hasta la fecha actual o la fecha de finalización de la suscripción.
+. Seleccione el rango de fechas de la consulta. El rango de fechas puede ser el comienzo del mes o la fecha de inicio de la suscripción hasta la fecha actual o la fecha de finalización de la suscripción. No puede seleccionar una fecha futura.
 
 
 Los detalles recuperados se basan en el objetivo de nivel de servicio para cada nivel de servicio. Por ejemplo, el valor máximo de IOPS, el rendimiento máximo, la latencia objetivo y otras métricas vienen determinadas por la configuración individual del nivel de servicio. Para obtener más información sobre la configuración, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html["Niveles de servicio"].

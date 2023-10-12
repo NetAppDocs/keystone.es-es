@@ -54,7 +54,7 @@ El asesor digital de Active IQ proporciona una vista de panel, con información 
 
 
 * ¿Puedo pedir un nuevo servicio de almacenamiento? *
-Sí, es posible solicitar un nuevo servicio de almacenamiento o ampliación al servicio de almacenamiento desde los ksmos. El equipo de operaciones de NetApp Keystone procesa la solicitud antes de que esté disponible para su uso.
+Sí, es posible solicitar un nuevo servicio de almacenamiento o ampliación al servicio de almacenamiento a través de ksms. El equipo de operaciones de NetApp Keystone procesa la solicitud antes de que esté disponible para su uso.
 
 *¿Están disponibles inmediatamente aumentos en compromisos de almacenamiento?* dependiendo de la cantidad de capacidad solicitada, se realiza una determinación si la capacidad ya está desplegada, o requiere que se envíe e instale equipo adicional.
 
