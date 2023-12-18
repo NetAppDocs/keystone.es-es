@@ -30,13 +30,13 @@ Los detalles de las suscripciones, los gráficos de uso de cada nivel de servici
 
 
 
-NOTE: El consumo de capacidad en las suscripciones de Keystone se muestra en TIBs en las consolas e informes, y se redondea a dos posiciones decimales. Si el uso es inferior a 0.01 TIB, el valor se muestra como `0` o. `No Usage`. La hora local introducida para la consulta en estas pestañas se convierte a la hora UTC. Por lo tanto, es posible que observe diferencias menores en los datos devueltos en función del tiempo consultado.
+NOTE: El consumo de capacidad en las suscripciones de Keystone se muestra en TIBs en las consolas e informes, y se redondea a dos posiciones decimales. Si el uso es inferior a 0.01 TIB, el valor se muestra como `0` o. `No Usage`. Los datos de estas pantallas se muestran en la hora UTC (zona horaria del servidor). Al introducir una fecha para la consulta, se considera automáticamente que está en la hora UTC.
 
 Para obtener más información sobre las métricas de uso, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["Definiciones y métricas de nivel de servicio"]. Para obtener información sobre las distintas capacidades que se utilizan en Keystone, consulte https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Definiciones de la capacidad del servicio de Keystone"].
 
 
 
-== Ver suscripciones
+== Suscripciones
 
 Puedes ver una lista de tus suscripciones en la pestaña *Suscripciones*.
 
@@ -71,7 +71,7 @@ image:icon-purple.png["."]: Indica un consumo superior al límite de ráfaga est
 
 
 
-== Consulta de los detalles de uso de las suscripciones
+== Uso actual
 
 Para conocer los detalles de sus suscripciones, haga clic en la pestaña *Uso actual* y seleccione el número de suscripción requerido.
 
@@ -86,7 +86,7 @@ Para obtener más información sobre sus servicios de almacenamiento de Keystone
 
 
 
-== Ver datos de uso históricos
+== Tendencia de capacidad
 
 La pestaña *Tendencia de capacidad* muestra los datos históricos de tus suscripciones de Keystone durante un período específico. Los gráficos verticales muestran los detalles de uso del intervalo de tiempo seleccionado con los indicadores adecuados para que pueda comparar y generar informes.
 
@@ -215,7 +215,7 @@ Para obtener más información sobre cómo MetroCluster protege sus datos, consu
 ====
 
 
-== Ver detalles de volúmenes y objetos
+== Volúmenes y objetos
 
 En la pestaña *Volúmenes y objetos*, puede ver el consumo y otros detalles de sus volúmenes en ONTAP. Para StorageGRID, esta pestaña muestra los nodos y su uso individual en su entorno de almacenamiento de objetos.
 
@@ -224,7 +224,7 @@ NOTE: El nombre de esta pestaña varía según la naturaleza de la implementaci�
 
 
 
-=== Detalles del volumen de ONTAP
+=== Ver los detalles del volumen de ONTAP
 
 .Leer más
 [%collapsible]
@@ -248,12 +248,12 @@ image:aiq-ks-sysdtls.png["Volúmenes  ficha Objetos"]
 ====
 
 
-=== Nodos StorageGRID y detalles de consumo
+=== Vea los nodos y el consumo de StorageGRID
 
 .Leer más
 [%collapsible]
 ====
-Para StorageGRID, esta pestaña muestra el uso lógico de los nodos en el entorno de almacenamiento de objetos.
+Para StorageGRID, esta pestaña muestra el uso lógico de los nodos para el almacenamiento de objetos.
 
 .Pasos
 . Haga clic en la pestaña *Objects*.
@@ -270,11 +270,12 @@ image:sg-link-2.png["Ventana emergente SG"]
 ====
 
 
-== Vea el rendimiento del volumen de ONTAP
+== Rendimiento
 
-Puedes hacer clic en la pestaña *Rendimiento* para ver los detalles de rendimiento de los volúmenes de ONTAP administrados por tus suscripciones de Keystone.
+La pestaña *Rendimiento* te permite ver las métricas de rendimiento de los volúmenes de ONTAP gestionados por tus suscripciones de Keystone.
 
-Es posible que esta pestaña no esté disponible para ver las métricas de rendimiento en los volúmenes de ONTAP. Póngase en contacto con el soporte técnico para ver esta pestaña.
+
+TIP: Esta pestaña está disponible de forma opcional. Póngase en contacto con el soporte técnico para ver esta pestaña.
 
 .Pasos
 . Haga clic en la pestaña *Rendimiento*.

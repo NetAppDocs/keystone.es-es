@@ -27,7 +27,8 @@ Eleve un ticket con los detalles apropiados del problema para obtener asistencia
 
 También puede utilizar la siguiente información para ponerse en contacto con el equipo de soporte.
 
-* Contactos de servicio globales:https://www.netapp.com/us/contact-us/support.aspx[]
+* Contactos de servicio globales:
+https://www.netapp.com/us/contact-us/support.aspx[]
 * Si tiene un caso o una incidencia abiertos que es necesario escalar, envíe un correo electrónico a una de las siguientes direcciones: Keystone.services@netapp.com Keystone.escalations@netapp.com
 * NetApp utiliza OpsRamp, una solución de puerta de enlace remota basada en cloud para supervisar y conectar de forma proactiva el entorno NetApp Keystone a efectos de solución de problemas. Para obtener más información sobre OpsRamp, consulte https://www.opsramp.com/#[].
 

@@ -16,6 +16,10 @@ summary: Lo que los clientes observan en Active IQ para obtener una solución Ke
 [role="lead"]
 Si te has suscrito a los servicios de NetApp Keystone, obtendrás una descripción general de tus suscripciones en el widget *Suscripciones Keystone* del panel del asesor digital (asesor digital) de Active IQ.
 
+Puede buscar detalles de la suscripción de Keystone si busca por nombre de cliente o por nombre de lista de seguimiento que incluya varios clientes. Para obtener información sobre cómo buscar suscripciones de Keystone por listas de comprobaciones, consulte https://docs.netapp.com/us-en/keystone/nkfsosm-keystone-and-aiq.html#search-by-using-keystone-watchlists["Busca mediante listas de comprobaciones de Keystone"].
+
+Digital Advisor ofrece un panel de control unificado que proporciona información sobre varios niveles de los datos de suscripción y la información de uso a través del botón * Cambiar a un panel de control antiguo / nuevo *.
+
 Digital Advisor ofrece un panel de control unificado que le brinda información sobre varios niveles de sus datos de suscripción e información de uso a través del botón * Cambiar a un panel de control antiguo / nuevo *.
 
 .Consola predeterminada (antigua)
@@ -49,6 +53,27 @@ TIP: Haga clic en el enlace *Suscripciones* para ver la lista de suscripciones f
 
 image:db-card.png["sin sla"]
 
-Para obtener más información acerca de Digital Advisor, consulte link:https://docs.netapp.com/us-en/active-iq/index.html["Documentación de Digital Advisor"].
+Para obtener más información acerca de Digital Advisor, consulte link:https://docs.netapp.com/us-en/active-iq/index.html["Documentación de Digital Advisor"^].
 
 Para obtener información sobre la pestaña *Suscripciones de Keystone*, consulta el panel _Digital Advisor y la generación de informes para Keystone_.
+
+
+
+== Busca mediante listas de comprobaciones de Keystone
+
+Watchlist es una función del asesor digital de Active IQ (asesor digital). Para obtener más información, consulte https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["Entender la lista de observación"^]. Para obtener más información sobre la creación de listas de comprobaciones, consulte https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["Cree una lista de observación"^].
+
+Keystone admite la creación de listas de comprobaciones y la búsqueda por ellas para ver los detalles de las suscripciones de varios clientes. Sigue estos pasos para crear una lista de visualización para los clientes de Keystone:
+
+. En la pantalla *Create Watchlist*, proporciona un nombre para la lista de seguimiento de Keystone.
+. Seleccione *Categoría* en el campo *Agregar sistemas por*. *Cliente* se selecciona por defecto en el campo *Elegir Categoría*.
+. Busque los clientes requeridos por sus nombres y agréguelos. Solo puede agregar clientes cuyos detalles tiene derecho a ver.
+. Haga clic en *Crear lista de observación*. La pantalla del asesor digital muestra los datos de la nueva lista de comprobaciones.
+
+
+Al buscar por una lista de seguimiento en la pantalla del asesor digital, puede ver a los clientes y sus suscripciones en la lista desplegable *Suscripción* en el widget *Suscripciones de Keystone*.
+
+
+TIP: Si está viendo el panel _NEW_ en el widget *Suscripciones de Keystone*, haga clic en *Cambiar a Panel de Control Antiguo* para ver la lista.
+
+image:watchlist.png["pantalla de lista de seguimiento"]

@@ -18,15 +18,22 @@ Las siguientes preguntas proporcionan respuestas a sus consultas frecuentes sobr
 
 * ¿Qué es NetApp Keystone?*
 
-NetApp Keystone es una cartera de alternativas de gastos de capital (capex) en las instalaciones. Para obtener más información, consulte https://www.netapp.com/services/keystone/["NetApp Keystone"].
+NetApp Keystone es una cartera de alternativas de gastos de capital en las instalaciones.
+Para obtener más información, consulte https://www.netapp.com/services/keystone/["NetApp Keystone"^].
 
 *¿Cómo beneficia NetApp Keystone a mis clientes?*
 
-NetApp Keystone es un puente que conecta los pilares de nuestra estrategia de gastos de capital y cloud híbrido, y ofrece agilidad, flexibilidad financiera y un riesgo financiero reducido que ayuda a los clientes a satisfacer sus necesidades empresariales y de flujo de caja.
+NetApp Keystone es el puente que conecta los pilares de nuestra estrategia de gastos de capital y cloud híbrido, al ofrecer agilidad, flexibilidad financiera y un riesgo financiero reducido que ayuda a los clientes a cumplir sus necesidades empresariales y de liquidez.
 
 La marca NetApp Keystone ofrece una cartera de soluciones de pago flexibles que incluyen opciones tradicionales de financiación, arrendamiento, y fijas o variables para clientes que tienen un gran peso en efectivo, junto con los servicios Keystone.
 
-*Servicios Keystone (OPEX, experiencia similar a la nube):* * Prefiere un 100 % de gastos operativos, por lo que los activos no terminarán en el balance de tu cliente * Proveedores de servicios internos/externos que busquen alinear los costes con el uso/los ingresos * Cargas de trabajo con un crecimiento de capacidad impredecible * Recursos de TI reasignados a las tareas de almacenamiento típicas (migraciones, actualizaciones técnicas, actualizaciones, Y así sucesivamente) * Solución a corto plazo antes de migrar las cargas de trabajo a la nube * repatriar las cargas de trabajo del cloud a las instalaciones
+*Servicios Keystone (OpEx, experiencia similar a la nube):*
+* Prefiere 100% OpEx, por lo que los activos no terminarán en el balance de su cliente
+* Proveedores de servicios internos / externos que buscan alinear los costos con el uso / ingresos
+* Las cargas de trabajo con un crecimiento de la capacidad impredecible
+* Reasignación de RECURSOS DE TI a partir de tareas de almacenamiento típicas (migraciones, actualizaciones técnicas, renovaciones, etc.)
+* Solución a corto plazo antes de migrar cargas de trabajo a la nube
+* Repatriar las cargas de trabajo de vuelta del cloud a las instalaciones
 
 * ¿Qué es NetApp Keystone?*
 
