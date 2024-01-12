@@ -93,7 +93,7 @@ La pestaña *Tendencia de capacidad* muestra los datos históricos de tus suscri
 .Pasos
 . Haga clic en la pestaña *Tendencia de capacidad*.
 . Seleccione la suscripción necesaria para la que desea ver los detalles. La primera suscripción en el nombre de su cuenta se selecciona de forma predeterminada.
-. Seleccione *Tendencia de capacidad* si desea ver los datos históricos y analizar la tendencia de uso de capacidad. Selecciona *Explosión acumulada* si deseas ver los datos de uso de ráfaga históricos y analiza el uso facturado según tu factura.
+. Seleccione *Tendencia de capacidad* si desea ver los datos históricos y analizar la tendencia de uso de capacidad. Selecciona *Explosión acumulada facturada* si deseas ver los datos de uso de ráfaga históricos, para los que se han generado facturas. Puede utilizar estos datos para analizar el uso facturado según la factura.
 
 
 
@@ -152,15 +152,15 @@ Puede hacer clic en el botón de alternar *Mostrar uso actual* para ver los dato
 ====
 
 
-=== Ver datos históricos de ráfaga
+=== Consulta de repartición devengada facturada
 
 .Leer más
 [%collapsible]
 ====
-Si ha seleccionado la opción *Explosión acumulada*, de forma predeterminada, puede ver los datos de uso de ráfaga acumulados mensualmente durante los últimos 12 meses. Puede realizar una consulta por el rango de fechas de hasta los últimos 30 meses.
+Si ha seleccionado la opción *Ráfaga devengada facturada*, de forma predeterminada, puede ver los datos de uso de ráfaga acumulados mensualmente durante los últimos 12 meses que se han facturado. Puede realizar una consulta por el rango de fechas de hasta los últimos 30 meses. Los gráficos de barras se muestran para los datos facturados, y si el uso aún no se ha facturado, verá _Pending_ para ese mes.
 
 
-TIP: El uso de bursting acumulado o la capacidad consumida se calcula por mes para el período de facturación actual. El uso de ráfaga acumulado se calcula en función de la capacidad comprometida y consumida para un nivel de servicio mediante esta fórmula: `(consumed - committed)/365.25/12`.
+TIP: El uso de bursting acumulado facturado se calcula por período de facturación, en función de la capacidad comprometida y consumida para un nivel de servicio.
 
 image:accr-burst.png["gráficos de uso de ráfaga acumulados"]
 
